@@ -1,0 +1,16 @@
+{
+  "_note": "One plain-words line per prompt, shown on the report page. Keyed by task id.",
+  "elev_cable_feel": "You stand in an elevator. The cable snaps and it falls. What do you feel?",
+  "elev_cable_feel_why": "Same fall. What do you feel, why, and what does it say about gravity?",
+  "elev_cable_stone": "Falling elevator. A man lets go of a stone. What does the stone do, and what does that say about weight?",
+  "elev_cable_scale": "Falling elevator. A man stands on a scale. What does the scale read, and what does that mean?",
+  "ladder_1_mistaken": "Help, rung 1. Told the facts: a falling person feels no weight, loose objects float beside them. Told something in our idea of gravity must be mistaken. Asked what.",
+  "ladder_2_carriage": "Help, rung 2. Same facts, plus a man pressed into his seat in a carriage that keeps speeding up. Asked what the two cases have in common.",
+  "ladder_3_undetectable": "Help, rung 3. Same facts, plus: no experiment inside the falling cabin can detect gravity. Asked what follows about gravity.",
+  "ded_ship_mast": "A stone is dropped from the mast of a ship moving steadily. Where does it land? Galileo's answer is in the corpus: at the foot of the mast.",
+  "ded_two_stones": "A heavy stone and a light one are dropped together. Which lands first? In the corpus: together.",
+  "ind_pendulum": "Pendulums 1, 4, 9, 16 feet long swing in 1, 2, 3, 4 seconds. What is the rule? Spot the pattern: time goes as the square root of length.",
+  "abd_uranus": "Uranus drifts off the path Newton's law predicts. What could cause it? In the corpus: an unseen planet pulling on it, which is how Neptune was found in 1846.",
+  "abd_mm_bare": "Light speed is measured along and across Earth's motion and comes out the same. What must be true? The facts are from 1887, the answer from 1905, beyond the corpus.",
+  "abd_bb_bare": "A hot body's glow peaks and then dies away at high frequency instead of growing forever. What is wrong with the theory? Planck's answer, 1900, beyond the corpus."
+}

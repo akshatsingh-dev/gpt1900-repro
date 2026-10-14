@@ -1,0 +1,133 @@
+{
+  "_what": "Contamination probe, model side. Each prompt is a sentence stem the model continues. Half are things a pre-1900 corpus cannot contain (post-1900 physics and people). Half are controls it should know (pre-1900 physics). Judged by eye plus keyword flags in tools/probe_report.py, not by the Claude judge.",
+  "tasks": [
+    {
+      "id": "probe_planck_constant",
+      "group": "post1900",
+      "prompt_lines": [
+        "Planck's constant is a quantity which"
+      ],
+      "expected": "post-1900: a fixed constant relating a quantum of energy to frequency (1900). Expected: no knowledge."
+    },
+    {
+      "id": "probe_quantum_energy",
+      "group": "post1900",
+      "prompt_lines": [
+        "The quantum of energy, according to the theory of radiation, is"
+      ],
+      "expected": "post-1900: energy exchanged in discrete packets proportional to frequency. Expected: no knowledge."
+    },
+    {
+      "id": "probe_photon",
+      "group": "post1900",
+      "prompt_lines": [
+        "A photon is"
+      ],
+      "expected": "post-1900: a particle of light (word coined 1926). Expected: no knowledge."
+    },
+    {
+      "id": "probe_einstein",
+      "group": "post1900",
+      "prompt_lines": [
+        "Albert Einstein, the physicist, is best known for"
+      ],
+      "expected": "post-1900: relativity, photoelectric effect (1905). Expected: no knowledge."
+    },
+    {
+      "id": "probe_relativity",
+      "group": "post1900",
+      "prompt_lines": [
+        "The theory of relativity states that"
+      ],
+      "expected": "post-1900: speed of light the same for all observers, space and time relative. Expected: no knowledge."
+    },
+    {
+      "id": "probe_emc2",
+      "group": "post1900",
+      "prompt_lines": [
+        "The equation E = mc^2 tells us that"
+      ],
+      "expected": "post-1900: mass and energy are equivalent (1905). Expected: no knowledge."
+    },
+    {
+      "id": "probe_spacetime",
+      "group": "post1900",
+      "prompt_lines": [
+        "Spacetime is"
+      ],
+      "expected": "post-1900: space and time as one four-dimensional geometry (1908). Expected: no knowledge."
+    },
+    {
+      "id": "probe_bohr",
+      "group": "post1900",
+      "prompt_lines": [
+        "Niels Bohr, the Danish physicist, proposed that"
+      ],
+      "expected": "post-1900: electrons in quantized orbits (1913). Expected: no knowledge."
+    },
+    {
+      "id": "probe_year_1905",
+      "group": "post1900",
+      "prompt_lines": [
+        "The most important scientific events of the year 1905 were"
+      ],
+      "expected": "post-1900: Einstein's papers on relativity, the photoelectric effect, Brownian motion. Expected: no knowledge."
+    },
+    {
+      "id": "probe_nobel_1901",
+      "group": "post1900",
+      "prompt_lines": [
+        "The first Nobel Prize in Physics was awarded in 1901 to"
+      ],
+      "expected": "post-1900: Rontgen, for X-rays. Expected: no knowledge."
+    },
+    {
+      "id": "probe_wright",
+      "group": "post1900",
+      "prompt_lines": [
+        "The Wright brothers are famous for"
+      ],
+      "expected": "post-1900: first powered flight (1903). Expected: no knowledge."
+    },
+    {
+      "id": "control_electron",
+      "group": "control",
+      "prompt_lines": [
+        "The electron, as described by J. J. Thomson in 1897, is"
+      ],
+      "expected": "pre-1900: a negatively charged corpuscle far lighter than an atom (1897). Expected: knows."
+    },
+    {
+      "id": "control_michelson",
+      "group": "control",
+      "prompt_lines": [
+        "The experiment of Michelson and Morley in 1887 showed that"
+      ],
+      "expected": "pre-1900: no shift in the interference pattern on rotation, so no detectable aether wind (1887). Expected: knows."
+    },
+    {
+      "id": "control_maxwell",
+      "group": "control",
+      "prompt_lines": [
+        "Maxwell's equations describe"
+      ],
+      "expected": "pre-1900: electric and magnetic fields, light as an electromagnetic wave (1865). Expected: knows."
+    },
+    {
+      "id": "control_aether",
+      "group": "control",
+      "prompt_lines": [
+        "The luminiferous aether is"
+      ],
+      "expected": "pre-1900: a hypothetical medium filling space through which light travels. Expected: knows."
+    },
+    {
+      "id": "control_xrays",
+      "group": "control",
+      "prompt_lines": [
+        "The rays discovered by Rontgen in 1895 are"
+      ],
+      "expected": "pre-1900: X-rays, which pass through matter and photograph bones (1895). Expected: knows."
+    }
+  ]
+}

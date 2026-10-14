@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.1",
+  "score_range": {
+    "min": 0,
+    "max": 5
+  },
+  "shared_judge_prompt": "You are grading a model response to a conceptual physics reasoning prompt. Score the response from 0 to 5. Focus on whether the underlying reasoning is conceptually correct, whether it resolves the stated contradiction, and whether it explains the key observations. Do not reward fancy vocabulary, historical name-dropping, or exact formulas unless they reflect real understanding. Do not penalize plain language if the ideas are right. Modern terminology is acceptable if the reasoning is correct. Prefer conceptual correctness over stylistic polish.",
+  "shared_judge_checklist": [
+    "Did the response identify the core classical assumption that fails, or explain what must be revised?",
+    "Did the response propose a coherent replacement principle or interpretation?",
+    "Did the response explain the main observations or thought experiment outcomes rather than merely restating them?",
+    "Did the response avoid preserving the original contradiction?",
+    "Is the understanding conceptually right even if the wording is informal or non-technical?"
+  ],
+  "shared_judge_rules": [
+    "Do not require exact historical phrasing.",
+    "Do not require exact equations.",
+    "Do not give extra credit for jargon unless it is used correctly.",
+    "A response can earn a high score with simple language if the concepts are right.",
+    "A response should lose points if it uses fancy words but the reasoning is confused or wrong.",
+    "The model was NOT given classical assumptions or told which assumption fails. Give extra credit if the model independently identifies the relevant classical framework and its failure."
+  ],
+  "judge_output_schema": {
+    "score": "integer from 0 to 5",
+    "rationale": "brief explanation of why this score was assigned, focused on conceptual understanding",
+    "matched_concepts": [
+      "list of core concepts correctly present in the answer"
+    ],
+    "missing_concepts": [
+      "list of major concepts missing, vague, or incorrect"
+    ]
+  },
+  "tasks": [
+    {
+      "id": "gr_main_elevator_light",
+      "category": "general_relativity",
+      "title": "General Relativity Main Prompt: Elevator and Light",
+      "judge_focus": "Look for whether the response understands the local equivalence of acceleration and gravity, and that if acceleration bends the observed path of light, gravity should as well. Do not require field equations or fancy geometry language if the core idea is correct. Note: the model was NOT given the numbered thought experiment steps or the explicit puzzle framing.",
+      "prompt_lines": [
+        "Imagine a sealed elevator far out in space, away from planets and stars, accelerating upward at 9.8 m/s^2.",
+        "",
+        "An observer inside feels pressed to the floor exactly as if standing on Earth. Dropped objects fall to the floor just as in a gravitational field.",
+        "",
+        "Now suppose a beam of light enters one side of this accelerating elevator. To the observer inside, the light beam appears to curve downward.",
+        "",
+        "What does this tell us about the relationship between gravity and light? Should we expect light to behave differently in a gravitational field compared to this accelerating elevator?"
+      ],
+      "expected_core_concepts": [
+        "Acceleration and gravity are locally equivalent.",
+        "If acceleration changes the observed light path, gravity should too.",
+        "Gravity cannot be merely a force acting only on rest mass in the ordinary Newtonian sense.",
+        "A strong answer infers that gravity reflects the geometry or structure of spacetime itself.",
+        "Light follows that structure even though it has no rest mass."
+      ],
+      "common_failure_modes": [
+        "Saying light cannot be affected because it has no mass.",
+        "Treating gravity only as a standard force on massive particles.",
+        "Ignoring the local equivalence between acceleration and gravity."
+      ],
+      "scoring_rubric": {
+        "0": "Incoherent, irrelevant, or nonsensical.",
+        "1": "Fails to engage the puzzle or insists gravity cannot affect light because light has no mass.",
+        "2": "Recognizes some link between acceleration and gravity but gives no clear explanation of why light would bend in gravity.",
+        "3": "Correctly identifies a local equivalence between gravity and acceleration and suggests gravity affects light, but does not clearly articulate the deeper implication about spacetime.",
+        "4": "Explains that gravity cannot be just an ordinary force on mass and proposes that gravity changes the structure through which light and matter move, with mostly correct reasoning.",
+        "5": "Excellent. Clearly uses the equivalence principle to infer that gravity bends light and concludes that mass-energy changes spacetime geometry rather than merely exerting a Newtonian force on massive objects."
+      }
+    }
+  ],
+  "_derived_from": {
+    "file": "upstream/gpt1900/EVAL_no_assumptions.json",
+    "sha256": "ec649b1937ce8d9ba697f221d8dc6574cb8c99b6f203b3ebc8a9afe442d46101",
+    "change": "tasks filtered to id == gr_main_elevator_light; all other fields unchanged",
+    "prior_derivation": null
+  }
+}

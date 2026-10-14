@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.1",
+  "score_range": {
+    "min": 0,
+    "max": 5
+  },
+  "shared_judge_prompt": "You are grading a model response to a conceptual physics reasoning prompt. Score the response from 0 to 5. Focus on whether the underlying reasoning is conceptually correct, whether it resolves the stated contradiction, and whether it explains the key observations. Do not reward fancy vocabulary, historical name-dropping, or exact formulas unless they reflect real understanding. Do not penalize plain language if the ideas are right. Modern terminology is acceptable if the reasoning is correct. Prefer conceptual correctness over stylistic polish.",
+  "shared_judge_checklist": [
+    "Did the response identify the core classical assumption that fails, or explain what must be revised?",
+    "Did the response propose a coherent replacement principle or interpretation?",
+    "Did the response explain the main observations or thought experiment outcomes rather than merely restating them?",
+    "Did the response avoid preserving the original contradiction?",
+    "Is the understanding conceptually right even if the wording is informal or non-technical?"
+  ],
+  "shared_judge_rules": [
+    "Do not require exact historical phrasing.",
+    "Do not require exact equations.",
+    "Do not give extra credit for jargon unless it is used correctly.",
+    "A response can earn a high score with simple language if the concepts are right.",
+    "A response should lose points if it uses fancy words but the reasoning is confused or wrong."
+  ],
+  "judge_output_schema": {
+    "score": "integer from 0 to 5",
+    "rationale": "brief explanation of why this score was assigned, focused on conceptual understanding",
+    "matched_concepts": [
+      "list of core concepts correctly present in the answer"
+    ],
+    "missing_concepts": [
+      "list of major concepts missing, vague, or incorrect"
+    ]
+  },
+  "tasks": [
+    {
+      "id": "gr_free_fall_equivalence",
+      "category": "general_relativity",
+      "title": "General Relativity Thought Experiment: Free Fall and Acceleration",
+      "judge_focus": "Look for whether the response understands that gravity is locally removable in free fall and locally reproducible by acceleration, making it unlike ordinary forces. Do not require the phrase equivalence principle if the idea is clearly present.",
+      "prompt_lines": [
+        "A person falling freely from a roof does not feel their own weight during the fall.",
+        "",
+        "In a small cabin falling freely, nearby released objects float beside them.",
+        "",
+        "This suggests that, at least locally, gravity can be made to disappear by choosing the right state of motion.",
+        "",
+        "But ordinary forces do not behave this way. They cannot be removed simply by falling with the affected object.",
+        "",
+        "At the same time, a person in an accelerating cabin in empty space would feel weight, and released objects would fall to the floor exactly as in a gravitational field.",
+        "",
+        "How should we think about the relationship between gravity and acceleration?"
+      ],
+      "expected_core_concepts": [
+        "In free fall, gravity is locally absent in the sense that nearby objects share the same motion.",
+        "Acceleration can locally mimic the effects of gravity.",
+        "Gravity is unlike ordinary forces because it can be transformed away locally by going into free fall.",
+        "A strong answer identifies the local equivalence principle.",
+        "The best answers point toward gravity as a feature of spacetime or inertial structure rather than an ordinary force."
+      ],
+      "common_failure_modes": [
+        "Saying this is no different from any ordinary force.",
+        "Missing the importance of locality.",
+        "Failing to connect free fall and acceleration."
+      ],
+      "scoring_rubric": {
+        "0": "Incoherent, irrelevant, or nonsensical.",
+        "1": "Gives no meaningful explanation or treats gravity and acceleration as unrelated.",
+        "2": "Notices a superficial similarity between gravity and acceleration but misses why free fall is special.",
+        "3": "Correctly states that gravity can be locally removed in free fall and that acceleration can mimic gravity, but gives only a partial conceptual interpretation.",
+        "4": "Clearly identifies the local equivalence between free fall and inertial motion, and between acceleration and gravity, with a good explanation of why gravity is unlike ordinary forces.",
+        "5": "Excellent. Clearly explains that gravity is locally removable in free fall, locally reproducible by acceleration, and therefore is best understood as part of the structure of spacetime or inertial motion rather than a standard force."
+      }
+    }
+  ],
+  "_derived_from": {
+    "file": "upstream/gpt1900/EVAL.json",
+    "sha256": "3d2ee617836fb5c8b048d36633dcb6d3e02763708fdea16b5bff777689e760ec",
+    "change": "tasks filtered to id == gr_free_fall_equivalence; all other fields unchanged",
+    "prior_derivation": null
+  }
+}
