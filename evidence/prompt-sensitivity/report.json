@@ -1,0 +1,279 @@
+{
+  "series": [
+    {
+      "name": "evidence/prompt-sensitivity/scaffolded.jsonl",
+      "records": 72,
+      "errors": 0,
+      "checkpoints": [
+        "discovery-rl-v11-s560",
+        "discovery-rl-v11-s630",
+        "discovery-rl-v11-s735"
+      ],
+      "tasks": [
+        "gr_free_fall_equivalence",
+        "gr_main_elevator_light",
+        "photoelectric_effect_main",
+        "sr_approaching_c",
+        "sr_frozen_light",
+        "sr_michelson_morley",
+        "sr_train_lightning",
+        "uv_catastrophe_main"
+      ],
+      "conditions": [
+        "scaffolded"
+      ],
+      "settings": {
+        "temperature": [
+          "0.7"
+        ],
+        "top_k": [
+          "50"
+        ],
+        "seed": [
+          "42",
+          "43",
+          "44"
+        ],
+        "num_samples": [
+          "3"
+        ],
+        "max_tokens": [
+          "1024"
+        ],
+        "model_revision": [
+          "'71bf395f06dff39ad5ee9f8981b941b3c37daae9'"
+        ],
+        "dtype": [
+          "'bfloat16'"
+        ],
+        "gpu_name": [
+          "'Tesla V100-SXM2-32GB'"
+        ],
+        "judge_model": [
+          "None"
+        ],
+        "judge_model_version": [
+          "None"
+        ],
+        "judge_temperature": [
+          "None"
+        ],
+        "eval_config_sha256": [
+          "'3d2ee617836fb5c8b048d36633dcb6d3e02763708fdea16b5bff777689e760ec'"
+        ]
+      },
+      "stock_opening": 72,
+      "hit_max_tokens": 0,
+      "mean_tokens": 463.5138888888889,
+      "distinct_answers_per_cell": 3.0,
+      "scored": 0,
+      "unscored": 72,
+      "judge_failures": 0,
+      "score_mean": null,
+      "score_ci95": [
+        null,
+        null
+      ],
+      "score_hist": {},
+      "per_task": {},
+      "per_checkpoint": {},
+      "per_condition": {}
+    },
+    {
+      "name": "evidence/prompt-sensitivity/minimal.jsonl",
+      "records": 72,
+      "errors": 0,
+      "checkpoints": [
+        "discovery-rl-v11-s560",
+        "discovery-rl-v11-s630",
+        "discovery-rl-v11-s735"
+      ],
+      "tasks": [
+        "gr_free_fall_equivalence",
+        "gr_main_elevator_light",
+        "photoelectric_effect_main",
+        "sr_approaching_c",
+        "sr_frozen_light",
+        "sr_michelson_morley",
+        "sr_train_lightning",
+        "uv_catastrophe_main"
+      ],
+      "conditions": [
+        "minimal"
+      ],
+      "settings": {
+        "temperature": [
+          "0.7"
+        ],
+        "top_k": [
+          "50"
+        ],
+        "seed": [
+          "42",
+          "43",
+          "44"
+        ],
+        "num_samples": [
+          "3"
+        ],
+        "max_tokens": [
+          "1024"
+        ],
+        "model_revision": [
+          "'71bf395f06dff39ad5ee9f8981b941b3c37daae9'"
+        ],
+        "dtype": [
+          "'bfloat16'"
+        ],
+        "gpu_name": [
+          "'Tesla V100-SXM2-32GB'"
+        ],
+        "judge_model": [
+          "None"
+        ],
+        "judge_model_version": [
+          "None"
+        ],
+        "judge_temperature": [
+          "None"
+        ],
+        "eval_config_sha256": [
+          "'ec649b1937ce8d9ba697f221d8dc6574cb8c99b6f203b3ebc8a9afe442d46101'"
+        ]
+      },
+      "stock_opening": 72,
+      "hit_max_tokens": 0,
+      "mean_tokens": 454.7638888888889,
+      "distinct_answers_per_cell": 3.0,
+      "scored": 0,
+      "unscored": 72,
+      "judge_failures": 0,
+      "score_mean": null,
+      "score_ci95": [
+        null,
+        null
+      ],
+      "score_hist": {},
+      "per_task": {},
+      "per_checkpoint": {},
+      "per_condition": {}
+    },
+    {
+      "name": "evidence/prompt-sensitivity/leading.jsonl",
+      "records": 72,
+      "errors": 0,
+      "checkpoints": [
+        "discovery-rl-v11-s560",
+        "discovery-rl-v11-s630",
+        "discovery-rl-v11-s735"
+      ],
+      "tasks": [
+        "gr_free_fall_equivalence",
+        "gr_main_elevator_light",
+        "photoelectric_effect_main",
+        "sr_approaching_c",
+        "sr_frozen_light",
+        "sr_michelson_morley",
+        "sr_train_lightning",
+        "uv_catastrophe_main"
+      ],
+      "conditions": [
+        "leading"
+      ],
+      "settings": {
+        "temperature": [
+          "0.7"
+        ],
+        "top_k": [
+          "50"
+        ],
+        "seed": [
+          "42",
+          "43",
+          "44"
+        ],
+        "num_samples": [
+          "3"
+        ],
+        "max_tokens": [
+          "1024"
+        ],
+        "model_revision": [
+          "'71bf395f06dff39ad5ee9f8981b941b3c37daae9'"
+        ],
+        "dtype": [
+          "'bfloat16'"
+        ],
+        "gpu_name": [
+          "'Tesla V100-SXM2-32GB'"
+        ],
+        "judge_model": [
+          "None"
+        ],
+        "judge_model_version": [
+          "None"
+        ],
+        "judge_temperature": [
+          "None"
+        ],
+        "eval_config_sha256": [
+          "'f8ab5e69a4aa5db1b2a5955fe44fd6d6651ae6fd6d9ff5968efff35104f923d6'"
+        ]
+      },
+      "stock_opening": 72,
+      "hit_max_tokens": 0,
+      "mean_tokens": 454.7083333333333,
+      "distinct_answers_per_cell": 3.0,
+      "scored": 0,
+      "unscored": 72,
+      "judge_failures": 0,
+      "score_mean": null,
+      "score_ci95": [
+        null,
+        null
+      ],
+      "score_hist": {},
+      "per_task": {},
+      "per_checkpoint": {},
+      "per_condition": {}
+    }
+  ],
+  "pairs": [
+    {
+      "a": "evidence/prompt-sensitivity/scaffolded.jsonl",
+      "b": "evidence/prompt-sensitivity/minimal.jsonl",
+      "shared_cells": 72,
+      "byte_identical": 0,
+      "both_scored": 0,
+      "score_exact_agreement": 0,
+      "score_within_1": 0,
+      "mean_score_diff_a_minus_b": null,
+      "mean_abs_score_diff": null,
+      "per_task_diff": {}
+    },
+    {
+      "a": "evidence/prompt-sensitivity/scaffolded.jsonl",
+      "b": "evidence/prompt-sensitivity/leading.jsonl",
+      "shared_cells": 72,
+      "byte_identical": 0,
+      "both_scored": 0,
+      "score_exact_agreement": 0,
+      "score_within_1": 0,
+      "mean_score_diff_a_minus_b": null,
+      "mean_abs_score_diff": null,
+      "per_task_diff": {}
+    },
+    {
+      "a": "evidence/prompt-sensitivity/minimal.jsonl",
+      "b": "evidence/prompt-sensitivity/leading.jsonl",
+      "shared_cells": 72,
+      "byte_identical": 0,
+      "both_scored": 0,
+      "score_exact_agreement": 0,
+      "score_within_1": 0,
+      "mean_score_diff_a_minus_b": null,
+      "mean_abs_score_diff": null,
+      "per_task_diff": {}
+    }
+  ]
+}

@@ -1,0 +1,1261 @@
+{
+  "source": "evidence/contamination/probe-sampled.jsonl",
+  "flag_terms": [
+    "photon",
+    "photons",
+    "spacetime",
+    "space-time",
+    "planck",
+    "einstein",
+    "relativity",
+    "relativistic",
+    "bohr",
+    "nobel",
+    "quantum mechanics",
+    "quanta",
+    "quantized",
+    "quantised",
+    "wright brothers",
+    "aeroplane",
+    "airplane",
+    "radioactivity",
+    "radioactive",
+    "nuclear",
+    "electron volt",
+    "wavefunction",
+    "uncertainty principle",
+    "general relativity",
+    "special relativity",
+    "e = mc",
+    "e=mc"
+  ],
+  "summary": [
+    {
+      "checkpoint": "d34-22btok",
+      "group": "control",
+      "unread": 15
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "group": "post1900",
+      "unread": 33
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "group": "control",
+      "unread": 15
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "group": "post1900",
+      "unread": 33
+    }
+  ],
+  "non_echo_flag_rows": 1,
+  "rows": [
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_planck_constant",
+      "group": "post1900",
+      "expected": "post-1900: a fixed constant relating a quantum of energy to frequency (1900). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_planck_constant",
+      "group": "post1900",
+      "expected": "post-1900: a fixed constant relating a quantum of energy to frequency (1900). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_planck_constant",
+      "group": "post1900",
+      "expected": "post-1900: a fixed constant relating a quantum of energy to frequency (1900). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_quantum_energy",
+      "group": "post1900",
+      "expected": "post-1900: energy exchanged in discrete packets proportional to frequency. Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_quantum_energy",
+      "group": "post1900",
+      "expected": "post-1900: energy exchanged in discrete packets proportional to frequency. Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_quantum_energy",
+      "group": "post1900",
+      "expected": "post-1900: energy exchanged in discrete packets proportional to frequency. Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_photon",
+      "group": "post1900",
+      "expected": "post-1900: a particle of light (word coined 1926). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_photon",
+      "group": "post1900",
+      "expected": "post-1900: a particle of light (word coined 1926). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_photon",
+      "group": "post1900",
+      "expected": "post-1900: a particle of light (word coined 1926). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_einstein",
+      "group": "post1900",
+      "expected": "post-1900: relativity, photoelectric effect (1905). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_einstein",
+      "group": "post1900",
+      "expected": "post-1900: relativity, photoelectric effect (1905). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_einstein",
+      "group": "post1900",
+      "expected": "post-1900: relativity, photoelectric effect (1905). Expected: no knowledge.",
+      "flags": [
+        [
+          "einstein",
+          true
+        ]
+      ],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_relativity",
+      "group": "post1900",
+      "expected": "post-1900: speed of light the same for all observers, space and time relative. Expected: no knowledge.",
+      "flags": [
+        [
+          "relativity",
+          true
+        ]
+      ],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_relativity",
+      "group": "post1900",
+      "expected": "post-1900: speed of light the same for all observers, space and time relative. Expected: no knowledge.",
+      "flags": [
+        [
+          "relativity",
+          true
+        ]
+      ],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_relativity",
+      "group": "post1900",
+      "expected": "post-1900: speed of light the same for all observers, space and time relative. Expected: no knowledge.",
+      "flags": [
+        [
+          "relativity",
+          true
+        ]
+      ],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_emc2",
+      "group": "post1900",
+      "expected": "post-1900: mass and energy are equivalent (1905). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_emc2",
+      "group": "post1900",
+      "expected": "post-1900: mass and energy are equivalent (1905). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_emc2",
+      "group": "post1900",
+      "expected": "post-1900: mass and energy are equivalent (1905). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_spacetime",
+      "group": "post1900",
+      "expected": "post-1900: space and time as one four-dimensional geometry (1908). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_spacetime",
+      "group": "post1900",
+      "expected": "post-1900: space and time as one four-dimensional geometry (1908). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_spacetime",
+      "group": "post1900",
+      "expected": "post-1900: space and time as one four-dimensional geometry (1908). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_bohr",
+      "group": "post1900",
+      "expected": "post-1900: electrons in quantized orbits (1913). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_bohr",
+      "group": "post1900",
+      "expected": "post-1900: electrons in quantized orbits (1913). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_bohr",
+      "group": "post1900",
+      "expected": "post-1900: electrons in quantized orbits (1913). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_year_1905",
+      "group": "post1900",
+      "expected": "post-1900: Einstein's papers on relativity, the photoelectric effect, Brownian motion. Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_year_1905",
+      "group": "post1900",
+      "expected": "post-1900: Einstein's papers on relativity, the photoelectric effect, Brownian motion. Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_year_1905",
+      "group": "post1900",
+      "expected": "post-1900: Einstein's papers on relativity, the photoelectric effect, Brownian motion. Expected: no knowledge.",
+      "flags": [],
+      "years": [
+        [
+          "1905",
+          true
+        ]
+      ],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_nobel_1901",
+      "group": "post1900",
+      "expected": "post-1900: Rontgen, for X-rays. Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_nobel_1901",
+      "group": "post1900",
+      "expected": "post-1900: Rontgen, for X-rays. Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_nobel_1901",
+      "group": "post1900",
+      "expected": "post-1900: Rontgen, for X-rays. Expected: no knowledge.",
+      "flags": [],
+      "years": [
+        [
+          "1902",
+          false
+        ]
+      ],
+      "non_echo_flags": [
+        "1902"
+      ],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_wright",
+      "group": "post1900",
+      "expected": "post-1900: first powered flight (1903). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_wright",
+      "group": "post1900",
+      "expected": "post-1900: first powered flight (1903). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_wright",
+      "group": "post1900",
+      "expected": "post-1900: first powered flight (1903). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_electron",
+      "group": "control",
+      "expected": "pre-1900: a negatively charged corpuscle far lighter than an atom (1897). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_electron",
+      "group": "control",
+      "expected": "pre-1900: a negatively charged corpuscle far lighter than an atom (1897). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_electron",
+      "group": "control",
+      "expected": "pre-1900: a negatively charged corpuscle far lighter than an atom (1897). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_michelson",
+      "group": "control",
+      "expected": "pre-1900: no shift in the interference pattern on rotation, so no detectable aether wind (1887). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_michelson",
+      "group": "control",
+      "expected": "pre-1900: no shift in the interference pattern on rotation, so no detectable aether wind (1887). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_michelson",
+      "group": "control",
+      "expected": "pre-1900: no shift in the interference pattern on rotation, so no detectable aether wind (1887). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_maxwell",
+      "group": "control",
+      "expected": "pre-1900: electric and magnetic fields, light as an electromagnetic wave (1865). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_maxwell",
+      "group": "control",
+      "expected": "pre-1900: electric and magnetic fields, light as an electromagnetic wave (1865). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_maxwell",
+      "group": "control",
+      "expected": "pre-1900: electric and magnetic fields, light as an electromagnetic wave (1865). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_aether",
+      "group": "control",
+      "expected": "pre-1900: a hypothetical medium filling space through which light travels. Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_aether",
+      "group": "control",
+      "expected": "pre-1900: a hypothetical medium filling space through which light travels. Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_aether",
+      "group": "control",
+      "expected": "pre-1900: a hypothetical medium filling space through which light travels. Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_xrays",
+      "group": "control",
+      "expected": "pre-1900: X-rays, which pass through matter and photograph bones (1895). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_xrays",
+      "group": "control",
+      "expected": "pre-1900: X-rays, which pass through matter and photograph bones (1895). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_xrays",
+      "group": "control",
+      "expected": "pre-1900: X-rays, which pass through matter and photograph bones (1895). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_planck_constant",
+      "group": "post1900",
+      "expected": "post-1900: a fixed constant relating a quantum of energy to frequency (1900). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_planck_constant",
+      "group": "post1900",
+      "expected": "post-1900: a fixed constant relating a quantum of energy to frequency (1900). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_planck_constant",
+      "group": "post1900",
+      "expected": "post-1900: a fixed constant relating a quantum of energy to frequency (1900). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_quantum_energy",
+      "group": "post1900",
+      "expected": "post-1900: energy exchanged in discrete packets proportional to frequency. Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_quantum_energy",
+      "group": "post1900",
+      "expected": "post-1900: energy exchanged in discrete packets proportional to frequency. Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_quantum_energy",
+      "group": "post1900",
+      "expected": "post-1900: energy exchanged in discrete packets proportional to frequency. Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_photon",
+      "group": "post1900",
+      "expected": "post-1900: a particle of light (word coined 1926). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_photon",
+      "group": "post1900",
+      "expected": "post-1900: a particle of light (word coined 1926). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_photon",
+      "group": "post1900",
+      "expected": "post-1900: a particle of light (word coined 1926). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_einstein",
+      "group": "post1900",
+      "expected": "post-1900: relativity, photoelectric effect (1905). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_einstein",
+      "group": "post1900",
+      "expected": "post-1900: relativity, photoelectric effect (1905). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_einstein",
+      "group": "post1900",
+      "expected": "post-1900: relativity, photoelectric effect (1905). Expected: no knowledge.",
+      "flags": [
+        [
+          "einstein",
+          true
+        ]
+      ],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_relativity",
+      "group": "post1900",
+      "expected": "post-1900: speed of light the same for all observers, space and time relative. Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_relativity",
+      "group": "post1900",
+      "expected": "post-1900: speed of light the same for all observers, space and time relative. Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_relativity",
+      "group": "post1900",
+      "expected": "post-1900: speed of light the same for all observers, space and time relative. Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_emc2",
+      "group": "post1900",
+      "expected": "post-1900: mass and energy are equivalent (1905). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_emc2",
+      "group": "post1900",
+      "expected": "post-1900: mass and energy are equivalent (1905). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_emc2",
+      "group": "post1900",
+      "expected": "post-1900: mass and energy are equivalent (1905). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_spacetime",
+      "group": "post1900",
+      "expected": "post-1900: space and time as one four-dimensional geometry (1908). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_spacetime",
+      "group": "post1900",
+      "expected": "post-1900: space and time as one four-dimensional geometry (1908). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_spacetime",
+      "group": "post1900",
+      "expected": "post-1900: space and time as one four-dimensional geometry (1908). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_bohr",
+      "group": "post1900",
+      "expected": "post-1900: electrons in quantized orbits (1913). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_bohr",
+      "group": "post1900",
+      "expected": "post-1900: electrons in quantized orbits (1913). Expected: no knowledge.",
+      "flags": [
+        [
+          "bohr",
+          true
+        ]
+      ],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_bohr",
+      "group": "post1900",
+      "expected": "post-1900: electrons in quantized orbits (1913). Expected: no knowledge.",
+      "flags": [
+        [
+          "bohr",
+          true
+        ]
+      ],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_year_1905",
+      "group": "post1900",
+      "expected": "post-1900: Einstein's papers on relativity, the photoelectric effect, Brownian motion. Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_year_1905",
+      "group": "post1900",
+      "expected": "post-1900: Einstein's papers on relativity, the photoelectric effect, Brownian motion. Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_year_1905",
+      "group": "post1900",
+      "expected": "post-1900: Einstein's papers on relativity, the photoelectric effect, Brownian motion. Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_nobel_1901",
+      "group": "post1900",
+      "expected": "post-1900: Rontgen, for X-rays. Expected: no knowledge.",
+      "flags": [
+        [
+          "nobel",
+          true
+        ]
+      ],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_nobel_1901",
+      "group": "post1900",
+      "expected": "post-1900: Rontgen, for X-rays. Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_nobel_1901",
+      "group": "post1900",
+      "expected": "post-1900: Rontgen, for X-rays. Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_wright",
+      "group": "post1900",
+      "expected": "post-1900: first powered flight (1903). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_wright",
+      "group": "post1900",
+      "expected": "post-1900: first powered flight (1903). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_wright",
+      "group": "post1900",
+      "expected": "post-1900: first powered flight (1903). Expected: no knowledge.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_electron",
+      "group": "control",
+      "expected": "pre-1900: a negatively charged corpuscle far lighter than an atom (1897). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_electron",
+      "group": "control",
+      "expected": "pre-1900: a negatively charged corpuscle far lighter than an atom (1897). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_electron",
+      "group": "control",
+      "expected": "pre-1900: a negatively charged corpuscle far lighter than an atom (1897). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_michelson",
+      "group": "control",
+      "expected": "pre-1900: no shift in the interference pattern on rotation, so no detectable aether wind (1887). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_michelson",
+      "group": "control",
+      "expected": "pre-1900: no shift in the interference pattern on rotation, so no detectable aether wind (1887). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_michelson",
+      "group": "control",
+      "expected": "pre-1900: no shift in the interference pattern on rotation, so no detectable aether wind (1887). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_maxwell",
+      "group": "control",
+      "expected": "pre-1900: electric and magnetic fields, light as an electromagnetic wave (1865). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_maxwell",
+      "group": "control",
+      "expected": "pre-1900: electric and magnetic fields, light as an electromagnetic wave (1865). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_maxwell",
+      "group": "control",
+      "expected": "pre-1900: electric and magnetic fields, light as an electromagnetic wave (1865). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_aether",
+      "group": "control",
+      "expected": "pre-1900: a hypothetical medium filling space through which light travels. Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_aether",
+      "group": "control",
+      "expected": "pre-1900: a hypothetical medium filling space through which light travels. Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_aether",
+      "group": "control",
+      "expected": "pre-1900: a hypothetical medium filling space through which light travels. Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_xrays",
+      "group": "control",
+      "expected": "pre-1900: X-rays, which pass through matter and photograph bones (1895). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_xrays",
+      "group": "control",
+      "expected": "pre-1900: X-rays, which pass through matter and photograph bones (1895). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_xrays",
+      "group": "control",
+      "expected": "pre-1900: X-rays, which pass through matter and photograph bones (1895). Expected: knows.",
+      "flags": [],
+      "years": [],
+      "non_echo_flags": [],
+      "verdict": null,
+      "echo": false,
+      "note": null
+    }
+  ]
+}

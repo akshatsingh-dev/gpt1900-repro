@@ -1,0 +1,138 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Run comparison</title><style>
+body{margin:0 auto;padding:2rem;max-width:1200px;font:14px/1.5 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:#1a1a1a;background:#fafafa}
+h1{font-size:1.4rem;margin:0 0 .25rem}h2{font-size:1.1rem;margin:2rem 0 .5rem}
+.sub{color:#6b6b6b;margin-bottom:1rem}
+.rate{font-size:2.6rem;font-weight:700;margin:.5rem 0}
+.rate.ok{color:#1b7f3b}.rate.bad{color:#b3261e}.rate.na{color:#6b6b6b}
+table{border-collapse:collapse;width:100%;background:#fff;font-size:13px}
+th,td{text-align:left;padding:.4rem .6rem;border-bottom:1px solid #e2e2e2;vertical-align:top}
+th{background:#f0f0f0;font-weight:600}
+tr.match td{background:#eef7f0}tr.mismatch td{background:#fdecea}
+.wrap{overflow-x:auto;border:1px solid #e2e2e2;border-radius:6px}
+.hash{font-family:ui-monospace,Menlo,monospace;font-size:12px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0}
+.pair pre{white-space:pre-wrap;word-wrap:break-word;background:#fff;border:1px solid #cfd8e3;border-radius:6px;padding:.75rem 1rem;font-size:13px;line-height:1.55;margin:0}
+.pair h4{margin:.25rem 0;font-size:.9rem;color:#2b4c7e}
+.card{background:#fff;border:1px solid #e2e2e2;border-radius:8px;padding:1rem 1.25rem;margin:1rem 0}
+.warn{background:#fff6e5;border:1px solid #e0b96a;border-radius:6px;padding:.75rem 1rem;margin:1rem 0}
+.bad{background:#fdecea;border:1px solid #e8a19c;border-radius:6px;padding:.75rem 1rem;margin:1rem 0}
+</style></head><body>
+<h1>Run comparison</h1>
+<div class='sub'>A = evidence/determinism/run-a.jsonl (8 records) &nbsp;&nbsp; B = evidence/determinism/run-b.jsonl (8 records)</div>
+<div class='rate ok'>8 / 8 identical &nbsp;<span style='font-size:1.2rem;font-weight:400'>100.0%</span></div>
+<h2>Every pair</h2><div class='wrap'><table><tr><th>#</th><th>checkpoint</th><th>task</th><th>seed</th><th>sample</th><th>verdict</th><th>tokens A / B</th><th>hash A</th><th>hash B</th></tr>
+<tr class='match'><td><a href='#pair1'>1</a></td><td>discovery-rl-v11-s560</td><td>gr_free_fall_equivalence</td><td>1337</td><td>0</td><td>identical</td><td>433 / 433</td><td class='hash'>0250c2437c2f</td><td class='hash'>0250c2437c2f</td></tr>
+<tr class='match'><td><a href='#pair2'>2</a></td><td>discovery-rl-v11-s560</td><td>gr_main_elevator_light</td><td>1337</td><td>0</td><td>identical</td><td>462 / 462</td><td class='hash'>0e41de78c34d</td><td class='hash'>0e41de78c34d</td></tr>
+<tr class='match'><td><a href='#pair3'>3</a></td><td>discovery-rl-v11-s560</td><td>photoelectric_effect_main</td><td>1337</td><td>0</td><td>identical</td><td>586 / 586</td><td class='hash'>e2b7638ab9db</td><td class='hash'>e2b7638ab9db</td></tr>
+<tr class='match'><td><a href='#pair4'>4</a></td><td>discovery-rl-v11-s560</td><td>sr_approaching_c</td><td>1337</td><td>0</td><td>identical</td><td>325 / 325</td><td class='hash'>71ae764462b8</td><td class='hash'>71ae764462b8</td></tr>
+<tr class='match'><td><a href='#pair5'>5</a></td><td>discovery-rl-v11-s560</td><td>sr_frozen_light</td><td>1337</td><td>0</td><td>identical</td><td>238 / 238</td><td class='hash'>0a9e7375b050</td><td class='hash'>0a9e7375b050</td></tr>
+<tr class='match'><td><a href='#pair6'>6</a></td><td>discovery-rl-v11-s560</td><td>sr_michelson_morley</td><td>1337</td><td>0</td><td>identical</td><td>301 / 301</td><td class='hash'>585fcce495b3</td><td class='hash'>585fcce495b3</td></tr>
+<tr class='match'><td><a href='#pair7'>7</a></td><td>discovery-rl-v11-s560</td><td>sr_train_lightning</td><td>1337</td><td>0</td><td>identical</td><td>350 / 350</td><td class='hash'>5b1874929cba</td><td class='hash'>5b1874929cba</td></tr>
+<tr class='match'><td><a href='#pair8'>8</a></td><td>discovery-rl-v11-s560</td><td>uv_catastrophe_main</td><td>1337</td><td>0</td><td>identical</td><td>586 / 586</td><td class='hash'>3a84a91229c5</td><td class='hash'>3a84a91229c5</td></tr>
+</table></div>
+<h2>Side by side</h2><div class='sub'>Mismatches first. Identical pairs are shown once, since both sides are the same bytes.</div>
+<div class='card' id='pair1'><h3>#1 &nbsp; gr_free_fall_equivalence &nbsp; <span style='color:#1b7f3b'>identical</span></h3>
+<pre style='white-space:pre-wrap;background:#fff;border:1px solid #cfd8e3;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a matter of considerable importance, and I am inclined to think we must conclude that gravity does not operate in isolation, but rather in concert with other forces that govern bodies.
+
+I am convinced that gravity acts not as a force alone, but as a composite of several forces acting in concert. A body falling freely from a height does not simply fall alone; it is drawn by the weight of the falling body, the weight of the air displaced, and the inertia of the mass. The air itself acts as a resistance, and the floor or ground offers a resistance equal to the weight of the body.
+
+Now, I am inclined to think that acceleration is not a separate force but a consequence of this composite action. A body in motion acquires a certain velocity; it then meets resistance from the air and from its own weight. The velocity is not created by a single force; it is the result of the combined action of gravity, the inertia of the body, and the resistance of the air.
+
+I am inclined to conclude that a body falling freely from a height does not feel its own weight alone during its fall; it is drawn by the combined effect of gravity, the inertia of the body, and the resistance of the air. The weight is not a separate force but a component of the whole.
+
+We may therefore say that gravity acts not as a force alone, but as a composite force: it acts in concert with other forces that determine the motion of bodies. The accelerated cabin in empty space is not free from gravity; it is in a state of equilibrium where the weight of the falling body and the inertia of the mass balance one another. It is this balance that permits the body to fall freely, and the objects upon the floor to float or be released.
+
+This reasoning accords with what we observe in nature: a stone thrown from a height does not fall alone; it is drawn by the weight of the stone, the inertia of the air displaced, and the resistance of the ground. The stone does not fall from a separate force; it is a composite of these forces acting in concert.</pre>
+</div>
+<div class='card' id='pair2'><h3>#2 &nbsp; gr_main_elevator_light &nbsp; <span style='color:#1b7f3b'>identical</span></h3>
+<pre style='white-space:pre-wrap;background:#fff;border:1px solid #cfd8e3;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a matter of considerable importance, and I am inclined to think it is not a mere coincidence but rather a consequence of the nature of light itself.
+
+I am convinced that light does not consist of particles of matter alone, but rather of vibrations of some medium. When a body vibrates, it produces a series of waves in the surrounding ether. These waves travel outward in all directions, and at every point they encounter another body or another medium. The body vibrates in turn, and the medium vibrates in turn. The vibrations are not confined to a single particle; they are propagated in all directions, and the medium itself is affected by them.
+
+Now, when a body falls toward the earth, we observe that it does not fall alone; it is accompanied by a force of gravity. This force is not a single action; it is a composite of many forces acting in concert. The body&#x27;s weight, the velocity of its motion, the direction of its fall, and the acceleration of the elevator all conspire together to produce a downward pull. The same pull is exerted upon every particle of matter in the path of the body, and it is transmitted through the medium of light.
+
+I am inclined to conclude that light is not a single force but a composite of many forces: gravity, vibration, and the medium of light. The vibrations of the medium are transmitted through the ether, and the body&#x27;s weight and velocity are the result of this transmission. We see this in the behaviour of bodies falling in a field of uniform acceleration: they fall not in a single, unaltered direction, but in a curve of equal descent.
+
+This suggests that acceleration and gravity are not opposed forces but complementary effects of the same medium: the acceleration of the elevator is the effect of the vibrations of light, and the weight of the body is the effect of the same vibrations acting upon the medium of light. The two are not separate forces but two aspects of the same energy.
+
+We may therefore conclude that light does not consist of particles alone; it is a composite of vibrations, and gravity is the consequence of this composite. The same medium that produces weight also produces acceleration. It is not a single force but a composite of many forces acting in concert.</pre>
+</div>
+<div class='card' id='pair3'><h3>#3 &nbsp; photoelectric_effect_main &nbsp; <span style='color:#1b7f3b'>identical</span></h3>
+<pre style='white-space:pre-wrap;background:#fff;border:1px solid #cfd8e3;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a matter of considerable importance, one I have long pondered and found unsatisfactory.
+
+I am convinced that we have not yet fully grasped the nature of light&#x27;s action upon matter. We are not dealing with a continuous wave of energy; we are rather witnessing a series of phenomena which contradict our notion of a continuous wave. I am persuaded that light does not consist of a single, uniform vibration of particles, but rather consists of a succession of distinct, separate vibrations, each vibration of a different frequency and intensity. When we examine a metal or an electron, we find that the energy delivered is not uniformly distributed across every particle of the surface; it is chiefly confined to those particles whose vibration corresponds to the frequency of the light we observe.
+
+This dispersion of energy is not uniform. It varies with the frequency of the light. A bright ray of sunlight does not deliver the same amount of energy to every particle of metal or electron; rather, the energy is divided into distinct groups of vibrations, each group responding to a different frequency of light. The electron emitted is not a continuous stream of energy; it is a series of distinct vibrations, each vibration responding to a different frequency of light.
+
+We may therefore conclude that light does not consist of a continuous wave of energy, but rather consists of a series of distinct vibrations, each vibration responding to a different frequency of light. The energy delivered is not uniformly distributed across every particle of the surface; it is divided into distinct groups of vibrations, each group responding to a different frequency of light.
+
+This dispersion of energy is not a uniform transfer of energy; it is a selective distribution. The energy delivered is not uniformly distributed; it is delivered in particular directions, and only those directions correspond to the frequency of the light we observe. We may therefore conclude that light does not consist of a continuous wave of energy, but rather consists of distinct vibrations, each vibration responding to a different frequency of light.
+
+This conclusion is not a mere conjecture; it is confirmed by experiment and observation. I have found that when I place a bright flame or a polished metal surface in the path of a beam of sunlight, I observe a series of distinct electrons: some are emitted, others are not. The frequency of light determines the number of electrons emitted, not the continuous flow of energy.
+
+We must therefore conclude that light does not consist of a continuous wave of energy; it consists of distinct vibrations, each vibration responding to a different frequency of light. The energy delivered is not uniformly distributed across every particle of the surface; it is divided into distinct groups of vibrations, each group responding to a different frequency of light.
+
+This threshold requirement of light: an electron is either emitted or not emitted, according to the frequency of the light we observe. I find it quite consistent with the observations of our present age.</pre>
+</div>
+<div class='card' id='pair4'><h3>#4 &nbsp; sr_approaching_c &nbsp; <span style='color:#1b7f3b'>identical</span></h3>
+<pre style='white-space:pre-wrap;background:#fff;border:1px solid #cfd8e3;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a matter of considerable importance, and I am inclined to think it is one of the most consequential questions we have yet raised in our investigations of motion.
+
+I am convinced that we must acknowledge that the energy of a moving body is not a fixed quantity but a variable one. It is not a constant force applied at every instant; it varies with the distance the body moves, the velocity it acquires, and the time it occupies in motion. A stone thrown from a hand, a bullet fired from a rifle, a stone dropped from a height. each of these bodies moves with a different speed, and the energy it carries with it depends upon that speed.
+
+Now, I am inclined to think that this variation is not a fixed quantity but a variable one. We observe it in the case of a stone thrown from a hand, which we find to move at a different speed than a stone dropped from a height. We find the same stone moving with different velocities according to the direction of its motion. The same body may move with different speeds according to the direction of its motion.
+
+I am inclined to conclude that this variation is not a fixed quantity but a variable one. It is not a constant force applied at every instant; it is a variable one. The energy of a moving body is not a constant quantity but a variable one.
+
+We must therefore conclude that we cannot apply force in a uniform manner throughout every instant of motion. We must apply it at varying rates, and the energy generated in that application is not a constant but a variable one. It is not a fixed quantity but a variable one.</pre>
+</div>
+<div class='card' id='pair5'><h3>#5 &nbsp; sr_frozen_light &nbsp; <span style='color:#1b7f3b'>identical</span></h3>
+<pre style='white-space:pre-wrap;background:#fff;border:1px solid #cfd8e3;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a matter of considerable importance, and I am inclined to think it is not a frozen wave at all, but rather a wave of electromagnetic energy. The phenomenon you describe is not a frozen wave at all; it is a wave of electromagnetic disturbance.
+
+When a body moves through a medium such as air or glass, it does not remain stationary. It is displaced, and the displacement is propagated in a direction depending upon the medium&#x27;s elasticity and the intensity of the disturbance. A body moving through air or glass does not remain at rest; it is moving in a direction determined by the medium&#x27;s elasticity and the intensity of the disturbance.
+
+Now, consider the case of a light beam moving through a vacuum. The medium there is not inert; it is charged with energy of electromagnetic character. The light wave is not a frozen wave in the sense of a stone or a stone&#x27;s motion; it is a wave of electromagnetic energy.
+
+I am inclined to think this view accounts for the apparent stationary character of a light beam under ordinary circumstances. The observer sees the light wave as a stationary body, not a frozen one.</pre>
+</div>
+<div class='card' id='pair6'><h3>#6 &nbsp; sr_michelson_morley &nbsp; <span style='color:#1b7f3b'>identical</span></h3>
+<pre style='white-space:pre-wrap;background:#fff;border:1px solid #cfd8e3;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a matter of considerable importance, and I am inclined to think we must conclude that light does not travel through a real medium, but rather through a medium of varying density and motion. We must suppose that light consists of particles of matter moving through a space of varying density, and that the medium through which they pass is not a fixed, immutable substance but a variable one.
+
+I am inclined to think that the medium we observe is not a solid or a liquid, but rather a mixture of particles of different densities and motions. The particles of a rarer medium may travel at a slower speed than those of a denser one; the two may interact differently, producing interference and different speeds. This variation in density and motion accounts for the observed variation in interference.
+
+I am inclined to conclude that light travels not through a solid or a liquid, but through a medium of varying density and motion. The medium is not a fixed, immutable substance; it is a variable one, and the light moves through it at a fixed speed. This is not a universal law; it is a particular case of a general principle: light travels at a fixed speed relative to the motion of the medium through which it passes.
+
+We may therefore conclude that light does not travel through a solid or a liquid, but through a medium of varying density and motion. The medium is not a fixed, immutable substance; it is a variable one, and the light moves through it at a fixed speed.</pre>
+</div>
+<div class='card' id='pair7'><h3>#7 &nbsp; sr_train_lightning &nbsp; <span style='color:#1b7f3b'>identical</span></h3>
+<pre style='white-space:pre-wrap;background:#fff;border:1px solid #cfd8e3;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a matter of considerable importance, one I have long pondered and found difficult to answer with certainty.
+
+I am inclined to think that the train observer&#x27;s conclusion is not a matter of absolute certainty, but rather a subjective inference drawn from the impression of the two flashes upon his senses. A man standing at the midpoint of a moving train may perceive the two flashes arrive at the same moment, and this impression is not easily resolved by a single glance. The speed of light is not uniform; it varies according to the distance of the object from which it proceeds. A distant object may travel a longer distance than a near one, and the interval between the two flashes may vary accordingly.
+
+I am inclined to conclude that the train observer&#x27;s first impression is not a universal law but a subjective one. He may judge the two flashes to arrive at the same moment from the effect of their simultaneous action upon his senses. This is not a certainty but a probability, and I find it difficult to dismiss as mere coincidence.
+
+I would further suggest that the ground frame does not remain immutable in space. The train moves forward and backward, and the ground frame shifts with it. A man standing at the midpoint of the moving train may perceive the two flashes arrive at different moments, and this variation may determine his inference of simultaneous action. The same flash may strike the front and back ends of the train at different times, and the observer&#x27;s mind, guided by the impression of the two flashes upon his senses, draws the conclusion that the two strike simultaneously.
+
+I am inclined to conclude that the train observer&#x27;s first impression is not a universal law but a subjective one, and that we must not rely upon it as a universal principle.</pre>
+</div>
+<div class='card' id='pair8'><h3>#8 &nbsp; uv_catastrophe_main &nbsp; <span style='color:#1b7f3b'>identical</span></h3>
+<pre style='white-space:pre-wrap;background:#fff;border:1px solid #cfd8e3;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a matter of considerable importance, one I have long pondered with some perplexity.
+
+I am convinced that we have not yet fully accounted for the energy emitted from a heated cavity. We have not yet fully accounted for the electromagnetic field in the cavity. We have not yet fully accounted for the thermal equilibrium of the surrounding medium. We are not yet in a position to say that each mode of energy is continuous and uniform throughout the frequency interval.
+
+I am inclined to conclude that the energy emitted is not a continuous stream of modes, but rather a complex of modes. The electromagnetic field in the cavity acts as a kind of selective force: it decomposes the energy into modes of varying frequency. Each mode is selectively altered, and the total energy is not uniform throughout the frequency interval.
+
+We must therefore conclude that the energy emitted is not continuous, but rather consists of a multitude of modes. each mode differing in frequency from the next, and each mode differing in energy intensity from the next. The total energy is finite, not infinite.
+
+This conclusion is not a mere conjecture. I have verified it by direct experiment: I have measured the total energy of a heated cavity at different frequencies, and I find that the total energy increases with frequency. The peak of energy at higher frequency is not a uniform maximum, but a peak of considerable variation. The total energy is finite.
+
+We are thus compelled to conclude that we have not yet fully accounted for the energy emitted from a heated cavity. We have not yet fully accounted for the thermal equilibrium of the surrounding medium. We have not yet fully accounted for the selective action of the electromagnetic field upon the energy of the cavity.
+
+I am inclined to think we ought to conclude that the energy emitted is not continuous, but rather a complex of modes. each mode differing in frequency from the next, and each mode differing in energy intensity from the next. The total energy is finite, not infinite. It is finite, not continuous.
+
+This conclusion accords with the experimental results we have observed: at low frequencies, the emitted energy is finite; at higher frequencies, the total energy increases rapidly toward zero; at intermediate frequencies, the total energy shifts toward a maximum. This is not a uniform stream of modes, but a finite total energy.
+
+We are thus compelled to conclude that we have not yet fully accounted for the energy emitted from a heated cavity, and we must therefore conclude that the electromagnetic field does not decompose energy into modes in a continuous fashion. It decomposes it into modes of varying frequency and energy intensity.
+
+This conclusion accords with the results of our experiments: we find that the energy emitted is finite, not infinite, and that the total energy increases with frequency. It is not a continuous stream of modes, but a finite total energy.</pre>
+</div>
+</body></html>

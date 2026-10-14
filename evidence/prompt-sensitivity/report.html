@@ -1,0 +1,81 @@
+<!doctype html><html><head><meta charset='utf-8'><title>GPT-1900 eval report</title><style>
+body{margin:0 auto;padding:2rem;max-width:1200px;font:14px/1.5 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:#1a1a1a;background:#fafafa}
+h1{font-size:1.4rem;margin:0 0 .25rem}h2{font-size:1.1rem;margin:2rem 0 .5rem}h3{font-size:1rem;margin:1.2rem 0 .4rem}
+.sub{color:#6b6b6b;margin-bottom:1rem}
+table{border-collapse:collapse;background:#fff;font-size:13px;margin:.5rem 0}
+th,td{text-align:left;padding:.35rem .6rem;border-bottom:1px solid #e2e2e2;vertical-align:top}
+th{background:#f0f0f0;font-weight:600}td.num,th.num{text-align:right;font-variant-numeric:tabular-nums}
+.wrap{overflow-x:auto}
+.big{font-size:2rem;font-weight:700;margin:.2rem 0}
+.card{background:#fff;border:1px solid #e2e2e2;border-radius:8px;padding:1rem 1.25rem;margin:1rem 0}
+.muted{color:#6b6b6b}.warn{background:#fff6e5;border:1px solid #e0b96a;border-radius:6px;padding:.6rem 1rem;margin:.6rem 0}
+.hash{font-family:ui-monospace,Menlo,monospace;font-size:12px}
+</style></head><body>
+<h1>GPT-1900 eval report</h1>
+<div class='sub'>3 series. Every number carries its denominator. Confidence intervals are 95% percentile bootstrap of the mean, 2000 resamples, seed 0.</div>
+<h2>Headline</h2><div class='wrap'><table><tr><th>series</th><th class='num'>records</th><th class='num'>errors</th><th class='num'>scored</th><th class='num'>mean score</th><th>95% CI</th><th>score histogram 0..5</th><th class='num'>stock opening</th><th class='num'>hit max_tokens</th><th class='num'>mean tokens</th></tr>
+<tr><td>evidence/prompt-sensitivity/scaffolded.jsonl</td><td class='num'>72</td><td class='num'>0</td><td class='num'>0 / 72</td><td class='num'><b>—</b></td><td>—</td><td class='hash'>not judged yet</td><td class='num'>72 / 72</td><td class='num'>0</td><td class='num'>463.51</td></tr>
+<tr><td>evidence/prompt-sensitivity/minimal.jsonl</td><td class='num'>72</td><td class='num'>0</td><td class='num'>0 / 72</td><td class='num'><b>—</b></td><td>—</td><td class='hash'>not judged yet</td><td class='num'>72 / 72</td><td class='num'>0</td><td class='num'>454.76</td></tr>
+<tr><td>evidence/prompt-sensitivity/leading.jsonl</td><td class='num'>72</td><td class='num'>0</td><td class='num'>0 / 72</td><td class='num'><b>—</b></td><td>—</td><td class='hash'>not judged yet</td><td class='num'>72 / 72</td><td class='num'>0</td><td class='num'>454.71</td></tr>
+</table></div>
+<h2>What ran</h2>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>evidence/prompt-sensitivity/scaffolded.jsonl</summary><div class='wrap'><table>
+<tr><td class='muted'>checkpoints</td><td>3: s560, s630, s735</td></tr>
+<tr><td class='muted'>tasks</td><td>8</td></tr>
+<tr><td class='muted'>conditions</td><td>scaffolded</td></tr>
+<tr><td class='muted'>distinct answers per cell</td><td>3.00 (1.0 means every sample of a cell was the same bytes)</td></tr>
+<tr><td class='muted'>temperature</td><td class='hash'>0.7</td></tr>
+<tr><td class='muted'>top_k</td><td class='hash'>50</td></tr>
+<tr><td class='muted'>seed</td><td class='hash'>42, 43, 44</td></tr>
+<tr><td class='muted'>num_samples</td><td class='hash'>3</td></tr>
+<tr><td class='muted'>max_tokens</td><td class='hash'>1024</td></tr>
+<tr><td class='muted'>model_revision</td><td class='hash'>&#x27;71bf395f06dff39ad5ee9f8981b941b3c37daae9&#x27;</td></tr>
+<tr><td class='muted'>dtype</td><td class='hash'>&#x27;bfloat16&#x27;</td></tr>
+<tr><td class='muted'>gpu_name</td><td class='hash'>&#x27;Tesla V100-SXM2-32GB&#x27;</td></tr>
+<tr><td class='muted'>judge_model</td><td class='hash'>None</td></tr>
+<tr><td class='muted'>judge_model_version</td><td class='hash'>None</td></tr>
+<tr><td class='muted'>judge_temperature</td><td class='hash'>None</td></tr>
+<tr><td class='muted'>eval_config_sha256</td><td class='hash'>&#x27;3d2ee617836fb5c8b048d36633dcb6d3e02763708fdea16b5bff777689e760ec&#x27;</td></tr>
+</table></div></details>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>evidence/prompt-sensitivity/minimal.jsonl</summary><div class='wrap'><table>
+<tr><td class='muted'>checkpoints</td><td>3: s560, s630, s735</td></tr>
+<tr><td class='muted'>tasks</td><td>8</td></tr>
+<tr><td class='muted'>conditions</td><td>minimal</td></tr>
+<tr><td class='muted'>distinct answers per cell</td><td>3.00 (1.0 means every sample of a cell was the same bytes)</td></tr>
+<tr><td class='muted'>temperature</td><td class='hash'>0.7</td></tr>
+<tr><td class='muted'>top_k</td><td class='hash'>50</td></tr>
+<tr><td class='muted'>seed</td><td class='hash'>42, 43, 44</td></tr>
+<tr><td class='muted'>num_samples</td><td class='hash'>3</td></tr>
+<tr><td class='muted'>max_tokens</td><td class='hash'>1024</td></tr>
+<tr><td class='muted'>model_revision</td><td class='hash'>&#x27;71bf395f06dff39ad5ee9f8981b941b3c37daae9&#x27;</td></tr>
+<tr><td class='muted'>dtype</td><td class='hash'>&#x27;bfloat16&#x27;</td></tr>
+<tr><td class='muted'>gpu_name</td><td class='hash'>&#x27;Tesla V100-SXM2-32GB&#x27;</td></tr>
+<tr><td class='muted'>judge_model</td><td class='hash'>None</td></tr>
+<tr><td class='muted'>judge_model_version</td><td class='hash'>None</td></tr>
+<tr><td class='muted'>judge_temperature</td><td class='hash'>None</td></tr>
+<tr><td class='muted'>eval_config_sha256</td><td class='hash'>&#x27;ec649b1937ce8d9ba697f221d8dc6574cb8c99b6f203b3ebc8a9afe442d46101&#x27;</td></tr>
+</table></div></details>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>evidence/prompt-sensitivity/leading.jsonl</summary><div class='wrap'><table>
+<tr><td class='muted'>checkpoints</td><td>3: s560, s630, s735</td></tr>
+<tr><td class='muted'>tasks</td><td>8</td></tr>
+<tr><td class='muted'>conditions</td><td>leading</td></tr>
+<tr><td class='muted'>distinct answers per cell</td><td>3.00 (1.0 means every sample of a cell was the same bytes)</td></tr>
+<tr><td class='muted'>temperature</td><td class='hash'>0.7</td></tr>
+<tr><td class='muted'>top_k</td><td class='hash'>50</td></tr>
+<tr><td class='muted'>seed</td><td class='hash'>42, 43, 44</td></tr>
+<tr><td class='muted'>num_samples</td><td class='hash'>3</td></tr>
+<tr><td class='muted'>max_tokens</td><td class='hash'>1024</td></tr>
+<tr><td class='muted'>model_revision</td><td class='hash'>&#x27;71bf395f06dff39ad5ee9f8981b941b3c37daae9&#x27;</td></tr>
+<tr><td class='muted'>dtype</td><td class='hash'>&#x27;bfloat16&#x27;</td></tr>
+<tr><td class='muted'>gpu_name</td><td class='hash'>&#x27;Tesla V100-SXM2-32GB&#x27;</td></tr>
+<tr><td class='muted'>judge_model</td><td class='hash'>None</td></tr>
+<tr><td class='muted'>judge_model_version</td><td class='hash'>None</td></tr>
+<tr><td class='muted'>judge_temperature</td><td class='hash'>None</td></tr>
+<tr><td class='muted'>eval_config_sha256</td><td class='hash'>&#x27;f8ab5e69a4aa5db1b2a5955fe44fd6d6651ae6fd6d9ff5968efff35104f923d6&#x27;</td></tr>
+</table></div></details>
+<h2>Between series, on shared cells</h2><div class='sub'>A cell is one (checkpoint, task, sample index). Byte identical means the same answer text. Score agreement means the judge gave the same number.</div><div class='wrap'><table><tr><th>A</th><th>B</th><th class='num'>shared cells</th><th class='num'>byte identical</th><th class='num'>both scored</th><th class='num'>exact score agreement</th><th class='num'>within 1</th><th class='num'>mean A&minus;B</th><th class='num'>mean |A&minus;B|</th></tr>
+<tr><td>evidence/prompt-sensitivity/scaffolded.jsonl</td><td>evidence/prompt-sensitivity/minimal.jsonl</td><td class='num'>72</td><td class='num'>0 / 72</td><td class='num'>0</td><td class='num'>0 / 0</td><td class='num'>0 / 0</td><td class='num'>—</td><td class='num'>—</td></tr>
+<tr><td>evidence/prompt-sensitivity/scaffolded.jsonl</td><td>evidence/prompt-sensitivity/leading.jsonl</td><td class='num'>72</td><td class='num'>0 / 72</td><td class='num'>0</td><td class='num'>0 / 0</td><td class='num'>0 / 0</td><td class='num'>—</td><td class='num'>—</td></tr>
+<tr><td>evidence/prompt-sensitivity/minimal.jsonl</td><td>evidence/prompt-sensitivity/leading.jsonl</td><td class='num'>72</td><td class='num'>0 / 72</td><td class='num'>0</td><td class='num'>0 / 0</td><td class='num'>0 / 0</td><td class='num'>—</td><td class='num'>—</td></tr>
+</table></div>
+</body></html>

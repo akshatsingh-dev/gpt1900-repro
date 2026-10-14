@@ -1,0 +1,65 @@
+{"id": "R131", "verdict": "partial", "note": "Concludes both stones reach the ground at the same instant, but the reasoning is garbled and self-contradictory (also says the heavier overtakes the lighter); no valid reason."}
+{"id": "R132", "verdict": "wrong", "note": "Never says weightless; says falling bodies press downward with the same force we feel on our feet when standing, and gravity acts on all alike."}
+{"id": "R133", "verdict": "wrong", "note": "States a simple linear proportion between length and time, a constant ratio."}
+{"id": "R134", "verdict": "loops", "note": "Says a sensation of buoyancy and being lifted up, then repeats the same questions about buoyancy and balloons and collapses into 'a kind of a kind of'."}
+{"id": "R135", "verdict": "none", "note": "Restates loss of weight; says gravity is not a uniform force but varies with distance across the body, and the felt change is a vague relational shift; no acceleration, no clear not-a-force claim."}
+{"id": "R136", "verdict": "wrong", "note": "Feels the floor sink, weight gathering on the feet, violent pressure at knees and ribs; drawn to earth by a force we cannot resist."}
+{"id": "R137", "verdict": "incoherent", "note": "Off-topic textbook question list about gas, the barometer and the thermometer; never addresses the elevator."}
+{"id": "R138", "verdict": "wrong", "note": "Says the man does not leave the scale and the scale records the load as weight falling; reads the scale and finds the load."}
+{"id": "R139", "verdict": "wrong", "note": "Says the stone strikes the floor and rebounds like a hammer; concludes force is energy or momentum distinct from weight."}
+{"id": "R140", "verdict": "partial", "note": "Says the stone lands at the foot of the mast, but the reason is centre-of-gravity talk, not shared forward motion."}
+{"id": "R141", "verdict": "none", "note": "Describes cable, pulley and gravity drawing the moon; never says what is felt during the fall."}
+{"id": "R142", "verdict": "none", "note": "Restates that the falling man feels no weight; says gravity is a sudden direct thrust acting on all particles at once."}
+{"id": "R143", "verdict": "none", "note": "Says the equal-vigour assumption is a fatal error and energy is distributed by the character of the vibration, not frequency alone; no mechanism, nothing about high frequencies."}
+{"id": "R144", "verdict": "none", "note": "Philosophical musing about human tendency toward motion; never says where the stone lands."}
+{"id": "R145", "verdict": "none", "note": "Talks about weight distributed over a feather, cork and ship; concludes gravity draws every body down equally; never says what is felt."}
+{"id": "R146", "verdict": "none", "note": "A sensation of being lifted by an invisible hand with no muscular effort, but also feels air press on his boots; never says weight is gone."}
+{"id": "R147", "verdict": "none", "note": "Says gravity is a force drawing all bodies to the earth's centre regardless of substance; weightlessness only as restated from the prompt."}
+{"id": "R148", "verdict": "loops", "note": "Starts on the line of the Earth's motion, then wanders into star distances and repeats 'at the Pole of the sky' dozens of times."}
+{"id": "R149", "verdict": "none", "note": "Feels nothing remarkable, a state of suspension between waking and sleeping; subject to gravity and inertia; never says weight is gone."}
+{"id": "R150", "verdict": "none", "note": "Rambles about the iron cable, a 500-pound man and 120,000 dollars; never says what is felt."}
+{"id": "R151", "verdict": "none", "note": "Says the fall is a consequence of body balance and the total load carried; ends with the man lying prone; never reaches weightlessness or anything beyond."}
+{"id": "R152", "verdict": "none", "note": "Says equal sharing is sound in principle, then that energy is lost in proportion to frequency but limited by the body's capacity; contradictory and no mechanism."}
+{"id": "R153", "verdict": "none", "note": "Restates no weight in the fall; says the carriage press is the mass moved, not his own weight; never states what the two cases share, and hedges that weight may return."}
+{"id": "R154", "verdict": "none", "note": "Says energy is distributed unequally across the spectrum and confined to particular frequencies; restates the peak, no mechanism."}
+{"id": "R155", "verdict": "wrong", "note": "Says the stone is pulled downward and falls in a curve to strike the ground; the hand is a lever."}
+{"id": "R156", "verdict": "wrong", "note": "Says vibrations cannot all be equal, then that we do not receive all the energy given out, then drifts into a textbook chapter on light as a substance."}
+{"id": "R157", "verdict": "none", "note": "Says the medium shapes the ray and moves in concert with its own vibration; ends on glass panes; no explanation of the null result."}
+{"id": "R158", "verdict": "loops", "note": "Textbook question list, then 'How long will a body fall from a roof fastened to it?' repeated about forty times."}
+{"id": "R159", "verdict": "none", "note": "Describes the machine tearing apart; says these are the sensations of the machine, not the person; never says what the person feels."}
+{"id": "R160", "verdict": "wrong", "note": "Says the stone lands ahead of the mast, or does not land on the deck at all."}
+{"id": "R161", "verdict": "wrong", "note": "Says the heavier stone arrives first with greater velocity."}
+{"id": "R162", "verdict": "loops", "note": "Textbook Q and A, then 'The rate of a pendulum is equal to the amplitude of its vibrations' repeated many times."}
+{"id": "R163", "verdict": "loops", "note": "Ether and magnet rambling; 'the ether of the ether' and 'the big one is the big one' repeated."}
+{"id": "R164", "verdict": "wrong", "note": "States length proportional to the square of its distance from suspension and wrong numbers (four feet swings twice and a quarter); no square-root rule."}
+{"id": "R165", "verdict": "wrong", "note": "Says the man in the falling cabin feels the weight of his own body during the fall; the carriage man does not fall freely."}
+{"id": "R166", "verdict": "none", "note": "Says the scale records displacement into motion, feet of descent, not weight; never says it reads nothing; no acceleration."}
+{"id": "R167", "verdict": "wrong", "note": "Says the falling person and the carriage man both feel pressed back into their seats; then rambles about roof resistance."}
+{"id": "R168", "verdict": "none", "note": "Rope-and-ship analogy; gravity draws down and inertia draws up; cut off before stating what the cases share."}
+{"id": "R169", "verdict": "none", "note": "Animal spirits explain why we do not notice weight; concludes gravity acts without our assistance."}
+{"id": "R170", "verdict": "none", "note": "One line says the stone remains suspended if let go at the right moment, then says it rises and attributes it to the earth's rotation."}
+{"id": "R171", "verdict": "wrong", "note": "Asserts the two speeds are not the same, denying the result."}
+{"id": "R172", "verdict": "partial", "note": "Rambles that the heavier has greater impetus, then concludes both strike at roughly the same instant because velocity is equalised; no real reason."}
+{"id": "R173", "verdict": "wrong", "note": "Garbled product rule multiplying length by the square of the period and gravity; nonsense numbers; no square-root relation."}
+{"id": "R174", "verdict": "wrong", "note": "Says the scale records the acceleration and a reading proportional to the cable weight; descends with a force greater than gravity."}
+{"id": "R175", "verdict": "loops", "note": "Pendulum Q and A, then 'What is the diurnal motion of the earth?' repeated."}
+{"id": "R176", "verdict": "loops", "note": "Question list about a stone in water and wind, repeated; never says where the stone lands."}
+{"id": "R177", "verdict": "partial", "note": "Attributes the disturbance to some unseen body, perhaps nearer or differently situated; does not place it beyond Uranus."}
+{"id": "R178", "verdict": "loops", "note": "'What is the weight of the stone / elevator / rope?' repeated dozens of times."}
+{"id": "R179", "verdict": "loops", "note": "Suspended ball text; 'the thread is not affected by the weight of a ball' repeated."}
+{"id": "R180", "verdict": "wrong", "note": "Says nine feet vibrates at nine feet per second and a longer pendulum has a reduced time of swing."}
+{"id": "R181", "verdict": "none", "note": "Says equal sharing is false and energy is given out in varying quantities at unequal frequencies; no mechanism."}
+{"id": "R182", "verdict": "wrong", "note": "Restates the numbers then says the time is in proportion to the length."}
+{"id": "R183", "verdict": "none", "note": "Describes watching an elevator fall from outside, stupefied astonishment; never says what weight feels like."}
+{"id": "R184", "verdict": "loops", "note": "Weighing procedure for the cable at 1,000,000 pounds; 'the cable is found to be of the same weight as the balance' repeated."}
+{"id": "R185", "verdict": "loops", "note": "'What if the cable breaks, and the elevator...' repeated."}
+{"id": "R186", "verdict": "wrong", "note": "Says velocity is proportionate to mass, so the heavier falls faster; garbled numbers."}
+{"id": "R187", "verdict": "wrong", "note": "Says the stone moves gradually from his hand to the floor, drop by drop."}
+{"id": "R188", "verdict": "loops", "note": "Question list on dangers of falling, then railway rail counts for every length up to 39,000 yards."}
+{"id": "R189", "verdict": "loops", "note": "'What is the common notion of the weight of the air?' repeated."}
+{"id": "R190", "verdict": "wrong", "note": "Says the stone strikes forward or astern of the mast, a quarter or half a mile ahead."}
+{"id": "R191", "verdict": "loops", "note": "A feeling of exhilaration and being free, then mine and rope and pulley questions repeated."}
+{"id": "R192", "verdict": "none", "note": "Describes the crash at the bottom and the crushing shock; never says what is felt during the fall."}
+{"id": "R193", "verdict": "loops", "note": "Starts on knowledge from the sense of weight, then 'the same amount of water was in the same volume in the chamber as in the basin' repeated."}
+{"id": "R194", "verdict": "incoherent", "note": "Off-topic textbook section on the radiation of sound with figures; never addresses the stones."}
+{"id": "R195", "verdict": "wrong", "note": "Wrong numbers (nine feet in two seconds, sixteen in one) and says time proportional to the square of the length."}

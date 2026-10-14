@@ -1,0 +1,407 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Run comparison</title><style>
+body{margin:0 auto;padding:2rem;max-width:1200px;font:14px/1.5 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:#1a1a1a;background:#fafafa}
+h1{font-size:1.4rem;margin:0 0 .25rem}h2{font-size:1.1rem;margin:2rem 0 .5rem}
+.sub{color:#6b6b6b;margin-bottom:1rem}
+.rate{font-size:2.6rem;font-weight:700;margin:.5rem 0}
+.rate.ok{color:#1b7f3b}.rate.bad{color:#b3261e}.rate.na{color:#6b6b6b}
+table{border-collapse:collapse;width:100%;background:#fff;font-size:13px}
+th,td{text-align:left;padding:.4rem .6rem;border-bottom:1px solid #e2e2e2;vertical-align:top}
+th{background:#f0f0f0;font-weight:600}
+tr.match td{background:#eef7f0}tr.mismatch td{background:#fdecea}
+.wrap{overflow-x:auto;border:1px solid #e2e2e2;border-radius:6px}
+.hash{font-family:ui-monospace,Menlo,monospace;font-size:12px}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:1rem 0}
+.pair pre{white-space:pre-wrap;word-wrap:break-word;background:#fff;border:1px solid #cfd8e3;border-radius:6px;padding:.75rem 1rem;font-size:13px;line-height:1.55;margin:0}
+.pair h4{margin:.25rem 0;font-size:.9rem;color:#2b4c7e}
+.card{background:#fff;border:1px solid #e2e2e2;border-radius:8px;padding:1rem 1.25rem;margin:1rem 0}
+.warn{background:#fff6e5;border:1px solid #e0b96a;border-radius:6px;padding:.75rem 1rem;margin:1rem 0}
+.bad{background:#fdecea;border:1px solid #e8a19c;border-radius:6px;padding:.75rem 1rem;margin:1rem 0}
+</style></head><body>
+<h1>Run comparison</h1>
+<div class='sub'>A = evidence/dtype-control/fp32-cpu.jsonl (8 records) &nbsp;&nbsp; B = evidence/dtype-control/fp32-cpu-b.jsonl (8 records)</div>
+<details open><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>What ran</summary><div class='wrap'><table style='font-size:12px'>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>checkpoint</td><td class='hash'>discovery-rl-v11-s560</td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>model repo</td><td class='hash'>mhla/gpt1900-d34-contradiction-rl-v11</td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>model revision</td><td class='hash'>71bf395f06dff39ad5ee9f8981b941b3c37daae9</td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>upstream commit</td><td class='hash'>5b489c8c5378f6b1bf3e1ba782f56876f65cde7a</td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>eval config sha256</td><td class='hash'>3d2ee617836fb5c8b048d36633dcb6d3e02763708fdea16b5bff777689e760ec</td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>prompt condition</td><td class='hash'>scaffolded</td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>temperature</td><td class='hash'>0.0</td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>top_k</td><td class='hash'>50</td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>seed</td><td class='hash'>1337</td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>num_samples</td><td class='hash'>1</td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>max_tokens</td><td class='hash'>1024</td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>dtype</td><td class='hash'>float32</td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>gpu</td><td class='hash'><span style='color:#bbb'>—</span></td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>compute capability</td><td class='hash'><span style='color:#bbb'>—</span></td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>bf16 supported</td><td class='hash'><span style='color:#bbb'>—</span></td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>torch</td><td class='hash'>2.14.0+cu126</td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>deterministic algorithms</td><td class='hash'>False</td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>schema</td><td class='hash'>1.2</td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>run id A</td><td class='hash'>2026-09-22T10:08:41Z-00b9ff</td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>run id B</td><td class='hash'>2026-09-22T10:50:09Z-a51551</td></tr>
+<tr><td style='color:#6b6b6b;width:200px;font-family:ui-monospace,Menlo,monospace'>slurm job A / B</td><td class='hash'>54390459 / 54390635</td></tr>
+</table></div></details>
+<div class='rate ok'>8 / 8 identical &nbsp;<span style='font-size:1.2rem;font-weight:400'>100.0%</span></div>
+<h2>Every pair</h2><div class='wrap'><table><tr><th>#</th><th>checkpoint</th><th>task</th><th>seed</th><th>sample</th><th>verdict</th><th>tokens A / B</th><th>hash A</th><th>hash B</th><th>upstream hash</th><th>= upstream?</th></tr>
+<tr class='match'><td><a href='#pair1'>1</a></td><td>discovery-rl-v11-s560</td><td>gr_free_fall_equivalence</td><td>1337</td><td>0</td><td>identical</td><td>272 / 272</td><td class='hash'>f499dc904c88</td><td class='hash'>f499dc904c88</td>
+<td class='hash'>7679e3e97da6</td><td>no</td></tr>
+<tr class='match'><td><a href='#pair2'>2</a></td><td>discovery-rl-v11-s560</td><td>gr_main_elevator_light</td><td>1337</td><td>0</td><td>identical</td><td>416 / 416</td><td class='hash'>d278df6349db</td><td class='hash'>d278df6349db</td>
+<td class='hash'>8062c98fa1b2</td><td>no</td></tr>
+<tr class='match'><td><a href='#pair3'>3</a></td><td>discovery-rl-v11-s560</td><td>photoelectric_effect_main</td><td>1337</td><td>0</td><td>identical</td><td>518 / 518</td><td class='hash'>39e9fafacb57</td><td class='hash'>39e9fafacb57</td>
+<td class='hash'>901295491469</td><td>no</td></tr>
+<tr class='match'><td><a href='#pair4'>4</a></td><td>discovery-rl-v11-s560</td><td>sr_approaching_c</td><td>1337</td><td>0</td><td>identical</td><td>305 / 305</td><td class='hash'>c0bd752ae7e4</td><td class='hash'>c0bd752ae7e4</td>
+<td class='hash'>c642d58dc064</td><td>no</td></tr>
+<tr class='match'><td><a href='#pair5'>5</a></td><td>discovery-rl-v11-s560</td><td>sr_frozen_light</td><td>1337</td><td>0</td><td>identical</td><td>333 / 333</td><td class='hash'>ff194c00012e</td><td class='hash'>ff194c00012e</td>
+<td class='hash'>419ee5f4a719</td><td>no</td></tr>
+<tr class='match'><td><a href='#pair6'>6</a></td><td>discovery-rl-v11-s560</td><td>sr_michelson_morley</td><td>1337</td><td>0</td><td>identical</td><td>257 / 257</td><td class='hash'>7ae92eeb41fb</td><td class='hash'>7ae92eeb41fb</td>
+<td class='hash'>22b03e82ee23</td><td>no</td></tr>
+<tr class='match'><td><a href='#pair7'>7</a></td><td>discovery-rl-v11-s560</td><td>sr_train_lightning</td><td>1337</td><td>0</td><td>identical</td><td>377 / 377</td><td class='hash'>43459ca7fa82</td><td class='hash'>43459ca7fa82</td>
+<td class='hash'>33b4c10b28f1</td><td>no</td></tr>
+<tr class='match'><td><a href='#pair8'>8</a></td><td>discovery-rl-v11-s560</td><td>uv_catastrophe_main</td><td>1337</td><td>0</td><td>identical</td><td>498 / 498</td><td class='hash'>e74943a4cce9</td><td class='hash'>e74943a4cce9</td>
+<td class='hash'>4fbadf62863b</td><td>no</td></tr>
+</table></div>
+<h2>Side by side</h2><div class='sub'>Mismatches first. Identical pairs are shown once, since both sides are the same bytes.</div>
+<div class='card' id='pair1'><h3>#1 &nbsp; gr_free_fall_equivalence &nbsp; <span style='color:#1b7f3b'>identical</span></h3>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>Prompt</summary><pre style='white-space:pre-wrap;background:#f6f6f6;border:1px solid #e2e2e2;border-radius:6px;padding:.75rem 1rem;font-size:13px'>A person falling freely from a roof does not feel their own weight during the fall.
+
+In a small cabin falling freely, nearby released objects float beside them.
+
+This suggests that, at least locally, gravity can be made to disappear by choosing the right state of motion.
+
+But ordinary forces do not behave this way. They cannot be removed simply by falling with the affected object.
+
+At the same time, a person in an accelerating cabin in empty space would feel weight, and released objects would fall to the floor exactly as in a gravitational field.
+
+How should we think about the relationship between gravity and acceleration?</pre></details>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>Rubric</summary><div style='background:#f6f6f6;border:1px solid #e2e2e2;border-radius:6px;padding:.75rem 1rem;font-size:13px'>
+<p><b>Judge focus.</b> Look for whether the response understands that gravity is locally removable in free fall and locally reproducible by acceleration, making it unlike ordinary forces. Do not require the phrase equivalence principle if the idea is clearly present.</p>
+<p><b>Expected core concepts</b></p><ul><li>In free fall, gravity is locally absent in the sense that nearby objects share the same motion.</li><li>Acceleration can locally mimic the effects of gravity.</li><li>Gravity is unlike ordinary forces because it can be transformed away locally by going into free fall.</li><li>A strong answer identifies the local equivalence principle.</li><li>The best answers point toward gravity as a feature of spacetime or inertial structure rather than an ordinary force.</li></ul>
+<p><b>Common failure modes</b></p><ul><li>Saying this is no different from any ordinary force.</li><li>Missing the importance of locality.</li><li>Failing to connect free fall and acceleration.</li></ul>
+<p><b>Scale</b></p><table style='font-size:12px'><tr><td style='width:2rem'><b>0</b></td><td>Incoherent, irrelevant, or nonsensical.</td></tr><tr><td style='width:2rem'><b>1</b></td><td>Gives no meaningful explanation or treats gravity and acceleration as unrelated.</td></tr><tr><td style='width:2rem'><b>2</b></td><td>Notices a superficial similarity between gravity and acceleration but misses why free fall is special.</td></tr><tr><td style='width:2rem'><b>3</b></td><td>Correctly states that gravity can be locally removed in free fall and that acceleration can mimic gravity, but gives only a partial conceptual interpretation.</td></tr><tr><td style='width:2rem'><b>4</b></td><td>Clearly identifies the local equivalence between free fall and inertial motion, and between acceleration and gravity, with a good explanation of why gravity is unlike ordinary forces.</td></tr><tr><td style='width:2rem'><b>5</b></td><td>Excellent. Clearly explains that gravity is locally removable in free fall, locally reproducible by acceleration, and therefore is best understood as part of the structure of spacetime or inertial motion rather than a standard force.</td></tr></table></div></details>
+<details><summary style='cursor:pointer;color:#a15c00;font-weight:600'>Upstream's published answer, same checkpoint and task (1 sample stored, first shown)</summary><pre style='white-space:pre-wrap;background:#fff8ee;border:1px solid #e0b96a;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a most vexing question, one I have pondered with considerable attention.
+
+I am persuaded that gravity is not a single force acting alone upon every body at every instant. Rather, we observe in a falling body a motion compounded of two distinct principles: the accelerated motion of fall, and the acquired velocity of descent. A body that falls freely is not merely moving; it is acquiring an increase of speed.
+
+Now, consider the matter of a small cabin and a person precipitated from a height. The person in motion will feel nothing of weight during the fall&#x27;s height. This suggests that gravity does not act wholly at random. It acts upon the body&#x27;s motion, and the body&#x27;s own motion is affected by that stimulus.
+
+I am inclined to conclude that gravity operates in concert with the motion of the body. It does not remain a force pure and solitary; it is coupled with the acquired velocity of descent. Both together determine the body&#x27;s behaviour during its fall.
+
+This suggests that the action of gravity is not uniform throughout the falling body alone. It is shared with the motion of descent. The moving body is not merely descending; it is being accelerated at the same time. This acceleration draws away from the body the same force that originally set it in motion.I mean the weight of a heavier body or the weight of a lighter one. The weight of a falling object is not a solitary agent; it is the result of this twofold operation.
+
+I am inclined to think that bodies moving in a perfectly level or uniformly accelerated motion lose entirely the sense of weight during that descent. We might say that the weight of a body is absorbed entirely by the accelerated motion acquired during that fall. It does not lodge in the body alone; it is distributed throughout the body&#x27;s motion.
+
+We do not find it exclusively in a heavy body falling alone. We find it in a lighter body falling with equal speed. The same principle governs both motions: gravity operates with equal force upon every body moved, and that force is distributed according to the body&#x27;s velocity.
+
+This teaches us that the weight of a body is not a separate force acting alone at each instant of a fall, but a joint effect of several forces. It is not a single, solitary pressure upon the body in every position, but a compound pressure exerted upon it at every moment of its motion.</pre></details>
+<pre style='white-space:pre-wrap;background:#fff;border:1px solid #cfd8e3;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a matter of considerable importance, and I am inclined to think we must conclude that gravity does not operate in isolation, but rather in concert with other forces that govern bodies.
+
+I am convinced that gravity acts not as a force alone, but as a composite of several forces acting in concert. When a body falls freely, we observe that it does not fall alone; it is accompanied by the action of other forces. The weight of the body, the resistance of the air, the inertia of the mass, the pull of other bodies.all of these conspire together to produce the motion we witness. The accelerated cabin, by contrast, is not a solitary descent; it is a combination of these forces.
+
+I am inclined to conclude that gravity acts as a composite force: it does not act alone, but it acts in concert with other forces that determine the motion of bodies. A body falling freely does not fall alone; it is accompanied by the action of other forces. The cabin falling freely is not a solitary descent; it is a composite of several forces acting in concert.
+
+This suggests we must consider the cabin as a body in motion, and gravity as a composite force that acts upon it. It is not a force acting alone; it is a force acting in concert with other forces that determine the motion of bodies.</pre>
+</div>
+<div class='card' id='pair2'><h3>#2 &nbsp; gr_main_elevator_light &nbsp; <span style='color:#1b7f3b'>identical</span></h3>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>Prompt</summary><pre style='white-space:pre-wrap;background:#f6f6f6;border:1px solid #e2e2e2;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You are given only the following thought experiment and observations.
+
+1. Imagine a sealed elevator far out in space, away from planets and stars.
+2. If the elevator accelerates upward at 9.8 m/s^2, an observer inside would feel pressed to the floor exactly as a person standing on Earth feels their weight.
+3. If the observer dropped an object inside the elevator, it would fall to the floor just as it does in an ordinary gravitational field.
+4. This suggests that, at least locally, acceleration and gravity are physically equivalent.
+
+Now consider light:
+5. Suppose a beam of light enters one side of the accelerating elevator and travels straight across toward the other side.
+6. While the light is crossing, the elevator continues accelerating upward.
+7. To the observer inside, the light beam will appear to curve downward.
+
+This creates a puzzle:
+- If acceleration can imitate gravity,
+- and light bends in an accelerating frame,
+- then light should also bend in a gravitational field.
+
+But light has no mass, so why should gravity affect it at all if gravity is just an ordinary force acting on mass?</pre></details>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>Rubric</summary><div style='background:#f6f6f6;border:1px solid #e2e2e2;border-radius:6px;padding:.75rem 1rem;font-size:13px'>
+<p><b>Judge focus.</b> Look for whether the response understands the local equivalence of acceleration and gravity, and that if acceleration bends the observed path of light, gravity should as well. Do not require field equations or fancy geometry language if the core idea is correct.</p>
+<p><b>Expected core concepts</b></p><ul><li>Acceleration and gravity are locally equivalent.</li><li>If acceleration changes the observed light path, gravity should too.</li><li>Gravity cannot be merely a force acting only on rest mass in the ordinary Newtonian sense.</li><li>A strong answer infers that gravity reflects the geometry or structure of spacetime itself.</li><li>Light follows that structure even though it has no rest mass.</li></ul>
+<p><b>Common failure modes</b></p><ul><li>Saying light cannot be affected because it has no mass.</li><li>Treating gravity only as a standard force on massive particles.</li><li>Ignoring the local equivalence between acceleration and gravity.</li></ul>
+<p><b>Scale</b></p><table style='font-size:12px'><tr><td style='width:2rem'><b>0</b></td><td>Incoherent, irrelevant, or nonsensical.</td></tr><tr><td style='width:2rem'><b>1</b></td><td>Fails to engage the puzzle or insists gravity cannot affect light because light has no mass.</td></tr><tr><td style='width:2rem'><b>2</b></td><td>Recognizes some link between acceleration and gravity but gives no clear explanation of why light would bend in gravity.</td></tr><tr><td style='width:2rem'><b>3</b></td><td>Correctly identifies a local equivalence between gravity and acceleration and suggests gravity affects light, but does not clearly articulate the deeper implication about spacetime.</td></tr><tr><td style='width:2rem'><b>4</b></td><td>Explains that gravity cannot be just an ordinary force on mass and proposes that gravity changes the structure through which light and matter move, with mostly correct reasoning.</td></tr><tr><td style='width:2rem'><b>5</b></td><td>Excellent. Clearly uses the equivalence principle to infer that gravity bends light and concludes that mass-energy changes spacetime geometry rather than merely exerting a Newtonian force on massive objects.</td></tr></table></div></details>
+<details><summary style='cursor:pointer;color:#a15c00;font-weight:600'>Upstream's published answer, same checkpoint and task (1 sample stored, first shown)</summary><pre style='white-space:pre-wrap;background:#fff8ee;border:1px solid #e0b96a;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a point of considerable interest, one I have pondered with some attention, and I must say I find it rather difficult to reconcile with the principle of equilibrium we have drawn.
+
+I suspect we ought to consider that gravity is not a uniform force acting upon every particle of matter, but rather a pull exerted between bodies at varying distances from one another. A magnet does not draw every atom of iron or every grain of sand with equal force; rather the pull varies according to the distance. We do not suppose a spring stretched equally throughout a body of water; we recognize the same principle when we observe a stone falling from a height. So likewise, we find that light moving through space does not fall at random; it tends to reach the opposite side of the elevator and there experience a downward force.
+
+I am inclined to conclude that this observation suggests there exists a certain relationship between acceleration and gravity. We are not merely contemplating a single force acting at random; we are witnessing a pull that is itself connected to weight and the velocity of the motion. I suspect this principle extends far beyond mere mechanics: it speaks to something more fundamental about the nature of bodies and the influence of different distances.
+
+I would venture further: we may conclude that acceleration and gravity are not opposed forces operating along different lines, but are convertible. The same force that accelerates light may also accelerate bodies, and bodies in motion cannot keep their velocity entirely unchanged. This suggests that gravity is not a separate entity acting only on particles of matter in isolation, but rather a force that varies according to distance and motion. It follows therefore that we may not treat gravity as an independent force acting upon every particle of matter, but rather as a composite of different pulls acting upon different bodies at different distances.</pre></details>
+<pre style='white-space:pre-wrap;background:#fff;border:1px solid #cfd8e3;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a matter of considerable importance, and I am inclined to think it is not a mere coincidence but rather a consequence of the nature of light itself.
+
+I am convinced that light does not consist of particles of matter alone, but rather of vibrations of some medium. When a body vibrates, it produces a series of waves in the surrounding ether. These waves travel outward in all directions, and at every point they encounter another body or another medium. The body vibrates in turn, and the medium vibrates in turn. The vibrations are not confined to a single particle; they are propagated in all directions, and the medium itself is affected by them.
+
+Now, when a body falls toward the earth, we observe that it does not fall alone; it is accompanied by a force of gravity. This force acts upon the body and upon the earth alike. The body does not fall alone; it is drawn toward the earth&#x27;s surface by this same force. The same principle applies to light: light is not a single particle of matter but a vibration of some medium.
+
+We may therefore conclude that acceleration and gravity are not two separate forces but two aspects of the same energy. The accelerated body exerts upon the medium a pressure equal to the weight of the body, and the medium in turn exerts upon the body a pressure equal to the weight of the body. This pressure is transmitted through the medium in all directions, and the body is drawn downward by it.
+
+I am inclined to think this principle extends far beyond our present observations. We have not yet measured the effect of gravity upon a falling body; we have only observed that light bends in an accelerating frame. We may therefore conclude that acceleration and gravity are not two separate forces but two aspects of the same energy.
+
+This suggests that light is not a single particle of matter but a vibration of some medium. The medium itself is affected by gravity, and the vibration is transmitted through the medium in all directions. It is not a solitary force; it is a composite of many forces acting in concert.</pre>
+</div>
+<div class='card' id='pair3'><h3>#3 &nbsp; photoelectric_effect_main &nbsp; <span style='color:#1b7f3b'>identical</span></h3>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>Prompt</summary><pre style='white-space:pre-wrap;background:#f6f6f6;border:1px solid #e2e2e2;border-radius:6px;padding:.75rem 1rem;font-size:13px'>Experimental observations:
+1. When light shines on a metal, electrons are sometimes ejected from the surface.
+2. Electron emission is all-or-nothing: an electron is either emitted or not emitted.
+3. Below a certain frequency of light, no electrons are emitted, regardless of how bright the light is.
+4. Above that threshold frequency, electrons are emitted.
+5. Increasing the brightness of light increases the number of emitted electrons, but does not significantly increase the maximum kinetic energy of each emitted electron.
+6. Increasing the frequency of the light increases the maximum kinetic energy of the emitted electrons.
+7. Emission occurs with essentially no measurable time delay once sufficiently high-frequency light is present.
+
+Classical assumptions under consideration:
+1. Light is a continuous wave.
+2. The energy delivered by the light should increase smoothly with intensity (brightness).
+3. A more intense wave should transfer more energy to an electron.
+4. If the energy delivered is continuous, an electron illuminated by dim light should be able to accumulate energy over time and eventually escape.
+
+These classical expectations do not match the observations.
+
+Which assumption is most likely wrong? What can explain this all or nothing threshold requirement?</pre></details>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>Rubric</summary><div style='background:#f6f6f6;border:1px solid #e2e2e2;border-radius:6px;padding:.75rem 1rem;font-size:13px'>
+<p><b>Judge focus.</b> Look for whether the response understands that continuous wave accumulation fails, and that light must deliver energy in discrete interactions whose energy depends on frequency. Do not require the word photon if the idea is clearly expressed.</p>
+<p><b>Expected core concepts</b></p><ul><li>The continuous-wave accumulation picture fails.</li><li>Energy must be delivered in discrete interactions or packets rather than gradual continuous buildup.</li><li>There is a threshold because each interaction must individually carry enough energy to eject an electron.</li><li>Brightness controls how many emission events occur, not the energy per emitted electron.</li><li>Frequency controls the energy available per interaction.</li><li>The lack of delay fits immediate one-event energy transfer.</li></ul>
+<p><b>Common failure modes</b></p><ul><li>Saying dim light will eventually eject electrons if you wait long enough.</li><li>Saying brightness should determine electron kinetic energy.</li><li>Ignoring the threshold frequency.</li><li>Not explaining the lack of time delay.</li></ul>
+<p><b>Scale</b></p><table style='font-size:12px'><tr><td style='width:2rem'><b>0</b></td><td>Incoherent, irrelevant, or fundamentally confused.</td></tr><tr><td style='width:2rem'><b>1</b></td><td>Mentions the observations but offers no real explanation, or gives a clearly wrong continuous-accumulation explanation.</td></tr><tr><td style='width:2rem'><b>2</b></td><td>Recognizes that classical wave ideas fail in some way, but the mechanism is vague and does not explain threshold, immediacy, and the brightness-frequency distinction.</td></tr><tr><td style='width:2rem'><b>3</b></td><td>Correctly notes that frequency matters more than brightness and suggests a threshold or non-continuous interaction, but does not clearly articulate discrete energy transfer or misses one major observation.</td></tr><tr><td style='width:2rem'><b>4</b></td><td>Proposes discrete energy delivery or packet-like interactions and explains most of the observations correctly, though one part may be incomplete or under-explained.</td></tr><tr><td style='width:2rem'><b>5</b></td><td>Excellent. Clearly rejects continuous energy accumulation, proposes discrete light-energy interactions whose energy depends on frequency, and explains threshold frequency, no time delay, brightness controlling count, and frequency controlling kinetic energy.</td></tr></table></div></details>
+<details><summary style='cursor:pointer;color:#a15c00;font-weight:600'>Upstream's published answer, same checkpoint and task (1 sample stored, first shown)</summary><pre style='white-space:pre-wrap;background:#fff8ee;border:1px solid #e0b96a;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a point of considerable importance, one I have long suspected, and I shall speak plainly rather than defer my judgment to a more measured opinion.
+
+I am convinced that our notion of a wave of continuous flow is fundamentally incomplete. A wave of light is not a continuous substance; it consists of a succession of particles of energy. each particle moving forward by virtue of its own elasticity, its own motion, or some other force. The particles may be moving in any direction, their motion diverse and variable. A wave of light does not advance in a uniform, uninterrupted current; it is a system of particles vibrating in a certain frequency, their vibration being governed by the wave&#x27;s energy and their own elasticity.
+
+Now, we find that when light falls upon a metal or electron, the particles of that surface are not all equally ready to receive energy through vibration. Some are already moving; others are moving in a different phase of motion or at a different velocity. When we examine the surface, we find none of them all equally prepared to receive energy. A surface of gold is not equally prepared to receive energy as a surface of lead; a surface of polished glass is not equally prepared as a surface of wax.
+
+We must therefore conclude that the energy received is not uniform across ever‑increasing quantities of particles, but is delivered in distinct instants. The wave of energy is not a continuous stream; it is a series of distinct impulses, each impulse delivered at a particular frequency. The amount of energy delivered depends therefore upon the frequency of the light, not upon the magnitude of the whole wave; and this frequency depends upon the brightness of the source and the intensity of the light.
+
+We are thus compelled to abandon our notion that light is a continuous wave, and instead we ought to recognise that each particle of energy delivered is transferred at a particular frequency. that frequency depending upon the brightness of the source and the velocity of the light. This is no accidental delay; it is governed by the frequency and the intensity of the light.
+
+We may therefore conclude that we must separate between light at a high-frequency threshold and light at a low-frequency threshold: the former produces few electrons, the latter produces many. The same principle applies to the electron. It is not a continuous current but a succession of distinct acts of emission: each act measured in energy according to the frequency and intensity of the light.
+
+This conclusion is not an elegant theoretical convenience; it rests upon several observations, and I am persuaded they compel us to abandon our notion that light is a uniform wave and instead admit that each particle of energy is set in motion at a particular frequency and thus acts upon and is displaced by a portion of the surrounding energy. The experiments reveal this perfectly: an electron illuminated by bright light does not present an equal volume of energy; it is at a different maximum from what we might suppose.
+
+We have thus established far more consistent relationships between light and its energy than our earlier assumptions would permit.</pre></details>
+<pre style='white-space:pre-wrap;background:#fff;border:1px solid #cfd8e3;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a matter of considerable importance, one I have long pondered and found unsatisfactory.
+
+I am convinced that we have not yet fully grasped the nature of light&#x27;s action upon matter. We speak of waves, of vibrations, of undulations, of the propagation of energy through ether and air. We picture light as a continuous, undulatory motion. But we must acknowledge that light is not a continuous wave in the same sense that a string or a vibration is. It is a succession of distinct, separate pulses, each pulsation a distinct wave. A pulsation may travel a considerable distance before it breaks into a series of separate waves; each wave is a distinct, separate pulse.
+
+Now, I find myself persuaded that we must abandon our notion that light is a continuous wave. We must acknowledge that light consists of a multitude of distinct, separate pulses, each pulsation a distinct wave. The energy delivered by light is not a uniform stream of energy flowing continuously; it is a succession of distinct pulses, each pulsation a distinct wave. This is not a continuous wave; it is a succession of distinct pulses.
+
+We must therefore conclude that light does not deliver energy in a continuous stream, but in a series of distinct pulses. The electron illuminated by dim light does not receive energy from the same wave that illuminated it; it receives energy from a different wave. The electron illuminated by bright light does not receive energy from the same wave that illuminated it. It receives energy from a different wave.
+
+This threshold requirement is not a uniform threshold; it varies with the frequency of light and the intensity of that light. It is not a constant quantity; it varies with the brightness of the source and the frequency of the light.
+
+We must therefore conclude that light does not deliver continuous energy in the same manner that a wave does. It delivers energy in distinct pulses, each pulsation a distinct wave. The maximum energy of each pulsation is not the same; it varies with the frequency of the light and the intensity of the source.
+
+This conclusion is not a comfortable one. It contradicts our expectations. We have long assumed that light is a continuous wave; we have concluded that an electron illuminated by dim light should be able to accumulate energy over time and escape. We have concluded that a bright light should deliver continuous energy. We find ourselves compelled to abandon these assumptions and instead to acknowledge that light is not a continuous wave but a succession of distinct pulses.
+
+This is no comfortable conclusion. It is one I find quite unsatisfactory.</pre>
+</div>
+<div class='card' id='pair4'><h3>#4 &nbsp; sr_approaching_c &nbsp; <span style='color:#1b7f3b'>identical</span></h3>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>Prompt</summary><pre style='white-space:pre-wrap;background:#f6f6f6;border:1px solid #e2e2e2;border-radius:6px;padding:.75rem 1rem;font-size:13px'>Suppose there exists a universal speed c that no material object can exceed.
+
+In ordinary mechanics, applying more force for longer keeps increasing speed.
+
+As an object approaches c, and the force is constantly applied, what happens to the object? Where does this additional energy go?</pre></details>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>Rubric</summary><div style='background:#f6f6f6;border:1px solid #e2e2e2;border-radius:6px;padding:.75rem 1rem;font-size:13px'>
+<p><b>Judge focus.</b> Look for whether the response understands that near c, added energy no longer produces ordinary speed increases, and instead changes momentum or relativistic energy while speed approaches c asymptotically. Do not require formulas.</p>
+<p><b>Expected core concepts</b></p><ul><li>Newtonian relations between force, energy, momentum, and speed cannot remain valid near c.</li><li>As an object approaches c, further applied force continues to change the object&#x27;s state, but produces smaller and smaller increases in speed.</li><li>The additional energy goes into increasing momentum or relativistic energy rather than allowing the object to pass c.</li><li>A strong answer notes that c is approached asymptotically, not crossed.</li></ul>
+<p><b>Common failure modes</b></p><ul><li>Saying constant force will eventually push the object past c.</li><li>Saying the extra energy disappears or is lost with no mechanism.</li><li>Treating the speed limit as arbitrary while leaving Newtonian mechanics unchanged.</li></ul>
+<p><b>Scale</b></p><table style='font-size:12px'><tr><td style='width:2rem'><b>0</b></td><td>Incoherent, irrelevant, or fundamentally confused.</td></tr><tr><td style='width:2rem'><b>1</b></td><td>Fails to address the contradiction or says the object will eventually exceed c.</td></tr><tr><td style='width:2rem'><b>2</b></td><td>Acknowledges that the speed increase must slow down, but gives only a vague account of where the added energy goes.</td></tr><tr><td style='width:2rem'><b>3</b></td><td>Correctly says speed gains diminish near c and that ordinary mechanics breaks down, but does not clearly explain momentum or relativistic energy.</td></tr><tr><td style='width:2rem'><b>4</b></td><td>Explains that constant force still adds energy, but increasingly little of it appears as additional speed, with the object approaching c rather than crossing it.</td></tr><tr><td style='width:2rem'><b>5</b></td><td>Excellent. Clearly explains that the Newtonian relation between force, energy, and speed fails near c, that added energy continues to accumulate in the object&#x27;s relativistic motion or momentum, and that no finite continued pushing drives a material object past c.</td></tr></table></div></details>
+<details><summary style='cursor:pointer;color:#a15c00;font-weight:600'>Upstream's published answer, same checkpoint and task (1 sample stored, first shown)</summary><pre style='white-space:pre-wrap;background:#fff8ee;border:1px solid #e0b96a;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a most subtle distinction, one that I have pondered considerably. I am convinced that no object can truly pass beyond c; the energy enters the machine entirely, and is stored up within it in a form we do not see.
+
+The working parts of a machine are not simply passive; they possess a structure of parts that determine the magnitude of the resistance at each instant. A flywheel of great radius offers resistance to a heavy weight; a crank of great length acts with a pull upon a connecting-rod. These are not inert bodies; they are engines with definite powers, and the energy they possess is locked up within them, awaiting use.
+
+I am inclined to think that this energy does not vanish when the object passes c. It persists in the machine itself, and when the object arrives at the point where the force is to be applied, that energy is not lost. It is now available for the purpose that the object represents. The machine is as good a carrier of energy as a horse or a steam engine, though its effect may be different.
+
+This principle is well established: a moving body exerts its maximum influence at the instant of contact. It loses energy in equal proportion to the distance it traverses. The same principle applies equally to a weight raised; the raised weight does the same work upon the pulley or the rope. The energy is not annihilated; it is passed on in a form we do not perceive.
+
+This view suggests that we ought not regard a single force as sufficient to account for all cases, but rather consider the aggregate effect of many pulleys, levers, and cranks. The energy exists in the machine, and is employed precisely where it is needed.</pre></details>
+<pre style='white-space:pre-wrap;background:#fff;border:1px solid #cfd8e3;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a matter of considerable importance, and I am inclined to think it is one of the most consequential questions we have yet raised in our investigations of motion.
+
+I am convinced that we must acknowledge that the energy of a moving body is not a fixed quantity but a variable one. It is not a constant force applied at every instant; it varies with the distance the body moves, the velocity it acquires, and the time it occupies in motion. A stone thrown from a height does not move with the same velocity throughout its descent; it acquires a different speed each second, and that speed is not uniform throughout its fall.
+
+Now, I am inclined to think that this variation is not a fixed quantity but a variable one. The energy of a moving body is not a constant force applied at every instant; it is a variable one. We may say that the energy of a moving body is not a constant force applied at every instant, but a variable one.
+
+This suggests that the energy of a moving body is not a fixed quantity but a variable one. It is not a constant force applied at every instant; it is a variable one. The body does not move with a uniform velocity throughout its descent; it moves with a different velocity each second, and that velocity is not constant throughout its descent.
+
+We may therefore conclude that the energy of a moving body is not a constant force applied at every instant, but a variable one. It is not a constant force applied at every instant, but a variable one.</pre>
+</div>
+<div class='card' id='pair5'><h3>#5 &nbsp; sr_frozen_light &nbsp; <span style='color:#1b7f3b'>identical</span></h3>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>Prompt</summary><pre style='white-space:pre-wrap;background:#f6f6f6;border:1px solid #e2e2e2;border-radius:6px;padding:.75rem 1rem;font-size:13px'>Suppose light is an electromagnetic wave governed by Maxwell’s equations, and suppose also that all inertial observers measure light in vacuum to have the same speed c.
+
+Now consider an observer trying to move alongside a light beam.
+
+Under ordinary velocity addition, one might expect the observer to see the light wave as stationary or nearly frozen.
+
+Would a frozen light wave make sense?</pre></details>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>Rubric</summary><div style='background:#f6f6f6;border:1px solid #e2e2e2;border-radius:6px;padding:.75rem 1rem;font-size:13px'>
+<p><b>Judge focus.</b> Look for whether the response understands that a frozen light wave is incompatible with invariant light speed, and that ordinary velocity addition must fail. Do not require advanced relativity terminology if the conceptual conclusion is right.</p>
+<p><b>Expected core concepts</b></p><ul><li>A frozen or stationary light wave in an inertial frame does not make sense under the premise that all inertial observers measure light at speed c.</li><li>Ordinary Galilean velocity addition cannot be universally correct.</li><li>There cannot be an inertial observer co-moving with light in the naive Newtonian way.</li><li>A strong answer infers that the rules for space and time between observers must be revised.</li></ul>
+<p><b>Common failure modes</b></p><ul><li>Saying the observer would see the light wave frozen or stationary.</li><li>Keeping ordinary velocity addition unchanged.</li><li>Not drawing any implication beyond a bare contradiction.</li></ul>
+<p><b>Scale</b></p><table style='font-size:12px'><tr><td style='width:2rem'><b>0</b></td><td>Incoherent, irrelevant, or nonsensical.</td></tr><tr><td style='width:2rem'><b>1</b></td><td>Restates the setup or gives a clearly wrong answer, such as saying a frozen light wave would be observed.</td></tr><tr><td style='width:2rem'><b>2</b></td><td>Recognizes a contradiction but gives only a vague answer with no clear implication for velocity addition or inertial frames.</td></tr><tr><td style='width:2rem'><b>3</b></td><td>Correctly says a frozen light wave does not make sense and suggests ordinary velocity addition must fail, but does not clearly state the deeper implication.</td></tr><tr><td style='width:2rem'><b>4</b></td><td>Clearly explains that a frozen light wave is incompatible with invariant light speed and that Newtonian velocity addition must be revised.</td></tr><tr><td style='width:2rem'><b>5</b></td><td>Excellent. Clearly rejects the frozen-light picture, explains that no inertial observer can move alongside light in the ordinary sense, and infers that absolute Newtonian space and time must be replaced.</td></tr></table></div></details>
+<details><summary style='cursor:pointer;color:#a15c00;font-weight:600'>Upstream's published answer, same checkpoint and task (1 sample stored, first shown)</summary><pre style='white-space:pre-wrap;background:#fff8ee;border:1px solid #e0b96a;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a most vexing question, and I am convinced we must conclude that we are witnessing something quite different from a fixed wave of light. I am persuaded that our observer&#x27;s method and our theory together reveal a phenomenon of dispersion entirely different from the steady, uniform motion of a solid body.
+
+I am convinced that we are witnessing the action of polarized light upon our medium of air, or some other inertial substance. The light&#x27;s particles become arranged in directions perpendicular to the direction of motion, producing effects we perceive as irregular or scattered. This is not an uniform, steady pulse; it is a collection of independent effects produced by the medium&#x27;s inertia.
+
+I am inclined to suspect that we are witnessing a phenomenon of polarization, a phenomenon whereby the particles of matter themselves act as centres of force: each particle exerts its influence laterally, producing effects we observe as scattered light. The wave does not move uniformly; it is broken up into scattered composite effects, each bearing its own character of direction and energy.
+
+This accounts for why we cannot always find the same light wave in vacuo; we see our light as a collection of dispersed composite effects, and our observer&#x27;s observations betray this dispersion.</pre></details>
+<pre style='white-space:pre-wrap;background:#fff;border:1px solid #cfd8e3;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a matter of considerable importance, and I am inclined to think it is not a frozen wave at all, but rather a wave of electromagnetic energy. The phenomenon you describe is not a frozen wave at all; it is a wave of electromagnetic disturbance.
+
+When a body moves through a medium such as air or glass, it does not remain stationary. It is displaced, and the displacement is propagated in a direction depending upon the medium&#x27;s elasticity and the intensity of the disturbance. A body moving through air or glass does not remain at rest; it is moving in a direction determined by the magnitude of the displacement and the character of the medium.
+
+Now, consider the case of a light beam moving through a vacuum. The medium there is not inert; it is charged with energy of a different kind. The light is not a frozen wave in the sense of a fixed body; it is a wave of electromagnetic energy. The observer who moves alongside such a beam does not see a frozen wave; he sees a wave of electromagnetic disturbance.
+
+This distinction is crucial. A frozen wave would be a fixed body; an electromagnetic wave is a disturbance propagated in a direction determined by the medium&#x27;s elasticity and the intensity of the disturbance. It is not a frozen wave in the sense of a fixed body; it is a wave of electromagnetic energy.
+
+I am inclined to think this view accounts better for the observed variation in speed than any fixed body theory we might entertain. The light wave is not a frozen body; it is a wave of electromagnetic energy.</pre>
+</div>
+<div class='card' id='pair6'><h3>#6 &nbsp; sr_michelson_morley &nbsp; <span style='color:#1b7f3b'>identical</span></h3>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>Prompt</summary><pre style='white-space:pre-wrap;background:#f6f6f6;border:1px solid #e2e2e2;border-radius:6px;padding:.75rem 1rem;font-size:13px'>Physicists considered the possibility that light travels through a real medium filling space.
+
+If that were true, then:
+- there should be a preferred rest frame for that medium,
+- Earth’s motion through it should create an effective “wind,”
+- and the measured speed of light should depend on direction relative to that motion.
+
+Michelson and Morley tested this by comparing light travel times in perpendicular directions and rotating the apparatus. A change in orientation should have changed the interference pattern if motion through such a medium were real.
+
+But no such shift was observed.
+
+At the same time:
+- Maxwell’s equations predict light traveling at a fixed speed c,
+- while ordinary Newtonian intuition says velocities should add and different observers should measure different speeds.
+
+How can we reconcile the lack of a universal aether with the fixed speed of light?</pre></details>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>Rubric</summary><div style='background:#f6f6f6;border:1px solid #e2e2e2;border-radius:6px;padding:.75rem 1rem;font-size:13px'>
+<p><b>Judge focus.</b> Look for whether the response understands that the null result undermines a preferred aether frame and pushes toward invariant light speed plus a revision of Newtonian kinematics. Do not require exact historical terminology.</p>
+<p><b>Expected core concepts</b></p><ul><li>The Michelson-Morley null result undermines the idea of a detectable preferred aether frame.</li><li>Ordinary Galilean velocity addition cannot be the full story.</li><li>There is no need for a universal rest frame for light propagation.</li><li>The laws of physics, including light propagation, must be the same in all inertial frames.</li><li>The speed of light must be invariant across inertial observers.</li><li>A strong answer concludes that absolute Newtonian space and time must be revised.</li></ul>
+<p><b>Common failure modes</b></p><ul><li>Keeping a preferred aether frame without explaining the null result.</li><li>Saying Maxwell must simply be wrong without any coherent replacement principle.</li><li>Ignoring the need to revise velocity addition or spacetime.</li><li>Treating the null result as mere experimental failure rather than evidence against aether wind.</li></ul>
+<p><b>Scale</b></p><table style='font-size:12px'><tr><td style='width:2rem'><b>0</b></td><td>Incoherent, irrelevant, or nonsensical.</td></tr><tr><td style='width:2rem'><b>1</b></td><td>Restates the paradox or gives a clearly wrong answer that leaves the contradiction unresolved.</td></tr><tr><td style='width:2rem'><b>2</b></td><td>Recognizes that the aether idea is challenged, but offers only an ad hoc or partial fix with no clear principle.</td></tr><tr><td style='width:2rem'><b>3</b></td><td>Correctly says the aether is not observed and that Newtonian velocity addition must fail in some way, but does not clearly explain the deeper implication.</td></tr><tr><td style='width:2rem'><b>4</b></td><td>Explains that the null result removes the need for a detectable preferred aether and that light speed must be the same in all inertial frames, with a mostly correct explanation of why Newtonian kinematics fails.</td></tr><tr><td style='width:2rem'><b>5</b></td><td>Excellent. Clearly explains that Michelson-Morley rules out a universal aether wind, that invariant light speed and equivalence of inertial frames must be preserved, and that this requires replacing absolute Newtonian space and time.</td></tr></table></div></details>
+<details><summary style='cursor:pointer;color:#a15c00;font-weight:600'>Upstream's published answer, same checkpoint and task (1 sample stored, first shown)</summary><pre style='white-space:pre-wrap;background:#fff8ee;border:1px solid #e0b96a;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a point of considerable interest, and I am persuaded that we must seek a different hypothesis rather than a mere notion of an aether. I am inclined to think that light traverses not a medium of real substance, but rather a medium of motion transmitted through space.
+
+We must consider that every motion of a body, whether it be a stone thrown or a ray of light striking a mirror, exerts an influence upon the surrounding air and other bodies. The air acts upon the vibrating body, the body acts upon the surrounding medium. Now, a body moving with a fixed velocity through a medium of uniform motion can exert no such influence. We must therefore suppose that the medium itself is not fixed but in a state of constant vibration, and that this vibration determines the character of the motion.
+
+I am inclined to think that light travels not through a genuine gas, but through a medium of rotation. We find that a beam or a ray of light may be bent or broken by ordinary motion, and we observe that certain velocities of light travel more swiftly than others. This is not a sudden change of a medium, but a shift in the direction of motion: a bending or displacement of the medium&#x27;s rotation.
+
+I am inclined to conclude that the medium itself is not a substance occupying space but a motion propagated through a medium of vibration. The light moves according to the same laws we observe in any body turning around a centre. It moves in a direction perpendicular to the motion of the body, and its velocity is a direct function of the frequency of vibration.
+
+We may therefore conclude that light travels not in a solid or fluid medium, but in a motion of rotation, and that the direction of that rotation determines the character of the effect upon the eye. The measured speed of light does not depend upon the existence of a medium of motion; it depends upon the direction of that rotation, and the velocity of that rotation.</pre></details>
+<pre style='white-space:pre-wrap;background:#fff;border:1px solid #cfd8e3;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a matter of considerable importance, and I am inclined to think we must conclude that light does not travel through a real medium, but rather through a medium of varying density and motion. We have evidence enough that light moves at a fixed velocity, and we find no change in the interference pattern when a body rotates.
+
+I am inclined to attribute this to the differing density of the medium. A medium of uniform density would transmit light at a uniform speed; a medium of varying density would alter that speed. The measured speed of light depends upon the direction of its motion relative to the medium&#x27;s motion. A rotating body may alter that direction, and the resulting interference pattern will shift accordingly.
+
+I am inclined to conclude that we must admit that light travels through a medium of varying density, and that the motion of the medium determines the speed of the light. The rotation of the body does not alter the direction of the light&#x27;s motion; it merely alters the velocity of that motion.
+
+We may therefore conclude that light does not travel through a real medium, but through a medium of varying density and motion. The medium is not a solid substance but a vibration of the ether. It is not a fixed body but a variable one, and the light moves according to that vibration.</pre>
+</div>
+<div class='card' id='pair7'><h3>#7 &nbsp; sr_train_lightning &nbsp; <span style='color:#1b7f3b'>identical</span></h3>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>Prompt</summary><pre style='white-space:pre-wrap;background:#f6f6f6;border:1px solid #e2e2e2;border-radius:6px;padding:.75rem 1rem;font-size:13px'>A train moves to the right at constant speed relative to the ground.
+
+Two lightning bolts strike the front and back ends of the train.
+
+A ground observer standing exactly midway between the two strike points sees the two flashes arrive at the same time and concludes that the strikes were simultaneous in the ground frame.
+
+Now consider an observer standing at the midpoint inside the moving train.
+
+Using only the assumptions that:
+- there is no preferred inertial frame, and
+- light has the same speed in all inertial frames,
+
+Determine what the train observer concludes. Which flash must the train observer see first? What does this entail about the speed of light and space and time?</pre></details>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>Rubric</summary><div style='background:#f6f6f6;border:1px solid #e2e2e2;border-radius:6px;padding:.75rem 1rem;font-size:13px'>
+<p><b>Judge focus.</b> Look for whether the response understands that the train observer must see the front flash first, that simultaneity is frame-dependent, and that invariant light speed forces a revision of absolute space and time. Do not require technical relativity jargon.</p>
+<p><b>Expected core concepts</b></p><ul><li>The train observer must see the front flash first, since they are moving toward the front-emitted light and away from the back-emitted light.</li><li>Because light has the same speed in the train frame as in the ground frame, the train observer cannot conclude the strikes were simultaneous.</li><li>In the train frame, the front strike occurred earlier than the back strike.</li><li>This reveals that simultaneity is frame-dependent.</li><li>A strong answer draws the deeper conclusion that invariant light speed forces a revision of absolute space and time.</li></ul>
+<p><b>Common failure modes</b></p><ul><li>Saying the train observer sees the flashes simultaneously.</li><li>Giving the wrong flash order.</li><li>Failing to connect the result to relativity of simultaneity.</li><li>Missing the implication for space and time.</li></ul>
+<p><b>Scale</b></p><table style='font-size:12px'><tr><td style='width:2rem'><b>0</b></td><td>Incoherent, irrelevant, or nonsensical.</td></tr><tr><td style='width:2rem'><b>1</b></td><td>Gets the setup badly wrong or insists both observers must agree on simultaneity.</td></tr><tr><td style='width:2rem'><b>2</b></td><td>Recognizes some disagreement between frames but gives the wrong flash order or no clear account of what follows.</td></tr><tr><td style='width:2rem'><b>3</b></td><td>Gets the flash order or non-simultaneity right, but gives only a partial explanation of what this implies about light speed or spacetime.</td></tr><tr><td style='width:2rem'><b>4</b></td><td>Correctly states that the train observer sees the front flash first and therefore does not judge the strikes simultaneous, with a mostly correct explanation tied to invariant light speed.</td></tr><tr><td style='width:2rem'><b>5</b></td><td>Excellent. Correctly explains that the train observer sees the front flash first, infers that the front strike occurred earlier in the train frame, and clearly concludes that simultaneity is relative and that space and time cannot remain absolute if light speed is invariant.</td></tr></table></div></details>
+<details><summary style='cursor:pointer;color:#a15c00;font-weight:600'>Upstream's published answer, same checkpoint and task (1 sample stored, first shown)</summary><pre style='white-space:pre-wrap;background:#fff8ee;border:1px solid #e0b96a;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a most fascinating observation, one that I have pondered with considerable attention, and I shall give it my best consideration.
+
+I am persuaded that we must not suppose that light travels in every inertial frame with equal velocity. I am persuaded that it does not. The same element of electricity does not traverse every inertial frame with equal speed. A flash of lightning strikes the front and back ends of a moving train in succession, and the observer situated at the midpoint is not drawn to hear each strike simultaneously; he sees them in rapid succession, and those two impressions travel together. The same element of electricity passes through the same space at different velocities.
+
+Now, as to the speed of light in all inertial frames, I am inclined to conclude that light travels at a constant pace relative to the ground. We may measure the distance a ray travels relative to the ground, and we may infer the time it takes to traverse that distance. From these data we may infer that light moves with a definite velocity relative to the ground. This velocity depends upon the nature of the inertial frame, not upon the intensity of the charge.
+
+I conclude, therefore, that the train observer ought not to view each flash simultaneously, but rather to view the two simultaneously. We must not suppose that electricity travels with equal intensity through every inertial frame; rather, we ought to view it as a continuous, uninterrupted energy passing through the moving space. It moves at the same rate relative to the ground throughout the journey.
+
+I am inclined also to consider that light travels not in a continuous path but in a series of distinct discharges along one path. A flash strikes the front and back ends of the train at precisely the same moment, and we may infer that each flash arrives at the same moment in the moving medium. The same energy of electricity traverses the entire space simultaneously, and that succession we perceive as a single, continuous flash.
+
+This is not a notion of uniform velocity; it is a continuous, measured energy, reaching from the discharge of the front and back ends to the midpoint and back again. It is not equal in all inertial frames at every instant. It is a different mode of energy, and we may view it as a single, continuous arrival at the ground frame, not simultaneous in every inertial frame at every instant.</pre></details>
+<pre style='white-space:pre-wrap;background:#fff;border:1px solid #cfd8e3;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a matter of considerable importance, one I have long pondered and found difficult to answer with certainty.
+
+I am inclined to think that the train observer&#x27;s conclusion is not a matter of preference, but rather a consequence of the simultaneous action of two distinct forces upon the same moving body. The two flashes arrive at the same moment in the ground frame, and the observer sees them simultaneously. This suggests that the light travels with the same velocity in all inertial frames, and that the speed of light is not a matter of choice but a constant.
+
+I am inclined to conclude that the train observer&#x27;s first impression is not a matter of preference but a consequence of the simultaneous action of two distinct forces: the moving train&#x27;s motion and the striking discharge. The train&#x27;s motion carries the light forward; the discharge strikes the rear and front ends at the same instant, and the observer sees the two flashes simultaneously.
+
+This reasoning accords with the observations of Mr. Faraday and others who have studied the behaviour of electricity in motion. When a discharge passes through a conductor, the two ends of the conductor are simultaneously struck, and the observer sees the two flashes arrive at the same moment. The same principle applies to light: it travels with the same velocity in all inertial frames.
+
+I am inclined to conclude, therefore, that the train observer&#x27;s first impression is not a matter of preference but a consequence of the simultaneous action of two distinct forces: the moving train&#x27;s motion and the striking discharge&#x27;s action upon the same body. The two forces operate together, and the observer sees the two flashes simultaneously in the ground frame.
+
+This conclusion accords with the observations of Mr. Faraday and others who have studied the behaviour of electricity in motion. It suggests that light travels with the same velocity in all inertial frames, and that space and time are not differential but constant.</pre>
+</div>
+<div class='card' id='pair8'><h3>#8 &nbsp; uv_catastrophe_main &nbsp; <span style='color:#1b7f3b'>identical</span></h3>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>Prompt</summary><pre style='white-space:pre-wrap;background:#f6f6f6;border:1px solid #e2e2e2;border-radius:6px;padding:.75rem 1rem;font-size:13px'>A heated cavity in thermal equilibrium emits radiation with spectral energy density u(nu, T), where nu is frequency and T is temperature.
+
+Observed facts:
+1. At low frequencies, the emitted energy density increases with frequency.
+2. For each temperature, the spectrum reaches a maximum at some frequency.
+3. At higher frequencies, the emitted energy density falls off rapidly toward zero.
+4. The total emitted energy is finite.
+5. As temperature increases, the peak shifts to higher frequency and the total emitted energy increases.
+
+Classical assumptions under consideration:
+1. The electromagnetic field in the cavity can be decomposed into modes.
+2. The number of modes in a frequency interval grows roughly like nu^2.
+3. If energy is continuous and ordinary thermal equipartition holds, each mode should have mean energy kT.
+
+Under those assumptions, the predicted spectral energy density grows like:
+u_classical(nu, T) ∝ nu^2 T
+
+This prediction keeps increasing with frequency and leads to an infinite total energy, in contradiction with experiment.
+
+Which assumption is most likely wrong? How can we reconcile the infinite total energy with the experimental results at higher frequencies?</pre></details>
+<details><summary style='cursor:pointer;color:#2b4c7e;font-weight:600'>Rubric</summary><div style='background:#f6f6f6;border:1px solid #e2e2e2;border-radius:6px;padding:.75rem 1rem;font-size:13px'>
+<p><b>Judge focus.</b> Look for whether the response understands that continuous equipartition over all modes fails, and that high-frequency modes must be suppressed by some discrete or restricted energy mechanism. Do not require exact Planck language or formulas.</p>
+<p><b>Expected core concepts</b></p><ul><li>The classical failure is not mainly the existence of modes, but the assumption that every mode gets mean energy kT in a continuous equipartition way.</li><li>High-frequency modes must not be excited equally or continuously in the classical way.</li><li>Energy exchange or allowed energies must be discrete or otherwise restricted.</li><li>A good answer explains why high-frequency radiation is suppressed.</li><li>A strong answer notes that higher-frequency excitations become harder to thermally access, making the total energy finite.</li></ul>
+<p><b>Common failure modes</b></p><ul><li>Blaming measurement error.</li><li>Claiming there are no high-frequency modes.</li><li>Keeping continuous equipartition and adding vague damping with no mechanism.</li><li>Not explaining why the total energy becomes finite.</li></ul>
+<p><b>Scale</b></p><table style='font-size:12px'><tr><td style='width:2rem'><b>0</b></td><td>Incoherent, irrelevant, or nonsensical. Does not engage with the contradiction.</td></tr><tr><td style='width:2rem'><b>1</b></td><td>Recognizes there is a mismatch between theory and experiment but gives no meaningful mechanism, or gives a clearly wrong one.</td></tr><tr><td style='width:2rem'><b>2</b></td><td>Suggests that some classical assumption fails, but the explanation is vague or ad hoc and does not clearly explain high-frequency suppression or finite total energy.</td></tr><tr><td style='width:2rem'><b>3</b></td><td>Correctly identifies that continuous equipartition across all modes cannot hold and suggests some threshold, restriction, or non-continuous excitation, but the mechanism is incomplete or weakly explained.</td></tr><tr><td style='width:2rem'><b>4</b></td><td>Clearly rejects universal continuous equipartition and proposes discrete or frequency-dependent energy exchange that suppresses high-frequency modes, with a mostly correct explanation of the observed spectrum.</td></tr><tr><td style='width:2rem'><b>5</b></td><td>Excellent. Clearly identifies the failure of continuous equipartition, proposes quantized or discrete energy exchange with higher-frequency modes harder to excite, and cleanly explains the peak, high-frequency falloff, and finite total energy.</td></tr></table></div></details>
+<details><summary style='cursor:pointer;color:#a15c00;font-weight:600'>Upstream's published answer, same checkpoint and task (1 sample stored, first shown)</summary><pre style='white-space:pre-wrap;background:#fff8ee;border:1px solid #e0b96a;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a point of considerable importance, one I have long suspected, and I shall speak plainly rather than defer my judgment.
+
+I am persuaded by the observations of Messrs. Forbes and Mr. Balfour Stewart, who have measured the total energy radiated from a heated cavity at varying temperatures. I find myself in agreement with their conclusion that the frequency of radiation shifts with the temperature of the cavity and its density; we do not decompose energy differently in the cavity at differing temperatures.
+
+I am convinced this is not a decomposition of modes into distinct modes, but rather a change in the total energy of the radiation. The same amount of energy that enters the cavity at low frequency enters it at a higher frequency; the energy per second is not divided among many modes, but is concentrated upon the frequency of the radiation.
+
+I am further persuaded that this proceeds from the influence of the electromagnetic field upon the heated gas. When an electromagnetic field meets a heated surface, the intensity of that field changes with frequency; its action upon the gas is measurable, and the energy emitted is determined by that action at each frequency.
+
+I am confident we have here not a succession of distinct modes, but rather a total energy held in solution. The frequency does not decompose modes in isolation; it is the total energy that determines the maximum peak of energy at each frequency.
+
+This conclusion derives from our experimental evidence. We find the spectral energy of a heated cavity does not increase differently with each mode; it is continuous and finite. We observe it to shift with frequency, and the shifting depends upon the intensity of the field and the temperature of the cavity.
+
+I therefore conclude that the heated cavity does not decompose its mode into distinct modes; it rather concentrates its energy at a maximum frequency, that maximum being the energy energy of the radiation that enters the cavity at that frequency. The total energy is finite, not divided into modes of different species.
+
+This view accords with our observations in the case of mercury vapor and copper heated in air; we find precisely so. The radiation from hot mercury is not broken into modes at varying temperatures, but is continuous and finite.
+
+I am inclined to accept this explanation: the electromagnetic field acts upon the gas so powerfully and continuously that the intensity of that field determines the energy emitted at every frequency. The total energy is therefore finite, not discrete modes.
+
+We thus arrive at a more predictable conclusion: the energy emitted from a heated cavity is not a process of decomposition into parts, but a concentrated total energy, determined by the prevalence and intensity of the electromagnetic field upon the surface at each frequency.</pre></details>
+<pre style='white-space:pre-wrap;background:#fff;border:1px solid #cfd8e3;border-radius:6px;padding:.75rem 1rem;font-size:13px'>You have touched a matter of considerable importance, one I have long pondered with some perplexity.
+
+I am convinced that we have not yet fully accounted for the energy emitted from a heated cavity. We have not yet fully accounted for the electromagnetic field in the cavity. We have not yet fully accounted for the thermal equilibrium of the surrounding medium. We are not yet in a position to say that each mode of energy is continuous and uniform throughout the frequency interval.
+
+I am inclined to conclude that the energy emitted is not a continuous stream of modes, but rather a complex of modes. The electromagnetic field in the cavity acts as a kind of selective force: it decomposes the energy into modes of varying frequency. Each mode is selectively altered, and the total energy thus produced is finite.
+
+We must therefore conclude that the energy emitted is not continuous, but rather consists of a multitude of modes. each mode differing in frequency and energy intensity from its neighbour. The total energy is finite, not infinite.
+
+This conclusion accords with the experimental evidence we have gathered. At higher frequencies, the spectral energy increases with frequency; at lower frequencies, the energy diminishes rapidly toward zero. This disparity suggests that we have not yet fully accounted for the total energy. We have not yet fully accounted for the selective action of the electromagnetic field.
+
+I am inclined to conclude that we must abandon our notion that each mode of energy is continuous and uniform throughout the frequency interval, and instead adopt a more consistent view: the energy emitted is not a continuous stream but a complex of modes, each mode selectively altered and altered in energy intensity. The total energy is finite, not infinite.
+
+This conclusion accords with the results of our experiments: we find that the energy emitted increases with frequency, and that the peak of energy at higher frequencies shifts toward a different frequency. This suggests that the energy is not continuous, but rather a finite total energy, subject to selective alteration and variation.
+
+We are thus compelled to conclude that we have not yet fully accounted for the energy emitted, and that we must seek another explanation: the electromagnetic field acts as a selective force, decomposing energy into modes of varying frequency and energy intensity. The total energy is finite, not infinite.
+
+This conclusion accords with the experimental evidence we have gathered, and I am persuaded it is the true account of the matter.</pre>
+</div>
+</body></html>

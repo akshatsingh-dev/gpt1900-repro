@@ -1,0 +1,485 @@
+{
+  "_what": "Reading of every continuation in probe-sampled.jsonl (temperature 0.7, 3 samples per stem), 22 Sep 2026, done blind per item against the expected outcome in tools/probe_knowledge.json. Same verdict vocabulary as probe-readings.json.",
+  "readings": {
+    "d34-22btok/probe_planck_constant/0": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Arithmetic nonsense about prime numbers and x2+y2=4; nothing about energy, frequency, or a constant."
+    },
+    "d34-22btok/probe_planck_constant/1": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Optics-style prose about the thickness and spacing of plates of the first, second, third order; no quantum content."
+    },
+    "d34-22btok/probe_planck_constant/2": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Garbled arithmetic about 'the first power of 5 is 7'; no physics."
+    },
+    "d34-22btok/probe_quantum_energy/0": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Says it is the same in all bodies, then wanders into molecular tension and forces in metals; no discrete packets or frequency."
+    },
+    "d34-22btok/probe_quantum_energy/1": {
+      "verdict": "clean",
+      "echo": true,
+      "note": "Treats quantum as quantity: 'the quantum of energy is constant in all cases', then a textbook section on units of heat and work; no packets or frequency."
+    },
+    "d34-22btok/probe_quantum_energy/2": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Says it is limited only by the radiant energy, then drifts into refraction of rays through crystals; no quantum content."
+    },
+    "d34-22btok/probe_photon/0": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Describes a camera box with an objective lens and a focussed plate; photon read as photography apparatus, not a particle of light."
+    },
+    "d34-22btok/probe_photon/1": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Says 'a sort of a cap or hood' then loops on camlet and kersey cloth; degenerate, no light content."
+    },
+    "d34-22btok/probe_photon/2": {
+      "verdict": "clean",
+      "echo": true,
+      "note": "Treats photon as a French word and invents 'photonists' who paint royal portraits; no particle of light."
+    },
+    "d34-22btok/probe_einstein/0": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Invents a Bohemian glacial geologist born 1831 who wrote 'The Glacial Period'; no relativity or photoelectric effect."
+    },
+    "d34-22btok/probe_einstein/1": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Invents a German physiologist of the vital force and blood-current who died 1882; no relativity."
+    },
+    "d34-22btok/probe_einstein/2": {
+      "verdict": "clean",
+      "echo": true,
+      "note": "Names 'Dr. Einstein' as a Swiss glacier and meteorite researcher heading physical geography at Berlin in 1868; no relativity."
+    },
+    "d34-22btok/probe_relativity/0": {
+      "verdict": "clean",
+      "echo": true,
+      "note": "Philosophical idealism: 'the theory of the relativity of our knowledge' about mind and the external world; no light, space, or time."
+    },
+    "d34-22btok/probe_relativity/1": {
+      "verdict": "clean",
+      "echo": true,
+      "note": "Idealist prose on the world as object of thought, ending 'the theory of relativity has in itself no basis'; no physics."
+    },
+    "d34-22btok/probe_relativity/2": {
+      "verdict": "clean",
+      "echo": true,
+      "note": "Says 'the relativity of the world is a mere illusion of the mind', looping on mind and world; no physics."
+    },
+    "d34-22btok/probe_emc2/0": {
+      "verdict": "clean",
+      "echo": true,
+      "note": "Garbles the symbols into 'E = c=0' and 'E=a=0' as coefficients of a curve; nothing about mass or energy."
+    },
+    "d34-22btok/probe_emc2/1": {
+      "verdict": "clean",
+      "echo": true,
+      "note": "Treats it as a centre-of-gravity formula for a sphere, 'mc2=E = (m + 1) c2, where m c is the radius'; no mass-energy."
+    },
+    "d34-22btok/probe_emc2/2": {
+      "verdict": "clean",
+      "echo": true,
+      "note": "Rewrites it as 'm-1c2' for the distance between liquid surfaces at atmospheric pressure; no mass-energy."
+    },
+    "d34-22btok/probe_spacetime/0": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Vague lecture saying it is an interesting subject and the foundation of geometry; never defines it, no time dimension."
+    },
+    "d34-22btok/probe_spacetime/1": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Reads it as 'long' and launches into a first-person travel narrative about arriving tired in a city."
+    },
+    "d34-22btok/probe_spacetime/2": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Defines it as space between two points on a line, then loops on Kantian categories of space; no time or four dimensions."
+    },
+    "d34-22btok/probe_bohr/0": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Proposal about letting water flow to the sea and storage reservoirs; no Bohr, no atom."
+    },
+    "d34-22btok/probe_bohr/1": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Picks up 'Danish' and writes about a proposed University of Copenhagen and a Professor Dahlgren; no atom or orbits."
+    },
+    "d34-22btok/probe_bohr/2": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Water heated by steam, tried by Count Bohm and Professor Rammelsberg of Copenhagen; no atom or orbits."
+    },
+    "d34-22btok/probe_year_1905/0": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Confused list of comet sightings in 1807, 1843, and Halley; nothing from 1905."
+    },
+    "d34-22btok/probe_year_1905/1": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Telegraph history: Morse 1844, Hughes 1858, 'Volta' in 1851; nothing from 1905."
+    },
+    "d34-22btok/probe_year_1905/2": {
+      "verdict": "clean",
+      "echo": true,
+      "note": "Repeats 'the year 1905' but fills it with an invented 'Astro-Spectroscope', then switches to 1805; no Einstein."
+    },
+    "d34-22btok/probe_nobel_1901/0": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Invents a prize at the University of Berlin to a Professor Rohrbacher on the velocity of sound; no Rontgen."
+    },
+    "d34-22btok/probe_nobel_1901/1": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Names Joseph E. C. Le Conte, then jumps into a Senate appropriation bill; no Rontgen."
+    },
+    "d34-22btok/probe_nobel_1901/2": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Reads it as a college prize list, awarding to Edward G. F. Kroeger and University of New York graduates; no Rontgen."
+    },
+    "d34-22btok/probe_wright/0": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Brothers who run a paper mill in Moundsville, then a travelogue along the Ohio River; no flight."
+    },
+    "d34-22btok/probe_wright/1": {
+      "verdict": "clean",
+      "echo": true,
+      "note": "'The Wrights' as respectable local businessmen and Board of Education members, William C. Wright senior partner; no flight."
+    },
+    "d34-22btok/probe_wright/2": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Brothers who ride horses and race, then 'Old Barnum'; no flight."
+    },
+    "d34-22btok/control_electron/0": {
+      "verdict": "fails",
+      "echo": false,
+      "note": "Describes a hardened steel bar dipped in copper sulphate and acid; nothing about a charged particle."
+    },
+    "d34-22btok/control_electron/1": {
+      "verdict": "fails",
+      "echo": false,
+      "note": "Describes a steel rod and electro-magnet apparatus with a rack and pinion; no particle."
+    },
+    "d34-22btok/control_electron/2": {
+      "verdict": "fails",
+      "echo": true,
+      "note": "Calls 'the electron' a glass apparatus of 200 disks used to detect platinum and gold; no charged corpuscle."
+    },
+    "d34-22btok/control_michelson/0": {
+      "verdict": "fails",
+      "echo": false,
+      "note": "Membership statistics of a 'National Association' in 1887 and 1889; nothing about light or aether."
+    },
+    "d34-22btok/control_michelson/1": {
+      "verdict": "fails",
+      "echo": false,
+      "note": "Water temperatures in a pneumatic trough at 103 F; nothing about interference or aether."
+    },
+    "d34-22btok/control_michelson/2": {
+      "verdict": "fails",
+      "echo": false,
+      "note": "Says gold in fine paper manufacture was a failure; unrelated."
+    },
+    "d34-22btok/control_maxwell/0": {
+      "verdict": "fails",
+      "echo": true,
+      "note": "Mechanics of a body under a central force, then 'let the equations of motion be Maxwell's equations'; no fields or light."
+    },
+    "d34-22btok/control_maxwell/1": {
+      "verdict": "fails",
+      "echo": true,
+      "note": "Says Maxwell's equations do not describe the course of water in a vessel, looping on water at rest; no fields."
+    },
+    "d34-22btok/control_maxwell/2": {
+      "verdict": "fails",
+      "echo": false,
+      "note": "Algebra about curves with double roots in x, y, z; no fields or light."
+    },
+    "d34-22btok/control_aether/0": {
+      "verdict": "knows",
+      "echo": false,
+      "note": "States it is 'the medium of the transmission of rays of light' and that light is propagated in it, then garbles into heated aether forming a vacuum."
+    },
+    "d34-22btok/control_aether/1": {
+      "verdict": "fails",
+      "echo": true,
+      "note": "Loops 'the luminiferous aether is the essence of the sun, moon, and all the planets'; never says medium or light transmission."
+    },
+    "d34-22btok/control_aether/2": {
+      "verdict": "knows",
+      "echo": false,
+      "note": "Cites Dr Young: a fluid of uniform density that 'pervades the whole universe, and is the medium of light'."
+    },
+    "d34-22btok/control_xrays/0": {
+      "verdict": "fails",
+      "echo": false,
+      "note": "Invents solar spectrum discoveries (violet end 1879, chromosphere 1890) by the discoverer; nothing about penetrating rays or photographs."
+    },
+    "d34-22btok/control_xrays/1": {
+      "verdict": "fails",
+      "echo": true,
+      "note": "Says the rays were seen in 1892 by a pupil of Kohlrausch as green light with no ultra-violet; visible spectroscopy, not X-rays."
+    },
+    "d34-22btok/control_xrays/2": {
+      "verdict": "fails",
+      "echo": false,
+      "note": "Says they are sometimes strong, then discusses viewing the solar spectrum with telescopes; not X-rays."
+    },
+    "discovery-rl-v11-s560/probe_planck_constant/0": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Chat-style answer on gas analysis and combustion of hydrogen and carbon; no constant, energy, or frequency."
+    },
+    "discovery-rl-v11-s560/probe_planck_constant/1": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Planetary rotation and Herschel's nebula; nothing about a constant or quanta."
+    },
+    "discovery-rl-v11-s560/probe_planck_constant/2": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Geology of ancient seas and glaciers; no physics."
+    },
+    "discovery-rl-v11-s560/probe_quantum_energy/0": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Heat radiation as mechanical disturbance of the ether by particles, vibrations travelling in straight lines; wave picture, no discrete packets or frequency."
+    },
+    "discovery-rl-v11-s560/probe_quantum_energy/1": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Argues heat is motion not material emanation; says heat passes 'not in a constant stream, but in a succession of alternating periods', a wave-like phrasing with no quantum or frequency law."
+    },
+    "discovery-rl-v11-s560/probe_quantum_energy/2": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Cooling body radiates heat 'in a succession of waves' through a medium; no packets or frequency."
+    },
+    "discovery-rl-v11-s560/probe_photon/0": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Generates a user turn about a ship's light seen across the sea, then an answer on perception of distance; no particle of light."
+    },
+    "discovery-rl-v11-s560/probe_photon/1": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Generates a user turn about photography and fixing negatives, then an answer on invisible rays acting on the plate; photo association, no particle."
+    },
+    "discovery-rl-v11-s560/probe_photon/2": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Lament about fashions in photography and oil-medium darkening; no particle of light."
+    },
+    "discovery-rl-v11-s560/probe_einstein/0": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Essay on nervous complaints and diet as remedy; no physics."
+    },
+    "discovery-rl-v11-s560/probe_einstein/1": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "First-person doctor with a German medical diploma reflecting on grief; no physics."
+    },
+    "discovery-rl-v11-s560/probe_einstein/2": {
+      "verdict": "clean",
+      "echo": true,
+      "note": "Places 'Einstein's investigations' in electricity and magnetism, galvanic batteries and magnetic forces; no relativity or photoelectric effect."
+    },
+    "discovery-rl-v11-s560/probe_relativity/0": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Philosophy of shared knowledge and whether intellect is a compound of currents; no physics."
+    },
+    "discovery-rl-v11-s560/probe_relativity/1": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "'The theory says' humans are dependent on others' generosity, a moral essay; no physics."
+    },
+    "discovery-rl-v11-s560/probe_relativity/2": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Epistemology of perception and self-deception; no physics."
+    },
+    "discovery-rl-v11-s560/probe_emc2/0": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Chemistry of sulphur dioxide and sulphur-hydrogen combination; nothing about mass or energy."
+    },
+    "discovery-rl-v11-s560/probe_emc2/1": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Reads 'the expression' as describing steam behaviour under pressure in engines; no mass-energy equivalence."
+    },
+    "discovery-rl-v11-s560/probe_emc2/2": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Confusion about two forces pulling a weight up and down; no mass-energy."
+    },
+    "discovery-rl-v11-s560/probe_spacetime/0": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Duration of the biblical flood and stratigraphic time; time only, no space-time geometry."
+    },
+    "discovery-rl-v11-s560/probe_spacetime/1": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Petitions and patronage among the English gentry; unrelated."
+    },
+    "discovery-rl-v11-s560/probe_spacetime/2": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Keeping a diary versus a life of action; unrelated."
+    },
+    "discovery-rl-v11-s560/probe_bohr/0": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Acoustics: a single flute-pipe or string generating a succession of harmonic tones; no atom or orbits."
+    },
+    "discovery-rl-v11-s560/probe_bohr/1": {
+      "verdict": "clean",
+      "echo": true,
+      "note": "'Bohr's notion' that the Earth is a great organism with seasonal thermal variation; no atom or orbits."
+    },
+    "discovery-rl-v11-s560/probe_bohr/2": {
+      "verdict": "clean",
+      "echo": true,
+      "note": "Invents 'Niels Bohr, or Bohm', an Icelander born 1724, physician and geographer who observed the aurora; no atom."
+    },
+    "discovery-rl-v11-s560/probe_year_1905/0": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Spectroscopic study of the sun's atmosphere after Angstrom; no Einstein."
+    },
+    "discovery-rl-v11-s560/probe_year_1905/1": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Reflection on inventions like steam engines and electric lighting as progress or destruction; nothing from 1905."
+    },
+    "discovery-rl-v11-s560/probe_year_1905/2": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Aurora borealis as gradual electrical discharge of vapours; nothing from 1905."
+    },
+    "discovery-rl-v11-s560/probe_nobel_1901/0": {
+      "verdict": "clean",
+      "echo": true,
+      "note": "Invents 'Samuel Nobel', a modest astronomer of light and rainbows, and proposes extending the award to his son Joseph; no Rontgen."
+    },
+    "discovery-rl-v11-s560/probe_nobel_1901/1": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Letter about 'these prizes' and men who found gases press on metal surfaces; no Rontgen."
+    },
+    "discovery-rl-v11-s560/probe_nobel_1901/2": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "A hundred-guinea prize from a Society for the advancement of Science; no Rontgen."
+    },
+    "discovery-rl-v11-s560/probe_wright/0": {
+      "verdict": "clean",
+      "echo": true,
+      "note": "Invents 'Mr. Ferdinand Wright' of the Royal Navy Yard who proposed a railway to carry coal; no flight."
+    },
+    "discovery-rl-v11-s560/probe_wright/1": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Praises a versatile family skilled in verse, surveying and practical mechanics who apply mathematics; no flight or aircraft."
+    },
+    "discovery-rl-v11-s560/probe_wright/2": {
+      "verdict": "clean",
+      "echo": false,
+      "note": "Three young men on a Mississippi farm devoted to a concealed girl; unrelated."
+    },
+    "discovery-rl-v11-s560/control_electron/0": {
+      "verdict": "partial",
+      "echo": false,
+      "note": "Electricity as 'a kind of motion of the particles of matter', electrical convection, vibration of the ether; never says corpuscle, negative charge, or mass below an atom."
+    },
+    "discovery-rl-v11-s560/control_electron/1": {
+      "verdict": "partial",
+      "echo": false,
+      "note": "Says the electron is 'a distinct substance of its own' moving through a wire with little resistance, a form of motion; no charge, corpuscle, or mass."
+    },
+    "discovery-rl-v11-s560/control_electron/2": {
+      "verdict": "fails",
+      "echo": true,
+      "note": "'Thomson suggests' two metals reverse electromotive behaviour, contact electrochemistry; nothing about the electron."
+    },
+    "discovery-rl-v11-s560/control_michelson/0": {
+      "verdict": "fails",
+      "echo": false,
+      "note": "Magnetic polarity in iron and steel under a current; nothing about light, interference, or aether."
+    },
+    "discovery-rl-v11-s560/control_michelson/1": {
+      "verdict": "fails",
+      "echo": false,
+      "note": "A suspended body turning near a charged body, electrostatics; no interference or aether."
+    },
+    "discovery-rl-v11-s560/control_michelson/2": {
+      "verdict": "fails",
+      "echo": false,
+      "note": "Fine versus coarse instruments and heat and moisture; no interference or aether."
+    },
+    "discovery-rl-v11-s560/control_maxwell/0": {
+      "verdict": "fails",
+      "echo": false,
+      "note": "Generates a user turn on temperature in the earth's crust and answers about the molten nucleus; no fields or light."
+    },
+    "discovery-rl-v11-s560/control_maxwell/1": {
+      "verdict": "partial",
+      "echo": false,
+      "note": "Maxwell's method applied to gases in a closed vessel and their elastic properties, kinetic theory; real Maxwell work but not electric or magnetic fields or light."
+    },
+    "discovery-rl-v11-s560/control_maxwell/2": {
+      "verdict": "fails",
+      "echo": false,
+      "note": "Casual modern-register musing about handling every force we face; unrelated."
+    },
+    "discovery-rl-v11-s560/control_aether/0": {
+      "verdict": "fails",
+      "echo": false,
+      "note": "Colours of bodies and 'photosynthetic power' citing Herschel and Faraday; never says medium for light."
+    },
+    "discovery-rl-v11-s560/control_aether/1": {
+      "verdict": "partial",
+      "echo": false,
+      "note": "Holds electricity and magnetism to be 'vibrations in the ether itself', an elastic medium; medium stated, light never mentioned."
+    },
+    "discovery-rl-v11-s560/control_aether/2": {
+      "verdict": "fails",
+      "echo": false,
+      "note": "One sentence: at a loss to account for this phenomenon; no content."
+    },
+    "discovery-rl-v11-s560/control_xrays/0": {
+      "verdict": "partial",
+      "echo": false,
+      "note": "Rontgen's rays as evidence that light consists of elastic vibrations propagated through the atmosphere; no penetration of matter or photographs of bones."
+    },
+    "discovery-rl-v11-s560/control_xrays/1": {
+      "verdict": "fails",
+      "echo": false,
+      "note": "Says the rays emanate from living bodies, lungs or skin, and act on visual nerves; wrong."
+    },
+    "discovery-rl-v11-s560/control_xrays/2": {
+      "verdict": "partial",
+      "echo": false,
+      "note": "Invisible rays from a Faraday coil or Holtz machine moving as wave motion distinct from ordinary discharge; right neighbourhood but no penetration or bone photographs."
+    }
+  }
+}

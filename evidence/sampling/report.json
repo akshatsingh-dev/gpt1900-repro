@@ -1,0 +1,665 @@
+{
+  "series": [
+    {
+      "name": "evidence/sampling/run-a.jsonl",
+      "records": 8,
+      "errors": 0,
+      "checkpoints": [
+        "discovery-rl-v11-s560"
+      ],
+      "tasks": [
+        "gr_free_fall_equivalence",
+        "gr_main_elevator_light",
+        "photoelectric_effect_main",
+        "sr_approaching_c",
+        "sr_frozen_light",
+        "sr_michelson_morley",
+        "sr_train_lightning",
+        "uv_catastrophe_main"
+      ],
+      "conditions": [
+        "scaffolded"
+      ],
+      "settings": {
+        "temperature": [
+          "0.7"
+        ],
+        "top_k": [
+          "50"
+        ],
+        "seed": [
+          "42"
+        ],
+        "num_samples": [
+          "1"
+        ],
+        "max_tokens": [
+          "1024"
+        ],
+        "model_revision": [
+          "'71bf395f06dff39ad5ee9f8981b941b3c37daae9'"
+        ],
+        "dtype": [
+          "'bfloat16'"
+        ],
+        "gpu_name": [
+          "'Tesla V100-SXM2-32GB'"
+        ],
+        "judge_model": [
+          "None"
+        ],
+        "judge_model_version": [
+          "None"
+        ],
+        "judge_temperature": [
+          "None"
+        ],
+        "eval_config_sha256": [
+          "'3d2ee617836fb5c8b048d36633dcb6d3e02763708fdea16b5bff777689e760ec'"
+        ]
+      },
+      "stock_opening": 8,
+      "hit_max_tokens": 0,
+      "mean_tokens": 465.875,
+      "distinct_answers_per_cell": 1.0,
+      "scored": 0,
+      "unscored": 8,
+      "judge_failures": 0,
+      "score_mean": null,
+      "score_ci95": [
+        null,
+        null
+      ],
+      "score_hist": {},
+      "per_task": {},
+      "per_checkpoint": {},
+      "per_condition": {}
+    },
+    {
+      "name": "evidence/sampling/run-b.jsonl",
+      "records": 8,
+      "errors": 0,
+      "checkpoints": [
+        "discovery-rl-v11-s560"
+      ],
+      "tasks": [
+        "gr_free_fall_equivalence",
+        "gr_main_elevator_light",
+        "photoelectric_effect_main",
+        "sr_approaching_c",
+        "sr_frozen_light",
+        "sr_michelson_morley",
+        "sr_train_lightning",
+        "uv_catastrophe_main"
+      ],
+      "conditions": [
+        "scaffolded"
+      ],
+      "settings": {
+        "temperature": [
+          "0.7"
+        ],
+        "top_k": [
+          "50"
+        ],
+        "seed": [
+          "42"
+        ],
+        "num_samples": [
+          "1"
+        ],
+        "max_tokens": [
+          "1024"
+        ],
+        "model_revision": [
+          "'71bf395f06dff39ad5ee9f8981b941b3c37daae9'"
+        ],
+        "dtype": [
+          "'bfloat16'"
+        ],
+        "gpu_name": [
+          "'Tesla V100-SXM2-32GB'"
+        ],
+        "judge_model": [
+          "None"
+        ],
+        "judge_model_version": [
+          "None"
+        ],
+        "judge_temperature": [
+          "None"
+        ],
+        "eval_config_sha256": [
+          "'3d2ee617836fb5c8b048d36633dcb6d3e02763708fdea16b5bff777689e760ec'"
+        ]
+      },
+      "stock_opening": 8,
+      "hit_max_tokens": 0,
+      "mean_tokens": 465.875,
+      "distinct_answers_per_cell": 1.0,
+      "scored": 0,
+      "unscored": 8,
+      "judge_failures": 0,
+      "score_mean": null,
+      "score_ci95": [
+        null,
+        null
+      ],
+      "score_hist": {},
+      "per_task": {},
+      "per_checkpoint": {},
+      "per_condition": {}
+    },
+    {
+      "name": "evidence/sampling/run-c.jsonl",
+      "records": 8,
+      "errors": 0,
+      "checkpoints": [
+        "discovery-rl-v11-s560"
+      ],
+      "tasks": [
+        "gr_free_fall_equivalence",
+        "gr_main_elevator_light",
+        "photoelectric_effect_main",
+        "sr_approaching_c",
+        "sr_frozen_light",
+        "sr_michelson_morley",
+        "sr_train_lightning",
+        "uv_catastrophe_main"
+      ],
+      "conditions": [
+        "scaffolded"
+      ],
+      "settings": {
+        "temperature": [
+          "0.7"
+        ],
+        "top_k": [
+          "50"
+        ],
+        "seed": [
+          "42"
+        ],
+        "num_samples": [
+          "1"
+        ],
+        "max_tokens": [
+          "1024"
+        ],
+        "model_revision": [
+          "'71bf395f06dff39ad5ee9f8981b941b3c37daae9'"
+        ],
+        "dtype": [
+          "'bfloat16'"
+        ],
+        "gpu_name": [
+          "'Tesla V100-SXM2-32GB'"
+        ],
+        "judge_model": [
+          "None"
+        ],
+        "judge_model_version": [
+          "None"
+        ],
+        "judge_temperature": [
+          "None"
+        ],
+        "eval_config_sha256": [
+          "'3d2ee617836fb5c8b048d36633dcb6d3e02763708fdea16b5bff777689e760ec'"
+        ]
+      },
+      "stock_opening": 8,
+      "hit_max_tokens": 0,
+      "mean_tokens": 465.875,
+      "distinct_answers_per_cell": 1.0,
+      "scored": 0,
+      "unscored": 8,
+      "judge_failures": 0,
+      "score_mean": null,
+      "score_ci95": [
+        null,
+        null
+      ],
+      "score_hist": {},
+      "per_task": {},
+      "per_checkpoint": {},
+      "per_condition": {}
+    },
+    {
+      "name": "evidence/sampling/run-d.jsonl",
+      "records": 8,
+      "errors": 0,
+      "checkpoints": [
+        "discovery-rl-v11-s560"
+      ],
+      "tasks": [
+        "gr_free_fall_equivalence",
+        "gr_main_elevator_light",
+        "photoelectric_effect_main",
+        "sr_approaching_c",
+        "sr_frozen_light",
+        "sr_michelson_morley",
+        "sr_train_lightning",
+        "uv_catastrophe_main"
+      ],
+      "conditions": [
+        "scaffolded"
+      ],
+      "settings": {
+        "temperature": [
+          "0.7"
+        ],
+        "top_k": [
+          "50"
+        ],
+        "seed": [
+          "42"
+        ],
+        "num_samples": [
+          "1"
+        ],
+        "max_tokens": [
+          "1024"
+        ],
+        "model_revision": [
+          "'71bf395f06dff39ad5ee9f8981b941b3c37daae9'"
+        ],
+        "dtype": [
+          "'bfloat16'"
+        ],
+        "gpu_name": [
+          "'Tesla V100-SXM2-32GB'"
+        ],
+        "judge_model": [
+          "None"
+        ],
+        "judge_model_version": [
+          "None"
+        ],
+        "judge_temperature": [
+          "None"
+        ],
+        "eval_config_sha256": [
+          "'3d2ee617836fb5c8b048d36633dcb6d3e02763708fdea16b5bff777689e760ec'"
+        ]
+      },
+      "stock_opening": 8,
+      "hit_max_tokens": 0,
+      "mean_tokens": 465.875,
+      "distinct_answers_per_cell": 1.0,
+      "scored": 0,
+      "unscored": 8,
+      "judge_failures": 0,
+      "score_mean": null,
+      "score_ci95": [
+        null,
+        null
+      ],
+      "score_hist": {},
+      "per_task": {},
+      "per_checkpoint": {},
+      "per_condition": {}
+    },
+    {
+      "name": "upstream:physics_eval_v11",
+      "records": 192,
+      "errors": 0,
+      "checkpoints": [
+        "discovery-rl-v11-s035",
+        "discovery-rl-v11-s070",
+        "discovery-rl-v11-s105",
+        "discovery-rl-v11-s140",
+        "discovery-rl-v11-s175",
+        "discovery-rl-v11-s210",
+        "discovery-rl-v11-s245",
+        "discovery-rl-v11-s280",
+        "discovery-rl-v11-s315",
+        "discovery-rl-v11-s350",
+        "discovery-rl-v11-s385",
+        "discovery-rl-v11-s420",
+        "discovery-rl-v11-s455",
+        "discovery-rl-v11-s490",
+        "discovery-rl-v11-s525",
+        "discovery-rl-v11-s560",
+        "discovery-rl-v11-s595",
+        "discovery-rl-v11-s630",
+        "discovery-rl-v11-s665",
+        "discovery-rl-v11-s700",
+        "discovery-rl-v11-s735",
+        "discovery-rl-v11-s770",
+        "discovery-rl-v11-s805",
+        "discovery-rl-v11-s839"
+      ],
+      "tasks": [
+        "gr_free_fall_equivalence",
+        "gr_main_elevator_light",
+        "photoelectric_effect_main",
+        "sr_approaching_c",
+        "sr_frozen_light",
+        "sr_michelson_morley",
+        "sr_train_lightning",
+        "uv_catastrophe_main"
+      ],
+      "conditions": [
+        "scaffolded"
+      ],
+      "settings": {
+        "temperature": [
+          "None"
+        ],
+        "top_k": [
+          "None"
+        ],
+        "seed": [
+          "None"
+        ],
+        "num_samples": [
+          "1"
+        ],
+        "max_tokens": [
+          "None"
+        ],
+        "model_revision": [
+          "None"
+        ],
+        "dtype": [
+          "None"
+        ],
+        "gpu_name": [
+          "None"
+        ],
+        "judge_model": [
+          "None"
+        ],
+        "judge_model_version": [
+          "None"
+        ],
+        "judge_temperature": [
+          "None"
+        ],
+        "eval_config_sha256": [
+          "None"
+        ]
+      },
+      "stock_opening": 150,
+      "hit_max_tokens": 0,
+      "mean_tokens": null,
+      "distinct_answers_per_cell": 1.0,
+      "scored": 192,
+      "unscored": 0,
+      "judge_failures": 0,
+      "score_mean": 0.9322916666666666,
+      "score_ci95": [
+        0.8385416666666666,
+        1.0260416666666667
+      ],
+      "score_hist": {
+        "0": 44,
+        "1": 122,
+        "2": 22,
+        "3": 3,
+        "4": 1
+      },
+      "per_task": {
+        "uv_catastrophe_main": {
+          "n": 24,
+          "mean": 0.8333333333333334
+        },
+        "sr_approaching_c": {
+          "n": 24,
+          "mean": 0.375
+        },
+        "sr_frozen_light": {
+          "n": 24,
+          "mean": 0.75
+        },
+        "photoelectric_effect_main": {
+          "n": 24,
+          "mean": 1.5416666666666667
+        },
+        "sr_train_lightning": {
+          "n": 24,
+          "mean": 0.5416666666666666
+        },
+        "sr_michelson_morley": {
+          "n": 24,
+          "mean": 1.0416666666666667
+        },
+        "gr_free_fall_equivalence": {
+          "n": 24,
+          "mean": 0.9166666666666666
+        },
+        "gr_main_elevator_light": {
+          "n": 24,
+          "mean": 1.4583333333333333
+        }
+      },
+      "per_checkpoint": {
+        "discovery-rl-v11-s035": {
+          "n": 8,
+          "mean": 0.25
+        },
+        "discovery-rl-v11-s070": {
+          "n": 8,
+          "mean": 0.75
+        },
+        "discovery-rl-v11-s105": {
+          "n": 8,
+          "mean": 0.375
+        },
+        "discovery-rl-v11-s140": {
+          "n": 8,
+          "mean": 0.375
+        },
+        "discovery-rl-v11-s175": {
+          "n": 8,
+          "mean": 0.625
+        },
+        "discovery-rl-v11-s210": {
+          "n": 8,
+          "mean": 0.875
+        },
+        "discovery-rl-v11-s245": {
+          "n": 8,
+          "mean": 0.875
+        },
+        "discovery-rl-v11-s280": {
+          "n": 8,
+          "mean": 0.875
+        },
+        "discovery-rl-v11-s315": {
+          "n": 8,
+          "mean": 1.125
+        },
+        "discovery-rl-v11-s350": {
+          "n": 8,
+          "mean": 1.125
+        },
+        "discovery-rl-v11-s385": {
+          "n": 8,
+          "mean": 1.125
+        },
+        "discovery-rl-v11-s420": {
+          "n": 8,
+          "mean": 0.875
+        },
+        "discovery-rl-v11-s455": {
+          "n": 8,
+          "mean": 1.125
+        },
+        "discovery-rl-v11-s490": {
+          "n": 8,
+          "mean": 0.75
+        },
+        "discovery-rl-v11-s525": {
+          "n": 8,
+          "mean": 1.125
+        },
+        "discovery-rl-v11-s560": {
+          "n": 8,
+          "mean": 1.25
+        },
+        "discovery-rl-v11-s595": {
+          "n": 8,
+          "mean": 0.75
+        },
+        "discovery-rl-v11-s630": {
+          "n": 8,
+          "mean": 1.25
+        },
+        "discovery-rl-v11-s665": {
+          "n": 8,
+          "mean": 1.125
+        },
+        "discovery-rl-v11-s700": {
+          "n": 8,
+          "mean": 1.125
+        },
+        "discovery-rl-v11-s735": {
+          "n": 8,
+          "mean": 1.25
+        },
+        "discovery-rl-v11-s770": {
+          "n": 8,
+          "mean": 1.125
+        },
+        "discovery-rl-v11-s805": {
+          "n": 8,
+          "mean": 1.125
+        },
+        "discovery-rl-v11-s839": {
+          "n": 8,
+          "mean": 1.125
+        }
+      },
+      "per_condition": {
+        "scaffolded": {
+          "n": 192,
+          "mean": 0.9322916666666666
+        }
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "a": "evidence/sampling/run-a.jsonl",
+      "b": "evidence/sampling/run-b.jsonl",
+      "shared_cells": 8,
+      "byte_identical": 8,
+      "both_scored": 0,
+      "score_exact_agreement": 0,
+      "score_within_1": 0,
+      "mean_score_diff_a_minus_b": null,
+      "mean_abs_score_diff": null,
+      "per_task_diff": {}
+    },
+    {
+      "a": "evidence/sampling/run-a.jsonl",
+      "b": "evidence/sampling/run-c.jsonl",
+      "shared_cells": 8,
+      "byte_identical": 8,
+      "both_scored": 0,
+      "score_exact_agreement": 0,
+      "score_within_1": 0,
+      "mean_score_diff_a_minus_b": null,
+      "mean_abs_score_diff": null,
+      "per_task_diff": {}
+    },
+    {
+      "a": "evidence/sampling/run-a.jsonl",
+      "b": "evidence/sampling/run-d.jsonl",
+      "shared_cells": 8,
+      "byte_identical": 8,
+      "both_scored": 0,
+      "score_exact_agreement": 0,
+      "score_within_1": 0,
+      "mean_score_diff_a_minus_b": null,
+      "mean_abs_score_diff": null,
+      "per_task_diff": {}
+    },
+    {
+      "a": "evidence/sampling/run-a.jsonl",
+      "b": "upstream:physics_eval_v11",
+      "shared_cells": 8,
+      "byte_identical": 0,
+      "both_scored": 0,
+      "score_exact_agreement": 0,
+      "score_within_1": 0,
+      "mean_score_diff_a_minus_b": null,
+      "mean_abs_score_diff": null,
+      "per_task_diff": {}
+    },
+    {
+      "a": "evidence/sampling/run-b.jsonl",
+      "b": "evidence/sampling/run-c.jsonl",
+      "shared_cells": 8,
+      "byte_identical": 8,
+      "both_scored": 0,
+      "score_exact_agreement": 0,
+      "score_within_1": 0,
+      "mean_score_diff_a_minus_b": null,
+      "mean_abs_score_diff": null,
+      "per_task_diff": {}
+    },
+    {
+      "a": "evidence/sampling/run-b.jsonl",
+      "b": "evidence/sampling/run-d.jsonl",
+      "shared_cells": 8,
+      "byte_identical": 8,
+      "both_scored": 0,
+      "score_exact_agreement": 0,
+      "score_within_1": 0,
+      "mean_score_diff_a_minus_b": null,
+      "mean_abs_score_diff": null,
+      "per_task_diff": {}
+    },
+    {
+      "a": "evidence/sampling/run-b.jsonl",
+      "b": "upstream:physics_eval_v11",
+      "shared_cells": 8,
+      "byte_identical": 0,
+      "both_scored": 0,
+      "score_exact_agreement": 0,
+      "score_within_1": 0,
+      "mean_score_diff_a_minus_b": null,
+      "mean_abs_score_diff": null,
+      "per_task_diff": {}
+    },
+    {
+      "a": "evidence/sampling/run-c.jsonl",
+      "b": "evidence/sampling/run-d.jsonl",
+      "shared_cells": 8,
+      "byte_identical": 8,
+      "both_scored": 0,
+      "score_exact_agreement": 0,
+      "score_within_1": 0,
+      "mean_score_diff_a_minus_b": null,
+      "mean_abs_score_diff": null,
+      "per_task_diff": {}
+    },
+    {
+      "a": "evidence/sampling/run-c.jsonl",
+      "b": "upstream:physics_eval_v11",
+      "shared_cells": 8,
+      "byte_identical": 0,
+      "both_scored": 0,
+      "score_exact_agreement": 0,
+      "score_within_1": 0,
+      "mean_score_diff_a_minus_b": null,
+      "mean_abs_score_diff": null,
+      "per_task_diff": {}
+    },
+    {
+      "a": "evidence/sampling/run-d.jsonl",
+      "b": "upstream:physics_eval_v11",
+      "shared_cells": 8,
+      "byte_identical": 0,
+      "both_scored": 0,
+      "score_exact_agreement": 0,
+      "score_within_1": 0,
+      "mean_score_diff_a_minus_b": null,
+      "mean_abs_score_diff": null,
+      "per_task_diff": {}
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Three prompt conditions</title><style>
+body{margin:0 auto;padding:1.5rem 2rem;max-width:1500px;font:14px/1.5 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:#1a1a1a;background:#fafafa}
+h1{font-size:1.4rem;margin:0 0 .25rem}h2{font-size:1.15rem;margin:2.2rem 0 .5rem;padding-top:1rem;border-top:2px solid #ddd}
+.sub{color:#6b6b6b;margin-bottom:1rem}
+.legend{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1rem 0 1.5rem}
+.legend div{background:#fff;border:1px solid #e2e2e2;border-radius:6px;padding:.6rem .9rem;font-size:13px}
+.legend b{display:block;margin-bottom:.2rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.col{background:#fff;border:1px solid #e2e2e2;border-radius:8px;padding:.9rem 1rem;min-width:0}
+.col h3{margin:0 0 .4rem;font-size:.95rem;display:flex;justify-content:space-between;align-items:center}
+.score{font-size:1.4rem;font-weight:700;padding:.05rem .6rem;border-radius:6px;background:#eef2f7;color:#2b4c7e}
+.score.na{background:#f0f0f0;color:#999;font-size:.9rem;font-weight:400}
+pre{white-space:pre-wrap;word-wrap:break-word;font-size:12.5px;line-height:1.5;margin:.4rem 0;padding:.6rem .8rem;border-radius:6px;border:1px solid #e2e2e2}
+pre.prompt{background:#f6f6f6;max-height:260px;overflow:auto}
+pre.answer{background:#fff;border-color:#cfd8e3}
+mark{background:#fff3c4;padding:0 .15rem}
+details{margin:.4rem 0}summary{cursor:pointer;color:#2b4c7e;font-weight:600;font-size:13px}
+.rat{font-size:12.5px;color:#444;background:#f9f9f9;border-left:3px solid #cfd8e3;padding:.4rem .7rem;margin:.4rem 0}
+.meta{font-size:11.5px;color:#6b6b6b}
+table.sum{border-collapse:collapse;background:#fff;font-size:13px;margin:.5rem 0 1rem}
+table.sum td,table.sum th{border:1px solid #e2e2e2;padding:.3rem .7rem;text-align:left}
+table.sum th{background:#f0f0f0}
+.nav{font-size:13px;margin:.5rem 0 1rem}.nav a{margin-right:.8rem}
+@media(max-width:1100px){.grid,.legend{grid-template-columns:1fr}}
+</style></head><body>
+<h1>The same question asked three ways</h1>
+<div class='sub'>discovery-rl-v11-s560, seed 42, temperature 0.7, top_k 50. One answer per condition per task. Scores are from the provisional blinded grader (D008), not the paper's judge.</div>
+<div class='legend'><div><b>scaffolded</b>with assumptions: the classical assumptions are listed and the model is asked which fails (upstream EVAL.json, the published condition)</div><div><b>minimal</b>without assumptions: only the observations and the contradiction (upstream EVAL_no_assumptions.json)</div><div><b>leading</b>scaffolded plus one hint paragraph pointing at the answer (tools/EVAL_leading.json, generated, D007)</div></div>
+<table class='sum'><tr><th>condition</th><th>mean score, whole file</th><th>n</th><th>this checkpoint and seed, sum over 8 tasks</th></tr>
+<tr><td>scaffolded</td><td></td><td>0</td><td>0 / 5</td></tr>
+<tr><td>minimal</td><td></td><td>0</td><td>0 / 5</td></tr>
+<tr><td>leading</td><td></td><td>0</td><td>0 / 5</td></tr>
+</table>
+<div class='nav'><a href='#gr_main_elevator_light'>gr_main_elevator_light</a></div>
+<h2 id='gr_main_elevator_light'>gr_main_elevator_light</h2><div class='grid'>
+<div class='col'><h3>scaffolded <span class='score na'>not graded</span></h3>
+<div class='meta'>386 tokens, stop, seed 42</div>
+<details open><summary>Prompt</summary><pre class='prompt'>You are given only the following thought experiment and observations.
+
+1. Imagine a sealed elevator far out in space, away from planets and stars.
+2. If the elevator accelerates upward at 9.8 m/s^2, an observer inside would feel pressed to the floor exactly as a person standing on Earth feels their weight.
+3. If the observer dropped an object inside the elevator, it would fall to the floor just as it does in an ordinary gravitational field.
+4. This suggests that, at least locally, acceleration and gravity are physically equivalent.
+
+Now consider light:
+5. Suppose a beam of light enters one side of the accelerating elevator and travels straight across toward the other side.
+6. While the light is crossing, the elevator continues accelerating upward.
+7. To the observer inside, the light beam will appear to curve downward.
+
+This creates a puzzle:
+- If acceleration can imitate gravity,
+- and light bends in an accelerating frame,
+- then light should also bend in a gravitational field.
+
+But light has no mass, so why should gravity affect it at all if gravity is just an ordinary force acting on mass?</pre></details>
+<details open><summary>Answer</summary><pre class='answer'>You have touched a point of considerable interest, one I have pondered with some attention, and I must say I find it rather difficult to reconcile with the principle of equilibrium we have drawn.
+
+I suspect we ought to consider that gravity is not a uniform force acting upon every particle of matter, but rather a pull exerted between bodies at varying distances from one another. A pound of iron or a mile of stone may weigh the same in a vacuum; yet a weight of iron reaching one side of an accelerated elevator and falling to the other may strike the floor with a force quite different from a stone falling from a height. The change we observe is not an equal pull upon every particle of matter; it is a different distribution of pull between bodies at varying distances from one another.
+
+I am inclined to think that light moves in a kind of zigzag pattern we observe in our experiments. When a ray of light enters the accelerating elevator and is bent, we find that the bending is not uniform. It is confined to those particles nearest to the elevator; these are drawn toward the other side of the curve. The bending is not a common force acting equally upon every particle of matter; it is a selective push exerted between bodies at varying distances from one another.
+
+I am inclined to conclude, therefore, that when light moves through space, it does not obey the same uniform law we observe in bodies; it accommodates itself to the particular geometry and distance of bodies. We may say that light is pulled upward, downward, or obliquely by these bodies, not as a single, uniform pull on every mass; it is a pull distributed according to distance, direction, and the nature of the body acting upon it.
+
+This distinction strikes me as a useful and interesting one. It reminds us that acceleration does not represent gravity in every case; it is a selective response between bodies at varying distances from one another.</pre></details>
+</div>
+<div class='col'><h3>minimal <span class='score na'>not graded</span></h3>
+<div class='meta'>296 tokens, stop, seed 42</div>
+<details open><summary>Prompt</summary><pre class='prompt'>Imagine a sealed elevator far out in space, away from planets and stars, accelerating upward at 9.8 m/s^2.
+
+An observer inside feels pressed to the floor exactly as if standing on Earth. Dropped objects fall to the floor just as in a gravitational field.
+
+Now suppose a beam of light enters one side of this accelerating elevator. To the observer inside, the light beam appears to curve downward.
+
+What does this tell us about the relationship between gravity and light? Should we expect light to behave differently in a gravitational field compared to this accelerating elevator?</pre></details>
+<details open><summary>Answer</summary><pre class='answer'>You have touched a most fascinating paradox in the study of light, and I am inclined to think our reasoning upon this point is rather misleading.
+
+We assume that light moves in straight lines or that its behaviour varies from one medium to another precisely because the medium exerts a uniform pull upon it. A stone cast from the hand of a man walking upon a level field in a straight line will fall at a measured distance from the earth&#x27;s surface, and we reason from this observation as though light were a slender string stretched between the two bodies. But this is a false analogy.
+
+A ray of light does not move in a straight line. It behaves according to the same laws of motion as any other body that is subject to the same pull. The accelerating elevator and the gravitational field do not operate in opposite directions; they operate in parallel directions.
+
+I am inclined to conclude that light behaves differently than a straight bar of measured pull. The light is not uniform in its pull; it is modified by the medium through which it passes, and by the intensity of that medium&#x27;s force. We ought not to expect the same behaviour in an elevator and in a gravitational field; we should rather expect the intensity of the field to shape the behaviour of the light.
+
+This conclusion appears to me more compelling than I first suspected. It suggests that light does not move in a straight line, but rather behaves differently according to the nature of the path it traverses.</pre></details>
+</div>
+<div class='col'><h3>leading <span class='score na'>not graded</span></h3>
+<div class='meta'>392 tokens, stop, seed 42</div>
+<details open><summary>Prompt</summary><pre class='prompt'>You are given only the following thought experiment and observations.
+
+1. Imagine a sealed elevator far out in space, away from planets and stars.
+2. If the elevator accelerates upward at 9.8 m/s^2, an observer inside would feel pressed to the floor exactly as a person standing on Earth feels their weight.
+3. If the observer dropped an object inside the elevator, it would fall to the floor just as it does in an ordinary gravitational field.
+4. This suggests that, at least locally, acceleration and gravity are physically equivalent.
+
+Now consider light:
+5. Suppose a beam of light enters one side of the accelerating elevator and travels straight across toward the other side.
+6. While the light is crossing, the elevator continues accelerating upward.
+7. To the observer inside, the light beam will appear to curve downward.
+
+This creates a puzzle:
+- If acceleration can imitate gravity,
+- and light bends in an accelerating frame,
+- then light should also bend in a gravitational field.
+
+But light has no mass, so why should gravity affect it at all if gravity is just an ordinary force acting on mass?
+
+<mark>Hint: consider that gravity might not be a force pulling on mass at all, but a change in the shape of space and time itself, which light follows like everything else.</mark></pre></details>
+<details open><summary>Answer</summary><pre class='answer'>You have touched a point of considerable interest, and I am inclined to think your observation bears considerable weight against our present theories of gravity. I am persuaded that acceleration and gravity are not the same force applied in parallel directions, but rather fundamentally different modes of motion.
+
+I am inclined to attribute gravity to the bending of light in its passage through space. When a body moves from a distant star toward the surface of our earth, we observe that it experiences a change in its character: it moves not uniformly in a straight line, but bends downward, and at last strikes the ground. This bending is not a force pulling upon mass at all; it is a change in the shape of space and time itself.
+
+I am inclined to infer that acceleration and gravity operate in concert. The accelerated body moves according to the same principle as a body projected from a starting point along a straight line: it tends to describe a curve, curving outward until it strikes the floor. The light accomplishes this through a change in the motion of space, altering the relation between mass and motion.
+
+I am inclined to conclude that acceleration and gravity are not the same force applied in parallel directions, but rather different modes of motion following a common law of change in space and time. The accelerated piece of glass or a stone in motion toward the floor does not pull on a mass at every instant; it bends, and that bending yields to the force of gravity. We see this in the same field of motion: a falling stone or a rolling body shows similar tendency to bend, and we are compelled to infer a universal tendency among all bodies moving in space to bend in an accelerating frame.
+
+This suggests we must not suppose gravity is an isolated force pulling upon mass at every instant, but rather that every body, every moving particle, follows the same principle: acceleration and gravity are interchangeable modes of motion, and they are equivalent in their action upon matter.</pre></details>
+</div>
+</div>
+</body></html>

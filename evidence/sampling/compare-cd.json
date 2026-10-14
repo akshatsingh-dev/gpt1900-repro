@@ -1,0 +1,157 @@
+{
+  "run_a": "evidence/sampling/run-c.jsonl",
+  "run_b": "evidence/sampling/run-d.jsonl",
+  "paired": 8,
+  "matched": 8,
+  "rate": 1.0,
+  "unpaired_a": 0,
+  "unpaired_b": 0,
+  "blocking_setting_differences": {},
+  "environment_differences": {},
+  "verdicts": [
+    {
+      "key": {
+        "checkpoint_name": "discovery-rl-v11-s560",
+        "task_id": "gr_free_fall_equivalence",
+        "prompt_condition": "scaffolded",
+        "mode": "chat",
+        "seed": 42,
+        "sample_index": 0
+      },
+      "match": true,
+      "reason": "identical",
+      "sha_a": "d308668c411ed776d690fe60bf983de472fc75e0483273e5fc60c9cae3942de4",
+      "sha_b": "d308668c411ed776d690fe60bf983de472fc75e0483273e5fc60c9cae3942de4",
+      "tokens_a": 401,
+      "tokens_b": 401,
+      "error_a": null,
+      "error_b": null
+    },
+    {
+      "key": {
+        "checkpoint_name": "discovery-rl-v11-s560",
+        "task_id": "gr_main_elevator_light",
+        "prompt_condition": "scaffolded",
+        "mode": "chat",
+        "seed": 42,
+        "sample_index": 0
+      },
+      "match": true,
+      "reason": "identical",
+      "sha_a": "1a33cead290ed4691af904413fe4924aec8033e3edd71fb76dde2158bbbf5c8b",
+      "sha_b": "1a33cead290ed4691af904413fe4924aec8033e3edd71fb76dde2158bbbf5c8b",
+      "tokens_a": 386,
+      "tokens_b": 386,
+      "error_a": null,
+      "error_b": null
+    },
+    {
+      "key": {
+        "checkpoint_name": "discovery-rl-v11-s560",
+        "task_id": "photoelectric_effect_main",
+        "prompt_condition": "scaffolded",
+        "mode": "chat",
+        "seed": 42,
+        "sample_index": 0
+      },
+      "match": true,
+      "reason": "identical",
+      "sha_a": "4632874916aff7b3b024830e70399ccfc64e0f8bc3ec0986bd10fa0327dacfaf",
+      "sha_b": "4632874916aff7b3b024830e70399ccfc64e0f8bc3ec0986bd10fa0327dacfaf",
+      "tokens_a": 948,
+      "tokens_b": 948,
+      "error_a": null,
+      "error_b": null
+    },
+    {
+      "key": {
+        "checkpoint_name": "discovery-rl-v11-s560",
+        "task_id": "sr_approaching_c",
+        "prompt_condition": "scaffolded",
+        "mode": "chat",
+        "seed": 42,
+        "sample_index": 0
+      },
+      "match": true,
+      "reason": "identical",
+      "sha_a": "8f56937ecdd87912dbe975103cbf7c0bb918f838f9d5dec8ddf381c1e4bf60d7",
+      "sha_b": "8f56937ecdd87912dbe975103cbf7c0bb918f838f9d5dec8ddf381c1e4bf60d7",
+      "tokens_a": 481,
+      "tokens_b": 481,
+      "error_a": null,
+      "error_b": null
+    },
+    {
+      "key": {
+        "checkpoint_name": "discovery-rl-v11-s560",
+        "task_id": "sr_frozen_light",
+        "prompt_condition": "scaffolded",
+        "mode": "chat",
+        "seed": 42,
+        "sample_index": 0
+      },
+      "match": true,
+      "reason": "identical",
+      "sha_a": "e0dedcd31e06200cfc7025eee3fe7daeb40d9d16aba8232c940aeea48e14dfd1",
+      "sha_b": "e0dedcd31e06200cfc7025eee3fe7daeb40d9d16aba8232c940aeea48e14dfd1",
+      "tokens_a": 300,
+      "tokens_b": 300,
+      "error_a": null,
+      "error_b": null
+    },
+    {
+      "key": {
+        "checkpoint_name": "discovery-rl-v11-s560",
+        "task_id": "sr_michelson_morley",
+        "prompt_condition": "scaffolded",
+        "mode": "chat",
+        "seed": 42,
+        "sample_index": 0
+      },
+      "match": true,
+      "reason": "identical",
+      "sha_a": "9357f14902329ae0218f03baefc58e5e16833233b0619f3bb2f0c1292cc89913",
+      "sha_b": "9357f14902329ae0218f03baefc58e5e16833233b0619f3bb2f0c1292cc89913",
+      "tokens_a": 368,
+      "tokens_b": 368,
+      "error_a": null,
+      "error_b": null
+    },
+    {
+      "key": {
+        "checkpoint_name": "discovery-rl-v11-s560",
+        "task_id": "sr_train_lightning",
+        "prompt_condition": "scaffolded",
+        "mode": "chat",
+        "seed": 42,
+        "sample_index": 0
+      },
+      "match": true,
+      "reason": "identical",
+      "sha_a": "158592e3a8e3bee63b06de32b86290901c3be607664d8e7debfd1bf4f68e2a2c",
+      "sha_b": "158592e3a8e3bee63b06de32b86290901c3be607664d8e7debfd1bf4f68e2a2c",
+      "tokens_a": 380,
+      "tokens_b": 380,
+      "error_a": null,
+      "error_b": null
+    },
+    {
+      "key": {
+        "checkpoint_name": "discovery-rl-v11-s560",
+        "task_id": "uv_catastrophe_main",
+        "prompt_condition": "scaffolded",
+        "mode": "chat",
+        "seed": 42,
+        "sample_index": 0
+      },
+      "match": true,
+      "reason": "identical",
+      "sha_a": "bd12a52ee75844f2249b78f7b2234f19e83b2aa69548624060dc110bb3f05cb2",
+      "sha_b": "bd12a52ee75844f2249b78f7b2234f19e83b2aa69548624060dc110bb3f05cb2",
+      "tokens_a": 463,
+      "tokens_b": 463,
+      "error_a": null,
+      "error_b": null
+    }
+  ]
+}

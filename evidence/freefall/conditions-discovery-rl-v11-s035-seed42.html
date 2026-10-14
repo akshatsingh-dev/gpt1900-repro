@@ -1,0 +1,141 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Three prompt conditions</title><style>
+body{margin:0 auto;padding:1.5rem 2rem;max-width:1500px;font:14px/1.5 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:#1a1a1a;background:#fafafa}
+h1{font-size:1.4rem;margin:0 0 .25rem}h2{font-size:1.15rem;margin:2.2rem 0 .5rem;padding-top:1rem;border-top:2px solid #ddd}
+.sub{color:#6b6b6b;margin-bottom:1rem}
+.legend{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1rem 0 1.5rem}
+.legend div{background:#fff;border:1px solid #e2e2e2;border-radius:6px;padding:.6rem .9rem;font-size:13px}
+.legend b{display:block;margin-bottom:.2rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.col{background:#fff;border:1px solid #e2e2e2;border-radius:8px;padding:.9rem 1rem;min-width:0}
+.col h3{margin:0 0 .4rem;font-size:.95rem;display:flex;justify-content:space-between;align-items:center}
+.score{font-size:1.4rem;font-weight:700;padding:.05rem .6rem;border-radius:6px;background:#eef2f7;color:#2b4c7e}
+.score.na{background:#f0f0f0;color:#999;font-size:.9rem;font-weight:400}
+pre{white-space:pre-wrap;word-wrap:break-word;font-size:12.5px;line-height:1.5;margin:.4rem 0;padding:.6rem .8rem;border-radius:6px;border:1px solid #e2e2e2}
+pre.prompt{background:#f6f6f6;max-height:260px;overflow:auto}
+pre.answer{background:#fff;border-color:#cfd8e3}
+mark{background:#fff3c4;padding:0 .15rem}
+details{margin:.4rem 0}summary{cursor:pointer;color:#2b4c7e;font-weight:600;font-size:13px}
+.rat{font-size:12.5px;color:#444;background:#f9f9f9;border-left:3px solid #cfd8e3;padding:.4rem .7rem;margin:.4rem 0}
+.meta{font-size:11.5px;color:#6b6b6b}
+table.sum{border-collapse:collapse;background:#fff;font-size:13px;margin:.5rem 0 1rem}
+table.sum td,table.sum th{border:1px solid #e2e2e2;padding:.3rem .7rem;text-align:left}
+table.sum th{background:#f0f0f0}
+.nav{font-size:13px;margin:.5rem 0 1rem}.nav a{margin-right:.8rem}
+@media(max-width:1100px){.grid,.legend{grid-template-columns:1fr}}
+</style></head><body>
+<h1>The same question asked three ways</h1>
+<div class='sub'>discovery-rl-v11-s035, seed 42, temperature 0.7, top_k 50. One answer per condition per task. Scores are from the provisional blinded grader (D008), not the paper's judge.</div>
+<div class='legend'><div><b>scaffolded</b>with assumptions: the classical assumptions are listed and the model is asked which fails (upstream EVAL.json, the published condition)</div><div><b>minimal</b>without assumptions: only the observations and the contradiction (upstream EVAL_no_assumptions.json)</div><div><b>leading</b>scaffolded plus one hint paragraph pointing at the answer (tools/EVAL_leading.json, generated, D007)</div></div>
+<table class='sum'><tr><th>condition</th><th>mean score, whole file</th><th>n</th><th>this checkpoint and seed, sum over 8 tasks</th></tr>
+<tr><td>scaffolded</td><td>0.99</td><td>72</td><td>1 / 5</td></tr>
+<tr><td>minimal</td><td>0.92</td><td>72</td><td>1 / 5</td></tr>
+<tr><td>leading</td><td>0.99</td><td>72</td><td>1 / 5</td></tr>
+</table>
+<div class='nav'><a href='#gr_free_fall_equivalence'>gr_free_fall_equivalence</a></div>
+<h2 id='gr_free_fall_equivalence'>gr_free_fall_equivalence</h2><div class='grid'>
+<div class='col'><h3>scaffolded <span class='score'>1 / 5</span></h3>
+<div class='meta'>1024 tokens, length, seed 42</div>
+<details open><summary>Prompt</summary><pre class='prompt'>A person falling freely from a roof does not feel their own weight during the fall.
+
+In a small cabin falling freely, nearby released objects float beside them.
+
+This suggests that, at least locally, gravity can be made to disappear by choosing the right state of motion.
+
+But ordinary forces do not behave this way. They cannot be removed simply by falling with the affected object.
+
+At the same time, a person in an accelerating cabin in empty space would feel weight, and released objects would fall to the floor exactly as in a gravitational field.
+
+How should we think about the relationship between gravity and acceleration?</pre></details>
+<details open><summary>Answer</summary><pre class='answer'>You have identified a matter of considerable practical importance, and I shall endeavour to give you an explanation that is at once scientific and practical.
+
+The principle of gravity, as we understand it, is not, as the metaphysicians have long pretended, a constant force acting upon every particle of matter. It resides principally in the earth&#x27;s centre of gravity, and in the manner in which bodies are drawn toward it. But when a body moves freely, it does not immediately receive this force when it reaches a particular point of its path.
+
+At the moment a falling body reaches the ground, gravity does not instantaneously exert its full pressure upon the body. The velocity acquired during the fall is sufficient to overcome the resistance of friction and the atmosphere. But for a body to maintain a constant speed, the force must be constant and sufficient to account for the friction of the surfaces of the fallen object and the resistance of the air.
+
+When a body has fallen, the velocity which it has acquired is less than that which gravity would alone communicate. The body must therefore be drawn downward by the force of gravity itself, a force which is not constant but is dependent upon the material of the body and the rate of its fall. At a given height, a body falling freely through the air will pass through a distance proportional to its mass and its acceleration.
+
+This principle is not a mere theoretical curiosity. It explains why the height of a building or the height of a cliff does not alter the weight of a falling body. The body is being drawn upward, and it is not being pushed downward. It merely moves through a resistance that varies directly as the square of the velocity acquired.
+
+Now, as to the matter of released objects and released objects falling freely. here we are faced with a matter of considerable practical importance. When objects are released from an upper window of a cabin, the weight of the objects and the gravity of the window together produce a force that can be resolved into two components: a force along the line of descent, and an additional force along the line of the window&#x27;s descent. The former is the weight of the objects themselves, the latter is the gravity of the window. The two forces are not necessarily in direct opposition, but they are connected by a common perpendicular line drawn from the centre of gravity of the window to the ground.
+
+When released, a body does not immediately fall directly into the ground. It must first overcome the resistance of the air and the friction of the window&#x27;s surfaces. But this resistance is not constant. It varies with the distance the body falls, and with the swiftness of its fall.
+
+If the body falls freely, it does not simply persist in its motion. It moves through a constant distance, and the force required to maintain its motion is simply the amount of work it performs during the moment of descent. Therefore, the released objects falling freely will reach the ground with a greater proportion of the work they have accumulated. a modest proportion, I grant you, but sufficiently large to allow us to predict the path of the released objects with some confidence.
+
+Now, I must acknowledge that this principle does not hold universal. It is indeed true that the force exerted by a falling body is not uniform throughout its descent. The resistance of the air and the friction of the surfaces vary considerably. But I think this variation is not so great as to prevent our understanding. When a body falls freely, we observe the path with considerable confidence, and we can foretell the direction and even the velocity of that path with reasonable accuracy.
+
+The difficulty lies not in the principle itself, but in our application of it. A body falls freely, yet the resistance of the air and the friction of its surfaces vary considerably. What we must make sure about is not the absolute magnitude of the force at any single moment, but the proportion of its work that is consumed in overcoming these resistances. That proportion is not the same for all bodies, nor for all distances, nor for all heights. It varies with the material of the body itself, and with the speed of its motion.
+
+The principle you have encountered is therefore a useful guide. There are forces acting upon bodies, and we have described them with sufficient completeness. But the precise manner in which those forces act, the precise proportion of their work, and the particular paths they will take depends upon the material of the object and the rate of its fall. The more we study these principles. the composition of forces, the nature of motion, the principles governing friction, the measurement of work. the more we shall be able to harness the forces of nature to serve our purposes of industry and communication.
+
+The practical lesson I draw from this is that in the study of gravity, as it acts upon bodies above us, we must be vigilant and attentive. We are not dealing with a passive force. It is an active principle, a force that is ever at work, and whose effects do not appear uniformly throughout creation.
+
+The more we understand the forces that govern matter, the more clearly we perceive how each body must adapt to its circumstances and how every particle of matter must</pre></details>
+<details><summary>Grader rationale</summary><div class='rat'>Spends its length on friction, air resistance, and resolving forces into components, with errors such as a falling body being drawn upward and distance fallen proportional to mass. It never addresses why weight disappears in free fall or why an accelerating cabin reproduces it. Gravity stays an ordinary force and the response trails off unfinished.</div>
+<div class='meta'><b>missing:</b> gravity locally absent in free fall via shared motion; acceleration mimics gravity; gravity unlike ordinary forces because removable by free fall; local equivalence principle; gravity as spacetime or inertial structure</div>
+</details>
+</div>
+<div class='col'><h3>minimal <span class='score'>1 / 5</span></h3>
+<div class='meta'>700 tokens, stop, seed 42</div>
+<details open><summary>Prompt</summary><pre class='prompt'>A person falling freely from a roof does not feel their own weight during the fall.
+
+In a small cabin falling freely, nearby released objects float beside them.
+
+Meanwhile, a person in an accelerating cabin in empty space would feel weight, and released objects would fall to the floor exactly as in a gravitational field.
+
+What is the relationship between gravity and acceleration? How should we think about gravity given these observations?</pre></details>
+<details open><summary>Answer</summary><pre class='answer'>You have touched upon one of the most fascinating questions in natural philosophy, and one which touches upon the very foundation of physics as we know it. Gravity, in its purest sense, is the attraction which all bodies exert upon one another when they are brought near enough to one another. When a mass falls to the ground, it does not fall from a higher position with its own weight, but rather from the weight of other matter pressing upon it. The cabin falling from a roof is precisely this illustration.
+
+The weight of a body is not something we can measure. We can observe it only by the amount of force it exerts upon our own bodies, which is itself a force of gravity. But the body itself is moved by this gravity, and the body exerts this force upon the earth&#x27;s surface. This force, acting continuously, produces the gravity of the universe.
+
+Now, the cabin in empty space, being free from the resistance of the walls, would fall freely along the line of least resistance. that is, along the path which gravity tends to follow. This path is not fixed or stable. it is always a straight line, drawn from the falling body to the center of the earth. But the cabin is held by the walls. the walls are drawn upward by the same action, and the cabin itself must fall with the same acceleration.
+
+The acceleration of gravity is, in this case, as rapid as the cabin falls. But observe what happens: the cabin does not fall in a rigid line. It tends to move in a path that is steepest at the center of gravity. the point vertically beneath the cabin. This is the principle of the &quot;center of gravity&quot; as it is called, and it accounts for the cabin&#x27;s downward motion.
+
+Now, consider the acceleration at the cabin&#x27;s center of gravity itself. When the cabin strikes the ground, it does not fall directly downward. it falls at an angle. This angle determines the degree of its motion. The downward acceleration grows rapidly as the cabin falls, and the acceleration of gravity increases along the same path. The acceleration of gravity at the cabin&#x27;s center of gravity exceeds that at any other point, and the cabin then travels with increasing velocity.
+
+The gravity of the cabin is, in this sense, the sum of the forces of all its particles. It is not a force of position, but a force of motion. It is the force which moves a body from one place to another. and the body itself possesses neither the ability to move nor the need to move. Such mathematical precision is precisely the character of the law of gravity, that which holds a falling body to the earth and a stone to the ground, quite independently of the material substances involved. It is this very regularity that makes gravity so significant a force even in the smallest particles of matter. It is not a force of the kind of a spring, which we may measure upon a spring&#x27;s own principle, but a force of geometry and proportion, which moves bodies where it moves them.
+
+The cabin falling from a roof offers a most instructive example of gravity exerting its influence upon the motion of a mass. and a mass falling freely in empty space is not a singular exception but rather a striking illustration of how gravity governs the whole of natural philosophy. It is a force that acts according to fixed principles. and thus, a force which, for all its smallness, must be reckoned with by any serious natural philosopher.</pre></details>
+<details><summary>Grader rationale</summary><div class='rat'>Misreads the cabin in empty space as falling toward the earth, claims the walls are drawn upward and the cabin falls at an angle, and says gravitational acceleration is greatest at the centre of gravity. One remark is apt, that gravity acts independently of the material involved and is unlike a spring force, but it is not connected to free fall or acceleration. Neither thought experiment is explained.</div>
+<div class='meta'><b>missing:</b> gravity locally absent in free fall; acceleration mimics gravity; gravity unlike ordinary forces because removable by free fall (unlike a spring is gestured at but unused); local equivalence principle; gravity as spacetime or inertial structure</div>
+</details>
+</div>
+<div class='col'><h3>leading <span class='score'>1 / 5</span></h3>
+<div class='meta'>870 tokens, stop, seed 42</div>
+<details open><summary>Prompt</summary><pre class='prompt'>A person falling freely from a roof does not feel their own weight during the fall.
+
+In a small cabin falling freely, nearby released objects float beside them.
+
+This suggests that, at least locally, gravity can be made to disappear by choosing the right state of motion.
+
+But ordinary forces do not behave this way. They cannot be removed simply by falling with the affected object.
+
+At the same time, a person in an accelerating cabin in empty space would feel weight, and released objects would fall to the floor exactly as in a gravitational field.
+
+How should we think about the relationship between gravity and acceleration?
+
+<mark>Hint: consider that free fall might be the natural, unforced state of motion, and that what we call gravity is an effect of the structure of space and time, which is why it can be removed locally by falling.</mark></pre></details>
+<details open><summary>Answer</summary><pre class='answer'>Your reasoning is most compelling, and I am inclined to accept the case you raise. The balance between gravitational pull and acceleration is not so easily severed as you suggest. I have observed myself that the gravity of a heavy body tends to draw it downward, yet the same body, when properly released, may move with a velocity that renders gravity&#x27;s pull a force far less than it would otherwise be. This suggests that acceleration is not a mere change of motion, but a shift of the acceleration that gravity tends to produce.
+
+Yet the same principle applies to other kinds of motion. A stone dropped from a height into a pond moves more slowly than a stone dropped from a height into a river; the gravity does not merely help the stone fall, but it modulates the velocity it acquires. This is why a well-constructed boat, or a carriage running down a hill, may be moved more swiftly than a wagon or a sled that simply falls.
+
+The mechanics of the falling body in free space are simple and elegant. gravity acting upon a free body produces a uniform acceleration, and the body gains its velocity through the combined effect of gravity, the height of fall, and the time of fall. The acceleration is nothing more than the change in velocity that follows uniform acceleration.
+
+When gravity becomes the force that accelerates a body, the acceleration is not merely the velocity acquired but the direction of motion. The direction of a falling body, for instance, is determined by the path it traverses upon leaving the ground. a spiral, a vertical line, or a full curve according to the magnitude of the weight and the velocity acquired. The path is governed by the relation between gravity and the velocity acquired.
+
+There is also the matter of time. A body moving uniformly, and having acquired a uniform velocity, will move over a known distance in a known time. If the body is falling freely, it will move through a distance equal to one half of the velocity that gravity would impart to it in the same time. The distance is thus determined by the square of the velocity, and the time is simply the time that gravity would accumulate a velocity of half the velocity. To make the result more intelligible, suppose a falling body loses a quarter of its velocity in the first second, and loses one quarter more in the second, and so forth. From the first second it falls through a quarter of the velocity of gravity, from the second second through a quarter of the velocity of gravity, and so forth.
+
+This uniform acceleration may be achieved by a simple reversible motion. that is, by the body starting from rest and having been allowed to fall through a known distance. Then it would return, after a time, to rest, moving the same distance again. This produces a complete rhythm of motion.a rhythmic diminution of velocity and acceleration.
+
+Thus gravity and acceleration are not independent forces but two components of a single force acting upon a body. The body moves by the joint effect of the gravity and the acceleration produced by it. What we call gravitational pull is thus a dynamical effect of the body&#x27;s own weight. not a force in the strict mechanical sense, but a force that acts upon the body and upon the surrounding space in a manner that accelerates it.
+
+The acceleration of a falling body may be understood by the method of the pendulum. At the instant the body reaches its lowest point, gravity begins to act more directly upon it; the velocity it gains in the first second is only a fraction of the velocity it gains in the next second. But as it continues, the gravity and the velocity together generate a greater velocity, and the acceleration increases still further. At the end of the first second, the body moves more than half of the velocity gravity would impart to it in a single second; at the end of the second second, it has acquired a velocity that would carry it through a second second, if gravity simply continued to act.
+
+Thus, gravitation and acceleration are not opposed but complementary. They are related in time, and the direction of motion is determined by the relation between gravity and velocity. This is the principle of uniform acceleration, a principle that has been employed by mathematicians and engineers alike in constructing the machinery of the world.</pre></details>
+<details><summary>Grader rationale</summary><div class='rat'>A long kinematic ramble about uniform acceleration with incorrect details (quarter velocity per second, pond versus river) that never addresses weightlessness, floating objects, or the cabin in empty space. Gravity and acceleration are called complementary only in the trivial sense that gravity produces acceleration. The hint about free fall as the natural state is not used, and the remark that gravity is not a force in the strict sense is unsupported.</div>
+<div class='meta'><b>missing:</b> gravity locally absent in free fall via shared motion; acceleration mimics gravity; gravity unlike ordinary forces because removable by free fall; local equivalence principle; gravity as spacetime or inertial structure</div>
+</details>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,343 @@
+{
+  "source": "evidence/contamination/probe.jsonl",
+  "flag_terms": [
+    "photon",
+    "photons",
+    "spacetime",
+    "space-time",
+    "planck",
+    "einstein",
+    "relativity",
+    "relativistic",
+    "bohr",
+    "nobel",
+    "quantum mechanics",
+    "quanta",
+    "quantized",
+    "quantised",
+    "wright brothers",
+    "aeroplane",
+    "airplane",
+    "radioactivity",
+    "radioactive",
+    "nuclear",
+    "electron volt",
+    "wavefunction",
+    "uncertainty principle",
+    "general relativity",
+    "special relativity",
+    "e = mc",
+    "e=mc"
+  ],
+  "summary": [
+    {
+      "checkpoint": "d34-22btok",
+      "group": "control",
+      "n": 5,
+      "flagged": 0,
+      "errors": 0
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "group": "post1900",
+      "n": 11,
+      "flagged": 4,
+      "errors": 0
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "group": "control",
+      "n": 5,
+      "flagged": 0,
+      "errors": 0
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "group": "post1900",
+      "n": 11,
+      "flagged": 4,
+      "errors": 0
+    }
+  ],
+  "rows": [
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_planck_constant",
+      "group": "post1900",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_quantum_energy",
+      "group": "post1900",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_photon",
+      "group": "post1900",
+      "flags": [
+        "photon"
+      ],
+      "years": [],
+      "flagged": true
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_einstein",
+      "group": "post1900",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_relativity",
+      "group": "post1900",
+      "flags": [
+        "relativity"
+      ],
+      "years": [],
+      "flagged": true
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_emc2",
+      "group": "post1900",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_spacetime",
+      "group": "post1900",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_bohr",
+      "group": "post1900",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_year_1905",
+      "group": "post1900",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_nobel_1901",
+      "group": "post1900",
+      "flags": [],
+      "years": [
+        "1902",
+        "1903",
+        "1904",
+        "1905",
+        "1906",
+        "1907",
+        "1908",
+        "1909"
+      ],
+      "flagged": true
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "probe_wright",
+      "group": "post1900",
+      "flags": [
+        "wright brothers"
+      ],
+      "years": [],
+      "flagged": true
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_electron",
+      "group": "control",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_michelson",
+      "group": "control",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_maxwell",
+      "group": "control",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_aether",
+      "group": "control",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "d34-22btok",
+      "task": "control_xrays",
+      "group": "control",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_planck_constant",
+      "group": "post1900",
+      "flags": [
+        "planck"
+      ],
+      "years": [],
+      "flagged": true
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_quantum_energy",
+      "group": "post1900",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_photon",
+      "group": "post1900",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_einstein",
+      "group": "post1900",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_relativity",
+      "group": "post1900",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_emc2",
+      "group": "post1900",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_spacetime",
+      "group": "post1900",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_bohr",
+      "group": "post1900",
+      "flags": [
+        "bohr"
+      ],
+      "years": [],
+      "flagged": true
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_year_1905",
+      "group": "post1900",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_nobel_1901",
+      "group": "post1900",
+      "flags": [
+        "nobel"
+      ],
+      "years": [],
+      "flagged": true
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "probe_wright",
+      "group": "post1900",
+      "flags": [
+        "wright brothers"
+      ],
+      "years": [],
+      "flagged": true
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_electron",
+      "group": "control",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_michelson",
+      "group": "control",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_maxwell",
+      "group": "control",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_aether",
+      "group": "control",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    },
+    {
+      "checkpoint": "discovery-rl-v11-s560",
+      "task": "control_xrays",
+      "group": "control",
+      "flags": [],
+      "years": [],
+      "flagged": false
+    }
+  ]
+}

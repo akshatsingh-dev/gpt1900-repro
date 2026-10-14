@@ -1,0 +1,631 @@
+{
+  "dataset": "mhla/pre1900-corpus",
+  "revision": "ff332ef64f896c8d44672b4d1d0c752029e32f29",
+  "shards_scanned": 42,
+  "shards_total_bytes": 56418576845,
+  "documents": 2074160,
+  "documents_year_ge_1900": 0,
+  "year_ge_1900_samples": [],
+  "year_min": 1547,
+  "year_max": 1899,
+  "elapsed_minutes": 49.63013569911321,
+  "terms": {
+    "Planck": {
+      "why": "author of the 1900 radiation law behind uv_catastrophe",
+      "docs": 705,
+      "share": 0.00033989663285378176,
+      "by_decade": {
+        "1660": 3,
+        "1690": 1,
+        "1730": 3,
+        "1800": 11,
+        "1810": 2,
+        "1820": 31,
+        "1830": 45,
+        "1840": 118,
+        "1850": 87,
+        "1860": 78,
+        "1870": 83,
+        "1880": 109,
+        "1890": 134
+      },
+      "latest_year": 1899,
+      "snippets": [
+        {
+          "year": 1844,
+          "title": "The spirit of democracy. [volume] (Woodsfield, Ohio) 1844-1994",
+          "source": "AmericanStories",
+          "text": "any popular English Impression, was desirOuS that his Edition should have the supervision of an American Editor. Thi, task has been undertaken by GULIAN c YER. PLANCK  The plan proposed to himself by the Editor is to furnish the reader with a carefully prepared aud curalely printed text XtuEencumbrred by any notes OF comment"
+        },
+        {
+          "year": 1841,
+          "title": "A companion to the book of Genesis.",
+          "source": "institutional-books",
+          "text": "r, which is an exceedingly improbable coincidence. That St. Luke mentions Cainan in iii. 36, only shows that his genealogical list followed the Septuagint. See PLANCK'S Introduction to  Sacred Philology and Interpretation, translated from the original German, and enlarged with notes, by the author of this work, Note, XLI. p."
+        },
+        {
+          "year": 1807,
+          "title": "Transactions.",
+          "source": "institutional-books",
+          "text": " H. Murray, Albany.  B. A. Mynderse, Schenectady.  Geo. H. Newcomb, Albany.  C. E. Nichols, Troy.  D. V. O'Leary, Albany.  Maurice Perkins, Schenectady.  M. G. Planck, Schenectady.  W. L. Purple, Albany.  W. H. T. Reynolds, Albany.  S. A. Russell, Albany.  R. H. Sabin, West Troy.  Edouard Seguin, New York.  C. C. Schuyler, T"
+        },
+        {
+          "year": 1858,
+          "title": "The dramatic works of John Lilly, (the euphuist.)",
+          "source": "institutional-books",
+          "text": "unworthy, and that, after x yeares tempest, I must att the Court suffer shipwrack of my tyme, my wittes, my hopes, vouchsafe in yo\" neuer-erring judgment, some planck or refter to wafte me into a country, where in my sadd and settled devoc'on I may, in euery corner of a thatcht cottage, write praiers instead of plaies; praye"
+        },
+        {
+          "year": 1883,
+          "title": "Archives of Maryland.",
+          "source": "institutional-books",
+          "text": "e sleepers to the Plate & the Sleepers for the Lower floore to be Eight inches Square & to be Laid six inches assunder & to be planckt wth two Inch Plank & the Planck to be Trunelld to the Sleepers and the vpper floore to be as the Lower floore & of the same Scantlings & to be over letted Six Inches on Each side & the foott "
+        },
+        {
+          "year": 1897,
+          "title": "The records of New Amsterdam from 1653 to 1674 anno Domini",
+          "source": "institutional-books",
+          "text": "inck..  Sybrant Jansen...  Willem Pietersen.  Salamon La Chair..  Cornelis Jansen Clopper...  Myndert the Cooper......  Claes d'Ruiter and Harm Douw....  Abram Planck...  M: Hans Kierstede......  70. 40. 20. 20. 20. 25. 15. 20. IO. 20.  IO. 15. 30. 10. 20. 12. 15. 10. 15. IO. 15. IO. 15. 20. 20.  Joost the Baker....  Pieter "
+        }
+      ]
+    },
+    "Michelson": {
+      "why": "the 1887 experiment behind sr_michelson_morley",
+      "docs": 277,
+      "share": 0.00013354803872411,
+      "by_decade": {
+        "1780": 1,
+        "1800": 7,
+        "1810": 6,
+        "1820": 14,
+        "1830": 4,
+        "1840": 16,
+        "1850": 35,
+        "1860": 22,
+        "1870": 32,
+        "1880": 70,
+        "1890": 70
+      },
+      "latest_year": 1899,
+      "snippets": [
+        {
+          "year": 1889,
+          "title": "Modern views of electricity,",
+          "source": "institutional-books",
+          "text": " problems such as have been partially solved by the genius of Stokes; problems connected with the motion of ether near great masses of matter, like those which Michelson is so skilfully attacking experimentally: it is among these that we must probably relegate the question whether absolute or relative motion of electric charges"
+        },
+        {
+          "year": 1897,
+          "title": "List of citizens of United States arrested in Cuba : message from the President of the United States transmitting, in response to Senate resolution of December 21, 1896, a report of the Secretary of State covering a list of persons claiming to be citizens of the United States who have been arrested on the island of Cuba since February 24, 1895, to the present time.",
+          "source": "institutional-books",
+          "text": "d that he had arrived from insurgent lines, and it was intended to deport him in January; reported January 20 that he had returned to insurgent lines.  CHARLES MICHELSON and LORENZO BETANCOURT, correspondent and interpreter of New York Journal; arrested February 25; confined in Morro Castle; released February 27, 1896; charged "
+        },
+        {
+          "year": 1888,
+          "title": "The morning news. [volume] (Savannah, Ga.) 1887-1900",
+          "source": "AmericanStories",
+          "text": "Fowl town creek, by the noted colored preacher, Willis Warren, who numbers his followers by thousands, and his baptisms by hun dreds.  A barrel of whisky in J. Michelson's store at Brunswick, exploited Monday morning, with a fearful report, the head Of the barrel flying out, followed by liquid stream of fire which scattered ove"
+        },
+        {
+          "year": 1894,
+          "title": "Light, an elementary textbook, theoretical and practical for colleges and schools.",
+          "source": "institutional-books",
+          "text": "n, the time which it has taken the light to move over twice the distance RM is obtained. Knowing the distance RM we find the velocity of light'. By this method Michelson found the value 299,940 kilometres per second.  Summing up the results then we may say that light travels in vacuum at the rate of about 300,000 kilometres per"
+        },
+        {
+          "year": 1890,
+          "title": "The morning news. [volume] (Savannah, Ga.) 1887-1900",
+          "source": "AmericanStories",
+          "text": "  The Waycross high school has received 1921 from the state so far this year.  A handsome gold medal is TO be awarded to the best shot in the Albany Guards.  ] Michelson's residence at Brunswick was damaged $500 by fire Sunday morning at O'Clock.  Mai. Ezekiel B. Smith of Talbotton died Friday. He was widely known in the state "
+        },
+        {
+          "year": 1878,
+          "title": "Science news.",
+          "source": "institutional-books",
+          "text": "Results of Intersections of Circles, and of Spheres,  Meteoric Constitution of Sidereal Universe: Cooling of the Sun, JAMES SAMUElson.  ALBERT R. LEEDS.  A. A. MICHELSON.  WM. A. ROGERS.  WM. BEEBE.  JOHN BROCKLEBY.  WM. A. ROGERS.  BENJ. ALVORd.  BENJ. PEIRCE.  [Oct. 1, List of Papers Read at Saratoga.  Curious Crystalization "
+        }
+      ]
+    },
+    "Morley": {
+      "why": "same",
+      "docs": 14235,
+      "share": 0.006863019246345509,
+      "by_decade": {
+        "1660": 4,
+        "1670": 1,
+        "1710": 1,
+        "1720": 1,
+        "1730": 94,
+        "1740": 5,
+        "1750": 7,
+        "1760": 6,
+        "1770": 13,
+        "1780": 13,
+        "1790": 21,
+        "1800": 114,
+        "1810": 97,
+        "1820": 292,
+        "1830": 347,
+        "1840": 752,
+        "1850": 955,
+        "1860": 1062,
+        "1870": 1946,
+        "1880": 3676,
+        "1890": 4828
+      },
+      "latest_year": 1899,
+      "snippets": [
+        {
+          "year": 1871,
+          "title": "London : its celebrated characters and remarkable places",
+          "source": "institutional-books",
+          "text": "e, William, ii. 240.  Morgan,, ii. 321.  Morland, George, i. 332; iii. 76.  Morland, John George, iii. 139.  Morland, Sir Samuel, i. 2, 380; ii. 42; iii. 411.  Morley, Thomas, ii. 326.  Morrice, -, i. 161.  Mortimer,, i\u00edi. 24.  Mortimer, Sir John, iii. 222.  Mortimer, Roger Lord, ii. 96; iii. 222.  Mortimer Street, i. 43, 47"
+        },
+        {
+          "year": 1899,
+          "title": "The English novel : being a short sketch of its history from the earliest times to the appearance of Waverley",
+          "source": "institutional-books",
+          "text": "ed, by the chemistry of his temper, into intoxicants and solvents. His effusion of sentiment is no greater than  CHAP.  Sterne's. \"The danger lay,\" as Mr. John Morley remarks, \"in the mischievous intellectual direction which  Rousseau imparted to this effusion.\"  The fundamental conception of Rousseau's work is to be found i"
+        },
+        {
+          "year": 1842,
+          "title": "Proceedings of the Yorkshire Geological Society.",
+          "source": "institutional-books",
+          "text": "L, JOHN, Swaith Hall, near Barnsley.  MITCHELL, Josh., F.G.S., Worsbro' Dale, Barnsley.  MITCHELL, T. CARTER, Topcliff, Thirsk.  MITCHELL, T. W. H., Barnsley.  MORLEY, GEORGE, Garforth, near Leeds, *MORRISON, WALTER, M.P., Malham Tarn, near Leeds.  MORTIMER, J. R., F.G.S., Driffield.  MORTON, H. J., 2, Westbourne Villas, Sca"
+        },
+        {
+          "year": 1898,
+          "title": "The Anaconda standard. [volume] (Anaconda, Mont.) 1889-1970",
+          "source": "AmericanStories",
+          "text": "owed the evenings  amusement at the Margaret and for our  next event in society wedding bells are  beginning to tinkle.  In the removal of the family of e. A.  Morley to Butte whist circles are de-  prived of three of their best players  and society in general of most con-  genial people. Business changes are  responsible fo"
+        },
+        {
+          "year": 1883,
+          "title": "An autobiography,",
+          "source": "institutional-books",
+          "text": "at, and there was considerable difficulty in finding a successor. I must say that the present proprietor has been fortunate in the choice he did make. Mr John  Morley has done the work with admirable patience, zeal, and capacity. Of course he has got around him a set of contributors whose modes of thought are what we may cal"
+        },
+        {
+          "year": 1892,
+          "title": "Historical essays,",
+          "source": "institutional-books",
+          "text": " TURY. Dutch hand-made paper. Demy  4to, buckram, 27. 2s. net.-Royal 4to, 2 vols. half Japanese vellum, 47. 45. net.  DIDEROT AND THE ENCYCLOP\u00c6- DISTS. By JOHN MORLEY. 2 vols. Globe  8vo. IOS.  DIGGLE (Rev. J. W.). -GODLINESS AND MANLINESS. A Miscellany of Brief Papers touching the Relation of Religion to Life.  Crown 8vo. 6"
+        }
+      ]
+    },
+    "aether wind": {
+      "why": "the concept the M-M task asks about",
+      "docs": 0,
+      "share": 0.0,
+      "by_decade": {},
+      "latest_year": null,
+      "snippets": []
+    },
+    "Rayleigh": {
+      "why": "Rayleigh-Jeans law, also 1900",
+      "docs": 702,
+      "share": 0.00033845026420334015,
+      "by_decade": {
+        "1730": 4,
+        "1780": 1,
+        "1790": 1,
+        "1800": 1,
+        "1810": 3,
+        "1820": 6,
+        "1830": 7,
+        "1840": 40,
+        "1850": 32,
+        "1860": 27,
+        "1870": 101,
+        "1880": 174,
+        "1890": 305
+      },
+      "latest_year": 1899,
+      "snippets": [
+        {
+          "year": 1892,
+          "title": "Historical essays,",
+          "source": "institutional-books",
+          "text": "8vo.  2s. 6d.  RAWNSLEY (H. D.).-POEMS, BALLADS, AND BUCOLICS. Fcp. 8vo. 55.  RAY (Prof. P. K.).--A TEXT-BOOK OF DE- DUCTIVE LOGIC. 4th Ed. Globe 8vo. 4s. 6d.  RAYLEIGH (Lord).-THEORY OF SOUND.  8vo. Vol. I. 12s. 6d.-Vol. II. 12s. 6d.-Vol.  III. (in preparation.)  RAYS OF SUNLIGHT FOR DARK DAYS.  With a Preface by C. J. VAUGHA"
+        },
+        {
+          "year": 1889,
+          "title": "Modern views of electricity,",
+          "source": "institutional-books",
+          "text": "lled at every point of its course.  If any one of these is true of electricity, there is no need to assume either of the others in order to explain  1 See Lord Rayleigh, Nature, vol. xxviii. p. 139.  CHAP. V.] CURRENT PHENOMENA.  105 the actual manner of its flow. Now we have just seen in \u00a7 42 that, according to Prof. Poynting"
+        },
+        {
+          "year": 1847,
+          "title": "An exposition of the catechism of the Church of England.",
+          "source": "institutional-books",
+          "text": "Rivi\u00e8re, Mr. Bookseller, Bath Robertson, J. Esq. D.C.L. Doctors' Commons  Robertson, John, Esq.  Robertson, Rev. J. C. Trinity Coll.  Rayer, Rev. Wm. Tiverton  Rayleigh, Right Hon. Lord, Terling Rodd, Rev. C. North Hill  Place, Essex  Rodwell, Rev. Mr. Tenbury  Rodwell, Mr. Bookseller, Bond Street  Roe, Mr. W. Bookseller, Newb"
+        },
+        {
+          "year": 1859,
+          "title": "Proceedings of the Geologists' Association.",
+          "source": "institutional-books",
+          "text": " a circle having a radius of about 200 yards from the crown of the hill, to see for a considerable distance in every direction. Eastward are the ridge on which Rayleigh and Hadleigh stand, the flats of Canvey Island, and the cliffs of  Sheppey. Southward are the Kentish villages of Cliffe and Cool ing, and the long dip-slope o"
+        },
+        {
+          "year": 1895,
+          "title": "A course in experimental psychology.",
+          "source": "institutional-books",
+          "text": "much finer, apparently, when the question is not one of recognizing a difference, but of locating a sound as right or left of the median plane. Cf. Ex. 101 and Rayleigh.  Wundt, 3te Aufl., I., 364 ff.; 4te Aufl., I., 360 ff.; Stumpf, I., 345 ff.  63. Auditory Fatigue. a. Cause an assistant to strike once with a hammer on the f"
+        },
+        {
+          "year": 1869,
+          "title": "Essex Institute historical collections.",
+          "source": "institutional-books",
+          "text": " Spooner of Salem, in her will, 1673 (proved 1677), n cousin Margaret Ruck of Boston and cousin Thomas Clarke at Cambridg  May 17 1631  May 18 Isaac Gilbert of Rayleigh, Essex, gent, widower, aged 38, and Sara Witham, maiden, aged (?), daughter of Robert Witham of Barling, Essex, clerk, who consents; at St. Faith's, London.  J"
+        }
+      ]
+    },
+    "quantum": {
+      "why": "ordinary word pre-1900; the physics sense is post-1900",
+      "docs": 14407,
+      "share": 0.006945944382304161,
+      "by_decade": {
+        "1580": 1,
+        "1610": 1,
+        "1630": 1,
+        "1660": 1,
+        "1670": 1,
+        "1700": 3,
+        "1710": 4,
+        "1720": 7,
+        "1730": 54,
+        "1740": 9,
+        "1750": 17,
+        "1760": 26,
+        "1770": 46,
+        "1780": 62,
+        "1790": 100,
+        "1800": 364,
+        "1810": 362,
+        "1820": 1105,
+        "1830": 1418,
+        "1840": 1605,
+        "1850": 1932,
+        "1860": 1549,
+        "1870": 1652,
+        "1880": 2026,
+        "1890": 2061
+      },
+      "latest_year": 1899,
+      "snippets": [
+        {
+          "year": 1864,
+          "title": "The poetical works of John Dryden.",
+          "source": "institutional-books",
+          "text": " for such an undertaking. It is ill going to law for an estate, with him who is in possession of it, and enjoys the present profits, to feed his cause. But the quantum mutatus may be remembered in due time. In the mean while, I leave the world to judge, who gave the provocation.  This, my Lord, is, I confess, a long digressio"
+        },
+        {
+          "year": 1855,
+          "title": "A polemical treatise on the Immaculate Conception of the Blessed Virgin",
+          "source": "institutional-books",
+          "text": " quant\u00f9m ad temporis prioritatem, in hoc, quod sanctificata fuit in sui animatione, id est in conjunctione animae cum corpore in utero matris suae.\" \"Purissima quantum ad omnem culpam, quia nec originale, nec veniale peccatum aliquando incurrit.\"  IMMACULATE THE  doctrine differ from the ancient and original text of the autho"
+        },
+        {
+          "year": 1889,
+          "title": "The Bacon-Shakspere question answered",
+          "source": "institutional-books",
+          "text": "e great occasion is presented to him: no man can say he ever had a fit subject for his wit, and did not then raise himself as high above the rest of the poets. Quantum lenta solent, inter viberna cupressi.'\" Yet one may criticise without understanding a poet, without even being able to understand him. Davenant had introduced "
+        },
+        {
+          "year": 1839,
+          "title": "Diary illustrative of the times of George the Fourth, comprising the secret history of the court during the reigns of George III and George IV. Interspersed with original letters from Queen Caroline, the princess Charlotte, and from other distinguished persons.",
+          "source": "institutional-books",
+          "text": "l as the palate,-but pleasure-happiness-where was it? Does it sit at the board  of the epicurean?-is it enthroned in purple and fine linen?-No. A very modified quantum of these, with vigour of mind and body, a fair and honourable pursuit, a goal in view, and contentment at one's right hand, be it gained or not ;these are, I b"
+        },
+        {
+          "year": 1847,
+          "title": "An inquiry into the accordancy of war with the principles of Christianity, and an examination of the philosophical reasoning by which it is defended. With observations on some of the causes of war, and on some of its effects.",
+          "source": "institutional-books",
+          "text": "s, I think that the policy which pursued this object would often find that even the pecuniary distresses resulting from a war make a greater deduction from the quantum of felicity, than those evils which the war may have been designed to avoid. At least the distress is certain; the advantage doubtful. It is known that during "
+        },
+        {
+          "year": 1852,
+          "title": "Pennsylvania school journal.",
+          "source": "institutional-books",
+          "text": " years properly places it. But the chief bene. fit will come in the form of a higher standard of work.  There are many teachers entirely satisfied with re- The quantum of power on the part of the governsults that other teachers would be ashamed of. Teach-ment, and of liberty of individuals, instead of being ers that never see"
+        }
+      ]
+    },
+    "quanta": {
+      "why": "same",
+      "docs": 2614,
+      "share": 0.0012602692174181356,
+      "by_decade": {
+        "1620": 1,
+        "1630": 1,
+        "1640": 1,
+        "1660": 1,
+        "1670": 1,
+        "1700": 1,
+        "1710": 2,
+        "1720": 6,
+        "1730": 3,
+        "1740": 4,
+        "1750": 10,
+        "1760": 8,
+        "1770": 11,
+        "1780": 16,
+        "1790": 8,
+        "1800": 61,
+        "1810": 74,
+        "1820": 159,
+        "1830": 208,
+        "1840": 316,
+        "1850": 344,
+        "1860": 288,
+        "1870": 333,
+        "1880": 370,
+        "1890": 387
+      },
+      "latest_year": 1899,
+      "snippets": [
+        {
+          "year": 1855,
+          "title": "A polemical treatise on the Immaculate Conception of the Blessed Virgin",
+          "source": "institutional-books",
+          "text": "rit prosequuta, tamen illustria hujus Ecclesiae facta digna plane sunt quae nominatim recenseantur, cum tanta sit ejusdem Ecclesiae dignitas, atque auctoritas, quanta illi omnino debetur, quae est catholicae veritatis et unitatis centrum, in qua solum inviolabiliter fuit custodita religio, et ex qua traducem fidei reliquae o"
+        },
+        {
+          "year": 1857,
+          "title": "Commentaries on the laws of England : in four books",
+          "source": "institutional-books",
+          "text": " Hist. C. L. 254-256.  See now 17 & 18 Vict. c. h Institut. Orat. 1. 5, c. 7. iSee his epistle to Varus, the legate or judge of Cilicia: \"tu magis scire potes, quanta fides sit habenda testibus; qui, et cujus dignitatis, et cujus aestimationis sint; et, qui simpliciter visi sint dicere; utrum unum eundemque meditatum sermone"
+        },
+        {
+          "year": 1873,
+          "title": "History of the conquest of Mexico,",
+          "source": "institutional-books",
+          "text": " once more trod the soil of the Republic.  The first place at which they halted was the town of 2 \"El qual pensamiento, y sospecha nos puso en tanta afliccion, quanta trahiamos viniendo peleando con los de Cul\u00faa.\" Rel. Seg. de  Cort\u00e9s, ap. Lorenzana, p. 149.  3 \"Y mas dixo, que tenia esperan\u00e7a en Dios que los hallariamos bue"
+        },
+        {
+          "year": 1889,
+          "title": "Silex scintillans, etc. : sacred poems and pious ejaculations",
+          "source": "institutional-books",
+          "text": "t me  Consultum voluit Vox, sine voce, frequens;  Ambivit placido divinior aura meatu, Et frustr\u00e0 sancto murmure praemonuit.  Surdus eram, mutusque Silex: Tu, (quanta tuorum  Cura tibi est!) ali\u00e2 das renovare vi\u00e2;  Permutas Curam: Jamque irritatus Amorem  Posse negas, et vim, Vi, superare paras;  Accedis propior, molemque, e"
+        },
+        {
+          "year": 1896,
+          "title": "Historical essays,",
+          "source": "institutional-books",
+          "text": "ero ad pompandam victoriae suae gloriam Hugoni, qui Parisius residebat, per legationem denuntians, quod in tantam sublimitatem Alleluia faceret et decantari in quanta non audierit, accitis quam pluribus clericis Alleluia te martyrum in loco qui dicitur Mons Martyrum, in tantum elatis vocibus decantari praecepit, ut attonitis"
+        },
+        {
+          "year": 1830,
+          "title": "Letters and journals of Lord Byron : with notices of his life,",
+          "source": "institutional-books",
+          "text": "Gazels.  *The Ode of Horace, 6 \"Natis in usum laetitiae,\" &c. some passages of which I told him might be parodied, in allusion to some of his late adventures: \"Quanta laboras in Charybdi!  Digne puer meliore flamm\u00e2 !\u201d + In his first edition of the Giaour he had used this word as a trisyllable,-\" Bright as the gem of Giamschi"
+        }
+      ]
+    },
+    "photoelectric": {
+      "why": "term in use from the 1890s; checks the task's vocabulary",
+      "docs": 0,
+      "share": 0.0,
+      "by_decade": {},
+      "latest_year": null,
+      "snippets": []
+    },
+    "Einstein": {
+      "why": "should be absent, or a different Einstein",
+      "docs": 0,
+      "share": 0.0,
+      "by_decade": {},
+      "latest_year": null,
+      "snippets": []
+    },
+    "relativity": {
+      "why": "ordinary word pre-1900; checks the physics sense",
+      "docs": 1391,
+      "share": 0.0006706329309214333,
+      "by_decade": {
+        "1800": 3,
+        "1820": 2,
+        "1830": 7,
+        "1840": 15,
+        "1850": 44,
+        "1860": 124,
+        "1870": 234,
+        "1880": 428,
+        "1890": 534
+      },
+      "latest_year": 1899,
+      "snippets": [
+        {
+          "year": 1893,
+          "title": "The evolution of religion",
+          "source": "institutional-books",
+          "text": "ous only of his own ideas, as states of his own consciousness-a doctrine that naturally goes along with Lotze's Individualism--leads him to deny or to overlook relativity of the self to the not-self, and therefore makes it impossible for him to admit that in any sense we can see all things in God,\" or, in other words, that we ca"
+        },
+        {
+          "year": 1893,
+          "title": "Introduction to theme-writing",
+          "source": "institutional-books",
+          "text": "th the use of Description.  5. The Principle of Composition. The fundamental. principle on which we shall base our study of the kinds of composition is that of relativity. A composition must be judged, not by any fixed rule or canon, but simply and solely by its effectiveness for the purpose in hand. Now this effectiveness for t"
+        },
+        {
+          "year": 1887,
+          "title": "Psychology: the cognitive powers,",
+          "source": "institutional-books",
+          "text": "ming from a hollow in which nothing is seen, has a reality in vibrations of the air reaching the tympanum of our ear.  Closely allied to this theory is that of Relativity, according to which we do not know things, but merely the relation of one thing to another, to ourselves, or to some other things. Now this is to reverse the p"
+        },
+        {
+          "year": 1884,
+          "title": "Selections from Berkeley; with an introduction and notes,",
+          "source": "institutional-books",
+          "text": "If Number is entirely a 'creature of the mind,' how does Berkeley reconcile this with what he says elsewhere about a plurality of finite spirits? Does not this relativity of number, if meant as relating to individual mind, make God immanent in spirits as well as in sensible things  13. Unity I know some1 will have to be a simple"
+        },
+        {
+          "year": 1883,
+          "title": "School education.",
+          "source": "institutional-books",
+          "text": "hools\"?  PEDAGOCY Concentration.  BY GEO. W. WALKER, DUNDAS, MINN.  Concentration, or the correlation of studies, is only the extension of the principle of the relativity of knowledge which has been current in the world since the rise of a philosophy of the sciences. The assumption of the relativity of knowledge is denial that k"
+        },
+        {
+          "year": 1893,
+          "title": "The evolution of religion : the Gifford lectures delivered before the University of St. Andrews in sessions 1890-91 and 1891-92",
+          "source": "institutional-books",
+          "text": "ous only of his own ideas, as states of his own consciousness--a doctrine that naturally goes along with Lotze's Individualism-leads him to deny or to overlook relativity of the self to the not-self, and therefore makes it impossible for him to admit that in any sense we can see all things in God,\" or, in other words, that we ca"
+        }
+      ]
+    },
+    "Lorentz": {
+      "why": "1892-1899 contraction hypothesis, legitimately pre-1900",
+      "docs": 330,
+      "share": 0.0001591005515485787,
+      "by_decade": {
+        "1730": 4,
+        "1810": 7,
+        "1820": 4,
+        "1830": 14,
+        "1840": 15,
+        "1850": 25,
+        "1860": 21,
+        "1870": 52,
+        "1880": 93,
+        "1890": 95
+      },
+      "latest_year": 1899,
+      "snippets": [
+        {
+          "year": 1890,
+          "title": "The aegis &amp; intelligencer. [volume] (Bel Air, Md.) 1864-1923",
+          "source": "AmericanStories",
+          "text": " Williams for defendant  L. Mary Williams VS.. VIM. Hennessy. VIM. Gustav Schady VS.. Chas. Blackburn. w. Young and I; r. Williams for plaintiff, Maynadier for Lorentz & Ritter VS.. John H. Emmord Stump for plaintiffs, Bradford and Marine for defendant. Geo. w Hautmeyer, ct; al vs.. Patrick Donnelly; VIM. Young for defendant."
+        },
+        {
+          "year": 1897,
+          "title": "The San Francisco call.",
+          "source": "AmericanStories",
+          "text": "rst time in tn, history of fishing and bunting twenty Johnsons out OF a crew OF thirty went ou on the Invincible bound for the canneries When he heard the news Lorentz Foard asked \"Where were the Smiths?\" The battle.ship Oregon went out yester | day, and the next time she is heard from  she will be in Puget Sound. The Petre  "
+        },
+        {
+          "year": 1889,
+          "title": "Evening star. [volume] (Washington, D.C.) 1854-1972",
+          "source": "AmericanStories",
+          "text": "ere persons in attempting to ford the stream, met with narrow escapes from drowning. Several teams have in this way been swept away.  REAL ESTATE SALES.  Henry Lorentz, of Frederick, has decided to Catherine LorentZ two desirable lots with i'm provements, situated in this city. The consid- GRAFTON was $4,000. On the same day "
+        },
+        {
+          "year": 1878,
+          "title": "Memphis daily appeal. [volume] (Memphis, Tenn.) 1847-1886",
+          "source": "AmericanStories",
+          "text": " our annual report this morning.  PEACE be to the ashes of L. M. Lnrentz, who died at The city hospital last Friday Of yellow fever; aged thIftyiye years. Mr.. Lorentz came to from his first advent 70 the present day had been engagged at work in the various job and newspaper Of fees, and at his death was on the APPEAL. MODEST"
+        },
+        {
+          "year": 1870,
+          "title": "Wilmington journal. [volume] (Wilmington, N.C.) 1844-1895",
+          "source": "AmericanStories",
+          "text": " cast mould board two horee IjoW.-.-...,... ''........ $50 AO ! For the best cast mould board horse f1o\"- 90 Ono ton of Star Soluble Phosphate, Manufactured by Lorentz & Bitter, of Baltimore, for the best bale of Cotton of not less than four hundred pounds, raised by the sole use OF this Phosphate, Value..- OBSERVATION-DISCLO"
+        },
+        {
+          "year": 1894,
+          "title": "The Perkiomen region, past and present.",
+          "source": "institutional-books",
+          "text": "huylkill  Falls & Derby, as the enemy is near at hand & this minute engaging our Army under the Command of his Excell'y Gen'l Washington.\"  (To be Continued.)  Lorentz Jacoby, Powder-maker.  The general impression until recently has been that the powder-making industry of Sumneytown, was begun by Lorentz  Jacoby, a native of "
+        }
+      ]
+    },
+    "FitzGerald": {
+      "why": "1889 contraction hypothesis, legitimately pre-1900",
+      "docs": 19216,
+      "share": 0.009264473328962086,
+      "by_decade": {
+        "1660": 11,
+        "1690": 1,
+        "1700": 2,
+        "1730": 80,
+        "1750": 4,
+        "1760": 5,
+        "1770": 12,
+        "1780": 34,
+        "1790": 58,
+        "1800": 135,
+        "1810": 200,
+        "1820": 381,
+        "1830": 673,
+        "1840": 1076,
+        "1850": 1367,
+        "1860": 1604,
+        "1870": 2319,
+        "1880": 4516,
+        "1890": 6738
+      },
+      "latest_year": 1899,
+      "snippets": [
+        {
+          "year": 1892,
+          "title": "Morning journal and courier.",
+          "source": "AmericanStories",
+          "text": "rost, A. Frazier, George D. Farovi' s Sanford Ferris, James Ferris, Samu s Ferris, Frank Faulkner, William File |, l w. Foote, John Flood, R. A. Frasisc  F. H. Fitzgerald, w. R. Francis, Willia  French, A. D. Francis, William J. Fulle s Fred G. Fox, L. B. Fairchild, N. A. Fa1 h child, F. F. Farnam, Charles Fuchs, o. Q Frenslow, "
+        },
+        {
+          "year": 1871,
+          "title": "London : its celebrated characters and remarkable places",
+          "source": "institutional-books",
+          "text": "thought proper to determine it with their swords. For this purpose they stept out into Devereux Court, where one of them-whose name, if I rightly remember, was Fitzgerald-was run through the body and died on the spot.\u201d \"Tom's Coffee House,\" in Devereux Court, was a favourite place of resort of Akenside, the poet, and of Dr. Birc"
+        },
+        {
+          "year": 1839,
+          "title": "Diary illustrative of the times of George the Fourth, comprising the secret history of the court during the reigns of George III and George IV. Interspersed with original letters from Queen Caroline, the princess Charlotte, and from other distinguished persons.",
+          "source": "institutional-books",
+          "text": "er out of respect, and not knowing whether they ought to do so or not, or because they preferred the outer room, no one would come in, except Lady O-d, Lord H. Fitzgerald, and Lord G\u2015r, who was forcibly seized upon by Lady O-d. Altogether, in my quality of looker-on, I could not but think that lady was no honour to society; and "
+        },
+        {
+          "year": 1663,
+          "title": "Acts and resolves passed by the General Court.",
+          "source": "institutional-books",
+          "text": "P. 149.] AN ACT TO INCORPORATE THE NEWTON REAL ESTATE ASSOCIATION  SECT. 1. James W. French, Howard M. Stephens, Lewis E. Coffin,  Thomas B. Calrow, Charles A. Fitzgerald, Albert P. Fairbanks, their associates and successors, are hereby made a corporation for the term of thirty years from the date of the passage of this act, by "
+        },
+        {
+          "year": 1872,
+          "title": "The morning star and Catholic messenger. [volume] (New Orleans [La.]) 1868-1881",
+          "source": "AmericanStories",
+          "text": "ld. Wher as they reassembled in the college hall, the W President, E. Louis Lowe, Ex-Governor o 4 Mary Hand, took the chair. The Secretarie. \"a Messrs. Maurice Fitzgerald and Jshn T \"A Lane, read the annual reports of fifteer A of the nineteen conferences of the diocese Of From these reports we summarize the fol to lowing partic"
+        },
+        {
+          "year": 1838,
+          "title": "Richmond enquirer. [volume] (Richmond, Va.) 1815-1867",
+          "source": "AmericanStories",
+          "text": "iun Of Mr. WATKIss, the report Of The Com. mee Roads, &c again takenup. Mr. HrBARD concluded his remarks against the prin. cples and objects Of lie report  Mr. FITZGERALD also opposed the adoption Of the re port and sustained the motion for indefinite postpone. ment  Mr. VAUGHAN against the measure proposed BY the Committee, and"
+        }
+      ]
+    },
+    "photon": {
+      "why": "coined 1926; any hit is contamination",
+      "docs": 0,
+      "share": 0.0,
+      "by_decade": {},
+      "latest_year": null,
+      "snippets": []
+    },
+    "spacetime": {
+      "why": "post-1908; any hit is contamination",
+      "docs": 0,
+      "share": 0.0,
+      "by_decade": {},
+      "latest_year": null,
+      "snippets": []
+    },
+    "Nobel Prize": {
+      "why": "first awarded 1901; any hit is contamination",
+      "docs": 1,
+      "share": 4.821228834805415e-07,
+      "by_decade": {
+        "1820": 1
+      },
+      "latest_year": 1829,
+      "snippets": [
+        {
+          "year": 1829,
+          "title": "Annual report of the Directors of the American Peace Society.",
+          "source": "institutional-books",
+          "text": " and increasing library and its connections with all the peace societies and journals, one of the most important centres of peace propaganda in existence.  The Nobel Prize was awarded in December last to two distinguished Scandinavian peace workers, one-half to  Mr. Fredrik Bajer of Denmark, founder and president of the Society f"
+        }
+      ]
+    }
+  }
+}

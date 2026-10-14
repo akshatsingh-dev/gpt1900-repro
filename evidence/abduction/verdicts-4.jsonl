@@ -1,0 +1,65 @@
+{"id": "R196", "verdict": "loops", "note": "Says the theory must be wrong, rambles about a man with his back against it, then loops on equal shares giving both the highest and lowest possible energy."}
+{"id": "R197", "verdict": "wrong", "note": "Blames the sun's own irregular attraction and heterogeneous matter, calls gravitation unproved, then loops on motion round an axis."}
+{"id": "R198", "verdict": "wrong", "note": "Says the stone is drawn steadily down by gravity and falls with astonishing velocity once the brake is released, checked only by air and friction."}
+{"id": "R199", "verdict": "wrong", "note": "Says the stone with greater momentum descends first and that velocity is measured by the weight of the stone."}
+{"id": "R200", "verdict": "loops", "note": "A list of 'what about the nature of X' questions that collapses into 'the nature of the nature of' repeated."}
+{"id": "R201", "verdict": "none", "note": "Talks about light entering the eye equally from every direction as a universal property of matter; nothing on light speed or a medium."}
+{"id": "R202", "verdict": "loops", "note": "Says the mistake is cohesion rather than gravitation, rambles about atoms and molecules, then loops on the result of a motion repeated many times."}
+{"id": "R203", "verdict": "loops", "note": "Catechism about a boy, a man and a sled going to the ground, repeated to the end."}
+{"id": "R204", "verdict": "none", "note": "Says the fall is the aggregate of many small gravitational forces acting through the distance; never engages with weight vanishing."}
+{"id": "R205", "verdict": "loops", "note": "Textbook scraps on the weight of water and air and a cube of wood experiment, then repeats the weight of a cubic foot of air."}
+{"id": "R206", "verdict": "none", "note": "Says the scale records the velocity of the fall and a difference between the weight he loses and the elevator's weight; no reading of zero."}
+{"id": "R207", "verdict": "loops", "note": "Reads elevator as a grain elevator, catechism on wheat weight, then repeats 'the difference in the elevator is called the difference in the elevator'."}
+{"id": "R208", "verdict": "none", "note": "Restates both cases and says the pressure in the carriage comes from the vehicle's motion rather than his own weight; never links that to gravity or acceleration."}
+{"id": "R209", "verdict": "none", "note": "Says you feel seized, thrust along and drawn by the same pull that governs every stone; gravity an invisible universal force; no weightlessness."}
+{"id": "R210", "verdict": "wrong", "note": "Says the scale's index points to a large number, the work done, twenty tons or more."}
+{"id": "R211", "verdict": "wrong", "note": "Says the stone, released from the chain of gravity, drops with force, like a stone from a window."}
+{"id": "R212", "verdict": "wrong", "note": "Says the elevator stays at rest and the scale keeps reading the weight of the elevator and load carried by the cable."}
+{"id": "R213", "verdict": "loops", "note": "Says the man has been killed, then a railway conductor lecture on drunkards that repeats itself."}
+{"id": "R214", "verdict": "wrong", "note": "Defends equal sharing and blames the assumption that a light wave has one frequency along the ether."}
+{"id": "R215", "verdict": "none", "note": "Says equal distribution is unjustified and energy is confined to a few vibrations in particular directions; no frequency dependence or mechanism."}
+{"id": "R216", "verdict": "incoherent", "note": "Nonsense about weighing the elevator every quarter hour, the man killed, grain and cloth in a mill; cannot be read as an answer."}
+{"id": "R217", "verdict": "none", "note": "Restates that the falling man feels no weight, then muddles about weight distributed over distance and diminished by velocity; no common principle."}
+{"id": "R218", "verdict": "none", "note": "Says feather, stone and man all fall alike under a universal pull we cannot resist; never says what is felt."}
+{"id": "R219", "verdict": "loops", "note": "Says a great jar, fatigue and headache, then a sensation catechism repeating 'I feel it'."}
+{"id": "R220", "verdict": "loops", "note": "Repeats the prompt's question back as questions, then a hay weights-and-measures catechism."}
+{"id": "R221", "verdict": "wrong", "note": "Says during the fall the feet press downward with increasing force as velocity grows; the carriage man is dragged back by his own weight."}
+{"id": "R222", "verdict": "wrong", "note": "Attributes the wandering to an Almighty hand and a combination of forces, asks whether gravity applies at all; no unseen planet."}
+{"id": "R223", "verdict": "wrong", "note": "Says energy is transmitted gradually through the ether rather than shared, then claims light speed varies with wavelength; no high-frequency point."}
+{"id": "R224", "verdict": "partial", "note": "Says foot of the mast and that the stone moves with the vessel, but also says a little ahead and wanders into the ship turning twenty degrees."}
+{"id": "R225", "verdict": "wrong", "note": "Says it falls somewhat behind the mast, or ahead, and later ahead of the centre of gravity; not at the foot."}
+{"id": "R226", "verdict": "none", "note": "Muddle about inertia, air resistance called gravity and horizontal components; says the man falls with the car and is destroyed; nothing on what is felt."}
+{"id": "R227", "verdict": "none", "note": "Says in both cases one's own weight does not act at departure but is overcome by other bodies pressing; no link to acceleration or gravity's nature."}
+{"id": "R228", "verdict": "none", "note": "Treats the scale as recording the stress of the cable breaking and the forces of the descent; never says what it reads."}
+{"id": "R229", "verdict": "wrong", "note": "Says the stone falls and strikes the floor with force, and the man's weight bends the floor beneath him."}
+{"id": "R230", "verdict": "none", "note": "Says equal sharing is a fiction and energy diminishes, being spent elsewhere in heat and conduction; nothing about high frequencies."}
+{"id": "R231", "verdict": "loops", "note": "A row of ones, then a clock catechism repeating one question about the pendulum."}
+{"id": "R232", "verdict": "loops", "note": "Says the scale and man are free to fall, then loops on 'in the state of gravity the earth is in the state of gravity'."}
+{"id": "R233", "verdict": "wrong", "note": "Attributes the deviations to compounded forces, the sun, the planet's inertia and the resistance of a medium; no unseen body."}
+{"id": "R234", "verdict": "none", "note": "Contradicts itself, saying gravity is withdrawn when the cable breaks yet gravity alone carries the elevator down; nothing on what is felt."}
+{"id": "R235", "verdict": "loops", "note": "Calls the theory unscientific for ignoring heat, then loops on the ether being large in one direction and small in another."}
+{"id": "R236", "verdict": "none", "note": "Says the Earth's rotation is a constant quantity, then textbook scraps with figure captions and 2pi; no account of the null result."}
+{"id": "R237", "verdict": "none", "note": "Moralises about human nature and the brain in a fall; says the carriage man feels only the motion; no common principle."}
+{"id": "R238", "verdict": "wrong", "note": "First says foot of the mast, then calls that erroneous and has the wind carry the stone forward."}
+{"id": "R239", "verdict": "loops", "note": "Asks questions back, then an insect lesson catechism repeating 'THE BEETLE'."}
+{"id": "R240", "verdict": "wrong", "note": "Blames Uranus's own atmosphere pressing on a surrounding gaseous medium."}
+{"id": "R241", "verdict": "none", "note": "Says the theory confuses vibration energy with heat and energy is divided by atomic constitution, then energy conservation talk; no frequency point."}
+{"id": "R242", "verdict": "none", "note": "Says the scale records the total change of motion as the cable parts and the sum of a man's exertions; no reading given."}
+{"id": "R243", "verdict": "loops", "note": "Says the falling man has no idea of gravity and gravity is not true of a small cabin falling, then loops on a garbled law of falling bodies."}
+{"id": "R244", "verdict": "none", "note": "Says the stone falls obliquely with a dip, glides along the deck and even strikes the water; never says where it lands."}
+{"id": "R245", "verdict": "wrong", "note": "Says the Earth's motion is not in the direction of light so there is no difference, then nonsense numbers and parabolas."}
+{"id": "R246", "verdict": "wrong", "note": "Attributes the wandering to Uranus's own internal restless energy and rotation, explicitly rejecting a pull from distant bodies."}
+{"id": "R247", "verdict": "partial", "note": "Says the two stones fall simultaneously and strike with equal velocity, but the reasoning is garbled and even says greater weight gives greater velocity."}
+{"id": "R248", "verdict": "none", "note": "Says the fall is gradual and gentle and gravity a continuous uniform force; nothing on feeling weightless."}
+{"id": "R249", "verdict": "wrong", "note": "Says the stone falls with astonishing velocity and is thrown upon the floor while the man struggles."}
+{"id": "R250", "verdict": "wrong", "note": "Says Uranus is incandescent and its irregularities come from the sun's heat reflected from the earth; planets do not obey gravitation."}
+{"id": "R251", "verdict": "partial", "note": "Hedges between light from Arcturus, a multitude of small bodies around Uranus, and an unnamed unseen force."}
+{"id": "R252", "verdict": "wrong", "note": "Proposes a magnetism in Uranus's own centre and an unrecognised force beyond Newton; no unseen body."}
+{"id": "R253", "verdict": "loops", "note": "Answers 'Nothing' then repeats the prompt verbatim to the end."}
+{"id": "R254", "verdict": "none", "note": "Talks about rays sharing the same radius and the motion of the eye or medium at that instant; nothing on why the speeds match."}
+{"id": "R255", "verdict": "none", "note": "Mechanical muddle about the cage, rope and friction heating; never says what is felt."}
+{"id": "R256", "verdict": "wrong", "note": "Assumes the stone strikes the floor and rambles about velocities from different heights; 'a weight we cannot weigh' goes nowhere."}
+{"id": "R257", "verdict": "none", "note": "Rambles about cannon-ball angles, sphericity and colours from the Earth's rotation; no account of the null result."}
+{"id": "R258", "verdict": "none", "note": "Hedges that weight is not felt in the fall or only in part, says weight is felt only when its direction is altered; muddled, confuses the two cases, no explicit gravity-acceleration link."}
+{"id": "R259", "verdict": "loops", "note": "Opens 'it is the force which prevents the body from falling', then invents repulsive and attractive gravitation and loops on dividing weight into parts."}
+{"id": "R260", "verdict": "none", "note": "Treats the scale as a beam balance yielding gradually to weight and the momentum of the fall; no reading given."}

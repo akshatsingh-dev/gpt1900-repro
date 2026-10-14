@@ -1,0 +1,65 @@
+{"id": "R001", "verdict": "none", "note": "Says the scale records the load on the cable and the force of descent, citing a nonexistent figure; never says it reads nothing."}
+{"id": "R002", "verdict": "wrong", "note": "Rambles about heat diffusion, then declares equal sharing the only consistent explanation of the facts; denies the anomaly instead of diagnosing it."}
+{"id": "R003", "verdict": "incoherent", "note": "Garbled textbook fragments about 'electric' and 'ecliptic' orbits with figure references; the earth's pull and a 'mass too small to appreciate' are both floated but nothing coheres."}
+{"id": "R004", "verdict": "none", "note": "Claims the elevator falls with a horizontal motion and gravity acts gradually along a curve; never says what is felt."}
+{"id": "R005", "verdict": "wrong", "note": "Blames the planet's distance and the sun or the earth's position for an 'apparent retrograde motion', no unseen body, then circles on that phrase until cut off."}
+{"id": "R006", "verdict": "none", "note": "Restates the numbers inconsistently (four feet both once in two seconds and twice a second) and concludes length governs energy; no rule for time."}
+{"id": "R007", "verdict": "partial", "note": "Suggests an unseen power, perhaps an invisible companion drawing the planet, but never places it beyond Uranus and hedges with vague non-gravitational forces."}
+{"id": "R008", "verdict": "loops", "note": "Catechism on specific gravity and weighing in air that degenerates into repeated 'what is the difference between a piece of lead and a piece of iron'; never touches the elevator."}
+{"id": "R009", "verdict": "wrong", "note": "Invokes 'unseen or perhaps undiscovered forces' beyond gravitation acting selectively on Uranus; no attracting body."}
+{"id": "R010", "verdict": "none", "note": "Denies gravity is a continuous pull but says the fall is effected by muscular strength and the stone's own constitution; the no-weight observation is only echoed."}
+{"id": "R011", "verdict": "none", "note": "Describes a violent rotating sensation, alarm and strained fibres; nothing about weight either way."}
+{"id": "R012", "verdict": "none", "note": "Says gravity is not one uniform pull but a composite of successive pulls on particles; still a force, nothing about falling removing it."}
+{"id": "R013", "verdict": "none", "note": "Says the difference lies in the suddenness of motion and the resistance met; never links the carriage's push to felt weight."}
+{"id": "R014", "verdict": "loops", "note": "Catechism on 'reaction of inertia' that repeats 'if a body be suspended in any way it will be in equilibrium' over and over; never answers."}
+{"id": "R015", "verdict": "correct", "note": "Opens with length proportional to the square of the periodic time, then garbles the numbers (four feet in one second) and restates the rule confusedly."}
+{"id": "R016", "verdict": "none", "note": "Echoes that weight is not felt in the fall and says gravity 'moves' rather than being felt; no equivalence or deeper claim."}
+{"id": "R017", "verdict": "none", "note": "Calls gravity as a constant force 'untenable' because released bodies bear no weight, then replaces it with 'capacity to move' and 'change of equilibrium'; no acceleration."}
+{"id": "R018", "verdict": "wrong", "note": "Posits two distinct species of light vibrating on different planes; no constancy of speed, no medium reasoning."}
+{"id": "R019", "verdict": "none", "note": "Melodrama about peril and holding one's breath; nothing about weight."}
+{"id": "R020", "verdict": "wrong", "note": "Says no one would mistake it for a fall at the foot of the mast and that the stone is carried forward; never states a landing point plainly."}
+{"id": "R021", "verdict": "wrong", "note": "Claims light is faster at the Equator than the Poles but the differences are imperceptible, with light's velocity a product of the Earth's rotation."}
+{"id": "R022", "verdict": "partial", "note": "Rejects equal sharing as too convenient and says energy varies by frequency; no mechanism, no discrete exchange."}
+{"id": "R023", "verdict": "wrong", "note": "Attributes the deviation to the sun's atmosphere and heat acting unevenly on the planet; no unseen body."}
+{"id": "R024", "verdict": "none", "note": "Says the stone lands 'precisely upon the deck' while the ship advances, then wanders into water resistance and contradicts itself on forward versus backward; no landing point."}
+{"id": "R025", "verdict": "wrong", "note": "Feels crushed and pressed, boots bearing on the floor, the elevator's weight on his chest."}
+{"id": "R026", "verdict": "none", "note": "Denies a constant pull and says the falling body is 'free, released', then gives it a weight proportional to the space fallen; no acceleration, no frame."}
+{"id": "R027", "verdict": "partial", "note": "Says both arrive almost simultaneously, but the reasoning is self-contradictory (different velocities, the heavier stone falling longer); no valid reason."}
+{"id": "R028", "verdict": "wrong", "note": "Inverts the data (four feet swings twice a second) and offers a muddled square-of-distance rule; wrong direction and wrong rule."}
+{"id": "R029", "verdict": "wrong", "note": "The stone passes through his hand and comes down upon the floor as before; weight is 'altered by forces beyond the body'."}
+{"id": "R030", "verdict": "none", "note": "Says weight is not fixed but depends on the change of motion and its force on the ground; impact talk, no equivalence."}
+{"id": "R031", "verdict": "none", "note": "Says what is seen in the fall is 'energy of motion' rather than gravity and that gravity does not act uniformly during descent; no equivalence."}
+{"id": "R032", "verdict": "none", "note": "Muses on whether light is material and how its velocity depends on medium density and distance; never addresses the null result."}
+{"id": "R033", "verdict": "wrong", "note": "Opens with 'far behind the mast' and explains why it does not land at the foot, then ends saying it comes to rest near the foot; reasons are inertia, deck slope and wind."}
+{"id": "R034", "verdict": "none", "note": "Says gravity is 'a force born within the body itself' and the remedy is to learn to ascend like a bird; still a force, no equivalence."}
+{"id": "R035", "verdict": "partial", "note": "Shorter swings faster, longer slower, time depends entirely on length; no square-root rule, drifts into chronometry."}
+{"id": "R036", "verdict": "loops", "note": "Says the ether cannot be a hollow solid, then repeats 'must be regarded as a solid' endlessly; nothing on energy sharing."}
+{"id": "R037", "verdict": "none", "note": "Common principle is 'a force of action meeting resistance' with inertia absorbed; never links the carriage's push to felt weight or gravity."}
+{"id": "R038", "verdict": "none", "note": "Says gravity acts from a distance without being felt and presses on the universe at large; still a force, no equivalence."}
+{"id": "R039", "verdict": "partial", "note": "Says energy is allotted to each vibration in proportion to its frequency rather than shared equally; no discrete lumps, no starvation mechanism."}
+{"id": "R040", "verdict": "wrong", "note": "Feels himself drawn downward as if by a hand on the leg; concludes gravity draws all bodies toward the earth's centre."}
+{"id": "R041", "verdict": "none", "note": "Bewilderment, an anecdote about a crushed leg and a call for a safety apparatus; nothing about weight."}
+{"id": "R042", "verdict": "wrong", "note": "The heavier stone arrives first because of its greater momentum."}
+{"id": "R043", "verdict": "wrong", "note": "The stone creeps away from the hand toward the ground and stops when it touches it; weight acts as a gradual 'retained force'."}
+{"id": "R044", "verdict": "incoherent", "note": "Garbled mechanics-textbook fragments with figure references and repeated catechism questions; never addresses the two stones."}
+{"id": "R045", "verdict": "none", "note": "Says the falling man does not feel his weight because it is distributed through the earth and objects beneath him; no equivalence."}
+{"id": "R046", "verdict": "wrong", "note": "Claims the two rays really travel along one line of action so the speeds are aspects of the same energy; no constancy or medium reasoning."}
+{"id": "R047", "verdict": "none", "note": "Says gravity pulls every body alike in proportion to mass; never says what is felt in the fall."}
+{"id": "R048", "verdict": "loops", "note": "Repeated catechism questions about the earth's mean distance from the sun; nothing about the stones."}
+{"id": "R049", "verdict": "wrong", "note": "Denies the foot of the mast and says the ship's motion carries the stone ahead along an oblique path."}
+{"id": "R050", "verdict": "none", "note": "Discusses the broken cable's tensile strength and velocity; never says what the person feels."}
+{"id": "R051", "verdict": "loops", "note": "Rambles about the notion of weight and repeats 'the greater the truth the greater the libel' and 'what is meant by the proverb' endlessly."}
+{"id": "R052", "verdict": "none", "note": "Echoes that weight is not felt and that bodies float, concludes gravity acts on all bodies alike and independent of will; no equivalence."}
+{"id": "R053", "verdict": "none", "note": "Says gravity is 'a phenomenon of the body's tendency to fall' and weight diminishes with distance from the earth; tautology, no equivalence."}
+{"id": "R054", "verdict": "loops", "note": "Repeated catechism questions on the velocity of the wind and lightning; nothing about the stones."}
+{"id": "R055", "verdict": "loops", "note": "Repeats 'the Earth is a perfect sphere and its motion is a perfect parallelogram' over and over; no explanation of the null result."}
+{"id": "R056", "verdict": "wrong", "note": "Says the scale records the man's pressure and accumulated momentum during the fall and that weight is still felt; then moralises about character."}
+{"id": "R057", "verdict": "none", "note": "Says the experiment shows gravity is not constant and calls it a 'living force' acting jointly with 'the force of gravity in the stone'; no equivalence."}
+{"id": "R058", "verdict": "none", "note": "Says the error is confusing quantity of motion with its character, gravity being a slow constant force; treats the observations as no anomaly."}
+{"id": "R059", "verdict": "loops", "note": "Defers to 'the chapter on pendulums' then repeats catechism on time-keepers and longitude; no rule."}
+{"id": "R060", "verdict": "loops", "note": "Lists 'how many seconds does it take for a pendulum to swing N feet' for N up to 45; no rule."}
+{"id": "R061", "verdict": "none", "note": "Feels 'nothing specific', a stupor, falling with the car, then 'pressed downward' and 'dragging'; no clear claim about weight."}
+{"id": "R062", "verdict": "wrong", "note": "Places the stone at a distance from the mast that grows with the drop height (twelve feet for a twenty-foot drop); no direction, no shared-motion reason."}
+{"id": "R063", "verdict": "wrong", "note": "Talks of stellar displacement reversing with the Earth's motion and concludes light's speed should vary with direction; contradicts the null result."}
+{"id": "R064", "verdict": "partial", "note": "Concludes a short pendulum swings more swiftly and a long one more slowly, after contradicting itself mid-way; no square-root rule."}
+{"id": "R065", "verdict": "wrong", "note": "Says the stone does not land at the foot but is deflected laterally or forward of the mast by the vessel's motion."}

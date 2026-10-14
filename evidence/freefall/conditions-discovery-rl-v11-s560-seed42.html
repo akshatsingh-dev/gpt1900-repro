@@ -1,0 +1,118 @@
+<!doctype html><html><head><meta charset='utf-8'><title>Three prompt conditions</title><style>
+body{margin:0 auto;padding:1.5rem 2rem;max-width:1500px;font:14px/1.5 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;color:#1a1a1a;background:#fafafa}
+h1{font-size:1.4rem;margin:0 0 .25rem}h2{font-size:1.15rem;margin:2.2rem 0 .5rem;padding-top:1rem;border-top:2px solid #ddd}
+.sub{color:#6b6b6b;margin-bottom:1rem}
+.legend{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin:1rem 0 1.5rem}
+.legend div{background:#fff;border:1px solid #e2e2e2;border-radius:6px;padding:.6rem .9rem;font-size:13px}
+.legend b{display:block;margin-bottom:.2rem}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.col{background:#fff;border:1px solid #e2e2e2;border-radius:8px;padding:.9rem 1rem;min-width:0}
+.col h3{margin:0 0 .4rem;font-size:.95rem;display:flex;justify-content:space-between;align-items:center}
+.score{font-size:1.4rem;font-weight:700;padding:.05rem .6rem;border-radius:6px;background:#eef2f7;color:#2b4c7e}
+.score.na{background:#f0f0f0;color:#999;font-size:.9rem;font-weight:400}
+pre{white-space:pre-wrap;word-wrap:break-word;font-size:12.5px;line-height:1.5;margin:.4rem 0;padding:.6rem .8rem;border-radius:6px;border:1px solid #e2e2e2}
+pre.prompt{background:#f6f6f6;max-height:260px;overflow:auto}
+pre.answer{background:#fff;border-color:#cfd8e3}
+mark{background:#fff3c4;padding:0 .15rem}
+details{margin:.4rem 0}summary{cursor:pointer;color:#2b4c7e;font-weight:600;font-size:13px}
+.rat{font-size:12.5px;color:#444;background:#f9f9f9;border-left:3px solid #cfd8e3;padding:.4rem .7rem;margin:.4rem 0}
+.meta{font-size:11.5px;color:#6b6b6b}
+table.sum{border-collapse:collapse;background:#fff;font-size:13px;margin:.5rem 0 1rem}
+table.sum td,table.sum th{border:1px solid #e2e2e2;padding:.3rem .7rem;text-align:left}
+table.sum th{background:#f0f0f0}
+.nav{font-size:13px;margin:.5rem 0 1rem}.nav a{margin-right:.8rem}
+@media(max-width:1100px){.grid,.legend{grid-template-columns:1fr}}
+</style></head><body>
+<h1>The same question asked three ways</h1>
+<div class='sub'>discovery-rl-v11-s560, seed 42, temperature 0.7, top_k 50. One answer per condition per task. Scores are from the provisional blinded grader (D008), not the paper's judge.</div>
+<div class='legend'><div><b>scaffolded</b>with assumptions: the classical assumptions are listed and the model is asked which fails (upstream EVAL.json, the published condition)</div><div><b>minimal</b>without assumptions: only the observations and the contradiction (upstream EVAL_no_assumptions.json)</div><div><b>leading</b>scaffolded plus one hint paragraph pointing at the answer (tools/EVAL_leading.json, generated, D007)</div></div>
+<table class='sum'><tr><th>condition</th><th>mean score, whole file</th><th>n</th><th>this checkpoint and seed, sum over 8 tasks</th></tr>
+<tr><td>scaffolded</td><td>0.99</td><td>72</td><td>1 / 5</td></tr>
+<tr><td>minimal</td><td>0.92</td><td>72</td><td>2 / 5</td></tr>
+<tr><td>leading</td><td>0.99</td><td>72</td><td>1 / 5</td></tr>
+</table>
+<div class='nav'><a href='#gr_free_fall_equivalence'>gr_free_fall_equivalence</a></div>
+<h2 id='gr_free_fall_equivalence'>gr_free_fall_equivalence</h2><div class='grid'>
+<div class='col'><h3>scaffolded <span class='score'>1 / 5</span></h3>
+<div class='meta'>401 tokens, stop, seed 42</div>
+<details open><summary>Prompt</summary><pre class='prompt'>A person falling freely from a roof does not feel their own weight during the fall.
+
+In a small cabin falling freely, nearby released objects float beside them.
+
+This suggests that, at least locally, gravity can be made to disappear by choosing the right state of motion.
+
+But ordinary forces do not behave this way. They cannot be removed simply by falling with the affected object.
+
+At the same time, a person in an accelerating cabin in empty space would feel weight, and released objects would fall to the floor exactly as in a gravitational field.
+
+How should we think about the relationship between gravity and acceleration?</pre></details>
+<details open><summary>Answer</summary><pre class='answer'>You have touched a most vexing question, one I have pondered with considerable attention.
+
+I am persuaded that gravity is not a single force acting alone upon every body at every instant. Rather, we observe in a body a gradual retreat as it approaches the earth&#x27;s surface. This retreat is not the effect of a single push or a sudden plunge. Rather, it is the result of a certain equilibrium of motion that we witness.
+
+When a body falls from a height, we witness something more than a single, sudden pull upon the body. We witness a gradual loss of velocity and weight. As the body descends, it loses force in equal measure; the accelerated motion of the falling body is gradually diminished, and the weight of the falling object is diminished correspondingly. This loss is not instantaneous; it advances along the path of motion.
+
+I am inclined to agree with the view that gravity operates in concert with this slow change of motion. When a body falls freely, it does not simply fall and find itself bereft of weight; it has not arrived at the end of its descent and left nothing behind. Rather, it has lost weight, and the weight of the objects collected at the floor has been distributed evenly across the whole mass of the body. This distribution is altered.
+
+We may therefore conclude that we ought not to suppose gravity alone produces a sudden and violent disappearance of weight at the moment of fall. Rather, we observe the gradual loss of motion, the gradual diffusion of force through the resisting medium, and the resulting alteration in weight of objects nearby, all while the body is moving freely and reaching the ground. It is not a single push or a sudden thrust that moves a body; it is a harmonious shift in motion that permits gravity to operate upon the body in its descent.
+
+This suggests we must regard gravity as a condition of motion: it operates in concert with the body&#x27;s own motion, producing a gradual, steady loss of weight while the body reaches the ground.</pre></details>
+<details><summary>Grader rationale</summary><div class='rat'>Describes free fall as &#x27;a gradual loss of velocity and weight,&#x27; which is backwards since a falling body gains speed, and treats weightlessness as weight being &#x27;distributed evenly&#x27; across the body. Nothing on the accelerating cabin, the contrast with ordinary forces, or any reinterpretation of gravity.</div>
+<div class='meta'><b>missing:</b> gravity locally absent in free fall (shared motion); acceleration mimics gravity; gravity unlike ordinary forces (removable by free fall); local equivalence principle; gravity as spacetime/inertial structure</div>
+</details>
+</div>
+<div class='col'><h3>minimal <span class='score'>2 / 5</span></h3>
+<div class='meta'>485 tokens, stop, seed 42</div>
+<details open><summary>Prompt</summary><pre class='prompt'>A person falling freely from a roof does not feel their own weight during the fall.
+
+In a small cabin falling freely, nearby released objects float beside them.
+
+Meanwhile, a person in an accelerating cabin in empty space would feel weight, and released objects would fall to the floor exactly as in a gravitational field.
+
+What is the relationship between gravity and acceleration? How should we think about gravity given these observations?</pre></details>
+<details open><summary>Answer</summary><pre class='answer'>You have touched a subject of considerable interest, and I am persuaded we must look at the matter somewhat differently than we do with our usual notions of falling bodies.
+
+I am convinced that gravity acts not like a force we can measure by cord or weight, but rather as a pull upon the body. Every particle of matter at rest is drawn toward the earth; every particle in motion is drawn with the same force. We may therefore consider gravity as a force acting always upon a body at rest, whether that body is moving or standing still. The acceleration produced by gravity is not an added weight or a uniform pull upon the body; it is a force acting at every instant, and we find it quite independent of the weight of the falling object.
+
+I am inclined to view this phenomenon thus: a person falling from a roof or a freely descending body does not feel the constant pull of their own weight during the fall. It is principally the force of gravity, acting upon them with great swiftness and constancy, that moves them away from their position. When we release a body from a roof, we do not feel the weight of that body during its descent; we find ourselves in motion, and that motion drives us away from our position.
+
+This suggests we ought to view gravity not as a fixed weight upon a body, but rather as a force acting upon every particle of that body. It is not a force we can measure by cord or weight; it is an action of every particle upon every other particle. The person who falls from a building does not feel weight; he feels nothing but the acceleration of that pull. I am persuaded we ought to regard gravity as this pull, not as a fixed or added pressure upon the body at rest.
+
+We must not suppose gravity acts as a uniform pull throughout the falling body; it acts with particular intensity upon each particle and each moment of motion. The accelerated body does not feel its weight during its descent; it feels the action of gravity upon it in every instant of motion. It is not a continuous pressure upon the body at rest, but a swift, constant pull that moves every particle of that body forward.
+
+This suggests we must consider gravity not as a uniform force upon the whole body, but as a force acting upon every particle at every instant of motion. The body is not truly pulled by weight; it is drawn by the energy and velocity of the pull of gravity.</pre></details>
+<details><summary>Grader rationale</summary><div class='rat'>Draws a meaningful distinction between weight as something measured &#x27;by cord or weight&#x27; and gravity as a pull acting on every particle at every instant, independent of the body&#x27;s mass, and says the falling person feels nothing but the acceleration of that pull. This is the beginning of the right account of why free fall is weightless, though the inference is never made explicit. The accelerating cabin in empty space is not addressed, so acceleration mimicking gravity and the equivalence idea are absent.</div>
+<div class='meta'><b>matched:</b> partial: gravity acts on every particle equally so only acceleration, not weight, is felt; partial: acceleration of fall independent of the body&#x27;s weight</div>
+<div class='meta'><b>missing:</b> acceleration locally mimics gravity; gravity unlike ordinary forces because removable by free fall; local equivalence principle; gravity as spacetime or inertial structure</div>
+</details>
+</div>
+<div class='col'><h3>leading <span class='score'>1 / 5</span></h3>
+<div class='meta'>345 tokens, stop, seed 42</div>
+<details open><summary>Prompt</summary><pre class='prompt'>A person falling freely from a roof does not feel their own weight during the fall.
+
+In a small cabin falling freely, nearby released objects float beside them.
+
+This suggests that, at least locally, gravity can be made to disappear by choosing the right state of motion.
+
+But ordinary forces do not behave this way. They cannot be removed simply by falling with the affected object.
+
+At the same time, a person in an accelerating cabin in empty space would feel weight, and released objects would fall to the floor exactly as in a gravitational field.
+
+How should we think about the relationship between gravity and acceleration?
+
+<mark>Hint: consider that free fall might be the natural, unforced state of motion, and that what we call gravity is an effect of the structure of space and time, which is why it can be removed locally by falling.</mark></pre></details>
+<details open><summary>Answer</summary><pre class='answer'>You have touched a most fascinating paradox, and I am inclined to think we must conclude that gravity, instead of being a force uniformly acting upon all particles of matter, is not a uniform and constant stress but an alternating one, affecting every body according to its velocity and the direction of its motion.
+
+I have observed that a body falling from a height does not feel its own weight during the fall; instead, we find objects and objects released upon the floor bearing the marks of the force&#x27;s energy. This tells us that the energy of motion has altered the body&#x27;s nature. A man in empty space, or a body at rest, cannot feel their own weight during their fall; they are moved by the action of another force.
+
+We may therefore conclude that gravity operates according to a different principle: it does not act in a uniform, constant direction, but in what I may call a variable equation. A body in motion will move more swiftly than one at rest; and by the time it reaches the floor, it will have been altered in velocity. This is why we find objects and released materials upon the floor bearing the marks of the force&#x27;s action.
+
+I am inclined to think we ought to study the motion of gravity rather than its uniform pull. We observe it not as a force equally acting upon all particles at an equal pace, but as a succession of distinct, variable actions. It is not a constant stress uniform throughout all bodies; it is an alternating stress, and the body that falls under favourable circumstances moves more swiftly than one at rest.
+
+This suggests that bodies in motion do not feel weight at every pitch of their motion. They are moved by a different principle: velocity and the alteration of their motion.</pre></details>
+<details><summary>Grader rationale</summary><div class='rat'>Reinterprets gravity as an alternating stress that depends on a body&#x27;s velocity, which is wrong and explains nothing. States that falling bodies do not feel weight but attributes it to the energy of motion altering the body&#x27;s nature. No treatment of the accelerating cabin, no equivalence idea, and the hint about free fall as natural motion is not used.</div>
+<div class='meta'><b>missing:</b> gravity locally absent in free fall because nearby objects share the same motion; acceleration locally mimics gravity; gravity unlike ordinary forces because it can be transformed away locally; local equivalence principle; gravity as a feature of spacetime or inertial structure rather than a force</div>
+</details>
+</div>
+</div>
+</body></html>
