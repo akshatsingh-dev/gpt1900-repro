@@ -7,6 +7,8 @@ block of work. Newest work log entry is at the bottom.
 
 # START HERE: the next thing to do
 
+**14 Oct, done.** The repo is on GitHub, private: https://github.com/akshatsingh-dev/gpt1900-repro. README for readers, `docs/agents.md` for anyone running the tools. Results pack and one-page summary sent to a new collaborator.
+
 **7 Oct, done.** The professor's elevator question in his words to every checkpoint (E049): 0 of 75 say you feel no weight, 23 say weight is still felt, rising with training. The abduction suite (E050): 0 of 140 reach the jump under any phrasing or help, and the in-corpus deduction and induction controls fail as well. Pages `evidence/elevator-final/report.html` and `evidence/abduction/report.html`. Design note `notes/abduction-suite.md`, D009.
 
 **1 Oct, done.** Free fall at n=72 graded and read (E047): hint effect +0.00 against +0.89 on the elevator (E045); given the 1907 observation alone, 0 of 144 answers supply the equivalence. Pages `evidence/freefall/summary.html` and `jump.html`. Paper draft has no placeholders left; memo 5.1, brief and talking points carry both GR tasks.
