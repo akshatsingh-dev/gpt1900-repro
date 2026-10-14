@@ -1,0 +1,10 @@
+$ python3 -c "
+import json
+a = json.load(open('results/physics_eval_v8/generations.json'))
+b = json.load(open('results/physics_eval_v8_det/generations.json'))
+shared = sorted(set(a) & set(b))
+print('v8:', len(a), 'checkpoints | v8_det:', len(b), '| shared:', len(shared))
+print('first few shared:', shared[:3])
+"
+v8: 12 checkpoints | v8_det: 12 | shared: 12
+first few shared: ['discovery-rl-v8-s035', 'discovery-rl-v8-s070', 'discovery-rl-v8-s105']

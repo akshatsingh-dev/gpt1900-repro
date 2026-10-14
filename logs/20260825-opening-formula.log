@@ -1,0 +1,12 @@
+$ python3  # opening formula census
+most common 40-char openings across all v11 outputs (comparison set):
+   39x  'You have touched a matter of considerabl'
+   24x  'You have touched a point of considerable'
+   10x  'You have touched a most vexing question,'
+    8x  'You have touched a point I have long deb'
+    4x  'You have touched a matter I have long po'
+
+v11 outputs examined: 96
+starting "You have touched": 95  (98%)
+all 24 v11 checkpoints, outputs: 192, starting "You have touched": 150 (78%)
+v8 (completion mode) outputs: 288, starting "You have touched": 0

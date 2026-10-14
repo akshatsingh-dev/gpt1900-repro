@@ -1,0 +1,12 @@
+$ python3  # sample counts and any-sample re-test
+completions per task, v11 original : {1: 24}
+completions per task, v11 replication: {3: 24}
+pairs compared: 24
+original == replication sample 1 : 2
+original == ANY replication sample: 2 | which sample index: {0: 2}
+
+completions per task, v8    : {3: 96}
+completions per task, v8_det: {1: 96}
+pairs: 96
+v8_det answer == v8 sample 1      : 0
+v8_det answer == ANY of v8's three: 0

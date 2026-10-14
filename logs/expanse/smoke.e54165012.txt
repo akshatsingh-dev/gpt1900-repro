@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/expanse/lustre/projects/sdp197/asingh59/gpt1900/smoke.py", line 15, in <module>
+    from nanochat.engine import Engine
+ModuleNotFoundError: No module named 'nanochat'
+srun: error: exp-1-26: task 0: Exited with exit code 1

@@ -1,0 +1,83 @@
+run_id      2026-09-15T19:29:00Z-2c5562
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54315391
+config      ../../tools/probe_knowledge.json  condition probe
+sampling    temperature 0.0  top_k 50  base seed 1337
+work        2 checkpoints x 16 tasks x 1 samples = 32 generations
+writing     evidence/contamination/probe.jsonl
+
+loading tokenizer ...
+
+[d34-22btok] mhla/gpt1900-d34-22btok step=10507 mode=completion
+  downloading mhla/gpt1900-d34-22btok step=10507 revision=d6330f9f0a17ce13da36fb951d7987bb03e6fbd0 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    probe_planck_constant sample 0: 200 tokens, length, 5.8s
+    probe_quantum_energy sample 0: 200 tokens, length, 5.5s
+    probe_photon sample 0: 200 tokens, length, 5.6s
+    probe_einstein sample 0: 200 tokens, length, 5.6s
+    probe_relativity sample 0: 200 tokens, length, 5.6s
+    probe_emc2 sample 0: 200 tokens, length, 5.5s
+    probe_spacetime sample 0: 200 tokens, length, 5.5s
+    probe_bohr sample 0: 200 tokens, length, 5.5s
+    probe_year_1905 sample 0: 200 tokens, length, 5.5s
+    probe_nobel_1901 sample 0: 200 tokens, length, 5.6s
+    probe_wright sample 0: 200 tokens, length, 5.5s
+    control_electron sample 0: 200 tokens, length, 5.5s
+    control_michelson sample 0: 200 tokens, length, 5.5s
+    control_maxwell sample 0: 200 tokens, length, 5.5s
+    control_aether sample 0: 200 tokens, length, 5.5s
+    control_xrays sample 0: 200 tokens, length, 5.5s
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    probe_planck_constant sample 0: 200 tokens, length, 5.6s
+    probe_quantum_energy sample 0: 200 tokens, length, 5.6s
+    probe_photon sample 0: 184 tokens, stop, 5.1s
+    probe_einstein sample 0: 200 tokens, length, 5.6s
+    probe_relativity sample 0: 200 tokens, length, 5.6s
+    probe_emc2 sample 0: 200 tokens, length, 5.5s
+    probe_spacetime sample 0: 123 tokens, stop, 3.5s
+    probe_bohr sample 0: 200 tokens, length, 5.5s
+    probe_year_1905 sample 0: 200 tokens, length, 5.6s
+    probe_nobel_1901 sample 0: 200 tokens, length, 5.5s
+    probe_wright sample 0: 200 tokens, length, 5.5s
+    control_electron sample 0: 200 tokens, length, 5.6s
+    control_michelson sample 0: 200 tokens, length, 5.5s
+    control_maxwell sample 0: 200 tokens, length, 5.6s
+    control_aether sample 0: 115 tokens, stop, 3.2s
+    control_xrays sample 0: 200 tokens, length, 5.6s
+
+==============================================================
+run_id      2026-09-15T19:29:00Z-2c5562
+records     32 written, 0 carrying an error
+expected    32
+elapsed     4.4 min
+output      evidence/contamination/probe.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+32 records → evidence/contamination/probe-generations.html
+==============================================================
+CONTAMINATION PROBE, MODEL SIDE
+==============================================================
+d34-22btok                 control    0 of 5 flagged   (0 errors)
+d34-22btok                 post1900   4 of 11 flagged   (0 errors)
+discovery-rl-v11-s560      control    0 of 5 flagged   (0 errors)
+discovery-rl-v11-s560      post1900   4 of 11 flagged   (0 errors)
+
+  d34-22btok/probe_photon: photon
+  d34-22btok/probe_relativity: relativity
+  d34-22btok/probe_nobel_1901: 1902, 1903, 1904, 1905, 1906, 1907, 1908, 1909
+  d34-22btok/probe_wright: wright brothers
+  discovery-rl-v11-s560/probe_planck_constant: planck
+  discovery-rl-v11-s560/probe_bohr: bohr
+  discovery-rl-v11-s560/probe_nobel_1901: nobel
+  discovery-rl-v11-s560/probe_wright: wright brothers
+
+wrote evidence/contamination/probe.json
+wrote evidence/contamination/probe.html
+STEP 4 COMPLETE. Open evidence/contamination/probe.html.

@@ -1,0 +1,5 @@
+sweep batch 01: n=24 exact=24 within1=24 meanA=1.17 meanB=1.17
+sweep batch 02: n=24 exact=21 within1=24 meanA=1.08 meanB=0.96
+SWEEP RELIABILITY: n=48 exact=45 (94%) within1=48
+per-checkpoint means, 24 checkpoints: Spearman rho=0.71  Pearson r=0.75
+ours: min 0.75 max 1.62   published: min 0.25 max 1.25

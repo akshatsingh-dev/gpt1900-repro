@@ -1,0 +1,6 @@
+evidence/freefall/scaffolded.jsonl: 72 of 72 scored -> evidence/freefall/scaffolded.graded.jsonl
+evidence/freefall/minimal.jsonl: 72 of 72 scored -> evidence/freefall/minimal.graded.jsonl
+evidence/freefall/leading.jsonl: 72 of 72 scored -> evidence/freefall/leading.graded.jsonl
+
+graded ids 216   in key 216   ungraded 0
+records written 216   scored 216   grader 'claude-fable-5-1, blinded batches of 24, fresh session per batch, upstream rubric'

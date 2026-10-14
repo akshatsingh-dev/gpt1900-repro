@@ -1,0 +1,30 @@
+==============================================================
+REPORT
+==============================================================
+evidence/prompt-sensitivity/scaffolded.graded.jsonl
+  records 72  errors 0  scored 72  stock opening 72/72  hit max_tokens 0
+  MEAN SCORE 1.36 (n=72)  95% CI 1.22 to 1.50   hist 0:1 1:49 2:17 3:5 4:0 5:0
+evidence/prompt-sensitivity/minimal.graded.jsonl
+  records 72  errors 0  scored 72  stock opening 72/72  hit max_tokens 0
+  MEAN SCORE 1.22 (n=72)  95% CI 1.12 to 1.32   hist 0:0 1:56 2:16 3:0 4:0 5:0
+evidence/prompt-sensitivity/leading.graded.jsonl
+  records 72  errors 0  scored 72  stock opening 72/72  hit max_tokens 0
+  MEAN SCORE 1.64 (n=72)  95% CI 1.46 to 1.83   hist 0:0 1:40 2:20 3:10 4:2 5:0
+upstream:physics_eval_v11_no_assumptions
+  records 72  errors 0  scored 72  stock opening 72/72  hit max_tokens 0
+  MEAN SCORE 1.38 (n=72)  95% CI 1.21 to 1.54   hist 0:7 1:33 2:30 3:2 4:0 5:0
+evidence/prompt-sensitivity/scaffolded.graded.jsonl  vs  evidence/prompt-sensitivity/minimal.graded.jsonl
+  shared 72  byte identical 0  score exact agreement 44/72  mean diff 0.14
+evidence/prompt-sensitivity/scaffolded.graded.jsonl  vs  evidence/prompt-sensitivity/leading.graded.jsonl
+  shared 72  byte identical 0  score exact agreement 40/72  mean diff -0.28
+evidence/prompt-sensitivity/scaffolded.graded.jsonl  vs  upstream:physics_eval_v11_no_assumptions
+  shared 72  byte identical 0  score exact agreement 32/72  mean diff -0.01
+evidence/prompt-sensitivity/minimal.graded.jsonl  vs  evidence/prompt-sensitivity/leading.graded.jsonl
+  shared 72  byte identical 0  score exact agreement 31/72  mean diff -0.42
+evidence/prompt-sensitivity/minimal.graded.jsonl  vs  upstream:physics_eval_v11_no_assumptions
+  shared 72  byte identical 0  score exact agreement 40/72  mean diff -0.15
+evidence/prompt-sensitivity/leading.graded.jsonl  vs  upstream:physics_eval_v11_no_assumptions
+  shared 72  byte identical 0  score exact agreement 25/72  mean diff 0.26
+==============================================================
+wrote evidence/prompt-sensitivity/report.json
+wrote evidence/prompt-sensitivity/report.html

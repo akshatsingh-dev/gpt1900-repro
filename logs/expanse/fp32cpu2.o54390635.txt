@@ -1,0 +1,49 @@
+run_id      2026-09-22T10:50:09Z-a51551
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cpu
+determinism False  slurm job 54390635
+config      EVAL.json  condition scaffolded
+sampling    temperature 0.0  top_k 50  base seed 1337
+work        1 checkpoints x 8 tasks x 1 samples = 8 generations
+writing     evidence/dtype-control/fp32-cpu-b.jsonl
+
+loading tokenizer ...
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as float32
+    uv_catastrophe_main sample 0: 498 tokens, stop, 286.1s
+    photoelectric_effect_main sample 0: 518 tokens, stop, 265.7s
+    sr_frozen_light sample 0: 333 tokens, stop, 166.0s
+    sr_approaching_c sample 0: 305 tokens, stop, 139.8s
+    sr_train_lightning sample 0: 377 tokens, stop, 183.9s
+    sr_michelson_morley sample 0: 257 tokens, stop, 119.4s
+    gr_main_elevator_light sample 0: 416 tokens, stop, 190.9s
+    gr_free_fall_equivalence sample 0: 272 tokens, stop, 144.6s
+
+==============================================================
+run_id      2026-09-22T10:50:09Z-a51551
+records     8 written, 0 carrying an error
+expected    8
+elapsed     25.4 min
+output      evidence/dtype-control/fp32-cpu-b.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+################ COMPARE vs V100 bf16-emulated run-a ################
+==============================================================
+RUN COMPARISON
+==============================================================
+A  evidence/dtype-control/fp32-cpu.jsonl   8 records
+B  evidence/dtype-control/fp32-cpu-b.jsonl   8 records
+
+paired records    8
+
+  identical                        8
+
+REPRODUCTION RATE  8 / 8  = 100.0%
+==============================================================
+
+wrote evidence/dtype-control/compare-cpu-ab.json
+wrote evidence/dtype-control/compare-cpu-ab.html
+8 records → evidence/dtype-control/generations-cpu-b.html

@@ -1,0 +1,12 @@
+$ ls results/physics_eval_v11 results/physics_eval_v11_replication
+results/physics_eval_v11:
+best_generations.md  generations.json  results_judged.json  summary.txt
+results/physics_eval_v11_replication:
+comparison.txt  generations.json
+
+$ python3  # paired comparison
+v11 checkpoints: 24 | replication checkpoints: 3
+shared checkpoints: 3 -> ['discovery-rl-v11-s560', 'discovery-rl-v11-s630', 'discovery-rl-v11-s735']
+prompts identical: 24 | different: 0
+answers identical: 2 | different: 22 | total pairs: 24
+shared opening chars among differing pairs -> min 80 max 1647 mean 904

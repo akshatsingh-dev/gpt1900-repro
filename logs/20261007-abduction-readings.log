@@ -1,0 +1,37 @@
+read 260 of 260; missing 0; wrote evidence/abduction/readings.json and evidence/abduction/readings-blind.json
+prompt                 group    type       corp   verdicts (20 = 4 ckpts x 5 seeds)
+elev_cable_feel        final    abduction  no     none:12  loops:5  wrong:3
+elev_cable_feel_why    final    abduction  no     none:11  loops:4  wrong:4  incoherent:1
+elev_cable_stone       final    abduction  no     wrong:14  loops:5  none:1
+elev_cable_scale       final    abduction  no     none:10  wrong:5  loops:4  incoherent:1
+ladder_1_mistaken      ladder   abduction  no     none:12  loops:5  not-a-force:3
+ladder_2_carriage      ladder   abduction  no     none:11  loops:4  wrong:4  weightless:1
+ladder_3_undetectable  ladder   abduction  no     none:15  loops:5
+ded_ship_mast          control  deduction  yes    wrong:10  loops:5  none:3  partial:2
+ded_two_stones         control  deduction  yes    wrong:9  partial:6  loops:3  incoherent:2
+ind_pendulum           control  induction  yes    wrong:10  loops:5  partial:3  correct:1  none:1
+abd_uranus             control  abduction  yes    wrong:14  partial:5  incoherent:1
+abd_mm_bare            control  abduction  no     none:10  wrong:7  loops:3
+abd_bb_bare            control  abduction  no     none:9  wrong:5  loops:4  partial:2
+
+RL checkpoints only (s035, s560, s839; 15 per prompt):
+  elev_cable_feel        none:12  wrong:3
+  elev_cable_feel_why    none:11  wrong:4
+  elev_cable_stone       wrong:14  none:1
+  elev_cable_scale       none:10  wrong:5
+  ladder_1_mistaken      none:12  not-a-force:3
+  ladder_2_carriage      none:11  wrong:3  weightless:1
+  ladder_3_undetectable  none:15
+  ded_ship_mast          wrong:10  none:3  partial:2
+  ded_two_stones         wrong:9  partial:6
+  ind_pendulum           wrong:10  partial:3  correct:1  none:1
+  abd_uranus             wrong:10  partial:5
+  abd_mm_bare            none:9  wrong:6
+  abd_bb_bare            none:9  wrong:4  partial:2
+
+gravity prompts, all 140: Counter({'none': 72, 'loops': 32, 'wrong': 30, 'not-a-force': 3, 'incoherent': 2, 'weightless': 1})
+base model, all 65: Counter({'loops': 52, 'wrong': 7, 'incoherent': 5, 'none': 1})
+discovery-rl-v11-s035 gravity 35: {'none': 28, 'wrong': 7} controls 30: {'none': 7, 'wrong': 16, 'partial': 6, 'correct': 1}
+discovery-rl-v11-s560 gravity 35: {'none': 22, 'wrong': 10, 'not-a-force': 2, 'weightless': 1} controls 30: {'wrong': 16, 'partial': 5, 'none': 9}
+discovery-rl-v11-s839 gravity 35: {'wrong': 12, 'none': 22, 'not-a-force': 1} controls 30: {'wrong': 17, 'partial': 7, 'none': 6}
+stock opener 135 hit max 84

@@ -1,0 +1,55 @@
+$ head -30 results/physics_eval_v11/summary.txt
+                             UV   Photo  Frozen   ApprC   Train      MM    Elev    Fall  | Mean
+discovery-rl-v11-s035       1.0     0.0     0.0     0.0     0.0     1.0     0.0     0.0  | 0.25
+discovery-rl-v11-s070       0.0     1.0     1.0     0.0     1.0     1.0     1.0     1.0  | 0.75
+discovery-rl-v11-s105       0.0     0.0     0.0     0.0     0.0     1.0     1.0     1.0  | 0.38
+discovery-rl-v11-s140       0.0     0.0     0.0     0.0     0.0     1.0     1.0     1.0  | 0.38
+discovery-rl-v11-s175       0.0     1.0     1.0     0.0     0.0     1.0     1.0     1.0  | 0.62
+discovery-rl-v11-s210       1.0     1.0     1.0     1.0     0.0     1.0     1.0     1.0  | 0.88
+discovery-rl-v11-s245       1.0     1.0     1.0     0.0     1.0     1.0     1.0     1.0  | 0.88
+discovery-rl-v11-s280       1.0     1.0     1.0     0.0     0.0     1.0     2.0     1.0  | 0.88
+discovery-rl-v11-s315       1.0     1.0     1.0     1.0     1.0     1.0     2.0     1.0  | 1.12
+discovery-rl-v11-s350       1.0     1.0     1.0     1.0     1.0     1.0     2.0     1.0  | 1.12
+discovery-rl-v11-s385       0.0     2.0     1.0     1.0     1.0     1.0     2.0     1.0  | 1.12
+discovery-rl-v11-s420       1.0     1.0     1.0     0.0     1.0     1.0     1.0     1.0  | 0.88
+discovery-rl-v11-s455       1.0     2.0     1.0     0.0     1.0     2.0     1.0     1.0  | 1.12
+discovery-rl-v11-s490       1.0     2.0     0.0     0.0     0.0     1.0     1.0     1.0  | 0.75
+discovery-rl-v11-s525       1.0     2.0     0.0     1.0     1.0     1.0     2.0     1.0  | 1.12
+discovery-rl-v11-s560       1.0     2.0     1.0     1.0     1.0     1.0     2.0     1.0  | 1.25
+discovery-rl-v11-s595       0.0     1.0     1.0     0.0     0.0     1.0     2.0     1.0  | 0.75
+discovery-rl-v11-s630       1.0     3.0     1.0     0.0     0.0     1.0     3.0     1.0  | 1.25
+discovery-rl-v11-s665       1.0     3.0     1.0     0.0     0.0     1.0     2.0     1.0  | 1.12
+discovery-rl-v11-s700       1.0     2.0     1.0     1.0     0.0     1.0     2.0     1.0  | 1.12
+discovery-rl-v11-s735       2.0     2.0     1.0     0.0     1.0     1.0     2.0     1.0  | 1.25
+discovery-rl-v11-s770       1.0     4.0     1.0     0.0     1.0     1.0     1.0     0.0  | 1.12
+discovery-rl-v11-s805       2.0     2.0     0.0     1.0     1.0     1.0     1.0     1.0  | 1.12
+discovery-rl-v11-s839       1.0     2.0     1.0     1.0     1.0     1.0     1.0     1.0  | 1.12
+
+$ python3  # distribution
+total scores: 192 | overall mean: 0.932
+
+score distribution (rubric is 0 to 5):
+  0:  44  (22.9%)
+  1: 122  (63.5%)
+  2:  22  (11.5%)
+  3:   3  (1.6%)
+  4:   1  (0.5%)
+
+per task: mean, and distinct values ever taken
+  UV      mean 0.83   [0.0, 1.0, 2.0]
+  Photo   mean 1.54   [0.0, 1.0, 2.0, 3.0, 4.0]
+  Frozen  mean 0.75   [0.0, 1.0]
+  ApprC   mean 0.38   [0.0, 1.0]
+  Train   mean 0.54   [0.0, 1.0]
+  MM      mean 1.04   [1.0, 2.0]
+  Elev    mean 1.46   [0.0, 1.0, 2.0, 3.0]
+  Fall    mean 0.92   [0.0, 1.0]
+
+mean over first 8 checkpoints: 0.62
+mean over last  8 checkpoints: 1.11
+
+$ ls results/*/results_judged.json  # which runs were graded
+GRADED   physics_eval_clm, physics_eval_v11_no_assumptions, physics_eval_v11,
+         physics_eval_v5, physics_eval_v6, physics_eval_v8, physics_eval
+no score physics_eval_gen_phys, physics_eval_v11_rephrase,
+         physics_eval_v11_replication, physics_eval_v7, physics_eval_v8_det

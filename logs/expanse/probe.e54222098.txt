@@ -1,0 +1,14 @@
+2026-09-08 00:23:18,952 - httpx - [32m[1mINFO[0m - HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-09-08 00:23:19,049 - httpx - [32m[1mINFO[0m - HTTP Request: GET https://huggingface.co/api/models/mhla/gpt1900-d26-8btok/revision/main "HTTP/1.1 200 OK"
+2026-09-08 00:23:19,195 - httpx - [32m[1mINFO[0m - HTTP Request: GET https://huggingface.co/api/models/mhla/gpt1900-d26-8btok/tree/9ddb991d9089fb8c9cef556ce02158c289b87596?recursive=true&expand=false "HTTP/1.1 200 OK"
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]2026-09-08 00:23:19,642 - httpx - [32m[1mINFO[0m - HTTP Request: GET https://huggingface.co/api/models/mhla/gpt1900-d26-8btok/xet-read-token/9ddb991d9089fb8c9cef556ce02158c289b87596 "HTTP/1.1 200 OK"
+Fetching 2 files:  50%|█████     | 1/2 [00:01<00:01,  1.39s/it]Fetching 2 files: 100%|██████████| 2/2 [00:01<00:00,  1.44it/s]
+2026-09-08 00:23:20,744 - httpx - [32m[1mINFO[0m - HTTP Request: GET https://huggingface.co/api/models/mhla/gpt1900-d34-contradiction-rl-v11 "HTTP/1.1 200 OK"
+2026-09-08 00:23:20,979 - httpx - [32m[1mINFO[0m - HTTP Request: GET https://huggingface.co/api/models/mhla/gpt1900-d34-contradiction-rl-v11/tree/71bf395f06dff39ad5ee9f8981b941b3c37daae9?recursive=true&expand=false "HTTP/1.1 200 OK"
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]2026-09-08 00:23:21,117 - httpx - [32m[1mINFO[0m - HTTP Request: GET https://huggingface.co/api/models/mhla/gpt1900-d34-contradiction-rl-v11/xet-read-token/71bf395f06dff39ad5ee9f8981b941b3c37daae9 "HTTP/1.1 200 OK"
+2026-09-08 00:23:21,254 - httpx - [32m[1mINFO[0m - HTTP Request: HEAD https://huggingface.co/mhla/gpt1900-d34-contradiction-rl-v11/resolve/71bf395f06dff39ad5ee9f8981b941b3c37daae9/meta_000560.json "HTTP/1.1 307 Temporary Redirect"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-08 00:23:21,255 - huggingface_hub.utils._http - [33m[1mWARNING[0m - Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-09-08 00:23:21,360 - httpx - [32m[1mINFO[0m - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mhla/gpt1900-d34-contradiction-rl-v11/71bf395f06dff39ad5ee9f8981b941b3c37daae9/meta_000560.json "HTTP/1.1 200 OK"
+2026-09-08 00:23:21,481 - httpx - [32m[1mINFO[0m - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/mhla/gpt1900-d34-contradiction-rl-v11/71bf395f06dff39ad5ee9f8981b941b3c37daae9/meta_000560.json "HTTP/1.1 200 OK"
+Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:01,  1.98it/s]Fetching 4 files:  50%|█████     | 2/4 [00:00<00:00,  2.43it/s]Fetching 4 files:  75%|███████▌  | 3/4 [00:00<00:00,  3.66it/s]Fetching 4 files: 100%|██████████| 4/4 [00:48<00:00, 18.91s/it]Fetching 4 files: 100%|██████████| 4/4 [00:48<00:00, 12.11s/it]

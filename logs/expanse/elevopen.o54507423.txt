@@ -1,0 +1,106 @@
+run_id      2026-09-28T21:36:02Z-ada5d9
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54507423
+config      ../../tools/EVAL_elevator_open.json  condition open
+sampling    temperature 0.7  top_k 50  base seed 42
+work        4 checkpoints x 2 tasks x 8 samples = 64 generations
+writing     evidence/elevator-open/open.jsonl
+
+loading tokenizer ...
+
+[d34-22btok] mhla/gpt1900-d34-22btok step=10507 mode=completion
+  [cached] d34-22btok
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elevator_open_continue sample 0: 1024 tokens, length, 30.5s
+    elevator_open_continue sample 1: 1024 tokens, length, 28.0s
+    elevator_open_continue sample 2: 1024 tokens, length, 28.0s
+    elevator_open_continue sample 3: 1024 tokens, length, 28.0s
+    elevator_open_continue sample 4: 1024 tokens, length, 28.0s
+    elevator_open_continue sample 5: 1024 tokens, length, 27.9s
+    elevator_open_continue sample 6: 1024 tokens, length, 27.9s
+    elevator_open_continue sample 7: 1024 tokens, length, 28.0s
+    elevator_open_ask sample 0: 1024 tokens, length, 27.9s
+    elevator_open_ask sample 1: 1024 tokens, length, 28.0s
+    elevator_open_ask sample 2: 1024 tokens, length, 27.9s
+    elevator_open_ask sample 3: 1024 tokens, length, 28.0s
+    elevator_open_ask sample 4: 1024 tokens, length, 27.9s
+    elevator_open_ask sample 5: 1024 tokens, length, 28.0s
+    elevator_open_ask sample 6: 1024 tokens, length, 28.0s
+    elevator_open_ask sample 7: 1024 tokens, length, 28.0s
+
+[discovery-rl-v11-s035] mhla/gpt1900-d34-contradiction-rl-v11 step=35 mode=chat
+  [cached] discovery-rl-v11-s035
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elevator_open_continue sample 0: 666 tokens, stop, 18.3s
+    elevator_open_continue sample 1: 517 tokens, stop, 14.2s
+    elevator_open_continue sample 2: 433 tokens, stop, 11.9s
+    elevator_open_continue sample 3: 849 tokens, stop, 23.2s
+    elevator_open_continue sample 4: 444 tokens, stop, 12.2s
+    elevator_open_continue sample 5: 624 tokens, stop, 17.2s
+    elevator_open_continue sample 6: 573 tokens, stop, 15.7s
+    elevator_open_continue sample 7: 1024 tokens, length, 28.1s
+    elevator_open_ask sample 0: 714 tokens, stop, 19.6s
+    elevator_open_ask sample 1: 533 tokens, stop, 14.7s
+    elevator_open_ask sample 2: 831 tokens, stop, 22.8s
+    elevator_open_ask sample 3: 703 tokens, stop, 19.3s
+    elevator_open_ask sample 4: 1024 tokens, length, 27.9s
+    elevator_open_ask sample 5: 774 tokens, stop, 21.0s
+    elevator_open_ask sample 6: 428 tokens, stop, 11.7s
+    elevator_open_ask sample 7: 730 tokens, stop, 19.8s
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elevator_open_continue sample 0: 355 tokens, stop, 11.2s
+    elevator_open_continue sample 1: 420 tokens, stop, 14.4s
+    elevator_open_continue sample 2: 397 tokens, stop, 13.6s
+    elevator_open_continue sample 3: 449 tokens, stop, 15.4s
+    elevator_open_continue sample 4: 514 tokens, stop, 17.6s
+    elevator_open_continue sample 5: 341 tokens, stop, 11.7s
+    elevator_open_continue sample 6: 388 tokens, stop, 13.3s
+    elevator_open_continue sample 7: 419 tokens, stop, 14.5s
+    elevator_open_ask sample 0: 345 tokens, stop, 11.9s
+    elevator_open_ask sample 1: 357 tokens, stop, 12.3s
+    elevator_open_ask sample 2: 258 tokens, stop, 8.9s
+    elevator_open_ask sample 3: 352 tokens, stop, 12.1s
+    elevator_open_ask sample 4: 337 tokens, stop, 11.7s
+    elevator_open_ask sample 5: 327 tokens, stop, 11.3s
+    elevator_open_ask sample 6: 575 tokens, stop, 19.7s
+    elevator_open_ask sample 7: 409 tokens, stop, 14.1s
+
+[discovery-rl-v11-s839] mhla/gpt1900-d34-contradiction-rl-v11 step=839 mode=chat
+  [cached] discovery-rl-v11-s839
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elevator_open_continue sample 0: 562 tokens, stop, 15.2s
+    elevator_open_continue sample 1: 504 tokens, stop, 13.6s
+    elevator_open_continue sample 2: 372 tokens, stop, 10.0s
+    elevator_open_continue sample 3: 445 tokens, stop, 12.0s
+    elevator_open_continue sample 4: 555 tokens, stop, 15.0s
+    elevator_open_continue sample 5: 435 tokens, stop, 11.7s
+    elevator_open_continue sample 6: 376 tokens, stop, 10.2s
+    elevator_open_continue sample 7: 341 tokens, stop, 9.2s
+    elevator_open_ask sample 0: 372 tokens, stop, 10.1s
+    elevator_open_ask sample 1: 399 tokens, stop, 10.8s
+    elevator_open_ask sample 2: 293 tokens, stop, 8.0s
+    elevator_open_ask sample 3: 379 tokens, stop, 10.3s
+    elevator_open_ask sample 4: 365 tokens, stop, 9.9s
+    elevator_open_ask sample 5: 489 tokens, stop, 13.2s
+    elevator_open_ask sample 6: 406 tokens, stop, 11.0s
+    elevator_open_ask sample 7: 377 tokens, stop, 10.2s
+
+==============================================================
+run_id      2026-09-28T21:36:02Z-ada5d9
+records     64 written, 0 carrying an error
+expected    64
+elapsed     21.3 min
+output      evidence/elevator-open/open.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+64 records → evidence/elevator-open/open.html
+ELEVATOR-OPEN COMPLETE. Open evidence/elevator-open/open.html. Read blind on the Mac next.

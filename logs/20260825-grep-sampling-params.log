@@ -1,0 +1,26 @@
+$ grep -n "temperature\|top_k\|top_p\|seed\|manual_seed\|add_argument" scripts/physics_eval.py
+220:    temperature: float = 0.7,
+221:    top_k: int = 50,
+249:            temperature=temperature,
+250:            top_k=top_k,
+287:    temperature: float,
+288:    top_k: int,
+317:            temperature=temperature,
+318:            top_k=top_k,
+347:    temperature: float = 0.7,
+348:    top_k: int = 50,
+368:                num_samples, max_tokens, temperature, top_k, result_dict,
+525:    parser.add_argument("--output-dir", default="results/physics_eval", help="Output directory")
+526:    parser.add_argument("--only", default=None, help="Comma-separated list of checkpoint names to evaluate")
+527:    parser.add_argument("--skip-judge", action="store_true", help="Skip the Claude judge phase")
+528:    parser.add_argument("--num-samples", type=int, default=3, help="Number of samples per task")
+529:    parser.add_argument("--max-tokens", type=int, default=1024, help="Max tokens per generation")
+530:    parser.add_argument("--cache-dir", default=None, help="HF download cache dir (default: <output-dir>/hf_cache)")
+531:    parser.add_argument("--num-gpus", type=int, default=1, help="Number of GPUs for generation (default: 1)")
+532:    parser.add_argument("--temperature", type=float, default=0.7, help="Sampling temperature (default: 0.7)")
+533:    parser.add_argument("--top-k", type=int, default=50, help="Top-k sampling (default: 50)")
+534:    parser.add_argument("--eval-config", default=None, help="Path to eval config JSON (default: EVAL.json in repo root)")
+595:                temperature=args.temperature,
+596:                top_k=args.top_k,
+603:                temperature=args.temperature,
+604:                top_k=args.top_k,

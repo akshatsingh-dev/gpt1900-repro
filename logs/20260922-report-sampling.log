@@ -1,0 +1,12 @@
+==============================================================
+evidence/sampling/run-a.graded.jsonl
+  records 8  errors 0  scored 8  stock opening 8/8  hit max_tokens 0
+  MEAN SCORE 1.00 (n=8)  95% CI 0.62 to 1.38   hist 0:1 1:6 2:1 3:0 4:0 5:0
+upstream:physics_eval_v11
+  records 192  errors 0  scored 192  stock opening 150/192  hit max_tokens 0
+  MEAN SCORE 0.93 (n=192)  95% CI 0.84 to 1.03   hist 0:44 1:122 2:22 3:3 4:1 5:0
+evidence/sampling/run-a.graded.jsonl  vs  upstream:physics_eval_v11
+  shared 8  byte identical 0  score exact agreement 6/8  mean diff -0.25
+==============================================================
+wrote evidence/sampling/report.json
+wrote evidence/sampling/report.html

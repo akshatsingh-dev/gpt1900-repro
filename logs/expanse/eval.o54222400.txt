@@ -1,0 +1,85 @@
+################ RUN a ################
+run_id      2026-09-08T08:02:54Z-b7bc6a
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54222400
+config      EVAL.json  condition scaffolded
+sampling    temperature 0.0  top_k 50  base seed 1337
+work        1 checkpoints x 8 tasks x 1 samples = 8 generations
+writing     evidence/determinism/run-a.jsonl
+
+loading tokenizer ...
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 586 tokens, stop, 16.4s
+    photoelectric_effect_main sample 0: 586 tokens, stop, 16.2s
+    sr_frozen_light sample 0: 238 tokens, stop, 6.6s
+    sr_approaching_c sample 0: 325 tokens, stop, 9.0s
+    sr_train_lightning sample 0: 350 tokens, stop, 9.7s
+    sr_michelson_morley sample 0: 301 tokens, stop, 8.4s
+    gr_main_elevator_light sample 0: 462 tokens, stop, 12.8s
+    gr_free_fall_equivalence sample 0: 433 tokens, stop, 11.9s
+
+==============================================================
+run_id      2026-09-08T08:02:54Z-b7bc6a
+records     8 written, 0 carrying an error
+expected    8
+elapsed     1.7 min
+output      evidence/determinism/run-a.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+################ RUN b ################
+run_id      2026-09-08T08:04:42Z-076a4e
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54222400
+config      EVAL.json  condition scaffolded
+sampling    temperature 0.0  top_k 50  base seed 1337
+work        1 checkpoints x 8 tasks x 1 samples = 8 generations
+writing     evidence/determinism/run-b.jsonl
+
+loading tokenizer ...
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 586 tokens, stop, 16.1s
+    photoelectric_effect_main sample 0: 586 tokens, stop, 15.9s
+    sr_frozen_light sample 0: 238 tokens, stop, 6.6s
+    sr_approaching_c sample 0: 325 tokens, stop, 9.3s
+    sr_train_lightning sample 0: 350 tokens, stop, 9.8s
+    sr_michelson_morley sample 0: 301 tokens, stop, 8.5s
+    gr_main_elevator_light sample 0: 462 tokens, stop, 13.0s
+    gr_free_fall_equivalence sample 0: 433 tokens, stop, 12.2s
+
+==============================================================
+run_id      2026-09-08T08:04:42Z-076a4e
+records     8 written, 0 carrying an error
+expected    8
+elapsed     1.7 min
+output      evidence/determinism/run-b.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+################ COMPARE ################
+==============================================================
+RUN COMPARISON
+==============================================================
+A  evidence/determinism/run-a.jsonl   8 records
+B  evidence/determinism/run-b.jsonl   8 records
+
+paired records    8
+
+  identical                        8
+
+REPRODUCTION RATE  8 / 8  = 100.0%
+==============================================================
+
+wrote evidence/determinism/compare.json
+wrote evidence/determinism/compare.html
+16 records → evidence/determinism/generations.html

@@ -1,0 +1,27 @@
+$ sed -n '590,615p' scripts/physics_eval.py
+        if num_gpus > 1:
+            ckpt_results = generate_for_checkpoint_multigpu(
+                ckpt, tasks, tokenizer, cache_dir, num_gpus,
+                num_samples=args.num_samples,
+                max_tokens=args.max_tokens,
+                temperature=args.temperature,
+                top_k=args.top_k,
+            )
+        else:
+            ckpt_results = generate_for_checkpoint(
+                ckpt, tasks, tokenizer, cache_dir, device,
+                num_samples=args.num_samples,
+                max_tokens=args.max_tokens,
+                temperature=args.temperature,
+                top_k=args.top_k,
+            )
+        all_generations[ckpt.name] = ckpt_results
+        # Save after each checkpoint for crash resilience
+        with open(gen_path, "w") as f:
+            json.dump(all_generations, f, indent=2)
+        print(f"  Saved generations to {gen_path}")
+        # Free disk space by removing downloaded checkpoint (skip symlinks / local)
+        ckpt_cache = os.path.join(cache_dir, ckpt.name)
+        if os.path.isdir(ckpt_cache) and not os.path.islink(ckpt_cache):
+            shutil.rmtree(ckpt_cache)
+            print(f"  Removed cache {ckpt_cache}")

@@ -1,0 +1,4 @@
+evidence/sweep/v11-scaffolded.jsonl: 192 of 192 scored -> evidence/sweep/v11-scaffolded.graded.jsonl
+
+graded ids 192   in key 192   ungraded 0
+records written 192   scored 192   grader 'claude-fable-5-1, blinded batches of 24, fresh session per batch, upstream rubric'

@@ -1,0 +1,15 @@
+$ python3 -c "
+import json
+d = json.load(open('results/physics_eval_v8_det/generations.json'))
+m = 'discovery-rl-v8-s035'
+for task, rec in d[m].items():
+    print(task, '| mode:', rec['mode'], '| completions:', len(rec['completions']))
+"
+uv_catastrophe_main | mode: completion | completions: 1
+photoelectric_effect_main | mode: completion | completions: 1
+sr_frozen_light | mode: completion | completions: 1
+sr_approaching_c | mode: completion | completions: 1
+sr_train_lightning | mode: completion | completions: 1
+sr_michelson_morley | mode: completion | completions: 1
+gr_main_elevator_light | mode: completion | completions: 1
+gr_free_fall_equivalence | mode: completion | completions: 1

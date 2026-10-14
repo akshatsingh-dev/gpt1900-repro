@@ -1,0 +1,7 @@
+$ grep -n "json.dump\|generations.json\|results_judged\|summary.txt\|def save" scripts/physics_eval.py
+396:    schema = json.dumps(eval_config["judge_output_schema"], indent=2)
+573:    gen_path = os.path.join(args.output_dir, "generations.json")
+609:            json.dump(all_generations, f, indent=2)
+634:    judged_path = os.path.join(args.output_dir, "results_judged.json")
+636:        json.dump(judged, f, indent=2)
+646:    summary_path = os.path.join(args.output_dir, "summary.txt")

@@ -1,0 +1,8 @@
+paired leading-scaffolded +0.00 CI -0.12 to +0.12; scaffolded-minimal +0.07 CI -0.07 to +0.21
+scaffolded first8 0.83 last8 1.00 max 2 n>=3: 0
+minimal    first8 0.71 last8 1.08 max 2 n>=3: 0
+leading    first8 0.92 last8 1.08 max 2 n>=3: 0
+published Fall column mean 0.92 (n=24)
+regrade batch 01: exact 16/24 within1 24/24 means 1.04 vs 0.96
+regrade batch 05: exact 22/24 within1 24/24 means 0.88 vs 0.96
+RELIABILITY 38/48 exact, 48/48 within one

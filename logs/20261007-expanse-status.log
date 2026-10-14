@@ -1,0 +1,100 @@
+=== cached checkpoints needed ===
+hf_cache/d34-22btok
+hf_cache/discovery-rl-v11-s035
+hf_cache/discovery-rl-v11-s560
+hf_cache/discovery-rl-v11-s839
+24
+=== queue before ===
+=== submit ===
+Submitted batch job 54719457
+Submitted batch job 54719458
+=== queue after ===
+54719458 abduction PENDING 0:00 (Priority)
+54719457 elevfinal PENDING 0:00 (Priority)
+54719457 elevfinal PENDING 0:00 (Priority)
+54719458 abduction PENDING 0:00 (Priority)
+54719457 elevfinal PENDING 0:00 (Priority)
+54719458 abduction PENDING 0:00 (Priority)
+JOBID NAME START_TIME NODELIST(REASON)
+54719457 elevfinal 2026-10-07T10:50:43 (Priority)
+54719458 abduction 2026-10-07T10:50:43 (Priority)
+=== partitions ===
+PARTITION  AVAIL  TIMELIMIT   NODES(A/I/O/T) NODELIST
+gpu           up 2-00:00:00        48/6/2/56 exp-1-[57-60],exp-2-[57-60],exp-3-[57-60],exp-4-[57-60],exp-5-[57-60],exp-6-[57-60],exp-7-[57-58],exp-8-[57-60],exp-9-[57-60],exp-10-[57-60],exp-12-[57-60],exp-13-[57-60],exp-14-[57-60],exp-16-[57-59],exp-17-[57-59]
+gpu-debug     up      30:00          0/2/0/2 exp-7-[59-60]
+gpu-shared    up 2-00:00:00        48/6/2/56 exp-1-[57-60],exp-2-[57-60],exp-3-[57-60],exp-4-[57-60],exp-5-[57-60],exp-6-[57-60],exp-7-[57-58],exp-8-[57-60],exp-9-[57-60],exp-10-[57-60],exp-12-[57-60],exp-13-[57-60],exp-14-[57-60],exp-16-[57-59],exp-17-[57-59]
+MaxNodes=2 MaxTime=00:30:00 State=UP 
+=== my qos ===
+Partition|QOS
+|debug-normal,gpu-debug-normal,gpu-normal,gpu-preempt-normal,gpu-shared-normal,large-shared-normal,normal,preempt-normal,shared-normal
+=== gpu-shared pending ahead of me ===
+142
+Submitted batch job 54719479
+Submitted batch job 54719480
+sbatch: error: MaxSubmitJobsPerAccount
+sbatch: error: Batch job submission failed: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)
+sbatch: error: MaxSubmitJobsPerAccount
+sbatch: error: Batch job submission failed: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)
+=== queue ===
+sbatch: error: MaxSubmitJobsPerAccount
+sbatch: error: Batch job submission failed: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)
+sbatch: error: MaxSubmitJobsPerAccount
+sbatch: error: Batch job submission failed: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)
+JOBID NAME PARTITION STATE TIME NODELIST(REASON)
+54719479 elevfin1 gpu-debug RUNNING 0:01 exp-7-59
+54719480 elevfin2 gpu-debug RUNNING 0:01 exp-7-59
+54719457 elevfinal gpu-shared PENDING 0:00 (Priority)
+54719458 abduction gpu-shared PENDING 0:00 (Priority)
+=== queue ===
+sbatch: error: MaxSubmitJobsPerAccount
+sbatch: error: Batch job submission failed: Job violates accounting/QOS policy (job submit limit, user's size and/or time limits)
+JOBID NAME PARTITION STATE TIME NODELIST(REASON)
+54719479 elevfin1 gpu-debug RUNNING 0:26 exp-7-59
+54719480 elevfin2 gpu-debug RUNNING 0:26 exp-7-59
+=== elevfin1 progress ===
+0
+54719479 elevfin1 RUNNING 14:57 exp-7-59
+54719480 elevfin2 RUNNING 14:57 exp-7-59
+elevfin1.o54719479.txt: 20 gens ::     elev_cable_feel_why sample 1: 359 tokens, stop, 9.6s
+elevfin2.o54719480.txt: 30 gens ::   [cached] discovery-rl-v11-s805
+evidence/elevator-final/parts:
+total 241
+drwxr-sr-x 2 asingh59 sdp197  57344 Oct  7 04:44 .
+drwxr-sr-x 3 asingh59 sdp197  57344 Oct  7 04:42 ..
+-rw-r--r-- 1 asingh59 sdp197  95594 Oct  7 04:57 final-1.jsonl
+-rw-r--r-- 1 asingh59 sdp197 123698 Oct  7 04:57 final-2.jsonl
+=== queue ===
+54719479 elevfin1 RUNNING 19:30 exp-7-59
+=== job states today ===
+       JobID      JobName  Partition        State    Elapsed ExitCode 
+------------ ------------ ---------- ------------ ---------- -------- 
+    54719457    elevfinal gpu-shared CANCELLED b+   00:00:00      0:0 
+    54719458    abduction gpu-shared CANCELLED b+   00:00:00      0:0 
+    54719479     elevfin1  gpu-debug      RUNNING   00:19:30      0:0 
+    54719480     elevfin2  gpu-debug    COMPLETED   00:16:59      0:0 
+=== elevfin1 ===
+33
+[discovery-rl-v11-s385] mhla/gpt1900-d34-contradiction-rl-v11 step=385 mode=chat
+  [cached] discovery-rl-v11-s385
+mux_client_request_session: read from master failed: Broken pipe
+Connection to 198.202.100.13 port 22 timed out
+=== queue ===
+=== sacct ===
+       JobID      JobName        State    Elapsed ExitCode 
+------------ ------------ ------------ ---------- -------- 
+    54719457    elevfinal CANCELLED b+   00:00:00      0:0 
+    54719458    abduction CANCELLED b+   00:00:00      0:0 
+    54719479     elevfin1    COMPLETED   00:21:36      0:0 
+    54719480     elevfin2    COMPLETED   00:16:59      0:0 
+=== parts ===
+    39 evidence/elevator-final/parts/final-1.jsonl
+    36 evidence/elevator-final/parts/final-2.jsonl
+    75 total
+==============================================================
+elevfin1 COMPLETE
+54724264 abd-base RUNNING 24:08 exp-7-59
+    63 evidence/abduction/parts/abduction-base.jsonl
+    65 evidence/abduction/parts/abduction-s035.jsonl
+   128 total
+abd-base.o54724264.txt: 63 gens ::     abd_bb_bare sample 2: 768 tokens, length, 20.5s
+abd-s035.o54724266.txt: 65 gens :: abd-s035 COMPLETE

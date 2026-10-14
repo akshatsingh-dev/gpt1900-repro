@@ -1,0 +1,13 @@
+$ ls scripts results tasks
+results:
+gallery_of_funny_failures.md    physics_eval_clm                physics_eval_v11_no_assumptions physics_eval_v5                 physics_eval_v8                 wandb_exports
+general_reasoning_eval          physics_eval_gen_phys           physics_eval_v11_rephrase       physics_eval_v6                 physics_eval_v8_det
+physics_eval                    physics_eval_v11                physics_eval_v11_replication    physics_eval_v7                 power_samp_pe
+
+scripts:
+__init__.py             base_train.py           chat_sft.py             dashboard.py            math_rl.py              physics_eval.py         tok_eval.py             upload_to_hf.py
+archive                 chat_cli.py             chat_web_batch.py       generate.py             organize_hf.py          pre1900_scripts         tok_train.py
+base_eval.py            chat_eval.py            chat_web.py             launch_serving.sh       physics_clm.py          pre1900_sft.py          upload_dataset_to_hf.py
+
+tasks:
+arc.py          common.py       customjson.py   gsm8k.py        humaneval.py    math_task.py    mmlu.py         smoltalk.py     spellingbee.py  yale_physics.py

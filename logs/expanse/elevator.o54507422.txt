@@ -1,0 +1,674 @@
+################ CONDITION scaffolded ################
+run_id      2026-09-28T21:36:02Z-969f70
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54507422
+config      ../../tools/EVAL_elevator_scaffolded.json  condition scaffolded
+sampling    temperature 0.7  top_k 50  base seed 42
+work        24 checkpoints x 1 tasks x 3 samples = 72 generations
+writing     evidence/elevator/scaffolded.jsonl
+
+loading tokenizer ...
+
+[discovery-rl-v11-s035] mhla/gpt1900-d34-contradiction-rl-v11 step=35 mode=chat
+  [cached] discovery-rl-v11-s035
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 161 tokens, stop, 7.0s
+    gr_main_elevator_light sample 1: 468 tokens, stop, 12.9s
+    gr_main_elevator_light sample 2: 561 tokens, stop, 15.5s
+
+[discovery-rl-v11-s070] mhla/gpt1900-d34-contradiction-rl-v11 step=70 mode=chat
+  [cached] discovery-rl-v11-s070
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 711 tokens, stop, 19.4s
+    gr_main_elevator_light sample 1: 674 tokens, stop, 18.3s
+    gr_main_elevator_light sample 2: 800 tokens, stop, 21.7s
+
+[discovery-rl-v11-s105] mhla/gpt1900-d34-contradiction-rl-v11 step=105 mode=chat
+  [cached] discovery-rl-v11-s105
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 858 tokens, stop, 23.3s
+    gr_main_elevator_light sample 1: 1024 tokens, length, 27.7s
+    gr_main_elevator_light sample 2: 1024 tokens, length, 27.7s
+
+[discovery-rl-v11-s140] mhla/gpt1900-d34-contradiction-rl-v11 step=140 mode=chat
+  [cached] discovery-rl-v11-s140
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 417 tokens, stop, 11.8s
+    gr_main_elevator_light sample 1: 496 tokens, stop, 13.8s
+    gr_main_elevator_light sample 2: 579 tokens, stop, 16.1s
+
+[discovery-rl-v11-s175] mhla/gpt1900-d34-contradiction-rl-v11 step=175 mode=chat
+  [cached] discovery-rl-v11-s175
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 625 tokens, stop, 17.1s
+    gr_main_elevator_light sample 1: 627 tokens, stop, 17.1s
+    gr_main_elevator_light sample 2: 518 tokens, stop, 14.2s
+
+[discovery-rl-v11-s210] mhla/gpt1900-d34-contradiction-rl-v11 step=210 mode=chat
+  [cached] discovery-rl-v11-s210
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 336 tokens, stop, 9.3s
+    gr_main_elevator_light sample 1: 350 tokens, stop, 9.6s
+    gr_main_elevator_light sample 2: 345 tokens, stop, 9.5s
+
+[discovery-rl-v11-s245] mhla/gpt1900-d34-contradiction-rl-v11 step=245 mode=chat
+  [cached] discovery-rl-v11-s245
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 313 tokens, stop, 8.7s
+    gr_main_elevator_light sample 1: 375 tokens, stop, 10.3s
+    gr_main_elevator_light sample 2: 478 tokens, stop, 13.1s
+
+[discovery-rl-v11-s280] mhla/gpt1900-d34-contradiction-rl-v11 step=280 mode=chat
+  [cached] discovery-rl-v11-s280
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 400 tokens, stop, 11.0s
+    gr_main_elevator_light sample 1: 345 tokens, stop, 9.5s
+    gr_main_elevator_light sample 2: 453 tokens, stop, 12.4s
+
+[discovery-rl-v11-s315] mhla/gpt1900-d34-contradiction-rl-v11 step=315 mode=chat
+  [cached] discovery-rl-v11-s315
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 524 tokens, stop, 14.2s
+    gr_main_elevator_light sample 1: 585 tokens, stop, 15.8s
+    gr_main_elevator_light sample 2: 528 tokens, stop, 14.3s
+
+[discovery-rl-v11-s350] mhla/gpt1900-d34-contradiction-rl-v11 step=350 mode=chat
+  [cached] discovery-rl-v11-s350
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 533 tokens, stop, 14.8s
+    gr_main_elevator_light sample 1: 541 tokens, stop, 15.0s
+    gr_main_elevator_light sample 2: 417 tokens, stop, 11.6s
+
+[discovery-rl-v11-s385] mhla/gpt1900-d34-contradiction-rl-v11 step=385 mode=chat
+  [cached] discovery-rl-v11-s385
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 438 tokens, stop, 12.0s
+    gr_main_elevator_light sample 1: 373 tokens, stop, 10.2s
+    gr_main_elevator_light sample 2: 461 tokens, stop, 12.5s
+
+[discovery-rl-v11-s420] mhla/gpt1900-d34-contradiction-rl-v11 step=420 mode=chat
+  [cached] discovery-rl-v11-s420
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 381 tokens, stop, 10.7s
+    gr_main_elevator_light sample 1: 383 tokens, stop, 10.7s
+    gr_main_elevator_light sample 2: 521 tokens, stop, 14.4s
+
+[discovery-rl-v11-s455] mhla/gpt1900-d34-contradiction-rl-v11 step=455 mode=chat
+  [cached] discovery-rl-v11-s455
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 570 tokens, stop, 15.8s
+    gr_main_elevator_light sample 1: 496 tokens, stop, 13.7s
+    gr_main_elevator_light sample 2: 362 tokens, stop, 10.1s
+
+[discovery-rl-v11-s490] mhla/gpt1900-d34-contradiction-rl-v11 step=490 mode=chat
+  [cached] discovery-rl-v11-s490
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 351 tokens, stop, 9.9s
+    gr_main_elevator_light sample 1: 496 tokens, stop, 13.8s
+    gr_main_elevator_light sample 2: 394 tokens, stop, 11.0s
+
+[discovery-rl-v11-s525] mhla/gpt1900-d34-contradiction-rl-v11 step=525 mode=chat
+  [cached] discovery-rl-v11-s525
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 353 tokens, stop, 9.9s
+    gr_main_elevator_light sample 1: 455 tokens, stop, 12.7s
+    gr_main_elevator_light sample 2: 332 tokens, stop, 9.4s
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 386 tokens, stop, 10.9s
+    gr_main_elevator_light sample 1: 433 tokens, stop, 12.1s
+    gr_main_elevator_light sample 2: 423 tokens, stop, 11.9s
+
+[discovery-rl-v11-s595] mhla/gpt1900-d34-contradiction-rl-v11 step=595 mode=chat
+  [cached] discovery-rl-v11-s595
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 420 tokens, stop, 11.9s
+    gr_main_elevator_light sample 1: 404 tokens, stop, 11.4s
+    gr_main_elevator_light sample 2: 481 tokens, stop, 13.6s
+
+[discovery-rl-v11-s630] mhla/gpt1900-d34-contradiction-rl-v11 step=630 mode=chat
+  [cached] discovery-rl-v11-s630
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 513 tokens, stop, 14.5s
+    gr_main_elevator_light sample 1: 438 tokens, stop, 12.4s
+    gr_main_elevator_light sample 2: 436 tokens, stop, 12.3s
+
+[discovery-rl-v11-s665] mhla/gpt1900-d34-contradiction-rl-v11 step=665 mode=chat
+  [cached] discovery-rl-v11-s665
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 418 tokens, stop, 11.5s
+    gr_main_elevator_light sample 1: 541 tokens, stop, 14.8s
+    gr_main_elevator_light sample 2: 528 tokens, stop, 14.5s
+
+[discovery-rl-v11-s700] mhla/gpt1900-d34-contradiction-rl-v11 step=700 mode=chat
+  [cached] discovery-rl-v11-s700
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 410 tokens, stop, 11.3s
+    gr_main_elevator_light sample 1: 322 tokens, stop, 8.8s
+    gr_main_elevator_light sample 2: 525 tokens, stop, 14.4s
+
+[discovery-rl-v11-s735] mhla/gpt1900-d34-contradiction-rl-v11 step=735 mode=chat
+  [cached] discovery-rl-v11-s735
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 462 tokens, stop, 12.6s
+    gr_main_elevator_light sample 1: 419 tokens, stop, 11.4s
+    gr_main_elevator_light sample 2: 448 tokens, stop, 12.1s
+
+[discovery-rl-v11-s770] mhla/gpt1900-d34-contradiction-rl-v11 step=770 mode=chat
+  [cached] discovery-rl-v11-s770
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 395 tokens, stop, 10.8s
+    gr_main_elevator_light sample 1: 462 tokens, stop, 12.6s
+    gr_main_elevator_light sample 2: 605 tokens, stop, 16.3s
+
+[discovery-rl-v11-s805] mhla/gpt1900-d34-contradiction-rl-v11 step=805 mode=chat
+  [cached] discovery-rl-v11-s805
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 364 tokens, stop, 10.0s
+    gr_main_elevator_light sample 1: 469 tokens, stop, 12.8s
+    gr_main_elevator_light sample 2: 467 tokens, stop, 12.8s
+
+[discovery-rl-v11-s839] mhla/gpt1900-d34-contradiction-rl-v11 step=839 mode=chat
+  [cached] discovery-rl-v11-s839
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 534 tokens, stop, 14.6s
+    gr_main_elevator_light sample 1: 386 tokens, stop, 10.6s
+    gr_main_elevator_light sample 2: 436 tokens, stop, 12.0s
+
+==============================================================
+run_id      2026-09-28T21:36:02Z-969f70
+records     72 written, 0 carrying an error
+expected    72
+elapsed     29.3 min
+output      evidence/elevator/scaffolded.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+72 records → evidence/elevator/scaffolded.html
+################ CONDITION minimal ################
+run_id      2026-09-28T22:05:28Z-01e348
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54507422
+config      ../../tools/EVAL_elevator_minimal.json  condition minimal
+sampling    temperature 0.7  top_k 50  base seed 42
+work        24 checkpoints x 1 tasks x 3 samples = 72 generations
+writing     evidence/elevator/minimal.jsonl
+
+loading tokenizer ...
+
+[discovery-rl-v11-s035] mhla/gpt1900-d34-contradiction-rl-v11 step=35 mode=chat
+  [cached] discovery-rl-v11-s035
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 533 tokens, stop, 15.2s
+    gr_main_elevator_light sample 1: 725 tokens, stop, 20.3s
+    gr_main_elevator_light sample 2: 866 tokens, stop, 24.2s
+
+[discovery-rl-v11-s070] mhla/gpt1900-d34-contradiction-rl-v11 step=70 mode=chat
+  [cached] discovery-rl-v11-s070
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 438 tokens, stop, 12.2s
+    gr_main_elevator_light sample 1: 577 tokens, stop, 15.9s
+    gr_main_elevator_light sample 2: 606 tokens, stop, 16.7s
+
+[discovery-rl-v11-s105] mhla/gpt1900-d34-contradiction-rl-v11 step=105 mode=chat
+  [cached] discovery-rl-v11-s105
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 890 tokens, stop, 24.1s
+    gr_main_elevator_light sample 1: 561 tokens, stop, 15.1s
+    gr_main_elevator_light sample 2: 591 tokens, stop, 15.9s
+
+[discovery-rl-v11-s140] mhla/gpt1900-d34-contradiction-rl-v11 step=140 mode=chat
+  [cached] discovery-rl-v11-s140
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 507 tokens, stop, 13.7s
+    gr_main_elevator_light sample 1: 573 tokens, stop, 15.4s
+    gr_main_elevator_light sample 2: 389 tokens, stop, 10.5s
+
+[discovery-rl-v11-s175] mhla/gpt1900-d34-contradiction-rl-v11 step=175 mode=chat
+  [cached] discovery-rl-v11-s175
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 417 tokens, stop, 11.3s
+    gr_main_elevator_light sample 1: 582 tokens, stop, 15.7s
+    gr_main_elevator_light sample 2: 511 tokens, stop, 13.8s
+
+[discovery-rl-v11-s210] mhla/gpt1900-d34-contradiction-rl-v11 step=210 mode=chat
+  [cached] discovery-rl-v11-s210
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 449 tokens, stop, 12.0s
+    gr_main_elevator_light sample 1: 331 tokens, stop, 8.8s
+    gr_main_elevator_light sample 2: 304 tokens, stop, 8.1s
+
+[discovery-rl-v11-s245] mhla/gpt1900-d34-contradiction-rl-v11 step=245 mode=chat
+  [cached] discovery-rl-v11-s245
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 382 tokens, stop, 10.4s
+    gr_main_elevator_light sample 1: 377 tokens, stop, 10.1s
+    gr_main_elevator_light sample 2: 361 tokens, stop, 9.6s
+
+[discovery-rl-v11-s280] mhla/gpt1900-d34-contradiction-rl-v11 step=280 mode=chat
+  [cached] discovery-rl-v11-s280
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 398 tokens, stop, 10.6s
+    gr_main_elevator_light sample 1: 441 tokens, stop, 11.7s
+    gr_main_elevator_light sample 2: 275 tokens, stop, 7.4s
+
+[discovery-rl-v11-s315] mhla/gpt1900-d34-contradiction-rl-v11 step=315 mode=chat
+  [cached] discovery-rl-v11-s315
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 411 tokens, stop, 11.0s
+    gr_main_elevator_light sample 1: 313 tokens, stop, 8.4s
+    gr_main_elevator_light sample 2: 454 tokens, stop, 12.1s
+
+[discovery-rl-v11-s350] mhla/gpt1900-d34-contradiction-rl-v11 step=350 mode=chat
+  [cached] discovery-rl-v11-s350
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 374 tokens, stop, 10.0s
+    gr_main_elevator_light sample 1: 619 tokens, stop, 16.4s
+    gr_main_elevator_light sample 2: 496 tokens, stop, 13.2s
+
+[discovery-rl-v11-s385] mhla/gpt1900-d34-contradiction-rl-v11 step=385 mode=chat
+  [cached] discovery-rl-v11-s385
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 194 tokens, stop, 5.3s
+    gr_main_elevator_light sample 1: 252 tokens, stop, 6.8s
+    gr_main_elevator_light sample 2: 412 tokens, stop, 11.0s
+
+[discovery-rl-v11-s420] mhla/gpt1900-d34-contradiction-rl-v11 step=420 mode=chat
+  [cached] discovery-rl-v11-s420
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 366 tokens, stop, 9.9s
+    gr_main_elevator_light sample 1: 486 tokens, stop, 12.9s
+    gr_main_elevator_light sample 2: 265 tokens, stop, 7.1s
+
+[discovery-rl-v11-s455] mhla/gpt1900-d34-contradiction-rl-v11 step=455 mode=chat
+  [cached] discovery-rl-v11-s455
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 371 tokens, stop, 10.0s
+    gr_main_elevator_light sample 1: 319 tokens, stop, 8.5s
+    gr_main_elevator_light sample 2: 395 tokens, stop, 10.5s
+
+[discovery-rl-v11-s490] mhla/gpt1900-d34-contradiction-rl-v11 step=490 mode=chat
+  [cached] discovery-rl-v11-s490
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 405 tokens, stop, 10.8s
+    gr_main_elevator_light sample 1: 388 tokens, stop, 10.3s
+    gr_main_elevator_light sample 2: 291 tokens, stop, 7.7s
+
+[discovery-rl-v11-s525] mhla/gpt1900-d34-contradiction-rl-v11 step=525 mode=chat
+  [cached] discovery-rl-v11-s525
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 283 tokens, stop, 8.0s
+    gr_main_elevator_light sample 1: 251 tokens, stop, 7.0s
+    gr_main_elevator_light sample 2: 257 tokens, stop, 7.2s
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 296 tokens, stop, 8.4s
+    gr_main_elevator_light sample 1: 312 tokens, stop, 8.7s
+    gr_main_elevator_light sample 2: 515 tokens, stop, 14.4s
+
+[discovery-rl-v11-s595] mhla/gpt1900-d34-contradiction-rl-v11 step=595 mode=chat
+  [cached] discovery-rl-v11-s595
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 310 tokens, stop, 9.1s
+    gr_main_elevator_light sample 1: 226 tokens, stop, 6.6s
+    gr_main_elevator_light sample 2: 512 tokens, stop, 14.8s
+
+[discovery-rl-v11-s630] mhla/gpt1900-d34-contradiction-rl-v11 step=630 mode=chat
+  [cached] discovery-rl-v11-s630
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 387 tokens, stop, 11.3s
+    gr_main_elevator_light sample 1: 307 tokens, stop, 9.0s
+    gr_main_elevator_light sample 2: 439 tokens, stop, 12.8s
+
+[discovery-rl-v11-s665] mhla/gpt1900-d34-contradiction-rl-v11 step=665 mode=chat
+  [cached] discovery-rl-v11-s665
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 348 tokens, stop, 10.1s
+    gr_main_elevator_light sample 1: 365 tokens, stop, 10.5s
+    gr_main_elevator_light sample 2: 352 tokens, stop, 10.1s
+
+[discovery-rl-v11-s700] mhla/gpt1900-d34-contradiction-rl-v11 step=700 mode=chat
+  [cached] discovery-rl-v11-s700
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 296 tokens, stop, 8.5s
+    gr_main_elevator_light sample 1: 303 tokens, stop, 8.7s
+    gr_main_elevator_light sample 2: 360 tokens, stop, 10.4s
+
+[discovery-rl-v11-s735] mhla/gpt1900-d34-contradiction-rl-v11 step=735 mode=chat
+  [cached] discovery-rl-v11-s735
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 340 tokens, stop, 9.8s
+    gr_main_elevator_light sample 1: 321 tokens, stop, 9.2s
+    gr_main_elevator_light sample 2: 464 tokens, stop, 13.3s
+
+[discovery-rl-v11-s770] mhla/gpt1900-d34-contradiction-rl-v11 step=770 mode=chat
+  [cached] discovery-rl-v11-s770
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 210 tokens, stop, 6.1s
+    gr_main_elevator_light sample 1: 452 tokens, stop, 13.0s
+    gr_main_elevator_light sample 2: 503 tokens, stop, 14.4s
+
+[discovery-rl-v11-s805] mhla/gpt1900-d34-contradiction-rl-v11 step=805 mode=chat
+  [cached] discovery-rl-v11-s805
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 517 tokens, stop, 14.6s
+    gr_main_elevator_light sample 1: 444 tokens, stop, 12.5s
+    gr_main_elevator_light sample 2: 354 tokens, stop, 10.0s
+
+[discovery-rl-v11-s839] mhla/gpt1900-d34-contradiction-rl-v11 step=839 mode=chat
+  [cached] discovery-rl-v11-s839
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 279 tokens, stop, 7.9s
+    gr_main_elevator_light sample 1: 447 tokens, stop, 12.6s
+    gr_main_elevator_light sample 2: 400 tokens, stop, 11.4s
+
+==============================================================
+run_id      2026-09-28T22:05:28Z-01e348
+records     72 written, 0 carrying an error
+expected    72
+elapsed     22.9 min
+output      evidence/elevator/minimal.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+72 records → evidence/elevator/minimal.html
+################ CONDITION leading ################
+run_id      2026-09-28T22:28:29Z-a84a3d
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54507422
+config      ../../tools/EVAL_elevator_leading.json  condition leading
+sampling    temperature 0.7  top_k 50  base seed 42
+work        24 checkpoints x 1 tasks x 3 samples = 72 generations
+writing     evidence/elevator/leading.jsonl
+
+loading tokenizer ...
+
+[discovery-rl-v11-s035] mhla/gpt1900-d34-contradiction-rl-v11 step=35 mode=chat
+  [cached] discovery-rl-v11-s035
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 752 tokens, stop, 22.0s
+    gr_main_elevator_light sample 1: 286 tokens, stop, 8.4s
+    gr_main_elevator_light sample 2: 1010 tokens, stop, 29.0s
+
+[discovery-rl-v11-s070] mhla/gpt1900-d34-contradiction-rl-v11 step=70 mode=chat
+  [cached] discovery-rl-v11-s070
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 653 tokens, stop, 18.9s
+    gr_main_elevator_light sample 1: 1024 tokens, length, 29.1s
+    gr_main_elevator_light sample 2: 343 tokens, stop, 9.8s
+
+[discovery-rl-v11-s105] mhla/gpt1900-d34-contradiction-rl-v11 step=105 mode=chat
+  [cached] discovery-rl-v11-s105
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 860 tokens, stop, 24.4s
+    gr_main_elevator_light sample 1: 900 tokens, stop, 25.9s
+    gr_main_elevator_light sample 2: 1024 tokens, length, 29.5s
+
+[discovery-rl-v11-s140] mhla/gpt1900-d34-contradiction-rl-v11 step=140 mode=chat
+  [cached] discovery-rl-v11-s140
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 562 tokens, stop, 16.3s
+    gr_main_elevator_light sample 1: 401 tokens, stop, 11.7s
+    gr_main_elevator_light sample 2: 694 tokens, stop, 20.1s
+
+[discovery-rl-v11-s175] mhla/gpt1900-d34-contradiction-rl-v11 step=175 mode=chat
+  [cached] discovery-rl-v11-s175
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 415 tokens, stop, 12.0s
+    gr_main_elevator_light sample 1: 688 tokens, stop, 19.8s
+    gr_main_elevator_light sample 2: 462 tokens, stop, 13.2s
+
+[discovery-rl-v11-s210] mhla/gpt1900-d34-contradiction-rl-v11 step=210 mode=chat
+  [cached] discovery-rl-v11-s210
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 265 tokens, stop, 7.8s
+    gr_main_elevator_light sample 1: 264 tokens, stop, 7.7s
+    gr_main_elevator_light sample 2: 295 tokens, stop, 8.6s
+
+[discovery-rl-v11-s245] mhla/gpt1900-d34-contradiction-rl-v11 step=245 mode=chat
+  [cached] discovery-rl-v11-s245
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 339 tokens, stop, 9.9s
+    gr_main_elevator_light sample 1: 508 tokens, stop, 14.6s
+    gr_main_elevator_light sample 2: 433 tokens, stop, 12.4s
+
+[discovery-rl-v11-s280] mhla/gpt1900-d34-contradiction-rl-v11 step=280 mode=chat
+  [cached] discovery-rl-v11-s280
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 333 tokens, stop, 9.6s
+    gr_main_elevator_light sample 1: 378 tokens, stop, 10.8s
+    gr_main_elevator_light sample 2: 380 tokens, stop, 10.8s
+
+[discovery-rl-v11-s315] mhla/gpt1900-d34-contradiction-rl-v11 step=315 mode=chat
+  [cached] discovery-rl-v11-s315
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 549 tokens, stop, 15.7s
+    gr_main_elevator_light sample 1: 397 tokens, stop, 11.2s
+    gr_main_elevator_light sample 2: 366 tokens, stop, 10.4s
+
+[discovery-rl-v11-s350] mhla/gpt1900-d34-contradiction-rl-v11 step=350 mode=chat
+  [cached] discovery-rl-v11-s350
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 505 tokens, stop, 14.6s
+    gr_main_elevator_light sample 1: 462 tokens, stop, 13.4s
+    gr_main_elevator_light sample 2: 519 tokens, stop, 15.0s
+
+[discovery-rl-v11-s385] mhla/gpt1900-d34-contradiction-rl-v11 step=385 mode=chat
+  [cached] discovery-rl-v11-s385
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 367 tokens, stop, 10.7s
+    gr_main_elevator_light sample 1: 418 tokens, stop, 12.1s
+    gr_main_elevator_light sample 2: 373 tokens, stop, 10.8s
+
+[discovery-rl-v11-s420] mhla/gpt1900-d34-contradiction-rl-v11 step=420 mode=chat
+  [cached] discovery-rl-v11-s420
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 252 tokens, stop, 7.3s
+    gr_main_elevator_light sample 1: 305 tokens, stop, 8.7s
+    gr_main_elevator_light sample 2: 312 tokens, stop, 9.0s
+
+[discovery-rl-v11-s455] mhla/gpt1900-d34-contradiction-rl-v11 step=455 mode=chat
+  [cached] discovery-rl-v11-s455
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 572 tokens, stop, 16.4s
+    gr_main_elevator_light sample 1: 509 tokens, stop, 14.4s
+    gr_main_elevator_light sample 2: 406 tokens, stop, 11.5s
+
+[discovery-rl-v11-s490] mhla/gpt1900-d34-contradiction-rl-v11 step=490 mode=chat
+  [cached] discovery-rl-v11-s490
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 483 tokens, stop, 13.7s
+    gr_main_elevator_light sample 1: 412 tokens, stop, 11.7s
+    gr_main_elevator_light sample 2: 328 tokens, stop, 9.3s
+
+[discovery-rl-v11-s525] mhla/gpt1900-d34-contradiction-rl-v11 step=525 mode=chat
+  [cached] discovery-rl-v11-s525
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 368 tokens, stop, 10.5s
+    gr_main_elevator_light sample 1: 233 tokens, stop, 6.7s
+    gr_main_elevator_light sample 2: 298 tokens, stop, 8.5s
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 392 tokens, stop, 11.2s
+    gr_main_elevator_light sample 1: 322 tokens, stop, 9.0s
+    gr_main_elevator_light sample 2: 343 tokens, stop, 9.6s
+
+[discovery-rl-v11-s595] mhla/gpt1900-d34-contradiction-rl-v11 step=595 mode=chat
+  [cached] discovery-rl-v11-s595
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 422 tokens, stop, 11.8s
+    gr_main_elevator_light sample 1: 318 tokens, stop, 8.9s
+    gr_main_elevator_light sample 2: 521 tokens, stop, 14.4s
+
+[discovery-rl-v11-s630] mhla/gpt1900-d34-contradiction-rl-v11 step=630 mode=chat
+  [cached] discovery-rl-v11-s630
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 353 tokens, stop, 10.1s
+    gr_main_elevator_light sample 1: 300 tokens, stop, 8.7s
+    gr_main_elevator_light sample 2: 362 tokens, stop, 10.4s
+
+[discovery-rl-v11-s665] mhla/gpt1900-d34-contradiction-rl-v11 step=665 mode=chat
+  [cached] discovery-rl-v11-s665
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 356 tokens, stop, 10.2s
+    gr_main_elevator_light sample 1: 317 tokens, stop, 9.0s
+    gr_main_elevator_light sample 2: 526 tokens, stop, 14.8s
+
+[discovery-rl-v11-s700] mhla/gpt1900-d34-contradiction-rl-v11 step=700 mode=chat
+  [cached] discovery-rl-v11-s700
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 440 tokens, stop, 12.7s
+    gr_main_elevator_light sample 1: 397 tokens, stop, 11.3s
+    gr_main_elevator_light sample 2: 488 tokens, stop, 13.8s
+
+[discovery-rl-v11-s735] mhla/gpt1900-d34-contradiction-rl-v11 step=735 mode=chat
+  [cached] discovery-rl-v11-s735
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 378 tokens, stop, 10.8s
+    gr_main_elevator_light sample 1: 361 tokens, stop, 10.1s
+    gr_main_elevator_light sample 2: 449 tokens, stop, 12.6s
+
+[discovery-rl-v11-s770] mhla/gpt1900-d34-contradiction-rl-v11 step=770 mode=chat
+  [cached] discovery-rl-v11-s770
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 637 tokens, stop, 18.1s
+    gr_main_elevator_light sample 1: 295 tokens, stop, 8.6s
+    gr_main_elevator_light sample 2: 421 tokens, stop, 12.1s
+
+[discovery-rl-v11-s805] mhla/gpt1900-d34-contradiction-rl-v11 step=805 mode=chat
+  [cached] discovery-rl-v11-s805
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 586 tokens, stop, 16.8s
+    gr_main_elevator_light sample 1: 316 tokens, stop, 9.1s
+    gr_main_elevator_light sample 2: 438 tokens, stop, 12.6s
+
+[discovery-rl-v11-s839] mhla/gpt1900-d34-contradiction-rl-v11 step=839 mode=chat
+  [cached] discovery-rl-v11-s839
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_main_elevator_light sample 0: 282 tokens, stop, 8.2s
+    gr_main_elevator_light sample 1: 546 tokens, stop, 15.6s
+    gr_main_elevator_light sample 2: 595 tokens, stop, 17.0s
+
+==============================================================
+run_id      2026-09-28T22:28:29Z-a84a3d
+records     72 written, 0 carrying an error
+expected    72
+elapsed     23.4 min
+output      evidence/elevator/leading.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+72 records → evidence/elevator/leading.html
+################ SUMMARY (text level, no scores yet) ################
+==============================================================
+REPORT
+==============================================================
+evidence/elevator/scaffolded.jsonl
+  records 72  errors 0  scored 0  stock opening 62/72  hit max_tokens 2
+  not judged yet
+evidence/elevator/minimal.jsonl
+  records 72  errors 0  scored 0  stock opening 64/72  hit max_tokens 0
+  not judged yet
+evidence/elevator/leading.jsonl
+  records 72  errors 0  scored 0  stock opening 58/72  hit max_tokens 2
+  not judged yet
+upstream:physics_eval_v11
+  records 192  errors 0  scored 192  stock opening 150/192  hit max_tokens 0
+  MEAN SCORE 0.93 (n=192)  95% CI 0.84 to 1.03   hist 0:44 1:122 2:22 3:3 4:1 5:0
+evidence/elevator/scaffolded.jsonl  vs  evidence/elevator/minimal.jsonl
+  shared 72  byte identical 0
+evidence/elevator/scaffolded.jsonl  vs  evidence/elevator/leading.jsonl
+  shared 72  byte identical 0
+evidence/elevator/scaffolded.jsonl  vs  upstream:physics_eval_v11
+  shared 24  byte identical 0
+evidence/elevator/minimal.jsonl  vs  evidence/elevator/leading.jsonl
+  shared 72  byte identical 0
+evidence/elevator/minimal.jsonl  vs  upstream:physics_eval_v11
+  shared 24  byte identical 0
+evidence/elevator/leading.jsonl  vs  upstream:physics_eval_v11
+  shared 24  byte identical 0
+==============================================================
+wrote evidence/elevator/report.json
+wrote evidence/elevator/report.html
+ELEVATOR COMPLETE. Open evidence/elevator/report.html. Grade on the Mac next.

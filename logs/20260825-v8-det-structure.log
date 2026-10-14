@@ -1,0 +1,20 @@
+$ python3 -c "
+import json
+d = json.load(open('results/physics_eval_v8_det/generations.json'))
+for model in d:
+    tasks = d[model]
+    first = list(tasks.values())[0]
+    print(model, '| tasks:', len(tasks), '| fields:', list(first.keys()))
+"
+discovery-rl-v8-s035 | tasks: 8 | fields: ['prompt', 'mode', 'completions']
+discovery-rl-v8-s070 | tasks: 8 | fields: ['prompt', 'mode', 'completions']
+discovery-rl-v8-s105 | tasks: 8 | fields: ['prompt', 'mode', 'completions']
+discovery-rl-v8-s140 | tasks: 8 | fields: ['prompt', 'mode', 'completions']
+discovery-rl-v8-s175 | tasks: 8 | fields: ['prompt', 'mode', 'completions']
+discovery-rl-v8-s210 | tasks: 8 | fields: ['prompt', 'mode', 'completions']
+discovery-rl-v8-s245 | tasks: 8 | fields: ['prompt', 'mode', 'completions']
+discovery-rl-v8-s280 | tasks: 8 | fields: ['prompt', 'mode', 'completions']
+discovery-rl-v8-s315 | tasks: 8 | fields: ['prompt', 'mode', 'completions']
+discovery-rl-v8-s350 | tasks: 8 | fields: ['prompt', 'mode', 'completions']
+discovery-rl-v8-s385 | tasks: 8 | fields: ['prompt', 'mode', 'completions']
+discovery-rl-v8-s420 | tasks: 8 | fields: ['prompt', 'mode', 'completions']

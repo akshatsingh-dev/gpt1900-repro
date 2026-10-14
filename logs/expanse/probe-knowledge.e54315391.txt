@@ -1,0 +1,8 @@
+2026-09-15 12:29:00,543 - httpx - [32m[1mINFO[0m - HTTP Request: GET https://huggingface.co/api/models/mhla/gpt1900-d34-22btok "HTTP/1.1 200 OK"
+2026-09-15 12:29:00,671 - httpx - [32m[1mINFO[0m - HTTP Request: GET https://huggingface.co/api/models/mhla/gpt1900-d34-22btok/tree/d6330f9f0a17ce13da36fb951d7987bb03e6fbd0?recursive=true&expand=false "HTTP/1.1 200 OK"
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]2026-09-15 12:29:01,056 - httpx - [32m[1mINFO[0m - HTTP Request: GET https://huggingface.co/api/models/mhla/gpt1900-d34-22btok/xet-read-token/d6330f9f0a17ce13da36fb951d7987bb03e6fbd0 "HTTP/1.1 200 OK"
+2026-09-15 12:29:01,077 - httpx - [32m[1mINFO[0m - HTTP Request: HEAD https://huggingface.co/mhla/gpt1900-d34-22btok/resolve/d6330f9f0a17ce13da36fb951d7987bb03e6fbd0/meta_010507.json "HTTP/1.1 307 Temporary Redirect"
+2026-09-15 12:29:01,180 - httpx - [32m[1mINFO[0m - HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/mhla/gpt1900-d34-22btok/d6330f9f0a17ce13da36fb951d7987bb03e6fbd0/meta_010507.json "HTTP/1.1 200 OK"
+2026-09-15 12:29:01,339 - httpx - [32m[1mINFO[0m - HTTP Request: GET https://huggingface.co/api/resolve-cache/models/mhla/gpt1900-d34-22btok/d6330f9f0a17ce13da36fb951d7987bb03e6fbd0/meta_010507.json "HTTP/1.1 200 OK"
+Fetching 4 files:  25%|██▌       | 1/4 [00:00<00:02,  1.27it/s]Fetching 4 files:  50%|█████     | 2/4 [00:01<00:01,  1.58it/s]Fetching 4 files:  75%|███████▌  | 3/4 [00:01<00:00,  2.50it/s]Fetching 4 files: 100%|██████████| 4/4 [01:11<00:00, 27.98s/it]Fetching 4 files: 100%|██████████| 4/4 [01:11<00:00, 17.92s/it]
+2026-09-15 12:31:50,493 - httpx - [32m[1mINFO[0m - HTTP Request: GET https://huggingface.co/api/models/mhla/gpt1900-d34-contradiction-rl-v11 "HTTP/1.1 200 OK"

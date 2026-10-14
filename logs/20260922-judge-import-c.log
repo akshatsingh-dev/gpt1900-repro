@@ -1,0 +1,4 @@
+upstream:physics_eval_v11: 192 of 192 regraded -> evidence/review-packet-c/physics_eval_v11.regraded.jsonl
+
+graded ids 192   in key 192   ungraded 0
+records written 192   scored 192   grader 'claude-fable-5-1, blinded batches of 24, fresh session per batch, upstream rubric'

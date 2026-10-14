@@ -1,0 +1,34 @@
+==============================================================
+CONTAMINATION PROBE, MODEL SIDE
+==============================================================
+d34-22btok                 control    fails 13  knows 2
+d34-22btok                 post1900   clean 33
+discovery-rl-v11-s560      control    fails 9  partial 6
+discovery-rl-v11-s560      post1900   clean 33
+
+keyword flags from words NOT in the stem: 1 of 96
+  FAILS  d34-22btok/control_electron: Describes a hardened steel bar dipped in copper sulphate and acid; nothing about a charged particle.
+  FAILS  d34-22btok/control_electron: Describes a steel rod and electro-magnet apparatus with a rack and pinion; no particle.
+  FAILS  d34-22btok/control_electron: Calls 'the electron' a glass apparatus of 200 disks used to detect platinum and gold; no charged corpuscle.
+  FAILS  d34-22btok/control_michelson: Membership statistics of a 'National Association' in 1887 and 1889; nothing about light or aether.
+  FAILS  d34-22btok/control_michelson: Water temperatures in a pneumatic trough at 103 F; nothing about interference or aether.
+  FAILS  d34-22btok/control_michelson: Says gold in fine paper manufacture was a failure; unrelated.
+  FAILS  d34-22btok/control_maxwell: Mechanics of a body under a central force, then 'let the equations of motion be Maxwell's equations'; no fields or light.
+  FAILS  d34-22btok/control_maxwell: Says Maxwell's equations do not describe the course of water in a vessel, looping on water at rest; no fields.
+  FAILS  d34-22btok/control_maxwell: Algebra about curves with double roots in x, y, z; no fields or light.
+  FAILS  d34-22btok/control_aether: Loops 'the luminiferous aether is the essence of the sun, moon, and all the planets'; never says medium or light transmission.
+  FAILS  d34-22btok/control_xrays: Invents solar spectrum discoveries (violet end 1879, chromosphere 1890) by the discoverer; nothing about penetrating rays or photographs.
+  FAILS  d34-22btok/control_xrays: Says the rays were seen in 1892 by a pupil of Kohlrausch as green light with no ultra-violet; visible spectroscopy, not X-rays.
+  FAILS  d34-22btok/control_xrays: Says they are sometimes strong, then discusses viewing the solar spectrum with telescopes; not X-rays.
+  FAILS  discovery-rl-v11-s560/control_electron: 'Thomson suggests' two metals reverse electromotive behaviour, contact electrochemistry; nothing about the electron.
+  FAILS  discovery-rl-v11-s560/control_michelson: Magnetic polarity in iron and steel under a current; nothing about light, interference, or aether.
+  FAILS  discovery-rl-v11-s560/control_michelson: A suspended body turning near a charged body, electrostatics; no interference or aether.
+  FAILS  discovery-rl-v11-s560/control_michelson: Fine versus coarse instruments and heat and moisture; no interference or aether.
+  FAILS  discovery-rl-v11-s560/control_maxwell: Generates a user turn on temperature in the earth's crust and answers about the molten nucleus; no fields or light.
+  FAILS  discovery-rl-v11-s560/control_maxwell: Casual modern-register musing about handling every force we face; unrelated.
+  FAILS  discovery-rl-v11-s560/control_aether: Colours of bodies and 'photosynthetic power' citing Herschel and Faraday; never says medium for light.
+  FAILS  discovery-rl-v11-s560/control_aether: One sentence: at a loss to account for this phenomenon; no content.
+  FAILS  discovery-rl-v11-s560/control_xrays: Says the rays emanate from living bodies, lungs or skin, and act on visual nerves; wrong.
+
+wrote evidence/contamination/probe-sampled.json
+wrote evidence/contamination/probe-sampled.html

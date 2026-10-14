@@ -1,0 +1,81 @@
+run_id      2026-09-22T10:08:41Z-00b9ff
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cpu
+determinism False  slurm job 54390459
+config      EVAL.json  condition scaffolded
+sampling    temperature 0.0  top_k 50  base seed 1337
+work        1 checkpoints x 8 tasks x 1 samples = 8 generations
+writing     evidence/dtype-control/fp32-cpu.jsonl
+
+loading tokenizer ...
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as float32
+    uv_catastrophe_main sample 0: 498 tokens, stop, 321.1s
+    photoelectric_effect_main sample 0: 518 tokens, stop, 348.1s
+    sr_frozen_light sample 0: 333 tokens, stop, 285.6s
+    sr_approaching_c sample 0: 305 tokens, stop, 307.7s
+    sr_train_lightning sample 0: 377 tokens, stop, 289.5s
+    sr_michelson_morley sample 0: 257 tokens, stop, 236.6s
+    gr_main_elevator_light sample 0: 416 tokens, stop, 323.9s
+    gr_free_fall_equivalence sample 0: 272 tokens, stop, 229.9s
+
+==============================================================
+run_id      2026-09-22T10:08:41Z-00b9ff
+records     8 written, 0 carrying an error
+expected    8
+elapsed     39.4 min
+output      evidence/dtype-control/fp32-cpu.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+################ COMPARE vs V100 bf16-emulated run-a ################
+==============================================================
+RUN COMPARISON
+==============================================================
+A  evidence/determinism/run-a.jsonl   8 records
+B  evidence/dtype-control/fp32-cpu.jsonl   8 records
+
+Environment differs between the runs. This is a portability comparison,
+not a determinism test, and should be reported as one:
+  schema_version             A='1.1'   B='1.2'
+  device                     A='cuda'   B='cpu'
+  dtype                      A='bfloat16'   B='float32'
+  dtype_override             A=None   B='auto'
+  gpu_name                   A='Tesla V100-SXM2-32GB'   B=None
+  compute_capability         A='7.0'   B=None
+  bf16_supported             A=False   B=None
+
+paired records    8
+
+  different completion             8
+
+REPRODUCTION RATE  0 / 8  = 0.0%
+==============================================================
+
+First 5 mismatches:
+  discovery-rl-v11-s560 / gr_free_fall_equivalence / seed 1337 / sample 0
+    different completion, 433 vs 272 tokens
+    A 0250c2437c2fd5a7619e1504e84bfd2ab3aa7417116d704e821bac789ab443e5
+    B f499dc904c88b9fe0c20931842fc3ec961ed56c243f88ef092d39901fe8fddbb
+  discovery-rl-v11-s560 / gr_main_elevator_light / seed 1337 / sample 0
+    different completion, 462 vs 416 tokens
+    A 0e41de78c34d1f5a0f18598c11bbc632a2c95db9510dda7aa3650a82201d6039
+    B d278df6349dbd4ad325be4c3d98f2b7199da6e0383538b866462851969feed47
+  discovery-rl-v11-s560 / photoelectric_effect_main / seed 1337 / sample 0
+    different completion, 586 vs 518 tokens
+    A e2b7638ab9dbca32b5c26b8a87a33c7afcae9f343e520c0cf2a6ccd94a262710
+    B 39e9fafacb570914313c29f2fba24c6d49b4a4c74d8d838b973949e6185b7045
+  discovery-rl-v11-s560 / sr_approaching_c / seed 1337 / sample 0
+    different completion, 325 vs 305 tokens
+    A 71ae764462b832226aff9e49a53b25e8385f7e07d655878d50e624837d8b51f5
+    B c0bd752ae7e4bf881ad918c1b6fe419b8c07ee717bc11ab8199438b745cb4e7f
+  discovery-rl-v11-s560 / sr_frozen_light / seed 1337 / sample 0
+    different completion, 238 vs 333 tokens
+    A 0a9e7375b05054bdab277edea617eb3bca9529476374c93cc59b106dee1f89ea
+    B ff194c00012eb945987ca093e328b095cba3b847d69f48c3870c50ff7a2985b4
+
+wrote evidence/dtype-control/compare-cpu.json
+wrote evidence/dtype-control/compare-cpu.html
+8 records → evidence/dtype-control/generations-cpu.html

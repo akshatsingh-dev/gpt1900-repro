@@ -1,0 +1,25 @@
+$ python3 -c "
+import json, os
+a = json.load(open('results/physics_eval_v8/generations.json'))
+b = json.load(open('results/physics_eval_v8_det/generations.json'))
+pre = []
+for m in a:
+    for t in a[m]:
+        x = a[m][t]['completions'][0]; y = b[m][t]['completions'][0]
+        pre.append((len(os.path.commonprefix([x, y])), m, t))
+pre.sort()
+print('shared opening characters -> shortest:', pre[0][0], 'longest:', pre[-1][0], 'average:', sum(p[0] for p in pre)//len(pre))
+n, m, t = pre[-1]
+x = a[m][t]['completions'][0]; y = b[m][t]['completions'][0]
+print()
+print('longest shared opening:', m, t)
+print('...both wrote :', repr(x[max(0,n-100):n]))
+print('then v8       :', repr(x[n:n+100]))
+print('then v8_det   :', repr(y[n:n+100]))
+"
+shared opening characters -> shortest: 1 longest: 86 average: 16
+
+longest shared opening: discovery-rl-v8-s070 sr_train_lightning
+...both wrote : ' Is it not clear that the train observer sees the two flashes arrive at the same time '
+then v8       : 'in the same space? Is not this the only way in which he can see them arrive at the same time? What i'
+then v8_det   : 'because he sees them arrive at the same speed in the two inertia frames? Is not this the only way in'

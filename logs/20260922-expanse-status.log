@@ -1,0 +1,133 @@
+=== pwd ===
+/expanse/lustre/projects/sdp197/asingh59/gpt1900
+=== queue ===
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+=== script_logs ===
+total 521
+-rw-r--r-- 1 asingh59 sdp197 19284 Sep 15 13:18 sensitivity.o54315386.txt
+-rw-r--r-- 1 asingh59 sdp197  4727 Sep 15 13:12 sensitivity.e54315386.txt
+-rw-r--r-- 1 asingh59 sdp197  4187 Sep 15 12:33 probe-knowledge.o54315391.txt
+-rw-r--r-- 1 asingh59 sdp197  1846 Sep 15 12:31 probe-knowledge.e54315391.txt
+-rw-r--r-- 1 asingh59 sdp197 10127 Sep 15 12:27 sampling.o54315364.txt
+-rw-r--r-- 1 asingh59 sdp197   781 Sep 15 12:25 sampling.e54315364.txt
+-rw-r--r-- 1 asingh59 sdp197  3729 Sep  8 01:06 eval.o54222400.txt
+-rw-r--r-- 1 asingh59 sdp197   324 Sep  8 01:04 eval.e54222400.txt
+-rw-r--r-- 1 asingh59 sdp197  1245 Sep  8 00:24 probe.o54222098.txt
+-rw-r--r-- 1 asingh59 sdp197  3056 Sep  8 00:24 probe.e54222098.txt
+-rw-r--r-- 1 asingh59 sdp197   407 Sep  8 00:08 smoke.o54221937.txt
+=== evidence ===
+contamination
+determinism
+probe.jsonl
+prompt-sensitivity
+sampling
+=== hf_cache ===
+d26-8btok
+d34-22btok
+discovery-rl-v11-s560
+discovery-rl-v11-s630
+discovery-rl-v11-s735
+hub
+xet
+38G	hf_cache/
+=== disk ===
+10.22.101.123@o2ib:10.22.101.124@o2ib:/expanse/projects   11P  9.7P  1.2P  90% /expanse/lustre/projects
+=== tools on expanse ===
+blind_packet.py
+compare_runs.py
+corpus_search.py
+EVAL_leading.json
+judge.py
+logged_eval.py
+make_leading_config.py
+probe_knowledge.json
+probe_report.py
+__pycache__
+render_html.py
+report.py
+run_corpus_search.sh
+runeval.sh
+run_knowledge_probe.sh
+runprobe.sh
+run_sampling.sh
+run_sensitivity.sh
+runsmoke.sh
+run_sweep.sh
+smoke.py
+=== conda pyarrow ===
+ModuleNotFoundError: No module named 'pyarrow'
+torch 2.14.0+cu126
+=== rsync tools up ===
+Connection closed by 198.202.100.14 port 22
+rsync(66767): error: unexpected end of file
+rsync(66767): error: io_read_nonblocking
+rsync(66767): error: io_read_buf
+rsync(66767): error: io_read_int
+rsync(66767): warning: child 66768 exited with status 255
+=== HF env on expanse ===
+/home/asingh59/.bashrc:22:export HF_HOME=$GPT/hf_cache
+(end of grep)
+Transfer starting: 23 files
+./
+blind_packet.py
+judge_import.py
+probe_knowledge.json
+probe_report.py
+run_corpus_search.sh
+run_knowledge_probe.sh
+run_knowledge_probe_sampled.sh
+
+sent 28215 bytes  received 390 bytes  28978 bytes/sec
+total size is 187351  speedup is 6.55
+=== pip install pyarrow ===
+pyarrow 25.0.1
+=== submit sweep ===
+Submitted batch job 54390360
+=== submit probe-sampled ===
+Submitted batch job 54390361
+=== submit corpus-search ===
+Submitted batch job 54390362
+=== queue ===
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+          54390361 gpu-share probe-sa asingh59 PD       0:00      1 (Priority)
+          54390360 gpu-share    sweep asingh59 PD       0:00      1 (Priority)
+          54390362    shared corpus-s asingh59 PD       0:00      1 (Priority)
+=== sweep ===
+16
+
+[discovery-rl-v11-s105] mhla/gpt1900-d34-contradiction-rl-v11 step=105 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=105 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+=== probe-sampled ===
+    probe_spacetime sample 1: 200 tokens, length, 5.4s
+    probe_spacetime sample 2: 200 tokens, length, 5.4s
+    probe_bohr sample 0: 200 tokens, length, 5.4s
+=== corpus ===
+dataset mhla/pre1900-corpus revision ff332ef64f896c8d44672b4d1d0c752029e32f29
+downloading to corpus_cache ...
+scanning 42 shards, 56.4 GB, 15 terms, 16 workers
+=== errs ===
+=== sweep: checkpoints done ===
+6
+[discovery-rl-v11-s210] mhla/gpt1900-d34-contradiction-rl-v11 step=210 mode=chat
+=== corpus ===
+6
+  5/42 shard_00007.parquet: 50,000 docs, Planck 15, Michelson 4, Morley 239, aether wind 0 ...
+  6/42 shard_00015.parquet: 50,000 docs, Planck 19, Michelson 9, Morley 293, aether wind 0 ...
+sweep RUNNING 18:25
+corpus-search RUNNING 18:43
+54390360 sweep RUNNING 1:00:10
+54390459 fp32cpu RUNNING 18:48
+=== sweep ===
+176
+    gr_free_fall_equivalence sample 0: 461 tokens, stop, 12.9s
+
+[discovery-rl-v11-s805] mhla/gpt1900-d34-contradiction-rl-v11 step=805 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=805 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+total 398
+drwxr-sr-x 2 asingh59 sdp197  57344 Sep 22 02:28 .
+drwxr-sr-x 8 asingh59 sdp197  57344 Sep 22 03:05 ..
+-rw-r--r-- 1 asingh59 sdp197 873797 Sep 22 03:26 v11-scaffolded.jsonl
+54390635 fp32cpu2 RUNNING 0:29
+(queue listed above; empty means nothing running)
+235G	/expanse/lustre/projects/sdp197/asingh59/gpt1900/hf_cache
+51G	/expanse/lustre/projects/sdp197/asingh59/gpt1900/corpus_cache

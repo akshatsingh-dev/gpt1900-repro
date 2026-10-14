@@ -1,0 +1,140 @@
+run_id      2026-09-22T09:28:01Z-7a0551
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54390361
+config      ../../tools/probe_knowledge.json  condition probe
+sampling    temperature 0.7  top_k 50  base seed 42
+work        2 checkpoints x 16 tasks x 3 samples = 96 generations
+writing     evidence/contamination/probe-sampled.jsonl
+
+loading tokenizer ...
+
+[d34-22btok] mhla/gpt1900-d34-22btok step=10507 mode=completion
+  [cached] d34-22btok
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    probe_planck_constant sample 0: 200 tokens, length, 8.1s
+    probe_planck_constant sample 1: 200 tokens, length, 5.4s
+    probe_planck_constant sample 2: 200 tokens, length, 5.4s
+    probe_quantum_energy sample 0: 200 tokens, length, 5.4s
+    probe_quantum_energy sample 1: 200 tokens, length, 5.4s
+    probe_quantum_energy sample 2: 200 tokens, length, 5.4s
+    probe_photon sample 0: 200 tokens, length, 5.4s
+    probe_photon sample 1: 200 tokens, length, 5.4s
+    probe_photon sample 2: 200 tokens, length, 5.4s
+    probe_einstein sample 0: 200 tokens, length, 5.4s
+    probe_einstein sample 1: 200 tokens, length, 5.4s
+    probe_einstein sample 2: 200 tokens, length, 5.4s
+    probe_relativity sample 0: 200 tokens, length, 5.4s
+    probe_relativity sample 1: 200 tokens, length, 5.4s
+    probe_relativity sample 2: 200 tokens, length, 5.4s
+    probe_emc2 sample 0: 200 tokens, length, 5.5s
+    probe_emc2 sample 1: 200 tokens, length, 5.5s
+    probe_emc2 sample 2: 200 tokens, length, 5.4s
+    probe_spacetime sample 0: 200 tokens, length, 5.4s
+    probe_spacetime sample 1: 200 tokens, length, 5.4s
+    probe_spacetime sample 2: 200 tokens, length, 5.4s
+    probe_bohr sample 0: 200 tokens, length, 5.4s
+    probe_bohr sample 1: 200 tokens, length, 5.4s
+    probe_bohr sample 2: 200 tokens, length, 5.4s
+    probe_year_1905 sample 0: 200 tokens, length, 5.4s
+    probe_year_1905 sample 1: 200 tokens, length, 5.4s
+    probe_year_1905 sample 2: 200 tokens, length, 5.4s
+    probe_nobel_1901 sample 0: 200 tokens, length, 5.4s
+    probe_nobel_1901 sample 1: 200 tokens, length, 5.4s
+    probe_nobel_1901 sample 2: 200 tokens, length, 5.4s
+    probe_wright sample 0: 200 tokens, length, 5.4s
+    probe_wright sample 1: 200 tokens, length, 5.4s
+    probe_wright sample 2: 200 tokens, length, 5.4s
+    control_electron sample 0: 200 tokens, length, 5.4s
+    control_electron sample 1: 200 tokens, length, 5.4s
+    control_electron sample 2: 200 tokens, length, 5.4s
+    control_michelson sample 0: 200 tokens, length, 5.4s
+    control_michelson sample 1: 200 tokens, length, 5.4s
+    control_michelson sample 2: 200 tokens, length, 5.4s
+    control_maxwell sample 0: 200 tokens, length, 5.4s
+    control_maxwell sample 1: 200 tokens, length, 5.4s
+    control_maxwell sample 2: 200 tokens, length, 5.4s
+    control_aether sample 0: 200 tokens, length, 5.4s
+    control_aether sample 1: 200 tokens, length, 5.4s
+    control_aether sample 2: 200 tokens, length, 5.4s
+    control_xrays sample 0: 200 tokens, length, 5.4s
+    control_xrays sample 1: 200 tokens, length, 5.4s
+    control_xrays sample 2: 200 tokens, length, 5.4s
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    probe_planck_constant sample 0: 200 tokens, length, 5.5s
+    probe_planck_constant sample 1: 200 tokens, length, 5.4s
+    probe_planck_constant sample 2: 200 tokens, length, 5.4s
+    probe_quantum_energy sample 0: 200 tokens, length, 5.4s
+    probe_quantum_energy sample 1: 200 tokens, length, 5.4s
+    probe_quantum_energy sample 2: 200 tokens, length, 5.4s
+    probe_photon sample 0: 200 tokens, length, 5.5s
+    probe_photon sample 1: 200 tokens, length, 5.4s
+    probe_photon sample 2: 200 tokens, length, 5.4s
+    probe_einstein sample 0: 193 tokens, stop, 5.2s
+    probe_einstein sample 1: 200 tokens, length, 5.4s
+    probe_einstein sample 2: 200 tokens, length, 5.4s
+    probe_relativity sample 0: 105 tokens, stop, 2.9s
+    probe_relativity sample 1: 200 tokens, length, 5.4s
+    probe_relativity sample 2: 114 tokens, stop, 3.1s
+    probe_emc2 sample 0: 120 tokens, stop, 3.3s
+    probe_emc2 sample 1: 200 tokens, length, 5.4s
+    probe_emc2 sample 2: 78 tokens, stop, 2.2s
+    probe_spacetime sample 0: 200 tokens, length, 5.4s
+    probe_spacetime sample 1: 200 tokens, length, 5.4s
+    probe_spacetime sample 2: 200 tokens, length, 5.4s
+    probe_bohr sample 0: 200 tokens, length, 5.4s
+    probe_bohr sample 1: 200 tokens, length, 5.4s
+    probe_bohr sample 2: 200 tokens, length, 5.4s
+    probe_year_1905 sample 0: 200 tokens, length, 5.4s
+    probe_year_1905 sample 1: 200 tokens, length, 5.4s
+    probe_year_1905 sample 2: 200 tokens, length, 5.4s
+    probe_nobel_1901 sample 0: 200 tokens, length, 5.4s
+    probe_nobel_1901 sample 1: 200 tokens, length, 5.4s
+    probe_nobel_1901 sample 2: 200 tokens, length, 5.4s
+    probe_wright sample 0: 200 tokens, length, 5.5s
+    probe_wright sample 1: 200 tokens, length, 5.4s
+    probe_wright sample 2: 123 tokens, stop, 3.4s
+    control_electron sample 0: 200 tokens, length, 5.4s
+    control_electron sample 1: 131 tokens, stop, 3.6s
+    control_electron sample 2: 200 tokens, length, 5.4s
+    control_michelson sample 0: 200 tokens, length, 5.4s
+    control_michelson sample 1: 200 tokens, length, 5.4s
+    control_michelson sample 2: 169 tokens, stop, 4.6s
+    control_maxwell sample 0: 200 tokens, length, 5.4s
+    control_maxwell sample 1: 200 tokens, length, 5.4s
+    control_maxwell sample 2: 58 tokens, stop, 1.6s
+    control_aether sample 0: 127 tokens, stop, 3.5s
+    control_aether sample 1: 200 tokens, length, 5.4s
+    control_aether sample 2: 20 tokens, stop, 0.6s
+    control_xrays sample 0: 200 tokens, length, 5.4s
+    control_xrays sample 1: 179 tokens, stop, 4.8s
+    control_xrays sample 2: 200 tokens, length, 5.4s
+
+==============================================================
+run_id      2026-09-22T09:28:01Z-7a0551
+records     96 written, 0 carrying an error
+expected    96
+elapsed     9.4 min
+output      evidence/contamination/probe-sampled.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+96 records → evidence/contamination/probe-sampled-generations.html
+==============================================================
+CONTAMINATION PROBE, MODEL SIDE
+==============================================================
+d34-22btok                 control    unread 15
+d34-22btok                 post1900   unread 33
+discovery-rl-v11-s560      control    unread 15
+discovery-rl-v11-s560      post1900   unread 33
+
+keyword flags from words NOT in the stem: 1 of 96
+
+wrote evidence/contamination/probe-sampled.json
+wrote evidence/contamination/probe-sampled.html
+STEP 4b COMPLETE. Open evidence/contamination/probe-sampled.html.

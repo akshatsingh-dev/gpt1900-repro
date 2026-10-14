@@ -1,0 +1,26 @@
+=== newest logs ===
+total 1091
+-rw-r--r-- 1 asingh59 sdp197 52706 Sep 30 20:40 freefall.o54546826.txt
+-rw-r--r-- 1 asingh59 sdp197 15685 Sep 30 20:39 freefall.e54546826.txt
+-rw-r--r-- 1 asingh59 sdp197 36990 Sep 28 15:51 elevator.o54507422.txt
+-rw-r--r-- 1 asingh59 sdp197 11797 Sep 28 15:51 elevator.e54507422.txt
+=== freefall evidence ===
+total 1289
+drwxr-sr-x  2 asingh59 sdp197  57344 Sep 30 20:40 .
+drwxr-sr-x 11 asingh59 sdp197  57344 Sep 30 18:55 ..
+-rw-r--r--  1 asingh59 sdp197 507114 Sep 30 20:08 leading.html
+-rw-r--r--  1 asingh59 sdp197 339027 Sep 30 20:08 leading.jsonl
+-rw-r--r--  1 asingh59 sdp197 514269 Sep 30 19:47 minimal.html
+-rw-r--r--  1 asingh59 sdp197 345612 Sep 30 19:47 minimal.jsonl
+-rw-r--r--  1 asingh59 sdp197  16464 Sep 30 20:40 report.html
+-rw-r--r--  1 asingh59 sdp197  14220 Sep 30 20:40 report.json
+-rw-r--r--  1 asingh59 sdp197 499111 Sep 30 19:24 scaffolded.html
+-rw-r--r--  1 asingh59 sdp197 330355 Sep 30 19:24 scaffolded.jsonl
+-rw-r--r--  1 asingh59 sdp197 862659 Sep 30 20:40 seed.html
+-rw-r--r--  1 asingh59 sdp197 530805 Sep 30 20:40 seed.jsonl
+=== freefall log tail ===
+  shared 24  byte identical 0
+==============================================================
+wrote evidence/freefall/report.json
+wrote evidence/freefall/report.html
+FREEFALL COMPLETE. Open evidence/freefall/report.html. Grade and read on the Mac next.

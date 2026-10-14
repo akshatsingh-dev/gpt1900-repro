@@ -1,0 +1,91 @@
+run_id      2026-10-07T15:32:43Z-d5af2c
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54724266
+config      ../../tools/EVAL_abduction.json  condition abduction
+sampling    temperature 0.7  top_k 50  base seed 42
+work        1 checkpoints x 13 tasks x 5 samples = 65 generations
+writing     evidence/abduction/parts/abduction-s035.jsonl
+
+loading tokenizer ...
+
+[discovery-rl-v11-s035] mhla/gpt1900-d34-contradiction-rl-v11 step=35 mode=chat
+  [cached] discovery-rl-v11-s035
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel sample 0: 272 tokens, stop, 7.6s
+    elev_cable_feel sample 1: 125 tokens, stop, 3.5s
+    elev_cable_feel sample 2: 510 tokens, stop, 13.8s
+    elev_cable_feel sample 3: 344 tokens, stop, 9.3s
+    elev_cable_feel sample 4: 182 tokens, stop, 5.0s
+    elev_cable_feel_why sample 0: 476 tokens, stop, 12.9s
+    elev_cable_feel_why sample 1: 695 tokens, stop, 18.7s
+    elev_cable_feel_why sample 2: 541 tokens, stop, 14.6s
+    elev_cable_feel_why sample 3: 531 tokens, stop, 14.3s
+    elev_cable_feel_why sample 4: 768 tokens, length, 20.7s
+    elev_cable_stone sample 0: 609 tokens, stop, 16.4s
+    elev_cable_stone sample 1: 525 tokens, stop, 14.2s
+    elev_cable_stone sample 2: 506 tokens, stop, 13.6s
+    elev_cable_stone sample 3: 768 tokens, length, 20.7s
+    elev_cable_stone sample 4: 755 tokens, stop, 20.3s
+    elev_cable_scale sample 0: 768 tokens, length, 20.7s
+    elev_cable_scale sample 1: 148 tokens, stop, 4.1s
+    elev_cable_scale sample 2: 403 tokens, stop, 10.9s
+    elev_cable_scale sample 3: 182 tokens, stop, 5.0s
+    elev_cable_scale sample 4: 128 tokens, stop, 3.5s
+    ladder_1_mistaken sample 0: 437 tokens, stop, 11.8s
+    ladder_1_mistaken sample 1: 768 tokens, length, 20.7s
+    ladder_1_mistaken sample 2: 599 tokens, stop, 16.2s
+    ladder_1_mistaken sample 3: 614 tokens, stop, 16.5s
+    ladder_1_mistaken sample 4: 768 tokens, length, 20.7s
+    ladder_2_carriage sample 0: 768 tokens, length, 20.7s
+    ladder_2_carriage sample 1: 768 tokens, length, 20.6s
+    ladder_2_carriage sample 2: 689 tokens, stop, 18.5s
+    ladder_2_carriage sample 3: 484 tokens, stop, 13.1s
+    ladder_2_carriage sample 4: 620 tokens, stop, 16.7s
+    ladder_3_undetectable sample 0: 768 tokens, length, 20.7s
+    ladder_3_undetectable sample 1: 399 tokens, stop, 10.8s
+    ladder_3_undetectable sample 2: 768 tokens, length, 20.7s
+    ladder_3_undetectable sample 3: 327 tokens, stop, 8.9s
+    ladder_3_undetectable sample 4: 444 tokens, stop, 12.0s
+    ded_ship_mast sample 0: 768 tokens, length, 20.7s
+    ded_ship_mast sample 1: 531 tokens, stop, 14.3s
+    ded_ship_mast sample 2: 496 tokens, stop, 13.4s
+    ded_ship_mast sample 3: 768 tokens, length, 20.7s
+    ded_ship_mast sample 4: 475 tokens, stop, 12.8s
+    ded_two_stones sample 0: 520 tokens, stop, 14.1s
+    ded_two_stones sample 1: 504 tokens, stop, 13.6s
+    ded_two_stones sample 2: 412 tokens, stop, 11.1s
+    ded_two_stones sample 3: 399 tokens, stop, 10.8s
+    ded_two_stones sample 4: 768 tokens, length, 20.7s
+    ind_pendulum sample 0: 357 tokens, stop, 9.7s
+    ind_pendulum sample 1: 620 tokens, stop, 16.7s
+    ind_pendulum sample 2: 267 tokens, stop, 7.3s
+    ind_pendulum sample 3: 246 tokens, stop, 6.7s
+    ind_pendulum sample 4: 617 tokens, stop, 16.7s
+    abd_uranus sample 0: 768 tokens, length, 20.7s
+    abd_uranus sample 1: 554 tokens, stop, 14.9s
+    abd_uranus sample 2: 444 tokens, stop, 12.0s
+    abd_uranus sample 3: 768 tokens, length, 20.7s
+    abd_uranus sample 4: 130 tokens, stop, 3.6s
+    abd_mm_bare sample 0: 630 tokens, stop, 17.0s
+    abd_mm_bare sample 1: 442 tokens, stop, 11.9s
+    abd_mm_bare sample 2: 768 tokens, length, 20.7s
+    abd_mm_bare sample 3: 768 tokens, length, 20.7s
+    abd_mm_bare sample 4: 697 tokens, stop, 18.8s
+    abd_bb_bare sample 0: 768 tokens, length, 20.7s
+    abd_bb_bare sample 1: 768 tokens, length, 20.7s
+    abd_bb_bare sample 2: 202 tokens, stop, 5.5s
+    abd_bb_bare sample 3: 683 tokens, stop, 18.4s
+    abd_bb_bare sample 4: 768 tokens, length, 20.7s
+
+==============================================================
+run_id      2026-10-07T15:32:43Z-d5af2c
+records     65 written, 0 carrying an error
+expected    65
+elapsed     17.5 min
+output      evidence/abduction/parts/abduction-s035.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+abd-s035 COMPLETE

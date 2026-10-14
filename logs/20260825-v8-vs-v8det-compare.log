@@ -1,0 +1,19 @@
+$ python3 -c "
+import json
+a = json.load(open('results/physics_eval_v8/generations.json'))
+b = json.load(open('results/physics_eval_v8_det/generations.json'))
+sp = dp = sc = dc = 0
+for m in a:
+    for t in a[m]:
+        if t not in b.get(m, {}): continue
+        if a[m][t]['prompt'] == b[m][t]['prompt']: sp += 1
+        else: dp += 1
+        if a[m][t]['completions'][0] == b[m][t]['completions'][0]: sc += 1
+        else: dc += 1
+print('prompts identical:', sp, '| different:', dp)
+print('answers identical:', sc, '| different:', dc)
+print('total pairs:', sc + dc)
+"
+prompts identical: 96 | different: 0
+answers identical: 0 | different: 96
+total pairs: 96

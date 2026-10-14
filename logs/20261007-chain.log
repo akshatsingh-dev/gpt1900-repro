@@ -1,0 +1,16 @@
+04:43:47 waiting for elevfin1 elevfin2
+05:37:14 elevator halves done: 
+05:42:29 SSH tunnel dropped (control socket gone, broken pipe); driver stopped; will resume once the tunnel is reopened
+05:47:39 tunnel still down; checking again in 60 min
+06:48:31 tunnel still down; checking again in 60 min
+07:55:51 tunnel still down; checking again in 60 min
+08:31:51 tunnel back; elevator parts pulled (75); restarting driver for abduction pairs
+08:31:51 waiting for elevfin1 elevfin2
+08:32:00 elevator halves done:       75 total
+08:32:02 submit abd-base: Submitted batch job 54724264
+08:32:04 submit abd-s035: Submitted batch job 54724266
+08:57:10 pair done: abd-base abd-s035
+08:57:11 submit abd-s560: Submitted batch job 54724525
+08:57:13 submit abd-s839: Submitted batch job 54724526
+09:13:39 pair done: abd-s560 abd-s839
+09:13:39 ALL SLICES DONE      260 total

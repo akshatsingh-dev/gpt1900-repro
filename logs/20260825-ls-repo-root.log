@@ -1,0 +1,5 @@
+$ cd upstream/gpt1900
+$ ls
+CHECKPOINTS.md                  EVAL_no_assumptions.json        LICENSE                         PROJECT_LOG.md                  results                         SERVER_SETUP.md                 uv.lock
+deploy                          EVAL.json                       mcp                             pyproject.toml                  runs                            tasks
+dev                             figures                         nanochat                        README.md                       scripts                         tests

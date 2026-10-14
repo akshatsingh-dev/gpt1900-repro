@@ -1,0 +1,125 @@
+run_id      2026-10-07T11:44:29Z-ed1649
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54719479
+config      ../../tools/EVAL_elevator_final.json  condition final
+sampling    temperature 0.7  top_k 50  base seed 42
+work        13 checkpoints x 1 tasks x 3 samples = 39 generations
+writing     evidence/elevator-final/parts/final-1.jsonl
+
+loading tokenizer ...
+
+[d34-22btok] mhla/gpt1900-d34-22btok step=10507 mode=completion
+  [cached] d34-22btok
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 768 tokens, length, 20.9s
+    elev_cable_feel_why sample 1: 768 tokens, length, 20.3s
+    elev_cable_feel_why sample 2: 768 tokens, length, 20.4s
+
+[discovery-rl-v11-s035] mhla/gpt1900-d34-contradiction-rl-v11 step=35 mode=chat
+  [cached] discovery-rl-v11-s035
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 476 tokens, stop, 12.7s
+    elev_cable_feel_why sample 1: 695 tokens, stop, 18.4s
+    elev_cable_feel_why sample 2: 541 tokens, stop, 14.3s
+
+[discovery-rl-v11-s070] mhla/gpt1900-d34-contradiction-rl-v11 step=70 mode=chat
+  [cached] discovery-rl-v11-s070
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 620 tokens, stop, 16.6s
+    elev_cable_feel_why sample 1: 768 tokens, length, 20.4s
+    elev_cable_feel_why sample 2: 768 tokens, length, 20.3s
+
+[discovery-rl-v11-s105] mhla/gpt1900-d34-contradiction-rl-v11 step=105 mode=chat
+  [cached] discovery-rl-v11-s105
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 768 tokens, length, 20.3s
+    elev_cable_feel_why sample 1: 614 tokens, stop, 16.3s
+    elev_cable_feel_why sample 2: 768 tokens, length, 20.4s
+
+[discovery-rl-v11-s140] mhla/gpt1900-d34-contradiction-rl-v11 step=140 mode=chat
+  [cached] discovery-rl-v11-s140
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 639 tokens, stop, 16.9s
+    elev_cable_feel_why sample 1: 200 tokens, stop, 5.4s
+    elev_cable_feel_why sample 2: 768 tokens, length, 20.5s
+
+[discovery-rl-v11-s175] mhla/gpt1900-d34-contradiction-rl-v11 step=175 mode=chat
+  [cached] discovery-rl-v11-s175
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 768 tokens, length, 20.3s
+    elev_cable_feel_why sample 1: 497 tokens, stop, 13.0s
+    elev_cable_feel_why sample 2: 505 tokens, stop, 13.4s
+
+[discovery-rl-v11-s210] mhla/gpt1900-d34-contradiction-rl-v11 step=210 mode=chat
+  [cached] discovery-rl-v11-s210
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 326 tokens, stop, 8.8s
+    elev_cable_feel_why sample 1: 359 tokens, stop, 9.6s
+    elev_cable_feel_why sample 2: 542 tokens, stop, 14.6s
+
+[discovery-rl-v11-s245] mhla/gpt1900-d34-contradiction-rl-v11 step=245 mode=chat
+  [cached] discovery-rl-v11-s245
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 375 tokens, stop, 10.0s
+    elev_cable_feel_why sample 1: 722 tokens, stop, 19.1s
+    elev_cable_feel_why sample 2: 469 tokens, stop, 12.8s
+
+[discovery-rl-v11-s280] mhla/gpt1900-d34-contradiction-rl-v11 step=280 mode=chat
+  [cached] discovery-rl-v11-s280
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 422 tokens, stop, 11.3s
+    elev_cable_feel_why sample 1: 279 tokens, stop, 7.5s
+    elev_cable_feel_why sample 2: 387 tokens, stop, 10.3s
+
+[discovery-rl-v11-s315] mhla/gpt1900-d34-contradiction-rl-v11 step=315 mode=chat
+  [cached] discovery-rl-v11-s315
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 440 tokens, stop, 11.7s
+    elev_cable_feel_why sample 1: 361 tokens, stop, 9.6s
+    elev_cable_feel_why sample 2: 540 tokens, stop, 14.3s
+
+[discovery-rl-v11-s350] mhla/gpt1900-d34-contradiction-rl-v11 step=350 mode=chat
+  [cached] discovery-rl-v11-s350
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 461 tokens, stop, 12.3s
+    elev_cable_feel_why sample 1: 401 tokens, stop, 10.7s
+    elev_cable_feel_why sample 2: 346 tokens, stop, 9.2s
+
+[discovery-rl-v11-s385] mhla/gpt1900-d34-contradiction-rl-v11 step=385 mode=chat
+  [cached] discovery-rl-v11-s385
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 413 tokens, stop, 11.0s
+    elev_cable_feel_why sample 1: 629 tokens, stop, 16.7s
+    elev_cable_feel_why sample 2: 447 tokens, stop, 11.8s
+
+[discovery-rl-v11-s420] mhla/gpt1900-d34-contradiction-rl-v11 step=420 mode=chat
+  [cached] discovery-rl-v11-s420
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 397 tokens, stop, 10.6s
+    elev_cable_feel_why sample 1: 382 tokens, stop, 10.1s
+    elev_cable_feel_why sample 2: 478 tokens, stop, 12.6s
+
+==============================================================
+run_id      2026-10-07T11:44:29Z-ed1649
+records     39 written, 0 carrying an error
+expected    39
+elapsed     19.9 min
+output      evidence/elevator-final/parts/final-1.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+elevfin1 COMPLETE

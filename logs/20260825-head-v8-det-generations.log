@@ -1,0 +1,7 @@
+$ ls -lh results/physics_eval_v8_det && head -c 600 results/physics_eval_v8_det/generations.json
+total 744
+-rw-r--r--@ 1 akshatsingh  staff   370K Aug 25 01:30 generations.json
+{
+  "discovery-rl-v8-s035": {
+    "uv_catastrophe_main": {
+      "prompt": "A heated cavity in thermal equilibrium emits radiation with spectral energy density u(nu, T), where nu is frequency and T is temperature.\n\nObserved facts:\n1. At low frequencies, the emitted energy density increases with frequency.\n2. For each temperature, the spectrum reaches a maximum at some frequency.\n3. At higher frequencies, the emitted energy density falls off rapidly toward zero.\n4. The total emitted energy is finite.\n5. As temperature increases, the peak shifts to higher frequency and the total emitted e%

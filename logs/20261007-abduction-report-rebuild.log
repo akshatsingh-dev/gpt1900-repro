@@ -1,0 +1,17 @@
+260 answers, 260 read -> evidence/abduction/report.html
+260 answers, 260 read -> evidence/abduction/report.html
+260 answers, 260 read -> evidence/abduction/report.html
+260 answers, 260 read -> evidence/abduction/report.html
+260 answers, 260 read -> evidence/abduction/report.html
+Traceback (most recent call last):
+  File "/Users/akshatsingh/Desktop/Akshat/Projects/gpt1900-repro/tools/abduction_report.py", line 216, in <module>
+    main()
+  File "/Users/akshatsingh/Desktop/Akshat/Projects/gpt1900-repro/tools/abduction_report.py", line 145, in main
+    p.append(final_results(rs, cfg, V, key, cks, tasks, a.reading, PL))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/akshatsingh/Desktop/Akshat/Projects/gpt1900-repro/tools/abduction_report.py", line 67, in final_results
+    note = f" Reader's note: {E(N[key(r)])}" if N.get(key(r)) else ""
+                                                ^
+NameError: name 'N' is not defined
+260 answers, 260 read -> evidence/abduction/report.html
+260 answers, 260 read -> evidence/abduction/report.html

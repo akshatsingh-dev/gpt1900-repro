@@ -1,0 +1,9 @@
+read 75 of 75; missing 0; wrote evidence/elevator-final/readings.json and evidence/elevator-final/readings-blind.json
+75 answers, 75 read -> evidence/elevator-final/report.html
+overall Counter({'none': 48, 'wrong': 23, 'loops': 4})
+base Counter({'loops': 3})
+v11 (72) Counter({'none': 48, 'wrong': 23, 'loops': 1})
+first8 Counter({'none': 20, 'wrong': 3, 'loops': 1})
+last8 Counter({'none': 12, 'wrong': 12})
+stock opener 55 hit max 9 mean tokens 497
+wrong by checkpoint: [('s140', 2), ('s210', 1), ('s315', 1), ('s385', 2), ('s490', 1), ('s525', 2), ('s560', 2), ('s595', 1), ('s630', 1), ('s665', 2), ('s700', 1), ('s735', 1), ('s770', 3), ('s805', 3)]

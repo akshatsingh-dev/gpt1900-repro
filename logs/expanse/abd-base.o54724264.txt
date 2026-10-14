@@ -1,0 +1,91 @@
+run_id      2026-10-07T15:32:43Z-52f8ac
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54724264
+config      ../../tools/EVAL_abduction.json  condition abduction
+sampling    temperature 0.7  top_k 50  base seed 42
+work        1 checkpoints x 13 tasks x 5 samples = 65 generations
+writing     evidence/abduction/parts/abduction-base.jsonl
+
+loading tokenizer ...
+
+[d34-22btok] mhla/gpt1900-d34-22btok step=10507 mode=completion
+  [cached] d34-22btok
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel sample 0: 768 tokens, length, 21.2s
+    elev_cable_feel sample 1: 768 tokens, length, 21.0s
+    elev_cable_feel sample 2: 768 tokens, length, 20.9s
+    elev_cable_feel sample 3: 768 tokens, length, 20.9s
+    elev_cable_feel sample 4: 768 tokens, length, 20.9s
+    elev_cable_feel_why sample 0: 768 tokens, length, 20.9s
+    elev_cable_feel_why sample 1: 768 tokens, length, 20.9s
+    elev_cable_feel_why sample 2: 768 tokens, length, 20.9s
+    elev_cable_feel_why sample 3: 768 tokens, length, 20.9s
+    elev_cable_feel_why sample 4: 768 tokens, length, 20.9s
+    elev_cable_stone sample 0: 768 tokens, length, 20.9s
+    elev_cable_stone sample 1: 768 tokens, length, 20.9s
+    elev_cable_stone sample 2: 768 tokens, length, 20.9s
+    elev_cable_stone sample 3: 768 tokens, length, 21.0s
+    elev_cable_stone sample 4: 768 tokens, length, 20.9s
+    elev_cable_scale sample 0: 768 tokens, length, 20.9s
+    elev_cable_scale sample 1: 768 tokens, length, 20.8s
+    elev_cable_scale sample 2: 768 tokens, length, 20.8s
+    elev_cable_scale sample 3: 768 tokens, length, 20.7s
+    elev_cable_scale sample 4: 768 tokens, length, 20.5s
+    ladder_1_mistaken sample 0: 768 tokens, length, 20.5s
+    ladder_1_mistaken sample 1: 768 tokens, length, 20.5s
+    ladder_1_mistaken sample 2: 768 tokens, length, 20.5s
+    ladder_1_mistaken sample 3: 768 tokens, length, 20.5s
+    ladder_1_mistaken sample 4: 768 tokens, length, 20.5s
+    ladder_2_carriage sample 0: 768 tokens, length, 20.5s
+    ladder_2_carriage sample 1: 768 tokens, length, 20.5s
+    ladder_2_carriage sample 2: 768 tokens, length, 20.5s
+    ladder_2_carriage sample 3: 768 tokens, length, 20.5s
+    ladder_2_carriage sample 4: 768 tokens, length, 20.5s
+    ladder_3_undetectable sample 0: 768 tokens, length, 20.5s
+    ladder_3_undetectable sample 1: 768 tokens, length, 20.5s
+    ladder_3_undetectable sample 2: 768 tokens, length, 20.5s
+    ladder_3_undetectable sample 3: 768 tokens, length, 20.5s
+    ladder_3_undetectable sample 4: 768 tokens, length, 20.5s
+    ded_ship_mast sample 0: 768 tokens, length, 20.6s
+    ded_ship_mast sample 1: 768 tokens, length, 20.6s
+    ded_ship_mast sample 2: 768 tokens, length, 20.6s
+    ded_ship_mast sample 3: 768 tokens, length, 20.5s
+    ded_ship_mast sample 4: 768 tokens, length, 20.5s
+    ded_two_stones sample 0: 768 tokens, length, 20.5s
+    ded_two_stones sample 1: 768 tokens, length, 20.6s
+    ded_two_stones sample 2: 768 tokens, length, 20.6s
+    ded_two_stones sample 3: 768 tokens, length, 20.6s
+    ded_two_stones sample 4: 768 tokens, length, 20.5s
+    ind_pendulum sample 0: 768 tokens, length, 20.6s
+    ind_pendulum sample 1: 768 tokens, length, 20.6s
+    ind_pendulum sample 2: 768 tokens, length, 20.6s
+    ind_pendulum sample 3: 768 tokens, length, 20.6s
+    ind_pendulum sample 4: 768 tokens, length, 20.6s
+    abd_uranus sample 0: 768 tokens, length, 20.6s
+    abd_uranus sample 1: 768 tokens, length, 20.5s
+    abd_uranus sample 2: 768 tokens, length, 20.6s
+    abd_uranus sample 3: 768 tokens, length, 20.6s
+    abd_uranus sample 4: 768 tokens, length, 20.5s
+    abd_mm_bare sample 0: 768 tokens, length, 20.6s
+    abd_mm_bare sample 1: 768 tokens, length, 20.6s
+    abd_mm_bare sample 2: 768 tokens, length, 20.6s
+    abd_mm_bare sample 3: 768 tokens, length, 20.5s
+    abd_mm_bare sample 4: 768 tokens, length, 20.5s
+    abd_bb_bare sample 0: 768 tokens, length, 20.6s
+    abd_bb_bare sample 1: 768 tokens, length, 20.5s
+    abd_bb_bare sample 2: 768 tokens, length, 20.5s
+    abd_bb_bare sample 3: 768 tokens, length, 20.6s
+    abd_bb_bare sample 4: 768 tokens, length, 20.5s
+
+==============================================================
+run_id      2026-10-07T15:32:43Z-52f8ac
+records     65 written, 0 carrying an error
+expected    65
+elapsed     23.9 min
+output      evidence/abduction/parts/abduction-base.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+abd-base COMPLETE

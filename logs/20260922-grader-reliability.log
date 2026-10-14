@@ -1,0 +1,3 @@
+batch 01: n=24 exact=20 within1=24 meanA=1.67 meanB=1.67 disagreements=[('A009', 1, 2), ('A018', 1, 2), ('A019', 3, 2), ('A023', 2, 1)]
+batch 02: n=24 exact=24 within1=24 meanA=1.08 meanB=1.08 disagreements=[]
+TOTAL: n=48 exact=44 (92%) within1=48

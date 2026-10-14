@@ -1,0 +1,350 @@
+################ CONDITION scaffolded ################
+run_id      2026-09-15T19:25:34Z-51939b
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54315386
+config      EVAL.json  condition scaffolded
+sampling    temperature 0.7  top_k 50  base seed 42
+work        3 checkpoints x 8 tasks x 3 samples = 72 generations
+writing     evidence/prompt-sensitivity/scaffolded.jsonl
+
+loading tokenizer ...
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 463 tokens, stop, 13.2s
+    uv_catastrophe_main sample 1: 592 tokens, stop, 16.6s
+    uv_catastrophe_main sample 2: 417 tokens, stop, 11.7s
+    photoelectric_effect_main sample 0: 948 tokens, stop, 26.3s
+    photoelectric_effect_main sample 1: 515 tokens, stop, 14.4s
+    photoelectric_effect_main sample 2: 582 tokens, stop, 16.2s
+    sr_frozen_light sample 0: 300 tokens, stop, 8.4s
+    sr_frozen_light sample 1: 558 tokens, stop, 15.5s
+    sr_frozen_light sample 2: 415 tokens, stop, 11.6s
+    sr_approaching_c sample 0: 481 tokens, stop, 13.4s
+    sr_approaching_c sample 1: 382 tokens, stop, 10.7s
+    sr_approaching_c sample 2: 340 tokens, stop, 9.5s
+    sr_train_lightning sample 0: 380 tokens, stop, 10.7s
+    sr_train_lightning sample 1: 548 tokens, stop, 15.3s
+    sr_train_lightning sample 2: 349 tokens, stop, 9.8s
+    sr_michelson_morley sample 0: 368 tokens, stop, 10.3s
+    sr_michelson_morley sample 1: 379 tokens, stop, 10.6s
+    sr_michelson_morley sample 2: 358 tokens, stop, 10.0s
+    gr_main_elevator_light sample 0: 386 tokens, stop, 10.8s
+    gr_main_elevator_light sample 1: 433 tokens, stop, 12.2s
+    gr_main_elevator_light sample 2: 423 tokens, stop, 11.9s
+    gr_free_fall_equivalence sample 0: 401 tokens, stop, 11.2s
+    gr_free_fall_equivalence sample 1: 375 tokens, stop, 10.5s
+    gr_free_fall_equivalence sample 2: 281 tokens, stop, 7.9s
+
+[discovery-rl-v11-s630] mhla/gpt1900-d34-contradiction-rl-v11 step=630 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=630 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 636 tokens, stop, 18.5s
+    uv_catastrophe_main sample 1: 429 tokens, stop, 12.6s
+    uv_catastrophe_main sample 2: 589 tokens, stop, 16.9s
+    photoelectric_effect_main sample 0: 615 tokens, stop, 17.7s
+    photoelectric_effect_main sample 1: 649 tokens, stop, 18.6s
+    photoelectric_effect_main sample 2: 602 tokens, stop, 17.3s
+    sr_frozen_light sample 0: 455 tokens, stop, 13.0s
+    sr_frozen_light sample 1: 400 tokens, stop, 11.5s
+    sr_frozen_light sample 2: 283 tokens, stop, 8.2s
+    sr_approaching_c sample 0: 459 tokens, stop, 13.2s
+    sr_approaching_c sample 1: 318 tokens, stop, 9.2s
+    sr_approaching_c sample 2: 435 tokens, stop, 12.5s
+    sr_train_lightning sample 0: 455 tokens, stop, 13.1s
+    sr_train_lightning sample 1: 520 tokens, stop, 15.0s
+    sr_train_lightning sample 2: 242 tokens, stop, 7.0s
+    sr_michelson_morley sample 0: 319 tokens, stop, 9.2s
+    sr_michelson_morley sample 1: 445 tokens, stop, 12.8s
+    sr_michelson_morley sample 2: 530 tokens, stop, 15.2s
+    gr_main_elevator_light sample 0: 513 tokens, stop, 14.8s
+    gr_main_elevator_light sample 1: 438 tokens, stop, 12.6s
+    gr_main_elevator_light sample 2: 436 tokens, stop, 12.5s
+    gr_free_fall_equivalence sample 0: 373 tokens, stop, 10.7s
+    gr_free_fall_equivalence sample 1: 356 tokens, stop, 10.3s
+    gr_free_fall_equivalence sample 2: 390 tokens, stop, 11.2s
+
+[discovery-rl-v11-s735] mhla/gpt1900-d34-contradiction-rl-v11 step=735 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=735 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 658 tokens, stop, 18.9s
+    uv_catastrophe_main sample 1: 572 tokens, stop, 16.4s
+    uv_catastrophe_main sample 2: 457 tokens, stop, 13.2s
+    photoelectric_effect_main sample 0: 776 tokens, stop, 22.2s
+    photoelectric_effect_main sample 1: 712 tokens, stop, 20.5s
+    photoelectric_effect_main sample 2: 848 tokens, stop, 24.3s
+    sr_frozen_light sample 0: 454 tokens, stop, 13.0s
+    sr_frozen_light sample 1: 290 tokens, stop, 8.4s
+    sr_frozen_light sample 2: 401 tokens, stop, 11.5s
+    sr_approaching_c sample 0: 299 tokens, stop, 8.6s
+    sr_approaching_c sample 1: 429 tokens, stop, 12.3s
+    sr_approaching_c sample 2: 609 tokens, stop, 17.4s
+    sr_train_lightning sample 0: 587 tokens, stop, 16.9s
+    sr_train_lightning sample 1: 427 tokens, stop, 12.3s
+    sr_train_lightning sample 2: 592 tokens, stop, 17.1s
+    sr_michelson_morley sample 0: 409 tokens, stop, 11.8s
+    sr_michelson_morley sample 1: 406 tokens, stop, 11.7s
+    sr_michelson_morley sample 2: 323 tokens, stop, 9.3s
+    gr_main_elevator_light sample 0: 462 tokens, stop, 13.3s
+    gr_main_elevator_light sample 1: 419 tokens, stop, 12.1s
+    gr_main_elevator_light sample 2: 448 tokens, stop, 12.9s
+    gr_free_fall_equivalence sample 0: 406 tokens, stop, 11.7s
+    gr_free_fall_equivalence sample 1: 451 tokens, stop, 13.0s
+    gr_free_fall_equivalence sample 2: 377 tokens, stop, 10.9s
+
+==============================================================
+run_id      2026-09-15T19:25:34Z-51939b
+records     72 written, 0 carrying an error
+expected    72
+elapsed     20.9 min
+output      evidence/prompt-sensitivity/scaffolded.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+72 records → evidence/prompt-sensitivity/scaffolded.html
+################ CONDITION minimal ################
+run_id      2026-09-15T19:46:30Z-c9af96
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54315386
+config      EVAL_no_assumptions.json  condition minimal
+sampling    temperature 0.7  top_k 50  base seed 42
+work        3 checkpoints x 8 tasks x 3 samples = 72 generations
+writing     evidence/prompt-sensitivity/minimal.jsonl
+
+loading tokenizer ...
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 475 tokens, stop, 13.4s
+    uv_catastrophe_main sample 1: 567 tokens, stop, 15.8s
+    uv_catastrophe_main sample 2: 730 tokens, stop, 20.2s
+    photoelectric_effect_main sample 0: 416 tokens, stop, 11.6s
+    photoelectric_effect_main sample 1: 616 tokens, stop, 17.1s
+    photoelectric_effect_main sample 2: 643 tokens, stop, 17.9s
+    sr_frozen_light sample 0: 376 tokens, stop, 10.5s
+    sr_frozen_light sample 1: 482 tokens, stop, 13.4s
+    sr_frozen_light sample 2: 360 tokens, stop, 10.0s
+    sr_approaching_c sample 0: 186 tokens, stop, 5.2s
+    sr_approaching_c sample 1: 372 tokens, stop, 10.3s
+    sr_approaching_c sample 2: 300 tokens, stop, 8.4s
+    sr_train_lightning sample 0: 266 tokens, stop, 7.4s
+    sr_train_lightning sample 1: 408 tokens, stop, 11.4s
+    sr_train_lightning sample 2: 344 tokens, stop, 9.6s
+    sr_michelson_morley sample 0: 478 tokens, stop, 13.3s
+    sr_michelson_morley sample 1: 566 tokens, stop, 15.8s
+    sr_michelson_morley sample 2: 463 tokens, stop, 12.9s
+    gr_main_elevator_light sample 0: 296 tokens, stop, 8.2s
+    gr_main_elevator_light sample 1: 312 tokens, stop, 8.7s
+    gr_main_elevator_light sample 2: 515 tokens, stop, 14.2s
+    gr_free_fall_equivalence sample 0: 485 tokens, stop, 13.4s
+    gr_free_fall_equivalence sample 1: 476 tokens, stop, 13.2s
+    gr_free_fall_equivalence sample 2: 596 tokens, stop, 16.5s
+
+[discovery-rl-v11-s630] mhla/gpt1900-d34-contradiction-rl-v11 step=630 mode=chat
+  [cached] discovery-rl-v11-s630
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 533 tokens, stop, 14.9s
+    uv_catastrophe_main sample 1: 461 tokens, stop, 12.9s
+    uv_catastrophe_main sample 2: 487 tokens, stop, 13.6s
+    photoelectric_effect_main sample 0: 512 tokens, stop, 14.3s
+    photoelectric_effect_main sample 1: 644 tokens, stop, 17.9s
+    photoelectric_effect_main sample 2: 679 tokens, stop, 18.9s
+    sr_frozen_light sample 0: 441 tokens, stop, 12.3s
+    sr_frozen_light sample 1: 466 tokens, stop, 13.0s
+    sr_frozen_light sample 2: 388 tokens, stop, 10.8s
+    sr_approaching_c sample 0: 413 tokens, stop, 11.5s
+    sr_approaching_c sample 1: 379 tokens, stop, 10.5s
+    sr_approaching_c sample 2: 350 tokens, stop, 9.8s
+    sr_train_lightning sample 0: 467 tokens, stop, 13.0s
+    sr_train_lightning sample 1: 486 tokens, stop, 13.5s
+    sr_train_lightning sample 2: 431 tokens, stop, 12.0s
+    sr_michelson_morley sample 0: 379 tokens, stop, 10.6s
+    sr_michelson_morley sample 1: 533 tokens, stop, 14.8s
+    sr_michelson_morley sample 2: 391 tokens, stop, 10.9s
+    gr_main_elevator_light sample 0: 387 tokens, stop, 10.8s
+    gr_main_elevator_light sample 1: 307 tokens, stop, 8.6s
+    gr_main_elevator_light sample 2: 439 tokens, stop, 12.2s
+    gr_free_fall_equivalence sample 0: 471 tokens, stop, 13.1s
+    gr_free_fall_equivalence sample 1: 444 tokens, stop, 12.4s
+    gr_free_fall_equivalence sample 2: 694 tokens, stop, 19.3s
+
+[discovery-rl-v11-s735] mhla/gpt1900-d34-contradiction-rl-v11 step=735 mode=chat
+  [cached] discovery-rl-v11-s735
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 622 tokens, stop, 17.4s
+    uv_catastrophe_main sample 1: 419 tokens, stop, 11.7s
+    uv_catastrophe_main sample 2: 578 tokens, stop, 16.1s
+    photoelectric_effect_main sample 0: 666 tokens, stop, 18.6s
+    photoelectric_effect_main sample 1: 500 tokens, stop, 14.0s
+    photoelectric_effect_main sample 2: 602 tokens, stop, 16.8s
+    sr_frozen_light sample 0: 408 tokens, stop, 11.4s
+    sr_frozen_light sample 1: 344 tokens, stop, 9.6s
+    sr_frozen_light sample 2: 532 tokens, stop, 14.8s
+    sr_approaching_c sample 0: 441 tokens, stop, 12.2s
+    sr_approaching_c sample 1: 272 tokens, stop, 7.6s
+    sr_approaching_c sample 2: 311 tokens, stop, 8.7s
+    sr_train_lightning sample 0: 462 tokens, stop, 12.9s
+    sr_train_lightning sample 1: 436 tokens, stop, 12.2s
+    sr_train_lightning sample 2: 197 tokens, stop, 5.5s
+    sr_michelson_morley sample 0: 394 tokens, stop, 11.0s
+    sr_michelson_morley sample 1: 539 tokens, stop, 15.0s
+    sr_michelson_morley sample 2: 594 tokens, stop, 16.5s
+    gr_main_elevator_light sample 0: 340 tokens, stop, 9.5s
+    gr_main_elevator_light sample 1: 321 tokens, stop, 9.0s
+    gr_main_elevator_light sample 2: 464 tokens, stop, 12.9s
+    gr_free_fall_equivalence sample 0: 349 tokens, stop, 9.7s
+    gr_free_fall_equivalence sample 1: 442 tokens, stop, 12.3s
+    gr_free_fall_equivalence sample 2: 600 tokens, stop, 16.8s
+
+==============================================================
+run_id      2026-09-15T19:46:30Z-c9af96
+records     72 written, 0 carrying an error
+expected    72
+elapsed     15.7 min
+output      evidence/prompt-sensitivity/minimal.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+72 records → evidence/prompt-sensitivity/minimal.html
+################ CONDITION leading ################
+run_id      2026-09-15T20:02:19Z-608146
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54315386
+config      ../../tools/EVAL_leading.json  condition leading
+sampling    temperature 0.7  top_k 50  base seed 42
+work        3 checkpoints x 8 tasks x 3 samples = 72 generations
+writing     evidence/prompt-sensitivity/leading.jsonl
+
+loading tokenizer ...
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 715 tokens, stop, 20.2s
+    uv_catastrophe_main sample 1: 605 tokens, stop, 16.9s
+    uv_catastrophe_main sample 2: 433 tokens, stop, 12.1s
+    photoelectric_effect_main sample 0: 621 tokens, stop, 17.4s
+    photoelectric_effect_main sample 1: 746 tokens, stop, 20.8s
+    photoelectric_effect_main sample 2: 659 tokens, stop, 18.5s
+    sr_frozen_light sample 0: 476 tokens, stop, 13.3s
+    sr_frozen_light sample 1: 368 tokens, stop, 10.3s
+    sr_frozen_light sample 2: 466 tokens, stop, 13.0s
+    sr_approaching_c sample 0: 372 tokens, stop, 10.4s
+    sr_approaching_c sample 1: 406 tokens, stop, 11.3s
+    sr_approaching_c sample 2: 325 tokens, stop, 9.1s
+    sr_train_lightning sample 0: 441 tokens, stop, 12.3s
+    sr_train_lightning sample 1: 417 tokens, stop, 11.7s
+    sr_train_lightning sample 2: 471 tokens, stop, 13.1s
+    sr_michelson_morley sample 0: 428 tokens, stop, 12.0s
+    sr_michelson_morley sample 1: 246 tokens, stop, 6.9s
+    sr_michelson_morley sample 2: 309 tokens, stop, 8.7s
+    gr_main_elevator_light sample 0: 392 tokens, stop, 11.0s
+    gr_main_elevator_light sample 1: 322 tokens, stop, 9.0s
+    gr_main_elevator_light sample 2: 343 tokens, stop, 9.6s
+    gr_free_fall_equivalence sample 0: 345 tokens, stop, 9.7s
+    gr_free_fall_equivalence sample 1: 316 tokens, stop, 8.9s
+    gr_free_fall_equivalence sample 2: 366 tokens, stop, 10.2s
+
+[discovery-rl-v11-s630] mhla/gpt1900-d34-contradiction-rl-v11 step=630 mode=chat
+  [cached] discovery-rl-v11-s630
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 654 tokens, stop, 18.3s
+    uv_catastrophe_main sample 1: 465 tokens, stop, 13.1s
+    uv_catastrophe_main sample 2: 443 tokens, stop, 12.4s
+    photoelectric_effect_main sample 0: 754 tokens, stop, 21.0s
+    photoelectric_effect_main sample 1: 890 tokens, stop, 24.8s
+    photoelectric_effect_main sample 2: 641 tokens, stop, 17.9s
+    sr_frozen_light sample 0: 310 tokens, stop, 8.7s
+    sr_frozen_light sample 1: 451 tokens, stop, 12.6s
+    sr_frozen_light sample 2: 497 tokens, stop, 13.9s
+    sr_approaching_c sample 0: 474 tokens, stop, 13.3s
+    sr_approaching_c sample 1: 424 tokens, stop, 11.8s
+    sr_approaching_c sample 2: 506 tokens, stop, 14.1s
+    sr_train_lightning sample 0: 585 tokens, stop, 16.3s
+    sr_train_lightning sample 1: 613 tokens, stop, 17.1s
+    sr_train_lightning sample 2: 437 tokens, stop, 12.2s
+    sr_michelson_morley sample 0: 477 tokens, stop, 13.3s
+    sr_michelson_morley sample 1: 430 tokens, stop, 12.0s
+    sr_michelson_morley sample 2: 375 tokens, stop, 10.5s
+    gr_main_elevator_light sample 0: 353 tokens, stop, 10.0s
+    gr_main_elevator_light sample 1: 300 tokens, stop, 8.5s
+    gr_main_elevator_light sample 2: 362 tokens, stop, 10.2s
+    gr_free_fall_equivalence sample 0: 322 tokens, stop, 9.1s
+    gr_free_fall_equivalence sample 1: 409 tokens, stop, 11.5s
+    gr_free_fall_equivalence sample 2: 326 tokens, stop, 9.1s
+
+[discovery-rl-v11-s735] mhla/gpt1900-d34-contradiction-rl-v11 step=735 mode=chat
+  [cached] discovery-rl-v11-s735
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 474 tokens, stop, 13.4s
+    uv_catastrophe_main sample 1: 619 tokens, stop, 17.3s
+    uv_catastrophe_main sample 2: 655 tokens, stop, 18.3s
+    photoelectric_effect_main sample 0: 675 tokens, stop, 18.9s
+    photoelectric_effect_main sample 1: 639 tokens, stop, 17.9s
+    photoelectric_effect_main sample 2: 624 tokens, stop, 17.5s
+    sr_frozen_light sample 0: 488 tokens, stop, 13.7s
+    sr_frozen_light sample 1: 412 tokens, stop, 11.5s
+    sr_frozen_light sample 2: 354 tokens, stop, 9.9s
+    sr_approaching_c sample 0: 440 tokens, stop, 12.3s
+    sr_approaching_c sample 1: 352 tokens, stop, 9.9s
+    sr_approaching_c sample 2: 230 tokens, stop, 6.5s
+    sr_train_lightning sample 0: 281 tokens, stop, 8.0s
+    sr_train_lightning sample 1: 336 tokens, stop, 9.5s
+    sr_train_lightning sample 2: 595 tokens, stop, 16.7s
+    sr_michelson_morley sample 0: 384 tokens, stop, 10.8s
+    sr_michelson_morley sample 1: 385 tokens, stop, 10.8s
+    sr_michelson_morley sample 2: 354 tokens, stop, 10.0s
+    gr_main_elevator_light sample 0: 378 tokens, stop, 10.7s
+    gr_main_elevator_light sample 1: 361 tokens, stop, 10.2s
+    gr_main_elevator_light sample 2: 449 tokens, stop, 12.6s
+    gr_free_fall_equivalence sample 0: 346 tokens, stop, 9.7s
+    gr_free_fall_equivalence sample 1: 446 tokens, stop, 12.5s
+    gr_free_fall_equivalence sample 2: 376 tokens, stop, 10.6s
+
+==============================================================
+run_id      2026-09-15T20:02:19Z-608146
+records     72 written, 0 carrying an error
+expected    72
+elapsed     15.8 min
+output      evidence/prompt-sensitivity/leading.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+72 records → evidence/prompt-sensitivity/leading.html
+################ SUMMARY (text level, no scores yet) ################
+==============================================================
+REPORT
+==============================================================
+evidence/prompt-sensitivity/scaffolded.jsonl
+  records 72  errors 0  scored 0  stock opening 72/72  hit max_tokens 0
+  not judged yet
+evidence/prompt-sensitivity/minimal.jsonl
+  records 72  errors 0  scored 0  stock opening 72/72  hit max_tokens 0
+  not judged yet
+evidence/prompt-sensitivity/leading.jsonl
+  records 72  errors 0  scored 0  stock opening 72/72  hit max_tokens 0
+  not judged yet
+evidence/prompt-sensitivity/scaffolded.jsonl  vs  evidence/prompt-sensitivity/minimal.jsonl
+  shared 72  byte identical 0
+evidence/prompt-sensitivity/scaffolded.jsonl  vs  evidence/prompt-sensitivity/leading.jsonl
+  shared 72  byte identical 0
+evidence/prompt-sensitivity/minimal.jsonl  vs  evidence/prompt-sensitivity/leading.jsonl
+  shared 72  byte identical 0
+==============================================================
+wrote evidence/prompt-sensitivity/report.json
+wrote evidence/prompt-sensitivity/report.html
+STEP 2 COMPLETE. Open evidence/prompt-sensitivity/report.html. Judge on the Mac next.

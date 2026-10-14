@@ -1,0 +1,27 @@
+==============================================================
+REPORT
+==============================================================
+evidence/sweep/v11-scaffolded.graded.jsonl
+  records 192  errors 0  scored 192  stock opening 151/192  hit max_tokens 4
+  MEAN SCORE 1.27 (n=192)  95% CI 1.18 to 1.36   hist 0:13 1:126 2:41 3:12 4:0 5:0
+evidence/review-packet-c/physics_eval_v11.regraded.jsonl
+  records 192  errors 0  scored 192  stock opening 0/192  hit max_tokens 0
+  MEAN SCORE 1.26 (n=192)  95% CI 1.17 to 1.35   hist 0:13 1:125 2:45 3:9 4:0 5:0
+upstream:physics_eval_v11
+  records 192  errors 0  scored 192  stock opening 150/192  hit max_tokens 0
+  MEAN SCORE 0.93 (n=192)  95% CI 0.84 to 1.03   hist 0:44 1:122 2:22 3:3 4:1 5:0
+evidence/sweep/v11-scaffolded.graded.jsonl  vs  evidence/review-packet-c/physics_eval_v11.regraded.jsonl
+  shared 192  byte identical 0  score exact agreement 126/192  mean diff 0.01
+evidence/sweep/v11-scaffolded.graded.jsonl  vs  upstream:physics_eval_v11
+  shared 192  byte identical 0  score exact agreement 101/192  mean diff 0.34
+evidence/review-packet-c/physics_eval_v11.regraded.jsonl  vs  upstream:physics_eval_v11
+  shared 192  byte identical 192  score exact agreement 119/192  mean diff 0.33
+==============================================================
+wrote evidence/sweep/report.json
+wrote evidence/sweep/report.html
+per task  our text / our grader   : 1.25  2.17  1.00  0.88  0.96  1.29  1.58  1.04
+per task  their text / our grader : 1.33  1.92  1.08  0.75  0.96  1.25  1.67  1.12
+per task  their text / their grader: 0.83  1.54  0.75  0.38  0.54  1.04  1.46  0.92
+our text/our grader        first8 0.97  last8 1.52  hist {'0': 13, '1': 126, '2': 41, '3': 12}
+their text/our grader      first8 0.92  last8 1.45  hist {'0': 13, '1': 125, '2': 45, '3': 9}
+their text/their grader    first8 0.62  last8 1.11  hist {'0': 44, '1': 122, '2': 22, '3': 3, '4': 1}

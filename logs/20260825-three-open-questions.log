@@ -1,0 +1,51 @@
+$ grep -n "revision" scripts/physics_eval.py
+(no matches anywhere in file)
+
+$ grep -n "discovery-rl-v8" scripts/physics_eval.py | head -15
+85:    Checkpoint("discovery-rl-v8-s035", "local", 35,  "completion"),
+86:    Checkpoint("discovery-rl-v8-s070", "local", 70,  "completion"),
+87:    Checkpoint("discovery-rl-v8-s105", "local", 105, "completion"),
+88:    Checkpoint("discovery-rl-v8-s140", "local", 140, "completion"),
+89:    Checkpoint("discovery-rl-v8-s175", "local", 175, "completion"),
+90:    Checkpoint("discovery-rl-v8-s210", "local", 210, "completion"),
+91:    Checkpoint("discovery-rl-v8-s245", "local", 245, "completion"),
+92:    Checkpoint("discovery-rl-v8-s280", "local", 280, "completion"),
+93:    Checkpoint("discovery-rl-v8-s315", "local", 315, "completion"),
+94:    Checkpoint("discovery-rl-v8-s350", "local", 350, "completion"),
+95:    Checkpoint("discovery-rl-v8-s385", "local", 385, "completion"),
+96:    Checkpoint("discovery-rl-v8-s420", "local", 420, "completion"),
+
+$ grep -n -A8 "snapshot_download(" scripts/physics_eval.py
+180:    snapshot_download(
+181-        repo_id=ckpt.repo,
+182-        allow_patterns=[f"model_{step_str}.pt", f"meta_{step_str}.json", "tokenizer/*"],
+183-        local_dir=local_dir,
+184-    )
+185-    return local_dir
+--
+195:        snapshot_download(
+196-            repo_id=first.repo,
+197-            allow_patterns=["tokenizer/*"],
+198-            local_dir=local_dir,
+199-        )
+200-    return RustBPETokenizer.from_directory(tok_dir)
+
+$ python3  # registry census
+total Checkpoint entries in registry: 89
+repo == 'local' (not on Hugging Face): 54
+hosted on Hugging Face: 35
+modes: {'completion': 55, 'chat': 34}
+local checkpoint families: ['discovery-rl-v5', 'discovery-rl-v6', 'discovery-rl-v7', 'discovery-rl-v8', 'gen-physics-rl', 'physics-clm']
+distinct HF repos: 12
+   1  mhla/gpt1900-d26-22btok
+   1  mhla/gpt1900-d26-8btok
+   1  mhla/gpt1900-d34-22btok
+   1  mhla/gpt1900-d34-8b-subset
+   1  mhla/gpt1900-d34-coherence-rl
+  24  mhla/gpt1900-d34-contradiction-rl-v11
+   1  mhla/gpt1900-d34-discovery-rl-v4
+   1  mhla/gpt1900-d34-physics-sft
+   1  mhla/gpt1900-d34-reasoning-sft-v4
+   1  mhla/gpt1900-d34-rl
+   1  mhla/gpt1900-d34-sft-modern
+   1  mhla/gpt1900-d34-sft-period

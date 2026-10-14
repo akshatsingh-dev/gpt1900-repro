@@ -1,0 +1,117 @@
+run_id      2026-10-07T11:44:29Z-cac30a
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54719480
+config      ../../tools/EVAL_elevator_final.json  condition final
+sampling    temperature 0.7  top_k 50  base seed 42
+work        12 checkpoints x 1 tasks x 3 samples = 36 generations
+writing     evidence/elevator-final/parts/final-2.jsonl
+
+loading tokenizer ...
+
+[discovery-rl-v11-s455] mhla/gpt1900-d34-contradiction-rl-v11 step=455 mode=chat
+  [cached] discovery-rl-v11-s455
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 387 tokens, stop, 12.6s
+    elev_cable_feel_why sample 1: 535 tokens, stop, 14.3s
+    elev_cable_feel_why sample 2: 496 tokens, stop, 13.3s
+
+[discovery-rl-v11-s490] mhla/gpt1900-d34-contradiction-rl-v11 step=490 mode=chat
+  [cached] discovery-rl-v11-s490
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 514 tokens, stop, 13.9s
+    elev_cable_feel_why sample 1: 554 tokens, stop, 15.0s
+    elev_cable_feel_why sample 2: 347 tokens, stop, 9.4s
+
+[discovery-rl-v11-s525] mhla/gpt1900-d34-contradiction-rl-v11 step=525 mode=chat
+  [cached] discovery-rl-v11-s525
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 418 tokens, stop, 11.3s
+    elev_cable_feel_why sample 1: 435 tokens, stop, 11.7s
+    elev_cable_feel_why sample 2: 351 tokens, stop, 9.4s
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 361 tokens, stop, 9.7s
+    elev_cable_feel_why sample 1: 478 tokens, stop, 12.8s
+    elev_cable_feel_why sample 2: 463 tokens, stop, 12.4s
+
+[discovery-rl-v11-s595] mhla/gpt1900-d34-contradiction-rl-v11 step=595 mode=chat
+  [cached] discovery-rl-v11-s595
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 491 tokens, stop, 17.3s
+    elev_cable_feel_why sample 1: 434 tokens, stop, 15.3s
+    elev_cable_feel_why sample 2: 463 tokens, stop, 16.3s
+
+[discovery-rl-v11-s630] mhla/gpt1900-d34-contradiction-rl-v11 step=630 mode=chat
+  [cached] discovery-rl-v11-s630
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 473 tokens, stop, 12.8s
+    elev_cable_feel_why sample 1: 380 tokens, stop, 10.2s
+    elev_cable_feel_why sample 2: 399 tokens, stop, 10.7s
+
+[discovery-rl-v11-s665] mhla/gpt1900-d34-contradiction-rl-v11 step=665 mode=chat
+  [cached] discovery-rl-v11-s665
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 541 tokens, stop, 14.6s
+    elev_cable_feel_why sample 1: 387 tokens, stop, 10.4s
+    elev_cable_feel_why sample 2: 558 tokens, stop, 15.0s
+
+[discovery-rl-v11-s700] mhla/gpt1900-d34-contradiction-rl-v11 step=700 mode=chat
+  [cached] discovery-rl-v11-s700
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 567 tokens, stop, 15.4s
+    elev_cable_feel_why sample 1: 558 tokens, stop, 14.8s
+    elev_cable_feel_why sample 2: 512 tokens, stop, 13.6s
+
+[discovery-rl-v11-s735] mhla/gpt1900-d34-contradiction-rl-v11 step=735 mode=chat
+  [cached] discovery-rl-v11-s735
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 357 tokens, stop, 9.6s
+    elev_cable_feel_why sample 1: 360 tokens, stop, 9.6s
+    elev_cable_feel_why sample 2: 466 tokens, stop, 12.4s
+
+[discovery-rl-v11-s770] mhla/gpt1900-d34-contradiction-rl-v11 step=770 mode=chat
+  [cached] discovery-rl-v11-s770
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 442 tokens, stop, 12.0s
+    elev_cable_feel_why sample 1: 344 tokens, stop, 9.3s
+    elev_cable_feel_why sample 2: 709 tokens, stop, 19.1s
+
+[discovery-rl-v11-s805] mhla/gpt1900-d34-contradiction-rl-v11 step=805 mode=chat
+  [cached] discovery-rl-v11-s805
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 313 tokens, stop, 8.6s
+    elev_cable_feel_why sample 1: 388 tokens, stop, 10.6s
+    elev_cable_feel_why sample 2: 519 tokens, stop, 14.1s
+
+[discovery-rl-v11-s839] mhla/gpt1900-d34-contradiction-rl-v11 step=839 mode=chat
+  [cached] discovery-rl-v11-s839
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    elev_cable_feel_why sample 0: 454 tokens, stop, 12.1s
+    elev_cable_feel_why sample 1: 445 tokens, stop, 11.8s
+    elev_cable_feel_why sample 2: 557 tokens, stop, 14.8s
+
+==============================================================
+run_id      2026-10-07T11:44:29Z-cac30a
+records     36 written, 0 carrying an error
+expected    36
+elapsed     15.2 min
+output      evidence/elevator-final/parts/final-2.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+elevfin2 COMPLETE

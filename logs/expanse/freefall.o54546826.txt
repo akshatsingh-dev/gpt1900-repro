@@ -1,0 +1,960 @@
+################ CONDITION scaffolded ################
+run_id      2026-10-01T01:56:45Z-8a9956
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54546826
+config      ../../tools/EVAL_freefall_scaffolded.json  condition scaffolded
+sampling    temperature 0.7  top_k 50  base seed 42
+work        24 checkpoints x 1 tasks x 3 samples = 72 generations
+writing     evidence/freefall/scaffolded.jsonl
+
+loading tokenizer ...
+
+[discovery-rl-v11-s035] mhla/gpt1900-d34-contradiction-rl-v11 step=35 mode=chat
+  [cached] discovery-rl-v11-s035
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 1024 tokens, length, 35.5s
+    gr_free_fall_equivalence sample 1: 730 tokens, stop, 21.0s
+    gr_free_fall_equivalence sample 2: 484 tokens, stop, 14.0s
+
+[discovery-rl-v11-s070] mhla/gpt1900-d34-contradiction-rl-v11 step=70 mode=chat
+  [cached] discovery-rl-v11-s070
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 495 tokens, stop, 14.3s
+    gr_free_fall_equivalence sample 1: 721 tokens, stop, 20.7s
+    gr_free_fall_equivalence sample 2: 714 tokens, stop, 20.5s
+
+[discovery-rl-v11-s105] mhla/gpt1900-d34-contradiction-rl-v11 step=105 mode=chat
+  [cached] discovery-rl-v11-s105
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 933 tokens, stop, 27.1s
+    gr_free_fall_equivalence sample 1: 992 tokens, stop, 28.5s
+    gr_free_fall_equivalence sample 2: 1024 tokens, length, 29.4s
+
+[discovery-rl-v11-s140] mhla/gpt1900-d34-contradiction-rl-v11 step=140 mode=chat
+  [cached] discovery-rl-v11-s140
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 819 tokens, stop, 23.6s
+    gr_free_fall_equivalence sample 1: 520 tokens, stop, 15.0s
+    gr_free_fall_equivalence sample 2: 598 tokens, stop, 17.2s
+
+[discovery-rl-v11-s175] mhla/gpt1900-d34-contradiction-rl-v11 step=175 mode=chat
+  [cached] discovery-rl-v11-s175
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 542 tokens, stop, 15.7s
+    gr_free_fall_equivalence sample 1: 435 tokens, stop, 12.6s
+    gr_free_fall_equivalence sample 2: 533 tokens, stop, 15.5s
+
+[discovery-rl-v11-s210] mhla/gpt1900-d34-contradiction-rl-v11 step=210 mode=chat
+  [cached] discovery-rl-v11-s210
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 393 tokens, stop, 11.4s
+    gr_free_fall_equivalence sample 1: 276 tokens, stop, 8.1s
+    gr_free_fall_equivalence sample 2: 332 tokens, stop, 9.7s
+
+[discovery-rl-v11-s245] mhla/gpt1900-d34-contradiction-rl-v11 step=245 mode=chat
+  [cached] discovery-rl-v11-s245
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 509 tokens, stop, 14.8s
+    gr_free_fall_equivalence sample 1: 351 tokens, stop, 10.3s
+    gr_free_fall_equivalence sample 2: 406 tokens, stop, 11.8s
+
+[discovery-rl-v11-s280] mhla/gpt1900-d34-contradiction-rl-v11 step=280 mode=chat
+  [cached] discovery-rl-v11-s280
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 454 tokens, stop, 13.3s
+    gr_free_fall_equivalence sample 1: 311 tokens, stop, 9.1s
+    gr_free_fall_equivalence sample 2: 349 tokens, stop, 10.2s
+
+[discovery-rl-v11-s315] mhla/gpt1900-d34-contradiction-rl-v11 step=315 mode=chat
+  [cached] discovery-rl-v11-s315
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 430 tokens, stop, 12.4s
+    gr_free_fall_equivalence sample 1: 411 tokens, stop, 11.8s
+    gr_free_fall_equivalence sample 2: 504 tokens, stop, 14.4s
+
+[discovery-rl-v11-s350] mhla/gpt1900-d34-contradiction-rl-v11 step=350 mode=chat
+  [cached] discovery-rl-v11-s350
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 422 tokens, stop, 12.4s
+    gr_free_fall_equivalence sample 1: 353 tokens, stop, 10.4s
+    gr_free_fall_equivalence sample 2: 373 tokens, stop, 10.9s
+
+[discovery-rl-v11-s385] mhla/gpt1900-d34-contradiction-rl-v11 step=385 mode=chat
+  [cached] discovery-rl-v11-s385
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 452 tokens, stop, 13.2s
+    gr_free_fall_equivalence sample 1: 322 tokens, stop, 9.4s
+    gr_free_fall_equivalence sample 2: 312 tokens, stop, 9.1s
+
+[discovery-rl-v11-s420] mhla/gpt1900-d34-contradiction-rl-v11 step=420 mode=chat
+  [cached] discovery-rl-v11-s420
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 292 tokens, stop, 8.6s
+    gr_free_fall_equivalence sample 1: 416 tokens, stop, 12.2s
+    gr_free_fall_equivalence sample 2: 570 tokens, stop, 16.7s
+
+[discovery-rl-v11-s455] mhla/gpt1900-d34-contradiction-rl-v11 step=455 mode=chat
+  [cached] discovery-rl-v11-s455
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 234 tokens, stop, 6.9s
+    gr_free_fall_equivalence sample 1: 365 tokens, stop, 10.7s
+    gr_free_fall_equivalence sample 2: 489 tokens, stop, 14.3s
+
+[discovery-rl-v11-s490] mhla/gpt1900-d34-contradiction-rl-v11 step=490 mode=chat
+  [cached] discovery-rl-v11-s490
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 357 tokens, stop, 10.5s
+    gr_free_fall_equivalence sample 1: 369 tokens, stop, 10.8s
+    gr_free_fall_equivalence sample 2: 455 tokens, stop, 13.4s
+
+[discovery-rl-v11-s525] mhla/gpt1900-d34-contradiction-rl-v11 step=525 mode=chat
+  [cached] discovery-rl-v11-s525
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 278 tokens, stop, 8.2s
+    gr_free_fall_equivalence sample 1: 444 tokens, stop, 13.0s
+    gr_free_fall_equivalence sample 2: 303 tokens, stop, 8.9s
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 401 tokens, stop, 11.7s
+    gr_free_fall_equivalence sample 1: 375 tokens, stop, 10.9s
+    gr_free_fall_equivalence sample 2: 281 tokens, stop, 8.2s
+
+[discovery-rl-v11-s595] mhla/gpt1900-d34-contradiction-rl-v11 step=595 mode=chat
+  [cached] discovery-rl-v11-s595
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 420 tokens, stop, 12.4s
+    gr_free_fall_equivalence sample 1: 433 tokens, stop, 12.6s
+    gr_free_fall_equivalence sample 2: 388 tokens, stop, 11.4s
+
+[discovery-rl-v11-s630] mhla/gpt1900-d34-contradiction-rl-v11 step=630 mode=chat
+  [cached] discovery-rl-v11-s630
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 373 tokens, stop, 11.0s
+    gr_free_fall_equivalence sample 1: 356 tokens, stop, 10.5s
+    gr_free_fall_equivalence sample 2: 390 tokens, stop, 11.4s
+
+[discovery-rl-v11-s665] mhla/gpt1900-d34-contradiction-rl-v11 step=665 mode=chat
+  [cached] discovery-rl-v11-s665
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 351 tokens, stop, 10.2s
+    gr_free_fall_equivalence sample 1: 341 tokens, stop, 9.8s
+    gr_free_fall_equivalence sample 2: 562 tokens, stop, 16.1s
+
+[discovery-rl-v11-s700] mhla/gpt1900-d34-contradiction-rl-v11 step=700 mode=chat
+  [cached] discovery-rl-v11-s700
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 304 tokens, stop, 8.8s
+    gr_free_fall_equivalence sample 1: 362 tokens, stop, 10.4s
+    gr_free_fall_equivalence sample 2: 426 tokens, stop, 12.2s
+
+[discovery-rl-v11-s735] mhla/gpt1900-d34-contradiction-rl-v11 step=735 mode=chat
+  [cached] discovery-rl-v11-s735
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 406 tokens, stop, 12.0s
+    gr_free_fall_equivalence sample 1: 451 tokens, stop, 13.2s
+    gr_free_fall_equivalence sample 2: 377 tokens, stop, 11.1s
+
+[discovery-rl-v11-s770] mhla/gpt1900-d34-contradiction-rl-v11 step=770 mode=chat
+  [cached] discovery-rl-v11-s770
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 461 tokens, stop, 13.2s
+    gr_free_fall_equivalence sample 1: 459 tokens, stop, 13.2s
+    gr_free_fall_equivalence sample 2: 414 tokens, stop, 11.9s
+
+[discovery-rl-v11-s805] mhla/gpt1900-d34-contradiction-rl-v11 step=805 mode=chat
+  [cached] discovery-rl-v11-s805
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 325 tokens, stop, 9.6s
+    gr_free_fall_equivalence sample 1: 463 tokens, stop, 13.5s
+    gr_free_fall_equivalence sample 2: 423 tokens, stop, 12.3s
+
+[discovery-rl-v11-s839] mhla/gpt1900-d34-contradiction-rl-v11 step=839 mode=chat
+  [cached] discovery-rl-v11-s839
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 448 tokens, stop, 13.1s
+    gr_free_fall_equivalence sample 1: 407 tokens, stop, 11.8s
+    gr_free_fall_equivalence sample 2: 493 tokens, stop, 14.3s
+
+==============================================================
+run_id      2026-10-01T01:56:45Z-8a9956
+records     72 written, 0 carrying an error
+expected    72
+elapsed     27.5 min
+output      evidence/freefall/scaffolded.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+72 records → evidence/freefall/scaffolded.html
+################ CONDITION minimal ################
+run_id      2026-10-01T02:24:36Z-2d9acc
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54546826
+config      ../../tools/EVAL_freefall_minimal.json  condition minimal
+sampling    temperature 0.7  top_k 50  base seed 42
+work        24 checkpoints x 1 tasks x 3 samples = 72 generations
+writing     evidence/freefall/minimal.jsonl
+
+loading tokenizer ...
+
+[discovery-rl-v11-s035] mhla/gpt1900-d34-contradiction-rl-v11 step=35 mode=chat
+  [cached] discovery-rl-v11-s035
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 700 tokens, stop, 20.8s
+    gr_free_fall_equivalence sample 1: 987 tokens, stop, 28.8s
+    gr_free_fall_equivalence sample 2: 1004 tokens, stop, 29.3s
+
+[discovery-rl-v11-s070] mhla/gpt1900-d34-contradiction-rl-v11 step=70 mode=chat
+  [cached] discovery-rl-v11-s070
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 611 tokens, stop, 17.7s
+    gr_free_fall_equivalence sample 1: 814 tokens, stop, 23.5s
+    gr_free_fall_equivalence sample 2: 939 tokens, stop, 27.1s
+
+[discovery-rl-v11-s105] mhla/gpt1900-d34-contradiction-rl-v11 step=105 mode=chat
+  [cached] discovery-rl-v11-s105
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 716 tokens, stop, 20.8s
+    gr_free_fall_equivalence sample 1: 1024 tokens, length, 29.6s
+    gr_free_fall_equivalence sample 2: 735 tokens, stop, 21.3s
+
+[discovery-rl-v11-s140] mhla/gpt1900-d34-contradiction-rl-v11 step=140 mode=chat
+  [cached] discovery-rl-v11-s140
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 491 tokens, stop, 14.3s
+    gr_free_fall_equivalence sample 1: 812 tokens, stop, 23.5s
+    gr_free_fall_equivalence sample 2: 765 tokens, stop, 22.3s
+
+[discovery-rl-v11-s175] mhla/gpt1900-d34-contradiction-rl-v11 step=175 mode=chat
+  [cached] discovery-rl-v11-s175
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 551 tokens, stop, 16.2s
+    gr_free_fall_equivalence sample 1: 1024 tokens, length, 29.9s
+    gr_free_fall_equivalence sample 2: 439 tokens, stop, 12.9s
+
+[discovery-rl-v11-s210] mhla/gpt1900-d34-contradiction-rl-v11 step=210 mode=chat
+  [cached] discovery-rl-v11-s210
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 443 tokens, stop, 13.1s
+    gr_free_fall_equivalence sample 1: 479 tokens, stop, 14.1s
+    gr_free_fall_equivalence sample 2: 352 tokens, stop, 10.4s
+
+[discovery-rl-v11-s245] mhla/gpt1900-d34-contradiction-rl-v11 step=245 mode=chat
+  [cached] discovery-rl-v11-s245
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 466 tokens, stop, 13.7s
+    gr_free_fall_equivalence sample 1: 396 tokens, stop, 11.6s
+    gr_free_fall_equivalence sample 2: 509 tokens, stop, 14.9s
+
+[discovery-rl-v11-s280] mhla/gpt1900-d34-contradiction-rl-v11 step=280 mode=chat
+  [cached] discovery-rl-v11-s280
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 482 tokens, stop, 14.1s
+    gr_free_fall_equivalence sample 1: 301 tokens, stop, 8.9s
+    gr_free_fall_equivalence sample 2: 388 tokens, stop, 11.4s
+
+[discovery-rl-v11-s315] mhla/gpt1900-d34-contradiction-rl-v11 step=315 mode=chat
+  [cached] discovery-rl-v11-s315
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 692 tokens, stop, 20.3s
+    gr_free_fall_equivalence sample 1: 396 tokens, stop, 11.6s
+    gr_free_fall_equivalence sample 2: 442 tokens, stop, 13.0s
+
+[discovery-rl-v11-s350] mhla/gpt1900-d34-contradiction-rl-v11 step=350 mode=chat
+  [cached] discovery-rl-v11-s350
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 851 tokens, stop, 24.4s
+    gr_free_fall_equivalence sample 1: 457 tokens, stop, 13.1s
+    gr_free_fall_equivalence sample 2: 475 tokens, stop, 13.6s
+
+[discovery-rl-v11-s385] mhla/gpt1900-d34-contradiction-rl-v11 step=385 mode=chat
+  [cached] discovery-rl-v11-s385
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 522 tokens, stop, 15.1s
+    gr_free_fall_equivalence sample 1: 244 tokens, stop, 7.1s
+    gr_free_fall_equivalence sample 2: 467 tokens, stop, 13.4s
+
+[discovery-rl-v11-s420] mhla/gpt1900-d34-contradiction-rl-v11 step=420 mode=chat
+  [cached] discovery-rl-v11-s420
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 412 tokens, stop, 11.9s
+    gr_free_fall_equivalence sample 1: 419 tokens, stop, 12.0s
+    gr_free_fall_equivalence sample 2: 647 tokens, stop, 18.5s
+
+[discovery-rl-v11-s455] mhla/gpt1900-d34-contradiction-rl-v11 step=455 mode=chat
+  [cached] discovery-rl-v11-s455
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 533 tokens, stop, 15.5s
+    gr_free_fall_equivalence sample 1: 484 tokens, stop, 14.0s
+    gr_free_fall_equivalence sample 2: 507 tokens, stop, 14.7s
+
+[discovery-rl-v11-s490] mhla/gpt1900-d34-contradiction-rl-v11 step=490 mode=chat
+  [cached] discovery-rl-v11-s490
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 399 tokens, stop, 11.6s
+    gr_free_fall_equivalence sample 1: 539 tokens, stop, 15.6s
+    gr_free_fall_equivalence sample 2: 523 tokens, stop, 15.2s
+
+[discovery-rl-v11-s525] mhla/gpt1900-d34-contradiction-rl-v11 step=525 mode=chat
+  [cached] discovery-rl-v11-s525
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 377 tokens, stop, 10.9s
+    gr_free_fall_equivalence sample 1: 391 tokens, stop, 11.2s
+    gr_free_fall_equivalence sample 2: 495 tokens, stop, 14.2s
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 485 tokens, stop, 14.0s
+    gr_free_fall_equivalence sample 1: 476 tokens, stop, 13.7s
+    gr_free_fall_equivalence sample 2: 596 tokens, stop, 17.1s
+
+[discovery-rl-v11-s595] mhla/gpt1900-d34-contradiction-rl-v11 step=595 mode=chat
+  [cached] discovery-rl-v11-s595
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 476 tokens, stop, 13.7s
+    gr_free_fall_equivalence sample 1: 471 tokens, stop, 13.5s
+    gr_free_fall_equivalence sample 2: 465 tokens, stop, 13.3s
+
+[discovery-rl-v11-s630] mhla/gpt1900-d34-contradiction-rl-v11 step=630 mode=chat
+  [cached] discovery-rl-v11-s630
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 471 tokens, stop, 13.9s
+    gr_free_fall_equivalence sample 1: 444 tokens, stop, 13.0s
+    gr_free_fall_equivalence sample 2: 694 tokens, stop, 20.3s
+
+[discovery-rl-v11-s665] mhla/gpt1900-d34-contradiction-rl-v11 step=665 mode=chat
+  [cached] discovery-rl-v11-s665
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 508 tokens, stop, 15.0s
+    gr_free_fall_equivalence sample 1: 541 tokens, stop, 15.9s
+    gr_free_fall_equivalence sample 2: 499 tokens, stop, 14.6s
+
+[discovery-rl-v11-s700] mhla/gpt1900-d34-contradiction-rl-v11 step=700 mode=chat
+  [cached] discovery-rl-v11-s700
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 345 tokens, stop, 10.2s
+    gr_free_fall_equivalence sample 1: 411 tokens, stop, 12.1s
+    gr_free_fall_equivalence sample 2: 446 tokens, stop, 13.1s
+
+[discovery-rl-v11-s735] mhla/gpt1900-d34-contradiction-rl-v11 step=735 mode=chat
+  [cached] discovery-rl-v11-s735
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 349 tokens, stop, 10.1s
+    gr_free_fall_equivalence sample 1: 442 tokens, stop, 12.7s
+    gr_free_fall_equivalence sample 2: 600 tokens, stop, 17.2s
+
+[discovery-rl-v11-s770] mhla/gpt1900-d34-contradiction-rl-v11 step=770 mode=chat
+  [cached] discovery-rl-v11-s770
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 551 tokens, stop, 15.8s
+    gr_free_fall_equivalence sample 1: 446 tokens, stop, 12.8s
+    gr_free_fall_equivalence sample 2: 549 tokens, stop, 15.8s
+
+[discovery-rl-v11-s805] mhla/gpt1900-d34-contradiction-rl-v11 step=805 mode=chat
+  [cached] discovery-rl-v11-s805
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 472 tokens, stop, 13.6s
+    gr_free_fall_equivalence sample 1: 542 tokens, stop, 15.5s
+    gr_free_fall_equivalence sample 2: 380 tokens, stop, 10.9s
+
+[discovery-rl-v11-s839] mhla/gpt1900-d34-contradiction-rl-v11 step=839 mode=chat
+  [cached] discovery-rl-v11-s839
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 574 tokens, stop, 16.5s
+    gr_free_fall_equivalence sample 1: 449 tokens, stop, 12.9s
+    gr_free_fall_equivalence sample 2: 463 tokens, stop, 13.3s
+
+==============================================================
+run_id      2026-10-01T02:24:36Z-2d9acc
+records     72 written, 0 carrying an error
+expected    72
+elapsed     23.2 min
+output      evidence/freefall/minimal.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+72 records → evidence/freefall/minimal.html
+################ CONDITION leading ################
+run_id      2026-10-01T02:47:52Z-8c5dbf
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54546826
+config      ../../tools/EVAL_freefall_leading.json  condition leading
+sampling    temperature 0.7  top_k 50  base seed 42
+work        24 checkpoints x 1 tasks x 3 samples = 72 generations
+writing     evidence/freefall/leading.jsonl
+
+loading tokenizer ...
+
+[discovery-rl-v11-s035] mhla/gpt1900-d34-contradiction-rl-v11 step=35 mode=chat
+  [cached] discovery-rl-v11-s035
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 870 tokens, stop, 25.8s
+    gr_free_fall_equivalence sample 1: 767 tokens, stop, 22.5s
+    gr_free_fall_equivalence sample 2: 749 tokens, stop, 22.0s
+
+[discovery-rl-v11-s070] mhla/gpt1900-d34-contradiction-rl-v11 step=70 mode=chat
+  [cached] discovery-rl-v11-s070
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 520 tokens, stop, 15.4s
+    gr_free_fall_equivalence sample 1: 751 tokens, stop, 22.1s
+    gr_free_fall_equivalence sample 2: 1005 tokens, stop, 29.5s
+
+[discovery-rl-v11-s105] mhla/gpt1900-d34-contradiction-rl-v11 step=105 mode=chat
+  [cached] discovery-rl-v11-s105
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 1024 tokens, length, 30.1s
+    gr_free_fall_equivalence sample 1: 650 tokens, stop, 19.1s
+    gr_free_fall_equivalence sample 2: 718 tokens, stop, 21.2s
+
+[discovery-rl-v11-s140] mhla/gpt1900-d34-contradiction-rl-v11 step=140 mode=chat
+  [cached] discovery-rl-v11-s140
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 714 tokens, stop, 20.5s
+    gr_free_fall_equivalence sample 1: 699 tokens, stop, 20.0s
+    gr_free_fall_equivalence sample 2: 382 tokens, stop, 11.0s
+
+[discovery-rl-v11-s175] mhla/gpt1900-d34-contradiction-rl-v11 step=175 mode=chat
+  [cached] discovery-rl-v11-s175
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 297 tokens, stop, 8.8s
+    gr_free_fall_equivalence sample 1: 722 tokens, stop, 20.9s
+    gr_free_fall_equivalence sample 2: 369 tokens, stop, 10.8s
+
+[discovery-rl-v11-s210] mhla/gpt1900-d34-contradiction-rl-v11 step=210 mode=chat
+  [cached] discovery-rl-v11-s210
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 276 tokens, stop, 8.1s
+    gr_free_fall_equivalence sample 1: 417 tokens, stop, 12.0s
+    gr_free_fall_equivalence sample 2: 385 tokens, stop, 11.1s
+
+[discovery-rl-v11-s245] mhla/gpt1900-d34-contradiction-rl-v11 step=245 mode=chat
+  [cached] discovery-rl-v11-s245
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 448 tokens, stop, 13.0s
+    gr_free_fall_equivalence sample 1: 301 tokens, stop, 8.7s
+    gr_free_fall_equivalence sample 2: 423 tokens, stop, 12.2s
+
+[discovery-rl-v11-s280] mhla/gpt1900-d34-contradiction-rl-v11 step=280 mode=chat
+  [cached] discovery-rl-v11-s280
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 394 tokens, stop, 11.5s
+    gr_free_fall_equivalence sample 1: 339 tokens, stop, 9.9s
+    gr_free_fall_equivalence sample 2: 336 tokens, stop, 9.7s
+
+[discovery-rl-v11-s315] mhla/gpt1900-d34-contradiction-rl-v11 step=315 mode=chat
+  [cached] discovery-rl-v11-s315
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 342 tokens, stop, 10.0s
+    gr_free_fall_equivalence sample 1: 393 tokens, stop, 11.4s
+    gr_free_fall_equivalence sample 2: 338 tokens, stop, 9.8s
+
+[discovery-rl-v11-s350] mhla/gpt1900-d34-contradiction-rl-v11 step=350 mode=chat
+  [cached] discovery-rl-v11-s350
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 271 tokens, stop, 7.9s
+    gr_free_fall_equivalence sample 1: 478 tokens, stop, 13.8s
+    gr_free_fall_equivalence sample 2: 399 tokens, stop, 11.5s
+
+[discovery-rl-v11-s385] mhla/gpt1900-d34-contradiction-rl-v11 step=385 mode=chat
+  [cached] discovery-rl-v11-s385
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 242 tokens, stop, 7.0s
+    gr_free_fall_equivalence sample 1: 416 tokens, stop, 11.8s
+    gr_free_fall_equivalence sample 2: 179 tokens, stop, 5.2s
+
+[discovery-rl-v11-s420] mhla/gpt1900-d34-contradiction-rl-v11 step=420 mode=chat
+  [cached] discovery-rl-v11-s420
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 418 tokens, stop, 11.9s
+    gr_free_fall_equivalence sample 1: 342 tokens, stop, 9.7s
+    gr_free_fall_equivalence sample 2: 358 tokens, stop, 10.2s
+
+[discovery-rl-v11-s455] mhla/gpt1900-d34-contradiction-rl-v11 step=455 mode=chat
+  [cached] discovery-rl-v11-s455
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 263 tokens, stop, 7.6s
+    gr_free_fall_equivalence sample 1: 511 tokens, stop, 14.4s
+    gr_free_fall_equivalence sample 2: 460 tokens, stop, 12.9s
+
+[discovery-rl-v11-s490] mhla/gpt1900-d34-contradiction-rl-v11 step=490 mode=chat
+  [cached] discovery-rl-v11-s490
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 409 tokens, stop, 11.5s
+    gr_free_fall_equivalence sample 1: 341 tokens, stop, 9.6s
+    gr_free_fall_equivalence sample 2: 383 tokens, stop, 10.8s
+
+[discovery-rl-v11-s525] mhla/gpt1900-d34-contradiction-rl-v11 step=525 mode=chat
+  [cached] discovery-rl-v11-s525
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 392 tokens, stop, 11.0s
+    gr_free_fall_equivalence sample 1: 416 tokens, stop, 11.7s
+    gr_free_fall_equivalence sample 2: 276 tokens, stop, 7.8s
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 345 tokens, stop, 9.7s
+    gr_free_fall_equivalence sample 1: 316 tokens, stop, 8.9s
+    gr_free_fall_equivalence sample 2: 366 tokens, stop, 10.3s
+
+[discovery-rl-v11-s595] mhla/gpt1900-d34-contradiction-rl-v11 step=595 mode=chat
+  [cached] discovery-rl-v11-s595
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 369 tokens, stop, 10.7s
+    gr_free_fall_equivalence sample 1: 371 tokens, stop, 10.7s
+    gr_free_fall_equivalence sample 2: 530 tokens, stop, 15.1s
+
+[discovery-rl-v11-s630] mhla/gpt1900-d34-contradiction-rl-v11 step=630 mode=chat
+  [cached] discovery-rl-v11-s630
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 322 tokens, stop, 9.3s
+    gr_free_fall_equivalence sample 1: 409 tokens, stop, 11.7s
+    gr_free_fall_equivalence sample 2: 326 tokens, stop, 9.5s
+
+[discovery-rl-v11-s665] mhla/gpt1900-d34-contradiction-rl-v11 step=665 mode=chat
+  [cached] discovery-rl-v11-s665
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 278 tokens, stop, 8.1s
+    gr_free_fall_equivalence sample 1: 331 tokens, stop, 9.5s
+    gr_free_fall_equivalence sample 2: 493 tokens, stop, 14.1s
+
+[discovery-rl-v11-s700] mhla/gpt1900-d34-contradiction-rl-v11 step=700 mode=chat
+  [cached] discovery-rl-v11-s700
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 397 tokens, stop, 11.2s
+    gr_free_fall_equivalence sample 1: 444 tokens, stop, 12.5s
+    gr_free_fall_equivalence sample 2: 468 tokens, stop, 13.1s
+
+[discovery-rl-v11-s735] mhla/gpt1900-d34-contradiction-rl-v11 step=735 mode=chat
+  [cached] discovery-rl-v11-s735
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 346 tokens, stop, 9.8s
+    gr_free_fall_equivalence sample 1: 446 tokens, stop, 12.5s
+    gr_free_fall_equivalence sample 2: 376 tokens, stop, 10.6s
+
+[discovery-rl-v11-s770] mhla/gpt1900-d34-contradiction-rl-v11 step=770 mode=chat
+  [cached] discovery-rl-v11-s770
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 461 tokens, stop, 13.0s
+    gr_free_fall_equivalence sample 1: 553 tokens, stop, 15.5s
+    gr_free_fall_equivalence sample 2: 340 tokens, stop, 9.6s
+
+[discovery-rl-v11-s805] mhla/gpt1900-d34-contradiction-rl-v11 step=805 mode=chat
+  [cached] discovery-rl-v11-s805
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 348 tokens, stop, 9.8s
+    gr_free_fall_equivalence sample 1: 343 tokens, stop, 9.6s
+    gr_free_fall_equivalence sample 2: 448 tokens, stop, 12.6s
+
+[discovery-rl-v11-s839] mhla/gpt1900-d34-contradiction-rl-v11 step=839 mode=chat
+  [cached] discovery-rl-v11-s839
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_free_fall_equivalence sample 0: 425 tokens, stop, 11.9s
+    gr_free_fall_equivalence sample 1: 454 tokens, stop, 12.7s
+    gr_free_fall_equivalence sample 2: 468 tokens, stop, 13.1s
+
+==============================================================
+run_id      2026-10-01T02:47:52Z-8c5dbf
+records     72 written, 0 carrying an error
+expected    72
+elapsed     21.1 min
+output      evidence/freefall/leading.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+72 records → evidence/freefall/leading.html
+################ CONDITION seed ################
+run_id      2026-10-01T03:09:02Z-64d74a
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54546826
+config      ../../tools/EVAL_freefall_seed.json  condition seed
+sampling    temperature 0.7  top_k 50  base seed 42
+work        24 checkpoints x 2 tasks x 3 samples = 144 generations
+writing     evidence/freefall/seed.jsonl
+
+loading tokenizer ...
+
+[discovery-rl-v11-s035] mhla/gpt1900-d34-contradiction-rl-v11 step=35 mode=chat
+  [cached] discovery-rl-v11-s035
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 903 tokens, stop, 25.8s
+    gr_freefall_seed sample 1: 747 tokens, stop, 21.2s
+    gr_freefall_seed sample 2: 1024 tokens, length, 28.9s
+    gr_freefall_bare sample 0: 597 tokens, stop, 16.9s
+    gr_freefall_bare sample 1: 106 tokens, stop, 3.1s
+    gr_freefall_bare sample 2: 112 tokens, stop, 3.3s
+
+[discovery-rl-v11-s070] mhla/gpt1900-d34-contradiction-rl-v11 step=70 mode=chat
+  [cached] discovery-rl-v11-s070
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 756 tokens, stop, 21.5s
+    gr_freefall_seed sample 1: 772 tokens, stop, 21.9s
+    gr_freefall_seed sample 2: 133 tokens, stop, 3.9s
+    gr_freefall_bare sample 0: 175 tokens, stop, 5.0s
+    gr_freefall_bare sample 1: 588 tokens, stop, 16.7s
+    gr_freefall_bare sample 2: 298 tokens, stop, 8.5s
+
+[discovery-rl-v11-s105] mhla/gpt1900-d34-contradiction-rl-v11 step=105 mode=chat
+  [cached] discovery-rl-v11-s105
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 1024 tokens, length, 29.1s
+    gr_freefall_seed sample 1: 1024 tokens, length, 29.0s
+    gr_freefall_seed sample 2: 699 tokens, stop, 19.9s
+    gr_freefall_bare sample 0: 652 tokens, stop, 18.5s
+    gr_freefall_bare sample 1: 1024 tokens, length, 28.9s
+    gr_freefall_bare sample 2: 987 tokens, stop, 27.8s
+
+[discovery-rl-v11-s140] mhla/gpt1900-d34-contradiction-rl-v11 step=140 mode=chat
+  [cached] discovery-rl-v11-s140
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 535 tokens, stop, 15.4s
+    gr_freefall_seed sample 1: 557 tokens, stop, 16.0s
+    gr_freefall_seed sample 2: 422 tokens, stop, 12.1s
+    gr_freefall_bare sample 0: 487 tokens, stop, 13.9s
+    gr_freefall_bare sample 1: 156 tokens, stop, 4.5s
+    gr_freefall_bare sample 2: 819 tokens, stop, 23.2s
+
+[discovery-rl-v11-s175] mhla/gpt1900-d34-contradiction-rl-v11 step=175 mode=chat
+  [cached] discovery-rl-v11-s175
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 526 tokens, stop, 14.6s
+    gr_freefall_seed sample 1: 629 tokens, stop, 17.5s
+    gr_freefall_seed sample 2: 463 tokens, stop, 12.9s
+    gr_freefall_bare sample 0: 182 tokens, stop, 5.1s
+    gr_freefall_bare sample 1: 626 tokens, stop, 17.4s
+    gr_freefall_bare sample 2: 324 tokens, stop, 9.0s
+
+[discovery-rl-v11-s210] mhla/gpt1900-d34-contradiction-rl-v11 step=210 mode=chat
+  [cached] discovery-rl-v11-s210
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 215 tokens, stop, 6.1s
+    gr_freefall_seed sample 1: 377 tokens, stop, 10.5s
+    gr_freefall_seed sample 2: 374 tokens, stop, 10.4s
+    gr_freefall_bare sample 0: 380 tokens, stop, 10.6s
+    gr_freefall_bare sample 1: 177 tokens, stop, 5.0s
+    gr_freefall_bare sample 2: 169 tokens, stop, 4.8s
+
+[discovery-rl-v11-s245] mhla/gpt1900-d34-contradiction-rl-v11 step=245 mode=chat
+  [cached] discovery-rl-v11-s245
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 293 tokens, stop, 8.2s
+    gr_freefall_seed sample 1: 392 tokens, stop, 10.9s
+    gr_freefall_seed sample 2: 226 tokens, stop, 6.3s
+    gr_freefall_bare sample 0: 234 tokens, stop, 6.5s
+    gr_freefall_bare sample 1: 179 tokens, stop, 5.0s
+    gr_freefall_bare sample 2: 444 tokens, stop, 12.3s
+
+[discovery-rl-v11-s280] mhla/gpt1900-d34-contradiction-rl-v11 step=280 mode=chat
+  [cached] discovery-rl-v11-s280
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 293 tokens, stop, 8.2s
+    gr_freefall_seed sample 1: 341 tokens, stop, 9.5s
+    gr_freefall_seed sample 2: 280 tokens, stop, 7.8s
+    gr_freefall_bare sample 0: 431 tokens, stop, 12.0s
+    gr_freefall_bare sample 1: 223 tokens, stop, 6.2s
+    gr_freefall_bare sample 2: 261 tokens, stop, 7.3s
+
+[discovery-rl-v11-s315] mhla/gpt1900-d34-contradiction-rl-v11 step=315 mode=chat
+  [cached] discovery-rl-v11-s315
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 459 tokens, stop, 12.9s
+    gr_freefall_seed sample 1: 260 tokens, stop, 7.4s
+    gr_freefall_seed sample 2: 509 tokens, stop, 14.4s
+    gr_freefall_bare sample 0: 184 tokens, stop, 5.3s
+    gr_freefall_bare sample 1: 187 tokens, stop, 5.4s
+    gr_freefall_bare sample 2: 278 tokens, stop, 7.9s
+
+[discovery-rl-v11-s350] mhla/gpt1900-d34-contradiction-rl-v11 step=350 mode=chat
+  [cached] discovery-rl-v11-s350
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 332 tokens, stop, 9.3s
+    gr_freefall_seed sample 1: 500 tokens, stop, 14.0s
+    gr_freefall_seed sample 2: 244 tokens, stop, 6.9s
+    gr_freefall_bare sample 0: 232 tokens, stop, 6.5s
+    gr_freefall_bare sample 1: 426 tokens, stop, 11.9s
+    gr_freefall_bare sample 2: 326 tokens, stop, 9.1s
+
+[discovery-rl-v11-s385] mhla/gpt1900-d34-contradiction-rl-v11 step=385 mode=chat
+  [cached] discovery-rl-v11-s385
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 337 tokens, stop, 9.5s
+    gr_freefall_seed sample 1: 218 tokens, stop, 6.1s
+    gr_freefall_seed sample 2: 313 tokens, stop, 8.8s
+    gr_freefall_bare sample 0: 288 tokens, stop, 8.1s
+    gr_freefall_bare sample 1: 379 tokens, stop, 10.6s
+    gr_freefall_bare sample 2: 333 tokens, stop, 9.3s
+
+[discovery-rl-v11-s420] mhla/gpt1900-d34-contradiction-rl-v11 step=420 mode=chat
+  [cached] discovery-rl-v11-s420
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 315 tokens, stop, 8.9s
+    gr_freefall_seed sample 1: 396 tokens, stop, 11.1s
+    gr_freefall_seed sample 2: 391 tokens, stop, 11.0s
+    gr_freefall_bare sample 0: 173 tokens, stop, 4.9s
+    gr_freefall_bare sample 1: 334 tokens, stop, 9.4s
+    gr_freefall_bare sample 2: 390 tokens, stop, 10.9s
+
+[discovery-rl-v11-s455] mhla/gpt1900-d34-contradiction-rl-v11 step=455 mode=chat
+  [cached] discovery-rl-v11-s455
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 224 tokens, stop, 6.4s
+    gr_freefall_seed sample 1: 395 tokens, stop, 11.1s
+    gr_freefall_seed sample 2: 252 tokens, stop, 7.1s
+    gr_freefall_bare sample 0: 414 tokens, stop, 11.6s
+    gr_freefall_bare sample 1: 201 tokens, stop, 5.7s
+    gr_freefall_bare sample 2: 175 tokens, stop, 5.0s
+
+[discovery-rl-v11-s490] mhla/gpt1900-d34-contradiction-rl-v11 step=490 mode=chat
+  [cached] discovery-rl-v11-s490
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 334 tokens, stop, 9.4s
+    gr_freefall_seed sample 1: 339 tokens, stop, 9.5s
+    gr_freefall_seed sample 2: 372 tokens, stop, 10.4s
+    gr_freefall_bare sample 0: 373 tokens, stop, 10.4s
+    gr_freefall_bare sample 1: 447 tokens, stop, 12.5s
+    gr_freefall_bare sample 2: 355 tokens, stop, 9.9s
+
+[discovery-rl-v11-s525] mhla/gpt1900-d34-contradiction-rl-v11 step=525 mode=chat
+  [cached] discovery-rl-v11-s525
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 239 tokens, stop, 6.8s
+    gr_freefall_seed sample 1: 326 tokens, stop, 9.2s
+    gr_freefall_seed sample 2: 348 tokens, stop, 9.8s
+    gr_freefall_bare sample 0: 308 tokens, stop, 8.6s
+    gr_freefall_bare sample 1: 287 tokens, stop, 8.1s
+    gr_freefall_bare sample 2: 497 tokens, stop, 13.9s
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 514 tokens, stop, 14.4s
+    gr_freefall_seed sample 1: 313 tokens, stop, 8.8s
+    gr_freefall_seed sample 2: 391 tokens, stop, 10.9s
+    gr_freefall_bare sample 0: 310 tokens, stop, 8.7s
+    gr_freefall_bare sample 1: 289 tokens, stop, 8.1s
+    gr_freefall_bare sample 2: 391 tokens, stop, 10.9s
+
+[discovery-rl-v11-s595] mhla/gpt1900-d34-contradiction-rl-v11 step=595 mode=chat
+  [cached] discovery-rl-v11-s595
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 380 tokens, stop, 10.8s
+    gr_freefall_seed sample 1: 336 tokens, stop, 9.6s
+    gr_freefall_seed sample 2: 398 tokens, stop, 11.4s
+    gr_freefall_bare sample 0: 556 tokens, stop, 15.8s
+    gr_freefall_bare sample 1: 295 tokens, stop, 8.5s
+    gr_freefall_bare sample 2: 394 tokens, stop, 11.3s
+
+[discovery-rl-v11-s630] mhla/gpt1900-d34-contradiction-rl-v11 step=630 mode=chat
+  [cached] discovery-rl-v11-s630
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 392 tokens, stop, 11.3s
+    gr_freefall_seed sample 1: 387 tokens, stop, 11.1s
+    gr_freefall_seed sample 2: 389 tokens, stop, 11.1s
+    gr_freefall_bare sample 0: 401 tokens, stop, 11.4s
+    gr_freefall_bare sample 1: 548 tokens, stop, 15.6s
+    gr_freefall_bare sample 2: 224 tokens, stop, 6.5s
+
+[discovery-rl-v11-s665] mhla/gpt1900-d34-contradiction-rl-v11 step=665 mode=chat
+  [cached] discovery-rl-v11-s665
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 307 tokens, stop, 8.9s
+    gr_freefall_seed sample 1: 223 tokens, stop, 6.4s
+    gr_freefall_seed sample 2: 194 tokens, stop, 5.6s
+    gr_freefall_bare sample 0: 293 tokens, stop, 8.4s
+    gr_freefall_bare sample 1: 330 tokens, stop, 9.5s
+    gr_freefall_bare sample 2: 240 tokens, stop, 6.9s
+
+[discovery-rl-v11-s700] mhla/gpt1900-d34-contradiction-rl-v11 step=700 mode=chat
+  [cached] discovery-rl-v11-s700
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 301 tokens, stop, 8.7s
+    gr_freefall_seed sample 1: 300 tokens, stop, 8.6s
+    gr_freefall_seed sample 2: 201 tokens, stop, 5.8s
+    gr_freefall_bare sample 0: 363 tokens, stop, 10.4s
+    gr_freefall_bare sample 1: 318 tokens, stop, 9.1s
+    gr_freefall_bare sample 2: 191 tokens, stop, 5.5s
+
+[discovery-rl-v11-s735] mhla/gpt1900-d34-contradiction-rl-v11 step=735 mode=chat
+  [cached] discovery-rl-v11-s735
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 249 tokens, stop, 7.2s
+    gr_freefall_seed sample 1: 437 tokens, stop, 12.5s
+    gr_freefall_seed sample 2: 372 tokens, stop, 10.7s
+    gr_freefall_bare sample 0: 435 tokens, stop, 12.5s
+    gr_freefall_bare sample 1: 462 tokens, stop, 13.3s
+    gr_freefall_bare sample 2: 233 tokens, stop, 6.7s
+
+[discovery-rl-v11-s770] mhla/gpt1900-d34-contradiction-rl-v11 step=770 mode=chat
+  [cached] discovery-rl-v11-s770
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 435 tokens, stop, 12.5s
+    gr_freefall_seed sample 1: 415 tokens, stop, 11.9s
+    gr_freefall_seed sample 2: 265 tokens, stop, 7.7s
+    gr_freefall_bare sample 0: 321 tokens, stop, 9.2s
+    gr_freefall_bare sample 1: 363 tokens, stop, 10.4s
+    gr_freefall_bare sample 2: 345 tokens, stop, 9.9s
+
+[discovery-rl-v11-s805] mhla/gpt1900-d34-contradiction-rl-v11 step=805 mode=chat
+  [cached] discovery-rl-v11-s805
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 473 tokens, stop, 13.6s
+    gr_freefall_seed sample 1: 299 tokens, stop, 8.6s
+    gr_freefall_seed sample 2: 307 tokens, stop, 8.8s
+    gr_freefall_bare sample 0: 237 tokens, stop, 6.8s
+    gr_freefall_bare sample 1: 527 tokens, stop, 15.1s
+    gr_freefall_bare sample 2: 494 tokens, stop, 14.2s
+
+[discovery-rl-v11-s839] mhla/gpt1900-d34-contradiction-rl-v11 step=839 mode=chat
+  [cached] discovery-rl-v11-s839
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    gr_freefall_seed sample 0: 251 tokens, stop, 7.3s
+    gr_freefall_seed sample 1: 307 tokens, stop, 8.8s
+    gr_freefall_seed sample 2: 302 tokens, stop, 8.6s
+    gr_freefall_bare sample 0: 74 tokens, stop, 2.2s
+    gr_freefall_bare sample 1: 260 tokens, stop, 7.4s
+    gr_freefall_bare sample 2: 407 tokens, stop, 11.6s
+
+==============================================================
+run_id      2026-10-01T03:09:02Z-64d74a
+records     144 written, 0 carrying an error
+expected    144
+elapsed     31.7 min
+output      evidence/freefall/seed.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+144 records → evidence/freefall/seed.html
+################ SUMMARY (text level) ################
+==============================================================
+REPORT
+==============================================================
+evidence/freefall/scaffolded.jsonl
+  records 72  errors 0  scored 0  stock opening 64/72  hit max_tokens 2
+  not judged yet
+evidence/freefall/minimal.jsonl
+  records 72  errors 0  scored 0  stock opening 60/72  hit max_tokens 2
+  not judged yet
+evidence/freefall/leading.jsonl
+  records 72  errors 0  scored 0  stock opening 59/72  hit max_tokens 1
+  not judged yet
+upstream:physics_eval_v11
+  records 192  errors 0  scored 192  stock opening 150/192  hit max_tokens 0
+  MEAN SCORE 0.93 (n=192)  95% CI 0.84 to 1.03   hist 0:44 1:122 2:22 3:3 4:1 5:0
+evidence/freefall/scaffolded.jsonl  vs  evidence/freefall/minimal.jsonl
+  shared 72  byte identical 0
+evidence/freefall/scaffolded.jsonl  vs  evidence/freefall/leading.jsonl
+  shared 72  byte identical 0
+evidence/freefall/scaffolded.jsonl  vs  upstream:physics_eval_v11
+  shared 24  byte identical 0
+evidence/freefall/minimal.jsonl  vs  evidence/freefall/leading.jsonl
+  shared 72  byte identical 0
+evidence/freefall/minimal.jsonl  vs  upstream:physics_eval_v11
+  shared 24  byte identical 0
+evidence/freefall/leading.jsonl  vs  upstream:physics_eval_v11
+  shared 24  byte identical 0
+==============================================================
+wrote evidence/freefall/report.json
+wrote evidence/freefall/report.html
+FREEFALL COMPLETE. Open evidence/freefall/report.html. Grade and read on the Mac next.

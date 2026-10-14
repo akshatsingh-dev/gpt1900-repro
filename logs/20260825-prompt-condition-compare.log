@@ -1,0 +1,21 @@
+$ head -6 results/physics_eval_v11_no_assumptions/summary.txt
+                             UV   Photo  Frozen   ApprC   Train      MM    Elev    Fall  | Mean
+discovery-rl-v11-s560       1.3     0.7     0.7     0.0     1.0     1.7     1.0     2.0  | 1.04
+discovery-rl-v11-s630       2.0     1.3     1.3     0.7     1.3     2.3     1.3     1.7  | 1.50
+discovery-rl-v11-s735       2.0     1.0     1.3     1.7     1.0     2.3     2.0     1.3  | 1.58
+
+$ python3  # scaffolded vs minimal, shared checkpoints only
+checkpoints: scaffolded 24 | minimal 3 | shared 3
+scaffolded (EVAL.json)        mean 1.250  n=24
+minimal (no_assumptions)      mean 1.371  n=24
+difference                    +0.121
+
+per task  scaffolded -> minimal
+  UV      1.33 -> 1.77   (+0.43)
+  Photo   2.33 -> 1.00   (-1.33)
+  Frozen  1.00 -> 1.10   (+0.10)
+  ApprC   0.33 -> 0.80   (+0.47)
+  Train   0.67 -> 1.10   (+0.43)
+  MM      1.00 -> 2.10   (+1.10)
+  Elev    2.33 -> 1.43   (-0.90)
+  Fall    1.00 -> 1.67   (+0.67)

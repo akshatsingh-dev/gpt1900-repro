@@ -1,0 +1,349 @@
+run_id      2026-09-22T09:28:01Z-0b5db5
+upstream    5b489c8c5378f6b1bf3e1ba782f56876f65cde7a (clean)
+device      cuda  Tesla V100-SXM2-32GB cc 7.0  bf16_supported False
+determinism False  slurm job 54390360
+config      EVAL.json  condition scaffolded
+sampling    temperature 0.7  top_k 50  base seed 42
+work        24 checkpoints x 8 tasks x 1 samples = 192 generations
+writing     evidence/sweep/v11-scaffolded.jsonl
+
+loading tokenizer ...
+
+[discovery-rl-v11-s035] mhla/gpt1900-d34-contradiction-rl-v11 step=35 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=35 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 513 tokens, stop, 14.7s
+    photoelectric_effect_main sample 0: 694 tokens, stop, 19.3s
+    sr_frozen_light sample 0: 573 tokens, stop, 15.9s
+    sr_approaching_c sample 0: 877 tokens, stop, 24.4s
+    sr_train_lightning sample 0: 591 tokens, stop, 16.4s
+    sr_michelson_morley sample 0: 432 tokens, stop, 12.0s
+    gr_main_elevator_light sample 0: 161 tokens, stop, 4.6s
+    gr_free_fall_equivalence sample 0: 1024 tokens, length, 28.4s
+
+[discovery-rl-v11-s070] mhla/gpt1900-d34-contradiction-rl-v11 step=70 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=70 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 663 tokens, stop, 18.5s
+    photoelectric_effect_main sample 0: 816 tokens, stop, 22.6s
+    sr_frozen_light sample 0: 180 tokens, stop, 5.0s
+    sr_approaching_c sample 0: 687 tokens, stop, 19.0s
+    sr_train_lightning sample 0: 842 tokens, stop, 23.3s
+    sr_michelson_morley sample 0: 709 tokens, stop, 19.7s
+    gr_main_elevator_light sample 0: 711 tokens, stop, 19.8s
+    gr_free_fall_equivalence sample 0: 495 tokens, stop, 13.8s
+
+[discovery-rl-v11-s105] mhla/gpt1900-d34-contradiction-rl-v11 step=105 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=105 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 1024 tokens, length, 28.8s
+    photoelectric_effect_main sample 0: 1024 tokens, length, 28.5s
+    sr_frozen_light sample 0: 883 tokens, stop, 24.5s
+    sr_approaching_c sample 0: 670 tokens, stop, 18.6s
+    sr_train_lightning sample 0: 1024 tokens, length, 28.5s
+    sr_michelson_morley sample 0: 460 tokens, stop, 12.8s
+    gr_main_elevator_light sample 0: 858 tokens, stop, 24.0s
+    gr_free_fall_equivalence sample 0: 933 tokens, stop, 26.0s
+
+[discovery-rl-v11-s140] mhla/gpt1900-d34-contradiction-rl-v11 step=140 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=140 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 439 tokens, stop, 12.2s
+    photoelectric_effect_main sample 0: 831 tokens, stop, 22.9s
+    sr_frozen_light sample 0: 478 tokens, stop, 13.2s
+    sr_approaching_c sample 0: 490 tokens, stop, 13.5s
+    sr_train_lightning sample 0: 708 tokens, stop, 19.5s
+    sr_michelson_morley sample 0: 433 tokens, stop, 12.0s
+    gr_main_elevator_light sample 0: 417 tokens, stop, 11.6s
+    gr_free_fall_equivalence sample 0: 819 tokens, stop, 22.6s
+
+[discovery-rl-v11-s175] mhla/gpt1900-d34-contradiction-rl-v11 step=175 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=175 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 590 tokens, stop, 16.5s
+    photoelectric_effect_main sample 0: 586 tokens, stop, 16.3s
+    sr_frozen_light sample 0: 336 tokens, stop, 9.3s
+    sr_approaching_c sample 0: 536 tokens, stop, 14.9s
+    sr_train_lightning sample 0: 831 tokens, stop, 23.0s
+    sr_michelson_morley sample 0: 527 tokens, stop, 14.7s
+    gr_main_elevator_light sample 0: 625 tokens, stop, 17.4s
+    gr_free_fall_equivalence sample 0: 542 tokens, stop, 15.1s
+
+[discovery-rl-v11-s210] mhla/gpt1900-d34-contradiction-rl-v11 step=210 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=210 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 416 tokens, stop, 11.7s
+    photoelectric_effect_main sample 0: 354 tokens, stop, 9.9s
+    sr_frozen_light sample 0: 259 tokens, stop, 7.2s
+    sr_approaching_c sample 0: 248 tokens, stop, 6.9s
+    sr_train_lightning sample 0: 307 tokens, stop, 8.6s
+    sr_michelson_morley sample 0: 363 tokens, stop, 10.1s
+    gr_main_elevator_light sample 0: 336 tokens, stop, 9.4s
+    gr_free_fall_equivalence sample 0: 393 tokens, stop, 10.9s
+
+[discovery-rl-v11-s245] mhla/gpt1900-d34-contradiction-rl-v11 step=245 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=245 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 536 tokens, stop, 14.9s
+    photoelectric_effect_main sample 0: 434 tokens, stop, 12.1s
+    sr_frozen_light sample 0: 309 tokens, stop, 8.6s
+    sr_approaching_c sample 0: 369 tokens, stop, 10.2s
+    sr_train_lightning sample 0: 281 tokens, stop, 7.8s
+    sr_michelson_morley sample 0: 368 tokens, stop, 10.2s
+    gr_main_elevator_light sample 0: 313 tokens, stop, 8.8s
+    gr_free_fall_equivalence sample 0: 509 tokens, stop, 14.2s
+
+[discovery-rl-v11-s280] mhla/gpt1900-d34-contradiction-rl-v11 step=280 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=280 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 413 tokens, stop, 11.6s
+    photoelectric_effect_main sample 0: 583 tokens, stop, 16.1s
+    sr_frozen_light sample 0: 235 tokens, stop, 6.5s
+    sr_approaching_c sample 0: 327 tokens, stop, 9.0s
+    sr_train_lightning sample 0: 373 tokens, stop, 10.3s
+    sr_michelson_morley sample 0: 541 tokens, stop, 14.9s
+    gr_main_elevator_light sample 0: 400 tokens, stop, 11.1s
+    gr_free_fall_equivalence sample 0: 454 tokens, stop, 12.6s
+
+[discovery-rl-v11-s315] mhla/gpt1900-d34-contradiction-rl-v11 step=315 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=315 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 416 tokens, stop, 11.6s
+    photoelectric_effect_main sample 0: 594 tokens, stop, 16.4s
+    sr_frozen_light sample 0: 327 tokens, stop, 9.1s
+    sr_approaching_c sample 0: 331 tokens, stop, 9.2s
+    sr_train_lightning sample 0: 408 tokens, stop, 11.3s
+    sr_michelson_morley sample 0: 418 tokens, stop, 11.6s
+    gr_main_elevator_light sample 0: 524 tokens, stop, 14.5s
+    gr_free_fall_equivalence sample 0: 430 tokens, stop, 11.9s
+
+[discovery-rl-v11-s350] mhla/gpt1900-d34-contradiction-rl-v11 step=350 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=350 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 614 tokens, stop, 17.0s
+    photoelectric_effect_main sample 0: 594 tokens, stop, 16.4s
+    sr_frozen_light sample 0: 318 tokens, stop, 8.8s
+    sr_approaching_c sample 0: 339 tokens, stop, 9.4s
+    sr_train_lightning sample 0: 748 tokens, stop, 20.6s
+    sr_michelson_morley sample 0: 450 tokens, stop, 12.4s
+    gr_main_elevator_light sample 0: 533 tokens, stop, 14.7s
+    gr_free_fall_equivalence sample 0: 422 tokens, stop, 11.6s
+
+[discovery-rl-v11-s385] mhla/gpt1900-d34-contradiction-rl-v11 step=385 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=385 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 426 tokens, stop, 11.9s
+    photoelectric_effect_main sample 0: 534 tokens, stop, 14.8s
+    sr_frozen_light sample 0: 245 tokens, stop, 6.8s
+    sr_approaching_c sample 0: 451 tokens, stop, 12.5s
+    sr_train_lightning sample 0: 485 tokens, stop, 13.4s
+    sr_michelson_morley sample 0: 328 tokens, stop, 9.1s
+    gr_main_elevator_light sample 0: 438 tokens, stop, 12.1s
+    gr_free_fall_equivalence sample 0: 452 tokens, stop, 12.5s
+
+[discovery-rl-v11-s420] mhla/gpt1900-d34-contradiction-rl-v11 step=420 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=420 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 409 tokens, stop, 11.6s
+    photoelectric_effect_main sample 0: 794 tokens, stop, 22.2s
+    sr_frozen_light sample 0: 262 tokens, stop, 7.3s
+    sr_approaching_c sample 0: 372 tokens, stop, 10.3s
+    sr_train_lightning sample 0: 270 tokens, stop, 7.5s
+    sr_michelson_morley sample 0: 411 tokens, stop, 11.4s
+    gr_main_elevator_light sample 0: 381 tokens, stop, 10.6s
+    gr_free_fall_equivalence sample 0: 292 tokens, stop, 8.2s
+
+[discovery-rl-v11-s455] mhla/gpt1900-d34-contradiction-rl-v11 step=455 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=455 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 652 tokens, stop, 18.2s
+    photoelectric_effect_main sample 0: 618 tokens, stop, 17.2s
+    sr_frozen_light sample 0: 327 tokens, stop, 9.1s
+    sr_approaching_c sample 0: 339 tokens, stop, 9.5s
+    sr_train_lightning sample 0: 385 tokens, stop, 10.8s
+    sr_michelson_morley sample 0: 382 tokens, stop, 10.7s
+    gr_main_elevator_light sample 0: 570 tokens, stop, 15.9s
+    gr_free_fall_equivalence sample 0: 234 tokens, stop, 6.6s
+
+[discovery-rl-v11-s490] mhla/gpt1900-d34-contradiction-rl-v11 step=490 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=490 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 798 tokens, stop, 22.2s
+    photoelectric_effect_main sample 0: 716 tokens, stop, 19.9s
+    sr_frozen_light sample 0: 263 tokens, stop, 7.3s
+    sr_approaching_c sample 0: 231 tokens, stop, 6.5s
+    sr_train_lightning sample 0: 477 tokens, stop, 13.3s
+    sr_michelson_morley sample 0: 337 tokens, stop, 9.4s
+    gr_main_elevator_light sample 0: 351 tokens, stop, 9.8s
+    gr_free_fall_equivalence sample 0: 357 tokens, stop, 9.9s
+
+[discovery-rl-v11-s525] mhla/gpt1900-d34-contradiction-rl-v11 step=525 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=525 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 427 tokens, stop, 12.0s
+    photoelectric_effect_main sample 0: 895 tokens, stop, 24.8s
+    sr_frozen_light sample 0: 370 tokens, stop, 10.3s
+    sr_approaching_c sample 0: 326 tokens, stop, 9.1s
+    sr_train_lightning sample 0: 560 tokens, stop, 15.6s
+    sr_michelson_morley sample 0: 431 tokens, stop, 12.0s
+    gr_main_elevator_light sample 0: 353 tokens, stop, 9.9s
+    gr_free_fall_equivalence sample 0: 278 tokens, stop, 7.8s
+
+[discovery-rl-v11-s560] mhla/gpt1900-d34-contradiction-rl-v11 step=560 mode=chat
+  [cached] discovery-rl-v11-s560
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 463 tokens, stop, 13.0s
+    photoelectric_effect_main sample 0: 948 tokens, stop, 26.3s
+    sr_frozen_light sample 0: 300 tokens, stop, 8.4s
+    sr_approaching_c sample 0: 481 tokens, stop, 13.4s
+    sr_train_lightning sample 0: 380 tokens, stop, 10.6s
+    sr_michelson_morley sample 0: 368 tokens, stop, 10.3s
+    gr_main_elevator_light sample 0: 386 tokens, stop, 10.8s
+    gr_free_fall_equivalence sample 0: 401 tokens, stop, 11.2s
+
+[discovery-rl-v11-s595] mhla/gpt1900-d34-contradiction-rl-v11 step=595 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=595 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 609 tokens, stop, 16.9s
+    photoelectric_effect_main sample 0: 874 tokens, stop, 24.0s
+    sr_frozen_light sample 0: 271 tokens, stop, 7.5s
+    sr_approaching_c sample 0: 456 tokens, stop, 12.6s
+    sr_train_lightning sample 0: 391 tokens, stop, 10.8s
+    sr_michelson_morley sample 0: 377 tokens, stop, 10.4s
+    gr_main_elevator_light sample 0: 420 tokens, stop, 11.6s
+    gr_free_fall_equivalence sample 0: 420 tokens, stop, 11.6s
+
+[discovery-rl-v11-s630] mhla/gpt1900-d34-contradiction-rl-v11 step=630 mode=chat
+  [cached] discovery-rl-v11-s630
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 636 tokens, stop, 17.6s
+    photoelectric_effect_main sample 0: 615 tokens, stop, 17.0s
+    sr_frozen_light sample 0: 455 tokens, stop, 12.5s
+    sr_approaching_c sample 0: 459 tokens, stop, 12.7s
+    sr_train_lightning sample 0: 455 tokens, stop, 12.6s
+    sr_michelson_morley sample 0: 319 tokens, stop, 8.9s
+    gr_main_elevator_light sample 0: 513 tokens, stop, 14.2s
+    gr_free_fall_equivalence sample 0: 373 tokens, stop, 10.3s
+
+[discovery-rl-v11-s665] mhla/gpt1900-d34-contradiction-rl-v11 step=665 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=665 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 524 tokens, stop, 14.6s
+    photoelectric_effect_main sample 0: 751 tokens, stop, 20.7s
+    sr_frozen_light sample 0: 510 tokens, stop, 14.1s
+    sr_approaching_c sample 0: 473 tokens, stop, 13.0s
+    sr_train_lightning sample 0: 388 tokens, stop, 10.8s
+    sr_michelson_morley sample 0: 399 tokens, stop, 11.0s
+    gr_main_elevator_light sample 0: 418 tokens, stop, 11.5s
+    gr_free_fall_equivalence sample 0: 351 tokens, stop, 9.8s
+
+[discovery-rl-v11-s700] mhla/gpt1900-d34-contradiction-rl-v11 step=700 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=700 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 443 tokens, stop, 12.5s
+    photoelectric_effect_main sample 0: 633 tokens, stop, 17.7s
+    sr_frozen_light sample 0: 320 tokens, stop, 8.9s
+    sr_approaching_c sample 0: 400 tokens, stop, 11.2s
+    sr_train_lightning sample 0: 473 tokens, stop, 13.2s
+    sr_michelson_morley sample 0: 436 tokens, stop, 12.2s
+    gr_main_elevator_light sample 0: 410 tokens, stop, 11.5s
+    gr_free_fall_equivalence sample 0: 304 tokens, stop, 8.5s
+
+[discovery-rl-v11-s735] mhla/gpt1900-d34-contradiction-rl-v11 step=735 mode=chat
+  [cached] discovery-rl-v11-s735
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 658 tokens, stop, 18.4s
+    photoelectric_effect_main sample 0: 776 tokens, stop, 21.6s
+    sr_frozen_light sample 0: 454 tokens, stop, 12.6s
+    sr_approaching_c sample 0: 299 tokens, stop, 8.4s
+    sr_train_lightning sample 0: 587 tokens, stop, 16.5s
+    sr_michelson_morley sample 0: 409 tokens, stop, 11.5s
+    gr_main_elevator_light sample 0: 462 tokens, stop, 12.9s
+    gr_free_fall_equivalence sample 0: 406 tokens, stop, 11.4s
+
+[discovery-rl-v11-s770] mhla/gpt1900-d34-contradiction-rl-v11 step=770 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=770 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 642 tokens, stop, 18.1s
+    photoelectric_effect_main sample 0: 666 tokens, stop, 18.6s
+    sr_frozen_light sample 0: 311 tokens, stop, 8.7s
+    sr_approaching_c sample 0: 545 tokens, stop, 15.2s
+    sr_train_lightning sample 0: 238 tokens, stop, 6.7s
+    sr_michelson_morley sample 0: 340 tokens, stop, 9.5s
+    gr_main_elevator_light sample 0: 395 tokens, stop, 11.1s
+    gr_free_fall_equivalence sample 0: 461 tokens, stop, 12.9s
+
+[discovery-rl-v11-s805] mhla/gpt1900-d34-contradiction-rl-v11 step=805 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=805 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 540 tokens, stop, 15.2s
+    photoelectric_effect_main sample 0: 624 tokens, stop, 17.5s
+    sr_frozen_light sample 0: 443 tokens, stop, 12.3s
+    sr_approaching_c sample 0: 375 tokens, stop, 10.5s
+    sr_train_lightning sample 0: 536 tokens, stop, 14.9s
+    sr_michelson_morley sample 0: 410 tokens, stop, 11.4s
+    gr_main_elevator_light sample 0: 364 tokens, stop, 10.2s
+    gr_free_fall_equivalence sample 0: 325 tokens, stop, 9.1s
+
+[discovery-rl-v11-s839] mhla/gpt1900-d34-contradiction-rl-v11 step=839 mode=chat
+  downloading mhla/gpt1900-d34-contradiction-rl-v11 step=839 revision=71bf395f06dff39ad5ee9f8981b941b3c37daae9 ...
+  loaded, weights held as bfloat16
+  WARNING: weights are bfloat16 on hardware without bf16 support. Results here are not comparable to a bf16-capable GPU.
+    uv_catastrophe_main sample 0: 568 tokens, stop, 16.0s
+    photoelectric_effect_main sample 0: 789 tokens, stop, 22.0s
+    sr_frozen_light sample 0: 433 tokens, stop, 12.1s
+    sr_approaching_c sample 0: 597 tokens, stop, 16.6s
+    sr_train_lightning sample 0: 486 tokens, stop, 13.6s
+    sr_michelson_morley sample 0: 516 tokens, stop, 14.4s
+    gr_main_elevator_light sample 0: 534 tokens, stop, 14.9s
+    gr_free_fall_equivalence sample 0: 448 tokens, stop, 12.5s
+
+==============================================================
+run_id      2026-09-22T09:28:01Z-0b5db5
+records     192 written, 0 carrying an error
+expected    192
+elapsed     64.3 min
+output      evidence/sweep/v11-scaffolded.jsonl
+==============================================================
+RUN COMPLETE
+==============================================================
+192 records → evidence/sweep/v11-scaffolded.html
+################ SUMMARY (text level, no scores yet) ################
+==============================================================
+REPORT
+==============================================================
+evidence/sweep/v11-scaffolded.jsonl
+  records 192  errors 0  scored 0  stock opening 151/192  hit max_tokens 4
+  not judged yet
+upstream:physics_eval_v11
+  records 192  errors 0  scored 192  stock opening 150/192  hit max_tokens 0
+  MEAN SCORE 0.93 (n=192)  95% CI 0.84 to 1.03   hist 0:44 1:122 2:22 3:3 4:1 5:0
+evidence/sweep/v11-scaffolded.jsonl  vs  upstream:physics_eval_v11
+  shared 192  byte identical 0
+==============================================================
+wrote evidence/sweep/report.json
+wrote evidence/sweep/report.html
+STEP 3 COMPLETE. Open evidence/sweep/report.html. Judge on the Mac next.

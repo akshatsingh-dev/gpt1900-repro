@@ -1,0 +1,7 @@
+evidence/prompt-sensitivity/leading.jsonl: 72 of 72 scored -> evidence/prompt-sensitivity/leading.graded.jsonl
+evidence/prompt-sensitivity/minimal.jsonl: 72 of 72 scored -> evidence/prompt-sensitivity/minimal.graded.jsonl
+evidence/prompt-sensitivity/scaffolded.jsonl: 72 of 72 scored -> evidence/prompt-sensitivity/scaffolded.graded.jsonl
+evidence/sampling/run-a.jsonl: 8 of 8 scored -> evidence/sampling/run-a.graded.jsonl
+
+graded ids 224   in key 224   ungraded 0
+records written 224   scored 224   grader 'claude-fable-5-1, blinded batches of 24, fresh session per batch, upstream rubric'
