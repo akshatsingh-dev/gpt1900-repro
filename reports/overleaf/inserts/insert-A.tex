@@ -1,0 +1,21 @@
+% INSERT A. Section 13.3, sampling and selection bias
+
+\subsection{Artefact reproducibility, measured}
+
+The published archive holds two pairs of repeated runs. After confirming the prompts byte-identical, we paired every generation with its repeat: 2 of 120 match. The cause is in the code rather than the model. The evaluation script sets no seed, so the engine default of 42 applied silently and was never written down; the run and its repeat asked for 1 and 3 samples per prompt, and the engine shares one random generator across every row of a batch, so the two could never have produced the same draws. With the seed recorded and one sample per call, the same checkpoint on the same GPU repeats exactly: 8 of 8 answers byte-identical at temperature 0, 8 of 8 at the published settings of temperature 0.7 and top\_k 50, with and without deterministic kernels forced. Across machines it does not: the same checkpoint at temperature 0 on a CPU in float32 against a V100 gives 0 of 8, each machine agreeing with itself 8 of 8. Sampling variance is therefore not the failure here. The failure is that the record did not contain what a repeat needs, and that device and numeric format belong in it.
+% sources: E014, E021; E022, E026; E032, E035; E043
+
+\begin{table*}[t]
+\caption{Paired generations between a published run and its repeat, and between our runs.}
+\begin{ruledtabular}
+\begin{tabular}{lll}
+Pair & Paired & Identical \\
+\hline
+authors' v8 against v8\_det & 96 & 0 \\
+authors' v11 against v11\_replication & 24 & 2 \\
+ours, same V100, temperature 0, twice & 8 & 8 \\
+ours, same V100, published settings, twice & 8 & 8 \\
+ours, V100 against CPU float32, temperature 0 & 8 & 0 \\
+\end{tabular}
+\end{ruledtabular}
+\end{table*}

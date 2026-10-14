@@ -1,0 +1,22 @@
+% INSERT B. Section 13.4, evaluator leakage
+
+\subsection{The grader moves the number}
+
+We regenerated all 192 cells of the published sweep at the authors' settings on different hardware and graded them blind with the authors' rubric, beside the authors' own published answers, by one grader.
+% sources: E042, E044
+
+\begin{table*}[t]
+\caption{The sweep under two graders, n=192 each, 95\% bootstrap intervals.}
+\begin{ruledtabular}
+\begin{tabular}{lllll}
+Answers & Grader & Mean & Interval & 0 / 1 / 2 / 3 / 4 \\
+\hline
+our fresh sweep & ours & 1.27 & 1.18 to 1.36 & 13 / 126 / 41 / 12 / 0 \\
+authors' published & ours & 1.26 & 1.17 to 1.35 & 13 / 125 / 45 / 9 / 0 \\
+authors' published & theirs, as published & 0.93 & 0.84 to 1.03 & 44 / 122 / 22 / 3 / 1 \\
+\end{tabular}
+\end{ruledtabular}
+\end{table*}
+
+Under one grader the fresh answers and the published answers agree to 0.01, with 126 of 192 cells scored identically. The same published answers under the two graders differ by 0.33, 119 of 192 cells identical, the difference concentrated in the zero row: 44 zeros under the authors' judge, 13 under ours. The grader was self-consistent, 89 of 96 regraded answers exact. The published score is a property of the grader as much as of the model, by an amount larger than any prompt manipulation reported below. Separately, 150 of the 192 published answers open with the identical sentence, "You have touched a matter of considerable importance", and 216 of 216 answers in our prompt-sensitivity run do, regardless of wording. Whether a language-model judge rewards that register is the question the blinded physicist packet is built to answer.
+% sources: E044; E044; E039, E042; E023, E037

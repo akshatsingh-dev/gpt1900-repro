@@ -1,0 +1,301 @@
+<html><head><meta charset="utf-8"><style>
+body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.45;max-width:7in;margin:1in auto;color:#111}
+h1{font-size:17pt;margin:0 0 6pt} h2{font-size:13.5pt;color:#2b4c7e;margin-top:20pt;border-bottom:1px solid #2b4c7e;padding-bottom:2pt} h3{font-size:11.5pt;margin-top:14pt}
+table{border-collapse:collapse;font-size:9.5pt;margin:6pt 0;width:100%} td{border:1px solid #ccc;padding:2pt 6pt;vertical-align:top}
+code{font-family:Menlo,monospace;font-size:9.5pt;background:#f3f3f3;padding:0 2pt} p{margin:5pt 0} li{margin:2pt 0} hr{border:0;border-top:1px solid #ccc;margin:14pt 0}
+.e{font-family:Menlo,monospace;font-size:8.5pt;color:#8a6d00;background:#fff6d6;padding:0 3pt;border-radius:2pt}
+.write{font-weight:700;color:#b3261e} .slot{font-weight:700;color:#1b5e9e;background:#e8f1fb;padding:0 3pt} @page{margin:0.8in}
+</style></head><body><h1>Paper draft: skeleton with numbers</h1>
+<p>Started 28 Sep 2026. Target: PRX Intelligence, Regular Article. See
+<code>reports/journal-recon.md</code> for the journal&#x27;s shape and required statements.
+</p>
+<p>How to use this file. Every section has three parts: the numbers it must
+carry (with the lab notebook entry in a comment so each can be checked), a
+pointer to the memo paragraph that already holds the argument, and a slot
+marked <code><span class="write">WRITE:</span></code> for the prose. The prose is Akshat&#x27;s to write in his own
+words first. The memo is the source; nothing in it needs to be re-derived.
+</p>
+<p>Two corrections to hold to throughout. The meeting notes describe the
+cross-machine result as &quot;V100 byte-identical, CPU did not match&quot;, which
+reads as if the CPU was unstable. It was not: the CPU also repeats itself
+8 of 8. Both machines are self-consistent and they disagree with each other.
+And the elevator task carries two different numbers in older files: -0.90
+from the authors&#x27; unmatched scaffolded-to-minimal comparison (E025) and
++0.89 from the matched leading-minus-scaffolded gain (E039). Only the second
+is a sensitivity result.
+</p>
+<p>The one placeholder left, <code><span class="slot">[FREEFALL n=72]</span></code>, fills from <code>evidence/freefall/</code>
+once job 54546826 is graded (E047). E045 and E046 are in.
+</p>
+<hr>
+<h2>Title</h2>
+<p>Working: &quot;Reproducing an LLM-judged physics benchmark: what a record must
+contain before a score can be checked&quot;
+</p>
+<p>Alternatives to weigh: something naming GPT-1900; something naming the
+grader finding. The grader finding is the headline, so the title should
+point at it.
+</p>
+<h2>Abstract</h2>
+<p>Numbers the abstract must carry, in this order:
+</p>
+<ul>
+<li>3.29B parameters, pre-1900 text, 8 physics prompts, 24 checkpoints, 192 graded answers, published mean 0.93 of 5 <span class="e">[upstream summary.txt; E033 for the interval 0.84 to 1.03]</span></li>
+<li>Authors&#x27; own repeat runs: 2 of 120 paired answers byte-identical <span class="e">[E014, E021]</span></li>
+<li>Three fields per published answer; the two settings that explain the divergence were never recorded <span class="e">[E016, E022, E026]</span></li>
+<li>Same machine, settings recorded: 8 of 8 identical at temperature 0 and 8 of 8 at the authors&#x27; sampled settings <span class="e">[E032, E035]</span></li>
+<li>Different machine, same settings: 0 of 8 identical, each machine self-consistent <span class="e">[E043]</span></li>
+<li>Fresh sweep, 192 answers, one grader on both sets: 1.27 ours, 1.26 theirs; their published grades 0.93. The grader alone is +0.33 <span class="e">[E042, E044]</span></li>
+<li>One hint paragraph: +0.28 overall; on the 1911 elevator task +0.89 at n=72, CI +0.69 to +1.08; on the 1907 free-fall seed +0.11 at n=9, <code><span class="slot">[FREEFALL n=72]</span></code> <span class="e">[E039; E045; E047]</span></li>
+<li>Corpus: 2,074,160 documents, 0 dated after 1899, one misdated leak <span class="e">[E041]</span></li>
+</ul>
+<p><span class="write">WRITE:</span> four to six sentences. Lead with the grader finding, not the tooling.
+</p>
+<h2>1. Introduction</h2>
+<p>Pointer: memo section 1.
+</p>
+<p>The claim under test and why it is a physics question: an LLM-judged
+benchmark asserting that a model restricted to pre-1900 text reasons toward
+post-1900 physics. Nobody had checked whether the number could be checked.
+</p>
+<p>Relation to existing benchmarks: <code>reports/evidence-table.md</code>. Eight
+benchmarks, four vintage models. None tests reconstruction from restricted
+knowledge; LLM-as-judge is the weak point in every one; PaperBench is the
+only one with a rubric validated against human grading.
+<span class="e">[evidence-table.md, families 1 to 3]</span>
+</p>
+<p><span class="write">WRITE:</span> the question, the artefact, what this paper adds (a repeat with
+denominators, a record schema, a grader comparison, a blinded packet), and
+the one-sentence answer.
+</p>
+<h2>2. The published artefact and its record</h2>
+<p>Pointer: memo section 2, the table.
+</p>
+<table>
+<tr><td>Fact</td><td>Source</td></tr>
+<tr><td>Per-answer record: prompt, mode, completions. Three fields</td><td><code>scripts/physics_eval.py:609</code> <span class="e">[E016]</span></td></tr>
+<tr><td>Temperature, top_k, num_samples, max_tokens in scope three lines above the write, not written</td><td>same <span class="e">[E017, E018]</span></td></tr>
+<tr><td>No revision pin on weight downloads</td><td><code>download_checkpoint</code> <span class="e">[E020]</span></td></tr>
+<tr><td>Seed: none in the eval script; engine default 42 applied silently</td><td><code>nanochat/engine.py:171</code> <span class="e">[E026]</span></td></tr>
+<tr><td>Run and repeat used 1 vs 3 samples; one generator shared across a batch</td><td><span class="e">[E022, E026]</span></td></tr>
+<tr><td>54 of 89 registry checkpoints never published</td><td><span class="e">[E020]</span></td></tr>
+<tr><td>5 of 12 runs never graded</td><td><span class="e">[E012]</span></td></tr>
+<tr><td>Judge: no temperature set; a judge failure written as score 0</td><td><code>judge_all</code> <span class="e">[E016]</span></td></tr>
+<tr><td>Consequence: 2 of 120 paired answers identical between published runs</td><td><span class="e">[E014, E021]</span></td></tr>
+</table>
+<p>Authors&#x27; own account of the model, for the description paragraph: nanochat
+framework; d34, 34 layers; 22B tokens of pre-1900 English from HathiTrust,
+British Library, American Stories; trained on 8 nodes of 8 H100s; RL
+checkpoints trained with physics reasoning rewards on the base.
+<span class="e">[upstream/gpt1900/PROJECT_LOG.md:28-75]</span>
+</p>
+<p><span class="write">WRITE:</span> describe the artefact neutrally, then the table, then the
+consequence sentence: the archive cannot distinguish a change in the model
+from a change in the dice.
+</p>
+<h2>3. Methods</h2>
+<p>Pointer: memo section 8 for the record; <code>notes/decisions.md</code> D003 to D008
+for each choice and what was rejected.
+</p>
+<ul>
+<li>Upstream imported at commit <code>5b489c8c</code>, never edited. Every difference is attributable to environment or settings. <span class="e">[D003]</span></li>
+<li>One sample per engine call. Removes the batch coupling that broke the authors&#x27; own repeats. <span class="e">[D004, E026]</span></li>
+<li>Their settings for anything set beside a published number: seed 42, temperature 0.7, top_k 50, one sample. <span class="e">[D005]</span></li>
+<li>Model pinned by Hugging Face revision hash (<code>71bf395f...</code>), weight file sha256 recorded. <span class="e">[E032]</span></li>
+<li>50 fields per generation, grouped: run identity, model identity, prompt, sampling, environment, output, judge, error. Schema 1.2. <span class="e">[notes/logging-schema.md]</span></li>
+<li>Comparison tool refuses to report a rate when settings differ. <span class="e">[compare_runs.py]</span></li>
+<li>Judge failure recorded as null, never 0. <span class="e">[D006]</span></li>
+<li>Leading prompt generated from <code>EVAL.json</code> with one appended hint paragraph per task; every judge field byte-identical. <span class="e">[D007]</span></li>
+<li>Grader: no API access; blinded reader in fresh sessions of 24 with provenance stripped and a sealed key; labelled provisional. <span class="e">[D008]</span></li>
+<li>Hardware: SDSC Expanse, one Tesla V100-SXM2-32GB, torch 2.14.0+cu126, bf16 emulated (recorded per generation as <code>bf16_supported: false</code>). CPU control on a <code>shared</code> node, float32. <span class="e">[E029, E043]</span></li>
+</ul>
+<p><span class="write">WRITE:</span> one paragraph per bullet group. The methods section is where the
+record schema earns its place; keep the field list in a table, not prose.
+</p>
+<h2>4. Results</h2>
+<h3>4.1 Missing metadata</h3>
+<p>This is section 2&#x27;s table restated as a result: what a reader of the
+published archive cannot recover. Short.
+</p>
+<h3>4.2 Generation is deterministic on one machine and diverges across machines</h3>
+<p>Pointer: memo section 3.
+</p>
+<table>
+<tr><td>Test</td><td>Result</td><td></td></tr>
+<tr><td>s560, temperature 0, twice, V100</td><td>8 of 8 identical</td><td><span class="e">[E032]</span></td></tr>
+<tr><td>s560, temperature 0.7, seed 42, one sample, twice, V100</td><td>8 of 8</td><td><span class="e">[E035]</span></td></tr>
+<tr><td>Same with deterministic kernels forced</td><td>8 of 8</td><td><span class="e">[E035]</span></td></tr>
+<tr><td>V100 emulated bf16 vs CPU float32, temperature 0</td><td>0 of 8</td><td><span class="e">[E043]</span></td></tr>
+<tr><td>CPU float32, twice</td><td>8 of 8</td><td><span class="e">[E043]</span></td></tr>
+<tr><td>Shared prefix before first divergence, V100 vs CPU</td><td>35 to 142 words, mean 450 chars</td><td><span class="e">[E043]</span></td></tr>
+<tr><td>GPU float32</td><td>cannot run; <code>gpt.py:396</code> asserts bf16 rotary tables</td><td><span class="e">[E043]</span></td></tr>
+</table>
+<p><span class="write">WRITE:</span> the published divergence is explained by two unrecorded settings.
+Then the cross-machine paragraph, stated correctly: each machine
+self-consistent, the two disagree, the mechanism is floating-point summation
+order flipping one near-tied token. Their hardware is unrecorded, so their
+text cannot be reproduced elsewhere even with every setting matched.
+</p>
+<h3>4.3 The full sweep: the model reproduces, the number does not</h3>
+<p>Pointer: memo sections 4 and 6.
+</p>
+<table>
+<tr><td>Text</td><td>Grader</td><td>Mean</td><td>95% interval</td><td>0 / 1 / 2 / 3 / 4</td><td></td></tr>
+<tr><td>our sweep, 192</td><td>ours</td><td>1.27</td><td>1.18 to 1.36</td><td>13 / 126 / 41 / 12 / 0</td><td><span class="e">[E042]</span></td></tr>
+<tr><td>their published answers</td><td>ours</td><td>1.26</td><td>1.17 to 1.35</td><td>13 / 125 / 45 / 9 / 0</td><td><span class="e">[E044]</span></td></tr>
+<tr><td>their published answers</td><td>theirs, as published</td><td>0.93</td><td>0.84 to 1.03</td><td>44 / 122 / 22 / 3 / 1</td><td><span class="e">[E033]</span></td></tr>
+</table>
+<ul>
+<li>Ours vs theirs under one grader: 126 of 192 cells exact, +0.01 <span class="e">[E044]</span></li>
+<li>Their text, two graders: 119 of 192 exact, 188 within one, +0.33 <span class="e">[E044]</span></li>
+<li>Training trend, first 8 to last 8 checkpoints: 0.97 to 1.52 ours; 0.62 to 1.11 published; rank correlation of per-checkpoint means 0.71 <span class="e">[E042]</span></li>
+<li>192 of 192 generated, 0 errors, 4 hit max_tokens, 64 min <span class="e">[E042]</span></li>
+<li>Stock opening &quot;You have touched&quot;: 151 of 192 ours, 150 of 192 theirs <span class="e">[E042, E023]</span></li>
+<li>Grader reliability: 96 answers graded twice, 89 exact, 96 within one <span class="e">[E039, E042]</span></li>
+</ul>
+<p><span class="write">WRITE:</span> the generation step reproduces at the level of the score. The whole
+gap between 1.27 and 0.93 is the grader, mostly the zero row. That shift is
+larger than the hint effect and comparable to the training gain. The
+published number is a property of the grader as much as of the model.
+</p>
+<h3>4.4 Prompt sensitivity, with the two general-relativity tasks as the worked example</h3>
+<p>Pointer: memo section 5.
+</p>
+<p>Three wordings, three checkpoints (s560, s630, s735), three seeds, n=72 per
+condition. 216 of 216 generated. <span class="e">[E037]</span>
+</p>
+<table>
+<tr><td>Condition</td><td>Mean</td><td>Interval</td><td>0 / 1 / 2 / 3 / 4</td><td></td></tr>
+<tr><td>minimal</td><td>1.22</td><td>1.12 to 1.32</td><td>0 / 56 / 16 / 0 / 0</td><td><span class="e">[E039]</span></td></tr>
+<tr><td>scaffolded</td><td>1.36</td><td>1.22 to 1.50</td><td>1 / 49 / 17 / 5 / 0</td><td></td></tr>
+<tr><td>leading</td><td>1.64</td><td>1.46 to 1.83</td><td>0 / 40 / 20 / 10 / 2</td><td></td></tr>
+</table>
+<p>Ordering holds on every checkpoint. Leading minus scaffolded per task:
+elevator +0.89, frozen light +0.56, photoelectric +0.44, Michelson-Morley
++0.44, free fall +0.11, approaching c +0.11, train 0.00, UV catastrophe
+-0.33. <span class="e">[E039]</span> Stock opening under every wording: 216 of 216. <span class="e">[E037]</span>
+</p>
+<p>Upstream has two general-relativity tasks and they are Einstein&#x27;s two steps.
+<code>gr_free_fall_equivalence</code> is the 1907 seed: a person falling from a roof
+feels no weight, so gravity and acceleration are locally the same.
+<code>gr_main_elevator_light</code> is the 1911 consequence: if that is so, light must
+bend in gravity. Keating&#x27;s elevator test is the first. Both are reported.
+</p>
+<p><b>The 1911 task at n=72, all 24 checkpoints</b> <span class="e">[E045]</span>
+</p>
+<table>
+<tr><td>Condition</td><td>Mean</td><td>Interval</td><td>0 / 1 / 2 / 3 / 4</td></tr>
+<tr><td>minimal</td><td>1.31</td><td>1.18 to 1.43</td><td>0 / 53 / 16 / 3 / 0</td></tr>
+<tr><td>scaffolded</td><td>1.57</td><td>1.44 to 1.69</td><td>2 / 27 / 43 / 0 / 0</td></tr>
+<tr><td>leading</td><td>2.46</td><td>2.26 to 2.65</td><td>0 / 11 / 22 / 34 / 5</td></tr>
+</table>
+<ul>
+<li>Leading minus scaffolded, paired: +0.89 (+0.69 to +1.08). Without the hint no answer in 72 scores above 2; with it 39 of 72 score 3 or 4. <span class="e">[E045]</span></li>
+<li>The hint: &quot;consider that gravity might not be a force pulling on mass at all, but a change in the shape of space and time itself, which light follows like everything else.&quot; It states rubric levels 4 and 5. <span class="e">[tools/make_leading_config.py:62]</span></li>
+<li>Published Elev column mean 1.46; ours 1.57. Training trend first 8 to last 8 checkpoints: scaffolded 1.21 to 1.83, leading 1.71 to 2.79. <span class="e">[E045]</span></li>
+<li>Regrade: 35 of 48 exact, 48 of 48 within one. <span class="e">[E045]</span></li>
+</ul>
+<p><b>The 1907 task</b> <span class="e">[E047, pending]</span>
+</p>
+<ul>
+<li>Existing: sweep n=24 mean 1.04; sensitivity n=9 scaffolded 1.11, minimal 1.22, leading 1.22, hint +0.11; published 0.92. <span class="e">[E042, E039]</span></li>
+<li><code><span class="slot">[FREEFALL n=72]</span></code>: five conditions. The three upstream wordings, plus two that give only the falling-person observation: seed (with &quot;What does this tell us about gravity?&quot;) and bare (nothing appended). Neither mentions the accelerating cabin, equivalence, or gravity disappearing. The count that matters: of 144 seed and bare answers, how many contain the equivalence idea unprompted. <span class="e">[E047]</span></li>
+</ul>
+<p><span class="write">WRITE:</span> a hint that states the answer moves the mean by +0.28 on a benchmark
+whose published signal is 0.93. Then the two GR tasks as one argument: on
+the 1911 consequence the hint is worth +0.89; on the 1907 seed it was worth
++0.11 at n=9, <code><span class="slot">[FREEFALL n=72]</span></code> at n=72. The model can be led to the
+consequence and not to the seed. Then the authors&#x27; own unmatched comparison
+(0.93 vs 1.38, different sample counts and checkpoint sets) and why it
+cannot be read as a sensitivity result.
+</p>
+<h3>4.5 The elevator thought experiment without a question</h3>
+<p>Pointer: <code>evidence/elevator-open/open_report.html</code>, <code>evidence/elevator/summary.html</code>, E046.
+</p>
+<p>Design: the seven numbered observations only, no puzzle, no question, no
+hint. Two forms: continue (no question) and ask (&quot;What follows from this?&quot;).
+Base model <code>d34-22btok</code> in completion mode and s035, s560, s839 in chat
+mode. 8 samples each, seeds 42 to 49, temperature 0.7. 64 continuations,
+read blind, one verdict each from {equivalence, bends-in-gravity,
+not-a-force, geometry, none, incoherent, loops}.
+</p>
+<p>Mode confound to state: the base model runs in completion mode and the RL
+checkpoints in chat mode, because that is how the registry defines them.
+</p>
+<p>Result <span class="e">[E046]</span>: base model 16 of 16 loop. s839 16 of 16 equivalence,
+which is line 4 of the prompt, and nothing further. s560 14 of 16. Geometry
+0 of 64; rung 3 1 of 64; three continuations state light does not bend. The
+only verdicts above rung 1 come from s035, the least-trained checkpoint,
+two of three marked marginal by the reader.
+</p>
+<p><span class="write">WRITE:</span> what the model does when nobody asks it a rubric-shaped question. It
+restates the given as a conclusion and stops. Set beside 4.4: with the hint,
+39 of 72 reach rung 3 or 4; without a question, 0 of 64 reach rung 4. The
+hint supplies the thought. Then the stage-gated framing: both upstream tasks
+hand the model stage 1 (the problem) and stage 2 (the explanatory idea) in
+the prompt, and the rubric rewards restating them. The seed and bare
+conditions in 4.4 are the first attempt to withhold stage 2.
+</p>
+<h3>4.6 Contamination</h3>
+<p>Pointer: memo section 7.
+</p>
+<p>Model side, sampled: 66 of 66 post-1900 stems clean; base model fails 13 of
+15 pre-1900 controls, RL model fails 9 and partial on 6. Recall of named
+facts is near zero on both sides of 1900. <span class="e">[E040]</span>
+</p>
+<p>Corpus side: 2,074,160 documents, 56.4 GB, revision <code>ff332ef6</code>, 15 terms.
+0 dated 1900 or later. Einstein, photon, photoelectric, spacetime, aether
+wind: 0 each. Planck 705, Lorentz 330, Michelson 277, Rayleigh 702, all
+latest year 1899. One &quot;Nobel Prize&quot; hit dated 1829 describes Fredrik Bajer&#x27;s
+1908 award: a misdated 1909 document that passed the date filter. <span class="e">[E041]</span>
+</p>
+<p><span class="write">WRITE:</span> no evidence the tasks are answerable from leaked text; the zero is a
+lower bound because the corpus was assembled by date and one misdated
+source is in it; a term search cannot see paraphrase.
+</p>
+<h2>5. Discussion</h2>
+<p><span class="write">WRITE:</span> three points. What a record must contain before a score can be
+checked (the 50-field list, condensed to the categories). Why the grader is
+the largest single source of variance in this benchmark and what that means
+for every LLM-judged benchmark in the evidence table. What the elevator
+results say about the difference between passing a rubric and reasoning
+toward general relativity.
+</p>
+<h2>6. Limitations</h2>
+<p>Each one a sentence or two, no softening:
+</p>
+<ul>
+<li>The v5 to v8 checkpoints were never published; 54 of 89 are unreachable. <span class="e">[E020]</span></li>
+<li>Hardware changes exact outputs: floating-point summation order diverges and flips a later token. Measured, 0 of 8 across V100 and CPU. <span class="e">[E043]</span></li>
+<li>The original evaluation did not record hardware, dtype or library build. <span class="e">[E016]</span></li>
+<li>The authors&#x27; judge model, <code>claude-sonnet-4-20250514</code>, was not reachable without a key; every score here is from a provisional blinded grader, and the cross-grade bounds the effect at about 0.33. <span class="e">[D008, E044]</span></li>
+<li>Which grader is closer to a physicist is untested until the blinded packet is graded by physicists. <span class="e">[evidence/review-packet-*]</span></li>
+<li>The contamination scan is lexical: 15 terms and a date field over 2,074,160 documents. Paraphrase and period-vocabulary leakage are outside it. <span class="e">[E041]</span></li>
+<li>Base-vs-RL comparisons in 4.5 carry a mode confound. <span class="e">[E046]</span></li>
+</ul>
+<h2>7. Data and code availability</h2>
+<ul>
+<li>Code: <code>github.com/michaelhla/gpt1900</code> at <code>5b489c8c</code> (upstream, MIT); this repository&#x27;s <code>tools/</code> (to be published with the paper).</li>
+<li>Every generation, grade and rationale: <code>evidence/</code> as JSONL, schema in <code>notes/logging-schema.md</code>.</li>
+<li>Blinded packets: <code>evidence/review-packet-a</code>, <code>-b</code>, <code>-c</code>, and the elevator packet.</li>
+<li>Weights: Hugging Face <code>mhla/gpt1900-d34-contradiction-rl-v11</code> at revision <code>71bf395f06dff39ad5ee9f8981b941b3c37daae9</code>; base <code>mhla/gpt1900-d34-22btok</code>.</li>
+<li>Corpus: <code>mhla/pre1900-corpus</code> at <code>ff332ef64f896c8d44672b4d1d0c752029e32f29</code>.</li>
+</ul>
+<p>Data Availability statement and AI-use disclosure are both required by APS;
+see <code>reports/journal-recon.md</code>. The AI-use disclosure must cover the
+provisional grader (D008) and any drafting help.
+</p>
+<h2>8. Acknowledgements</h2>
+<p>Compute: SDSC Expanse under ACCESS allocation CIS261668. Onboarding help
+from Evan Watson at SDSC. Supervision: Prof. Brian Keating, UCSD Physics.
+</p>
+<hr>
+<h2>Figures to make</h2>
+<ol>
+<li>Three-way sweep table as a figure: three histograms (0 to 5) side by side. Source <code>evidence/sweep/report.json</code>.</li>
+<li>Per-checkpoint means, ours vs published, 24 points each with the rank correlation. Source <code>evidence/sweep/report.json</code>.</li>
+<li>Prompt sensitivity: three conditions, per task, leading minus scaffolded. Source <code>evidence/prompt-sensitivity/report.json</code>.</li>
+<li>Elevator (1911) at n=72: per-checkpoint curve for three conditions. Source <code>evidence/elevator/report.json</code>. Free fall (1907) the same, <code><span class="slot">[FREEFALL n=72]</span></code>, plus the seed/bare equivalence count.</li>
+<li>Cross-machine divergence: shared prefix length per task, V100 vs CPU. Source E043 table.</li>
+<li>Corpus term table with year histograms. Source <code>evidence/contamination/corpus-search.json</code>.</li>
+</ol></body></html>

@@ -1,0 +1,48 @@
+<html><head><meta charset="utf-8"><style>
+body{font-family:Calibri,Arial,sans-serif;font-size:11pt;line-height:1.35;max-width:7in;margin:1in auto}
+h1{font-size:18pt;margin:0 0 2pt} h2{font-size:13pt;color:#2b4c7e;margin:14pt 0 4pt;border-bottom:1px solid #2b4c7e}
+p{margin:4pt 0} li{margin:2pt 0}
+</style></head><body><h1>Progress Update Week 3, Akshat Singh</h1>
+<p>GPT-1900 reproducibility, 8 September 2026</p>
+<p>Evaluated against github.com/michaelhla/gpt1900</p>
+<h2>What I did</h2>
+<p>The pipeline is built and running on Expanse. This week I got the model loaded on a GPU, ran the first real experiment, and got a result. The code is written. From here the work is running it in different configurations and logging what comes out.</p>
+<h2>Compute</h2>
+<ul>
+<li>The Expanse account is live. Last week&#x27;s report said it was not, that is now out of date.</li>
+<li>All four allocations are attached and confirmed: 1000 GPU hours, 4000 CPU hours, 500 GB storage, and the ACCESS credit pool. Nothing spent yet beyond a few minutes of testing.</li>
+<li>One catch that cost a day: the default PyTorch install has no support for Expanse&#x27;s V100 GPUs. It could see the card but could not run on it. Fixed by installing the CUDA 12.6 build instead. Worth knowing for anyone else in the group using Expanse.</li>
+</ul>
+<h2>The pipeline</h2>
+<p>Four scripts, all tested, all in the repo.</p>
+<ul>
+<li>logged_eval.py runs a checkpoint on the 8 physics questions and writes one record per answer with 50 fields: which exact bytes of model, the prompt, every sampling setting, the hardware, the output, and timing. Theirs saves three fields.</li>
+<li>compare_runs.py takes two runs and reports how many answers came back identical, byte for byte. It refuses to give a number if the two runs used different settings, which is the mistake their own comparison made.</li>
+<li>render_html.py turns the records into a page you can read.</li>
+<li>Job scripts for Slurm, so a run is one command.</li>
+</ul>
+<p>The first checkpoint took 48 seconds to download and 16 seconds per question to answer. A full pass over all 24 checkpoints is about an hour of GPU time.</p>
+<h2>The result</h2>
+<p>Same checkpoint, same 8 questions, randomness off, run twice. 8 of 8 answers identical.</p>
+<p>What that means: the model is consistent when you ask it the same way. Their published runs disagreed with each other 118 times out of 120, and this shows the model was never the reason. The reason was two settings they did not write down: the sampling temperature, and the number of samples per batch, which changes the random draws even at a fixed seed. Both are bookkeeping. Both are fixable.</p>
+<p>Two other things from the same run.</p>
+<ul>
+<li>Every one of the 8 answers opens with the same sentence, &quot;You have touched a matter of considerable importance.&quot; I found that phrase in 78 percent of their published outputs. With randomness off it is 100 percent.</li>
+<li>Expanse&#x27;s V100 GPUs do not support bfloat16 in hardware. The code loads the weights as bfloat16 anyway and PyTorch emulates it. So a number from a V100 and a number from an A100 are not the same computation, and the memo has to say so.</li>
+</ul>
+<h2>What it means for the paper</h2>
+<p>The published score of 0.93 out of 5 is a number nobody could check. Now there is a pipeline where every answer carries enough information to be checked, and the first check passed. The next checks are whether the score holds up when the question is worded differently, and whether the grade holds up when graded twice.</p>
+<h2>Next</h2>
+<ol>
+<li>Same checkpoint, minimal prompt. The version without the classical assumptions spelled out. This is the first half of the prompt sensitivity test.</li>
+<li>Repeat the pair five times for an error bar.</li>
+<li>All 24 checkpoints, both prompt versions. This is the full reproduction of their published sweep.</li>
+<li>The blinded review packet. Answers shuffled, provenance stripped, sealed key, scoring sheet with their rubric.</li>
+<li>The reproducibility memo and the presentation.</li>
+</ol>
+<h2>Three things I need</h2>
+<ol>
+<li>An API key or budget for the grading step. No repeat run of theirs has ever been graded, so this is the widest gap.</li>
+<li>Where the hosted page should live. Expanse is batch with no public address. Jetstream2 looks like the right ACCESS resource. Evan is checking.</li>
+<li>A scope call. Six items were assigned. Items 1, 2, 4 and 6 will land. Prompt sensitivity will land partially. The contamination probe and the leading prompt condition are designed but will not run before the 15th unless something else drops.</li>
+</ol></body></html>

@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GPT-1900 results, one page</title>
+<style>
+:root{--ink:#1a1a1a;--mute:#666;--line:#e2e2e2;--bg:#fafafa;--card:#fff;--blue:#2b4c7e;--green:#1b7f3b;--red:#b3261e;--amber:#b8860b}
+body{margin:0 auto;padding:1.5rem 2rem 4rem;max-width:1000px;font:15px/1.55 -apple-system,"Segoe UI",Helvetica,Arial,sans-serif;background:var(--bg);color:var(--ink)}
+h1{font-size:1.6rem;margin:0 0 .2rem}h2{font-size:1.2rem;margin:2.2rem 0 .6rem;border-top:2px solid #ddd;padding-top:1rem}h3{font-size:1rem;margin:1.1rem 0 .3rem}
+.sub{color:var(--mute);margin-bottom:1.2rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:1rem 1.2rem;margin:.8rem 0}
+.lead{border-left:6px solid var(--blue)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.7rem;margin:.8rem 0}
+.num{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.7rem .9rem}
+.num b{display:block;font-size:1.5rem;line-height:1.2}.num span{color:var(--mute);font-size:.85rem}
+table{border-collapse:collapse;background:var(--card);font-size:13.5px;margin:.5rem 0;width:100%}td,th{border:1px solid var(--line);padding:.35rem .6rem;text-align:left;vertical-align:top}th{background:#f0f0f0}td.n{text-align:right;white-space:nowrap}
+.meta{font-size:12.5px;color:var(--mute)}code{background:#f1f1f1;padding:0 .3rem;border-radius:3px;font-size:.9em}
+.good{color:var(--green);font-weight:600}.bad{color:var(--red);font-weight:600}.warn{color:var(--amber);font-weight:600}
+dl{display:grid;grid-template-columns:max-content 1fr;gap:.3rem 1rem}dt{font-weight:600}dd{margin:0}
+.wrap{overflow-x:auto}
+</style></head><body>
+
+<h1>GPT-1900 results, one page</h1>
+<div class="sub">Akshat Singh, UC San Diego. Updated 8 October 2026. Every number here was measured on SDSC Expanse or recomputed from the published files; the lab notebook entry that holds it is given in brackets, like [E044].</div>
+
+<div class="card lead">
+<h3 style="margin-top:0">If you read one thing</h3>
+<p><b>The project.</b> GPT-1900 is a 3.29 billion parameter language model trained only on text written before 1900. Its authors asked it eight physics questions whose answers were found after 1900 (relativity, quanta), had a Claude model grade each answer 0 to 5 against a rubric, and published a mean of <b>0.93 out of 5</b> over 192 answers. The question for this sprint: would anyone else get that number, and what does it measure?</p>
+<p><b>What we found.</b></p>
+<ol>
+<li><b>The text reproduces.</b> Same checkpoint, same settings, run twice on one machine: 8 of 8 answers identical, letter for letter, at temperature 0 and at the authors' own sampled settings. The authors' own repeat runs matched only 2 of 120 times because two settings were never written down (the seed and the sample count). That was bookkeeping, not the model. [E032, E035]</li>
+<li><b>The score does not survive a change of grader.</b> We regenerated all 192 answers and graded them: 1.27. We graded the authors' own 192 published answers with the same grader: 1.26. Their grader on their answers: 0.93. So the model reproduces to within 0.01; the published number moves by a third of a point when the grader changes. [E042, E044]</li>
+<li><b>A hint is worth more than training.</b> One added paragraph that restates the rubric's top answer lifts the elevator task from 1.57 to 2.46 (+0.89). The whole training run lifts the mean by about +0.5. [E045]</li>
+<li><b>The model never makes Einstein's jump.</b> Given the 1907 observation (a falling person feels no weight), it brings in acceleration or equivalence on its own 0 times in 144. Given the elevator question in four wordings with a ladder of help, 0 of 140. And it fails the easy control questions too (Galileo's ship, two falling stones), so this model cannot tell us whether the jump is the hard part. [E047, E049, E050]</li>
+<li><b>No leak found in the training data.</b> 2,074,160 documents searched: zero mention Einstein, photon, photoelectric or spacetime; zero dated 1900 or later by metadata. One document carries a wrong date and describes a 1908 event, so the date filter has at least one hole. [E041]</li>
+</ol>
+<p class="meta">Caveat that applies to every score on this page: no API key was available, so grades come from a blinded reading by Claude Fable 5.1 applying the authors' rubric verbatim, not from the authors' judge model (claude-sonnet-4-20250514). The reader saw shuffled answers with no checkpoint or condition attached. Regrade agreement is reported in section 9.</p>
+</div>
+
+<h2>1. What was wrong with the published pipeline</h2>
+<div class="card">
+<p>Read from the authors' repository at commit <code>5b489c8c</code> before anything was run. [E011 to E026]</p>
+<table>
+<tr><th>Finding</th><th>Number</th></tr>
+<tr><td>Fields saved per generated answer</td><td class="n">3 (prompt, mode, text)</td></tr>
+<tr><td>Occurrences of <code>seed</code>, <code>temperature</code>, <code>top_k</code> or <code>revision</code> in the saved results</td><td class="n">0</td></tr>
+<tr><td>Their run v8 against v8_det, answers identical</td><td class="n">0 of 96</td></tr>
+<tr><td>Their run v11 against v11_replication, answers identical</td><td class="n">2 of 24</td></tr>
+<tr><td><b>Combined: their own repeats reproducing</b></td><td class="n"><b>2 of 120 (1.7%)</b></td></tr>
+<tr><td>Checkpoints listed in their registry, never published</td><td class="n">54 of 89</td></tr>
+<tr><td>Published answers opening with the same sentence ("You have touched a matter of considerable importance")</td><td class="n">150 of 192 (78%)</td></tr>
+<tr><td>Published 0 to 5 scores that are 0 or 1</td><td class="n">86%</td></tr>
+<tr><td>Tests covering the evaluation script</td><td class="n">0</td></tr>
+</table>
+<p><b>Why their repeats failed.</b> The sampling engine defaults to seed 42, so the seed was fixed but never recorded. One random generator is shared across every answer in a batch, so asking for three answers per question instead of one changes which random draws each answer gets. Both of their repeat runs used a different sample count from the original. Same seed, different words. [E026]</p>
+</div>
+
+<h2>2. Does the model give the same answer twice?</h2>
+<div class="grid">
+<div class="num"><b class="good">8 of 8</b><span>temperature 0, run twice, identical [E032]</span></div>
+<div class="num"><b class="good">8 of 8</b><span>their settings (0.7, top_k 50, seed 42), run twice [E035]</span></div>
+<div class="num"><b class="good">8 of 8</b><span>same, with deterministic GPU kernels forced [E035]</span></div>
+<div class="num"><b class="bad">0 of 8</b><span>V100 GPU against CPU, same settings [E043]</span></div>
+</div>
+<div class="card">
+<p><b>Yes on one machine. No across machines.</b> With the seed and sample count recorded, every answer comes back identical. Across hardware they do not: the V100 holds the weights in bfloat16 by software emulation (the chip has no native support), the CPU runs float32. The two agree for 35 to 142 words, then one near-tied word flips under different rounding and everything after it changes. Each machine repeats itself (CPU run twice: 8 of 8). So "reproducible" for this pipeline means reproducible on one machine at one precision, and the hardware has to be in the record. [E043]</p>
+<p class="meta">Pages: <code>evidence/determinism/compare.html</code>, <code>evidence/sampling/report.html</code>, <code>evidence/dtype-control/</code>.</p>
+</div>
+
+<h2>3. The full reproduction: 24 checkpoints, 8 questions</h2>
+<div class="card">
+<p>All 192 answers regenerated at the authors' exact settings, then graded. Then the authors' own 192 published answers graded the same way, so the text and the grader can be separated. Means with 95% bootstrap intervals, n=192 each. [E042, E044]</p>
+<table>
+<tr><th>Answer text</th><th>Grader</th><th>Mean</th><th>95% interval</th><th>Scores 0 / 1 / 2 / 3 / 4</th></tr>
+<tr><td>ours, regenerated</td><td>ours</td><td class="n"><b>1.27</b></td><td class="n">1.18 to 1.36</td><td class="n">13 / 126 / 41 / 12 / 0</td></tr>
+<tr><td>theirs, published</td><td>ours</td><td class="n"><b>1.26</b></td><td class="n">1.17 to 1.35</td><td class="n">13 / 125 / 45 / 9 / 0</td></tr>
+<tr><td>theirs, published</td><td>theirs, published</td><td class="n"><b>0.93</b></td><td class="n">0.84 to 1.03</td><td class="n">44 / 122 / 22 / 3 / 1</td></tr>
+</table>
+<p><b>Reading.</b> Rows 1 and 2 differ by 0.01 with 126 of 192 cells scoring exactly the same: the model reproduces. Rows 2 and 3 are the same bytes of text under two graders: 119 of 192 cells agree exactly, 188 within one point, mean difference +0.33, most of it in how many answers get a zero (44 under theirs, 13 under ours). <b>The published 0.93 is a property of the grader as much as of the model.</b> Every one of the eight tasks scores higher under our grader. The training trend is the same under both: first eight checkpoints to last eight, 0.97 to 1.52 ours, 0.62 to 1.11 theirs. Stock opener: 151 of 192 ours, 150 of 192 theirs.</p>
+<p class="meta">Page: <code>evidence/sweep/report.html</code>.</p>
+</div>
+
+<h2>4. Does the wording of the question change the score?</h2>
+<div class="card">
+<p>Three wordings of every question. <b>Scaffolded</b> is the authors' prompt, with the classical assumptions spelled out. <b>Minimal</b> drops those assumptions. <b>Leading</b> is scaffolded plus one hint paragraph per task that restates the rubric's top answer; the hint was generated by script so every other byte is identical [D007]. Three checkpoints, three seeds, 8 tasks: n=72 per wording. [E037, E039]</p>
+<div class="grid">
+<div class="num"><b>1.22</b><span>minimal, 1.12 to 1.32</span></div>
+<div class="num"><b>1.36</b><span>scaffolded, 1.22 to 1.50</span></div>
+<div class="num"><b class="warn">1.64</b><span>leading, 1.46 to 1.83</span></div>
+<div class="num"><b>216 of 216</b><span>answers opening with the stock sentence, every wording</span></div>
+</div>
+<p>The hint adds about 0.3 on a benchmark whose whole published signal is 0.93. The model learned a voice, not an argument: the same opening sentence under all three wordings.</p>
+<p class="meta">Page: <code>evidence/prompt-sensitivity/report.html</code>.</p>
+</div>
+
+<h2>5. The two relativity tasks, all 24 checkpoints</h2>
+<div class="card">
+<p>The authors' benchmark has two general relativity questions. <b>Elevator light</b> is the 1911 consequence (light bends in a falling elevator). <b>Free fall</b> is the 1907 seed (a falling person feels no weight; what does that say about gravity?). Both run on all 24 checkpoints, three seeds, three wordings: n=72 per wording. [E045, E047]</p>
+<table>
+<tr><th>Task</th><th>minimal</th><th>scaffolded</th><th>leading</th><th>Hint effect (leading minus scaffolded, paired)</th><th>Published column</th></tr>
+<tr><td>Elevator light (1911)</td><td class="n">1.31</td><td class="n">1.57</td><td class="n"><b>2.46</b></td><td class="n"><b class="warn">+0.89</b> (+0.69 to +1.08)</td><td class="n">1.46</td></tr>
+<tr><td>Free fall (1907)</td><td class="n">0.92</td><td class="n">0.99</td><td class="n">0.99</td><td class="n"><b>+0.00</b> (-0.12 to +0.12)</td><td class="n">0.92</td></tr>
+</table>
+<p><b>Reading.</b> On the 1911 task, no answer in 72 scores above 2 without the hint; with it, 39 of 72 score 3 or 4. The hint paragraph contains the answer ("gravity might not be a force at all but the shape of space and time"), so the benchmark measures whether the model can carry a stated idea into its answer. On the 1907 task the hint does nothing: the highest score in 216 answers is 2. The step from the observation to the idea is the one the model does not take, with or without help.</p>
+<p class="meta">Pages: <code>evidence/elevator/summary.html</code>, <code>evidence/freefall/summary.html</code>.</p>
+</div>
+
+<h2>6. The jump: can it reach the idea on its own?</h2>
+<div class="card">
+<p>Three runs with no rubric and no question that gives the answer away. Answers read blind against a fixed ladder of verdicts: <b>wrong</b> (weight still felt), <b>none</b> (never says what is felt), <b>weightless</b> (the 1907 observation), <b>equivalence</b> (brings in acceleration on its own: the jump), <b>not-a-force</b>, <b>geometry</b> (beyond the jump). [D009]</p>
+<div class="grid">
+<div class="num"><b class="bad">0 of 144</b><span>given only the 1907 observation, answers that reach equivalence [E047]</span></div>
+<div class="num"><b class="bad">0 of 64</b><span>given the elevator observations with no question, answers that reach geometry [E046]</span></div>
+<div class="num"><b class="bad">0 of 75</b><span>the elevator question in the draft paper's words, 25 checkpoints, answers that even say weightless [E049]</span></div>
+<div class="num"><b class="bad">0 of 140</b><span>four wordings plus a ladder of help, answers that reach equivalence or geometry [E050]</span></div>
+</div>
+<p><b>What the answers do instead.</b> In the 75-answer run: 48 are period prose about cables, levers and pendulums that never say what the rider feels; 23 say weight is still felt or a heavier passenger falls faster, and that wrong answer rises with training (3 of 24 in the first eight checkpoints, 12 of 24 in the last eight). [E049] In the open run, the trained model restates the prompt's own line "acceleration and gravity are equivalent" as its conclusion and stops: 16 of 16 for the most trained checkpoint. [E046]</p>
+<p class="meta">Pages: <code>evidence/freefall/jump.html</code>, <code>evidence/elevator-open/open_report.html</code>, <code>evidence/elevator-final/report.html</code>.</p>
+</div>
+
+<h2>7. The abduction suite: the jump, with controls</h2>
+<div class="card">
+<p>A recent position paper argues language models can deduce and induce but cannot "jump" (abduce a new idea). If GPT-1900 fails the elevator, two stories fit: it cannot jump, or it cannot reason at all. Six control questions a 19th-century reader could answer from the training text separate those. 13 prompts, 4 checkpoints (the untrained base plus three trained), 5 seeds each: 260 answers, read blind. [E050]</p>
+<table>
+<tr><th>Group</th><th>Prompt</th><th>Result</th></tr>
+<tr><td rowspan="4">Elevator, four wordings</td><td>What do you feel in the falling elevator?</td><td>0 reach the jump</td></tr>
+<tr><td>Same, and why, and what it says about gravity</td><td>0 reach the jump</td></tr>
+<tr><td>A man lets go of a stone in the falling elevator. What does it do?</td><td class="bad">trained checkpoints say it falls to the floor 14 of 15 times</td></tr>
+<tr><td>A man on a scale in the falling elevator. What does it read?</td><td>0 reach the jump</td></tr>
+<tr><td rowspan="3">Ladder of help</td><td>Told: falling person feels no weight, objects float. Something in our idea of gravity is mistaken. What?</td><td>3 say "gravity is not a force", repeating the hint back with no reason; counted separately</td></tr>
+<tr><td>Same, plus a man pressed into his seat in a speeding-up carriage. What do the cases share?</td><td>1 says weightless, 0 reach the jump</td></tr>
+<tr><td>Same, plus: no experiment inside the cabin can detect gravity. What follows?</td><td>15 of 15 say nothing about what is felt</td></tr>
+<tr><td rowspan="6">Controls (trained checkpoints, 15 each)</td><td>Stone dropped from a moving ship's mast: where does it land? (Galileo, in the corpus)</td><td class="bad">0 correct, 2 partial, 10 wrong</td></tr>
+<tr><td>Heavy and light stone dropped together: which lands first? (in the corpus)</td><td class="bad">0 correct, 6 partial, 9 wrong</td></tr>
+<tr><td>Pendulums 1, 4, 9, 16 feet swing in 1, 2, 3, 4 seconds: what is the rule?</td><td class="bad">1 correct, 3 partial, 10 wrong</td></tr>
+<tr><td>Uranus drifts off Newton's path: what could cause it? (Neptune, 1846, in the corpus)</td><td class="bad">0 correct, 5 partial, 10 wrong</td></tr>
+<tr><td>Light speed is the same along and across Earth's motion: what must be true? (1905, beyond corpus)</td><td>0 correct, 6 wrong, 9 none</td></tr>
+<tr><td>A hot body's glow peaks then dies at high frequency: what is wrong with the theory? (1900, beyond corpus)</td><td>0 correct, 2 partial, 4 wrong, 9 none</td></tr>
+</table>
+<div class="grid">
+<div class="num"><b class="bad">0 of 140</b><span>elevator answers reaching equivalence or geometry</span></div>
+<div class="num"><b class="bad">1 of 90</b><span>control answers correct, trained checkpoints</span></div>
+<div class="num"><b>52 of 65</b><span>base model answers that loop until the token limit</span></div>
+</div>
+<p><b>Reading.</b> The model fails the jump. It also fails Galileo. So the elevator result is real but it does not test the "cannot jump" claim: the model never passes the entry test, and the floor is too low to see the ceiling. The one thing training clearly did is turn loops into fluent period prose.</p>
+<p class="meta">Page: <code>evidence/abduction/report.html</code>, with every answer and its verdict.</p>
+</div>
+
+<h2>8. Did post-1900 physics leak into the training data?</h2>
+<div class="card">
+<p>Two checks. <b>Model side:</b> 16 half-sentences for the model to finish, 11 about post-1900 physics it should not know, 5 about pre-1900 physics it should. <b>Corpus side:</b> a search of the full 56 GB training set, 2,074,160 documents, for 15 terms and for any document dated 1900 or later. [E036, E040, E041]</p>
+<table>
+<tr><th>Check</th><th>Result</th></tr>
+<tr><td>Post-1900 stems completed with post-1900 knowledge</td><td class="n"><b class="good">0 of 66</b></td></tr>
+<tr><td>Pre-1900 control facts the base model could state</td><td class="n">2 of 15 (both the aether)</td></tr>
+<tr><td>Pre-1900 control facts the trained model could state</td><td class="n">0 of 15</td></tr>
+<tr><td>Documents mentioning Einstein, photon, photoelectric or spacetime</td><td class="n"><b class="good">0 of 2,074,160</b></td></tr>
+<tr><td>Documents dated 1900 or later, by metadata</td><td class="n">0</td></tr>
+<tr><td>Documents with a wrong date carrying a post-1900 fact</td><td class="n"><b class="warn">1</b> (a 1909 report filed as 1829, describing the 1908 Nobel Peace Prize)</td></tr>
+</table>
+<p><b>Reading.</b> The physics is clean: nothing in the training text names the post-1900 ideas, and the model shows no recall of them. Two qualifiers. The model shows almost no recall of pre-1900 facts either (a "photon" is "a piece of paper or cloth"; it cannot describe the Michelson-Morley experiment, which is in its data), so the clean result partly measures weak recall in general. And the date filter has at least one hole, so "0 dated 1900 or later" is a lower bound on contamination, not a proof.</p>
+<p class="meta">Pages: <code>evidence/contamination/probe-sampled.html</code>, <code>evidence/contamination/corpus-search.html</code>.</p>
+</div>
+
+<h2>9. How reliable is the grading?</h2>
+<div class="card">
+<p>Every score above came from a blinded reading: answers shuffled with a recorded seed, checkpoint and wording stripped, the authors' rubric applied verbatim, grades mapped back through a sealed key. The reader was Claude Fable 5.1 in fresh sessions of 24 answers. Batches were regraded in independent sessions to measure consistency. [D008, E039, E042, E045, E047]</p>
+<table>
+<tr><th>Packet</th><th>Exact agreement on regrade</th><th>Within one point</th></tr>
+<tr><td>Prompt sensitivity (section 4)</td><td class="n">24 of 24, then 45 of 48; combined 89 of 96</td><td class="n">96 of 96</td></tr>
+<tr><td>Elevator light, 1911 task (section 5)</td><td class="n">35 of 48</td><td class="n">48 of 48</td></tr>
+<tr><td>Free fall, 1907 task (section 5)</td><td class="n">38 of 48</td><td class="n">48 of 48</td></tr>
+</table>
+<p>Agreement is high on the plain tasks and lower on the relativity tasks, where the rubric's middle levels are harder to tell apart. One regrade moved a batch mean from 1.62 to 2.04, all in one direction, without changing any ordering. This grader is <b>provisional</b>: it is not the authors' judge model, and no human physicist has graded yet. The packets for physicists are built and sealed (<code>evidence/review-packet-*/</code>).</p>
+</div>
+
+<h2>10. What the pipeline records that theirs did not</h2>
+<div class="card">
+<p>Every answer in <code>evidence/</code> carries a 50-field record: exact model bytes (SHA-256 of the weights and the Hugging Face revision), the prompt and its hash, seed, temperature, top_k, sample count, max tokens, the GPU model, whether it supports bfloat16 natively, the PyTorch version, deterministic-kernel flag, timing, the code commit, and the grading decision with the grader named and its temperature. A comparison tool refuses to report a match rate when two runs differ in any setting, which is the mistake the authors' own comparison made. Nothing was cherry-picked: every run is archived with its denominator, 0 generation errors in any run.</p>
+<table>
+<tr><th>Tool</th><th>Does</th></tr>
+<tr><td><code>tools/logged_eval.py</code></td><td>runs a checkpoint on a question set, one record per answer</td></tr>
+<tr><td><code>tools/compare_runs.py</code></td><td>byte-identity between two runs, refuses on mismatched settings</td></tr>
+<tr><td><code>tools/blind_packet.py</code>, <code>judge_import.py</code></td><td>shuffle and strip for blind grading, map grades back through the key</td></tr>
+<tr><td><code>tools/judge.py</code></td><td>the authors' rubric through the authors' judge model, failures recorded as null, not zero; waiting on a key</td></tr>
+<tr><td><code>tools/report.py</code></td><td>means, bootstrap intervals, per task and checkpoint, next to the published numbers</td></tr>
+<tr><td><code>tools/abduction_report.py</code>, <code>freefall_jump.py</code>, <code>probe_report.py</code>, <code>corpus_search.py</code></td><td>the pages for sections 6 to 8</td></tr>
+<tr><td><code>tools/decide.py</code></td><td>a second machine reader through a typed-answer API, for agreement with the blind readings; built and dry-run, not yet run [D010]</td></tr>
+</table>
+</div>
+
+<h2>11. What is not done</h2>
+<div class="card">
+<ul>
+<li><b>Grading with the authors' judge model.</b> Needs an API key. Under five dollars, about twenty minutes. Until then every score is provisional.</li>
+<li><b>Grading by physicists.</b> The blinded packets are ready. Needs their time.</li>
+<li><b>A second machine reader</b> on all 260 abduction answers and the 192 sweep answers, about three cents per run, for an agreement figure from a different vendor [D010].</li>
+<li><b>A model that passes the controls.</b> The jump test is only informative on a model that can do the ordinary steps. This one cannot.</li>
+</ul>
+</div>
+
+<h2>12. Words used above</h2>
+<div class="card">
+<dl>
+<dt>checkpoint</dt><dd>a saved copy of the model partway through training. The authors published 24, named by training step (s035 to s839), plus the untrained base model (d34-22btok).</dd>
+<dt>temperature</dt><dd>how much randomness in word choice. 0 means always the most likely word; 0.7 is what the authors used.</dd>
+<dt>top_k</dt><dd>only the k most likely next words are eligible to be drawn. The authors used 50.</dd>
+<dt>seed</dt><dd>the starting number for the random draws. Same seed, same draws, same words, if everything else matches.</dd>
+<dt>sample count</dt><dd>how many answers are generated per question in one batch. Changes which random draws each answer receives, even at a fixed seed.</dd>
+<dt>bfloat16, float32</dt><dd>number formats. The model is stored in bfloat16; the V100 GPU emulates it in software, so a V100 and a CPU round differently and the text diverges.</dd>
+<dt>rubric</dt><dd>the authors' 0 to 5 scale per task, with a sentence describing each level. Used verbatim.</dd>
+<dt>95% bootstrap interval</dt><dd>resample the scores 2000 times, take the middle 95% of the means. Two intervals that do not overlap are a real difference.</dd>
+<dt>blind reading</dt><dd>the reader sees the question, the expected answer and the text, never which checkpoint or wording produced it.</dd>
+<dt>scaffolded, minimal, leading</dt><dd>the three wordings in section 4.</dd>
+<dt>equivalence, the jump</dt><dd>Einstein's 1907 step: feeling weight and being accelerated are the same thing from inside, so gravity can be removed by falling. The idea the benchmark is meant to test.</dd>
+<dt>abduction</dt><dd>reasoning to a new explanation from a surprising observation, as opposed to deduction (from rules to a case) or induction (from cases to a rule).</dd>
+<dt>stock opener</dt><dd>"You have touched a matter of considerable importance", the sentence the trained model starts most answers with regardless of the question.</dd>
+</dl>
+</div>
+
+</body></html>

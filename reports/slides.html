@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>GPT-1900 reproducibility, final presentation</title>
+<style>
+:root {
+  --bg: #fbfaf7;
+  --ink: #1c1c1c;
+  --muted: #6f6a62;
+  --accent: #0f5f9e;
+  --rule: #e2ded6;
+  --code: #efece5;
+}
+html { font-size: clamp(15px, 0.55vw + 11px, 22px); }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.35;
+  -webkit-font-smoothing: antialiased;
+}
+section.slide {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  padding: 6vh 8vw;
+  flex-direction: column;
+  justify-content: center;
+}
+section.slide.active { display: flex; }
+.inner { width: 100%; max-width: 62rem; margin: 0 auto; }
+.n {
+  display: none;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.6rem;
+  font-variant-numeric: tabular-nums;
+}
+h2 {
+  font-size: 2.2rem;
+  font-weight: 650;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin: 0 0 1.4rem;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 3.5rem;
+  height: 0.22rem;
+  background: var(--accent);
+  margin-top: 0.8rem;
+  border-radius: 2px;
+}
+ul { list-style: none; margin: 0; padding: 0; }
+li {
+  font-size: 1.3rem;
+  margin: 0 0 0.85rem;
+  padding-left: 1.4rem;
+  position: relative;
+}
+li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: var(--accent);
+}
+li.pending b { color: var(--accent); font-weight: 700; }
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: var(--code);
+  padding: 0.05em 0.35em;
+  border-radius: 4px;
+}
+.big {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+  margin: 0.4rem 0 1.2rem;
+}
+.caption { font-size: 1.3rem; max-width: 42rem; margin: 0; }
+.counter, .foot {
+  position: fixed;
+  bottom: 1.1rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.counter { right: 1.4rem; font-variant-numeric: tabular-nums; }
+.foot { left: 1.4rem; }
+.help {
+  display: none;
+  position: fixed;
+  top: 0.8rem;
+  right: 1.4rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+  background: var(--bg);
+  padding: 0.3rem 0.6rem;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+}
+
+/* overview: Escape shows every slide, scrolled */
+body.overview section.slide {
+  display: flex;
+  height: auto;
+  min-height: 55vh;
+  border-bottom: 1px solid var(--rule);
+  cursor: pointer;
+}
+body.overview .n { display: block; }
+body.overview .counter, body.overview .foot { display: none; }
+body.overview .help { display: block; }
+
+/* print: one slide per page */
+@media print {
+  @page { size: landscape; margin: 0; }
+  html { font-size: 16px; }
+  body { background: #fff; }
+  section.slide, body.overview section.slide {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    min-height: 0;
+    border: 0;
+    cursor: auto;
+    break-after: page;
+    page-break-after: always;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  section.slide:last-of-type { break-after: auto; page-break-after: auto; }
+  .n, body.overview .n { display: block; }
+  .counter, .foot, .help { display: none !important; }
+}
+</style>
+</head>
+<body>
+<section class="slide" id="s1">
+<div class="inner">
+<div class="n">1 / 12</div>
+<h2>The question</h2>
+<ul>
+<li>GPT-1900 is a 3.29B-parameter model trained on about 22B tokens of pre-1900 English. The idea behind it: can a model reason its way to physics it has never read?</li>
+<li>Its authors ran 24 checkpoints on 8 physics questions and had Claude grade each answer 0 to 5. Published mean: 0.93 over 192 answers.</li>
+<li>Nobody had checked whether running it again gives the same number.</li>
+<li>My job was to check, and to build the record-keeping that lets anyone else check.</li>
+<li>This is not about whether the model is smart. It is about whether the measurement means anything.</li>
+</ul>
+</div>
+</section>
+
+<section class="slide" id="s2">
+<div class="inner">
+<div class="n">2 / 12</div>
+<h2>What reading their code found, before running anything</h2>
+<ul>
+<li>Their two repeat runs matched the originals on 2 of 120 paired answers. The other 118 differed.</li>
+<li>Each answer is saved with three fields: prompt, mode, text. Not the temperature, not the seed, not the model revision.</li>
+<li>The seed was there all along, one layer down in the engine, fixed at 42. Never overridden, never written down.</li>
+<li>Run and repeat asked for different sample counts, 1 versus 3. One random stream is shared across a batch, so those two runs could never have matched.</li>
+<li>54 of 89 checkpoints in their registry were never published, and no repeat run was ever graded. No reproducibility figure for the score has ever existed.</li>
+</ul>
+</div>
+</section>
+
+<section class="slide" id="s3">
+<div class="inner">
+<div class="n">3 / 12</div>
+<h2>The pipeline built</h2>
+<ul>
+<li><code>logged_eval.py</code> writes one record per answer with 50 fields. Their script writes 3.</li>
+<li><code>compare_runs.py</code> matches two runs on task and seed and reports byte-identical answers over total.</li>
+<li><code>report.py</code> gives every mean its n and a 95 percent bootstrap interval, per task, per checkpoint, per condition.</li>
+<li><code>judge.py</code> calls their grader at temperature 0 and records a failure as null. <code>blind_packet.py</code> shuffles answers, strips provenance and seals the key for human review.</li>
+<li>Everything runs on SDSC Expanse, one V100 per job, one Slurm script per experiment. Upstream pinned at commit 5b489c8c and never edited.</li>
+</ul>
+</div>
+</section>
+
+<section class="slide" id="s4">
+<div class="inner">
+<div class="n">4 / 12</div>
+<h2>Is the compute deterministic</h2>
+<p class="big">8 of 8</p>
+<p class="caption">answers byte-identical. Checkpoint s560, the same 8 questions, temperature 0, run twice on one V100. The hardware is not the problem.</p>
+</div>
+</section>
+
+<section class="slide" id="s5">
+<div class="inner">
+<div class="n">5 / 12</div>
+<h2>Their actual setting reproduces</h2>
+<ul>
+<li>Their published settings: temperature 0.7, top_k 50, seed 42, one sample. Checkpoint s560, 8 questions.</li>
+<li>Run twice with normal kernels: 8 of 8 identical.</li>
+<li>Run twice with PyTorch's deterministic kernels forced: 8 of 8. Normal against deterministic: 8 of 8.</li>
+<li>Against their published bytes for the same 8 cells: 0 of 8. Different GPU, different torch build, emulated bfloat16. Expected, and not a failure of their pipeline.</li>
+<li>Write the seed down and match the sample count, and their pipeline reproduces exactly. Their failure was two missing fields.</li>
+<li>Same weights, same argmax, CPU float32 instead of V100 emulated bf16: 0 of 8 identical. CPU twice: 8 of 8. Deterministic on each machine, not across machines. Their hardware is unrecorded. [E043]</li>
+</ul>
+</div>
+</section>
+
+<section class="slide" id="s6">
+<div class="inner">
+<div class="n">6 / 12</div>
+<h2>The full sweep</h2>
+<ul>
+<li>All 24 checkpoints, 8 questions, their exact settings, one sample each. 192 answers, the same count behind the published 0.93.</li>
+<li>Each answer carries the Hugging Face revision, the sha256 of the weight file, and 48 more fields.</li>
+<li>192 of 192 generated, no failures. Under one grader, n=192 each: our new sweep <b>1.27</b> (1.18 to 1.36); their published answers <b>1.26</b> (1.17 to 1.35); their published answers under their own grader <b>0.93</b> (0.84 to 1.03).</li>
+<li>The model reproduces: two thirds of the 192 cells agree exactly between our answers and theirs under one grader. The training trend reproduces, rank correlation 0.71 across 24 checkpoints.</li>
+<li>The number does not: same rubric, same answers, a different Claude, plus 0.33. Larger than the leading-prompt effect, about the size of the whole training gain. The published 0.93 is a property of the grader as much as of the model.</li>
+<li>Their 0.93 is printed without an error bar. Computed from their own file, the 95 percent bootstrap interval is 0.84 to 1.03, n=192.</li>
+<li>Ours will be reported with its interval, next to theirs.</li>
+</ul>
+</div>
+</section>
+
+<section class="slide" id="s7">
+<div class="inner">
+<div class="n">7 / 12</div>
+<h2>Prompt sensitivity</h2>
+<ul>
+<li>Three wordings of every question: scaffolded (theirs), minimal (assumptions removed), leading (theirs plus a hint that gives away the answer). Three checkpoints, three seeds. 216 answers, 0 errors, n=72 per condition.</li>
+<li>Leading 1.64 (1.46 to 1.83). Scaffolded 1.36 (1.22 to 1.50). Minimal 1.22 (1.12 to 1.32). Provisional grader, not their judge.</li>
+<li>The hint moves the mean by +0.28 on a scale where the whole published signal is 0.93. Leading and minimal intervals do not overlap. The order holds on each of the three checkpoints.</li>
+<li>216 of 216 answers open with "You have touched a matter of considerable importance", under every wording. Their published sweep: 150 of 192.</li>
+<li>Their own comparison, 0.93 against 1.38, used different sample counts and different checkpoint sets. This one is matched.</li>
+</ul>
+</div>
+</section>
+
+<section class="slide" id="s8">
+<div class="inner">
+<div class="n">8 / 12</div>
+<h2>Contamination</h2>
+<ul>
+<li>16 sentence stems, base model and RL s560. 11 on post-1900 physics: Planck's constant, the photon, Einstein, E = mc^2, Bohr, the Wright brothers. 5 controls the corpus does contain: Thomson's electron, Michelson-Morley, Maxwell, the aether, Rontgen's rays.</li>
+<li>Sampled at 0.7, three continuations per stem: 66 of 66 post-1900 continuations clean, 0 leaks. Greedy run before it: 22 of 22 blank. A photon is "a small piece of paper, or a piece of cloth".</li>
+<li>But the controls fail too. Base model: 2 of 15 right, both on the aether. RL model: 0 of 15 right, 6 partial. "Michelson and Morley showed that" a double-tube boiler is efficient.</li>
+<li>So the probe shows weak recall of named facts in general, not a clean pre/post-1900 split. Contamination risk is capped by recall, and recall is near zero.</li>
+<li>Corpus search, 2,074,160 documents, 56 GB: 0 dated 1900 or later. Einstein, photon, photoelectric, spacetime, aether wind: 0 hits each.</li>
+<li>One leak anyway. A "Nobel Prize" hit dated 1829 describes Fredrik Bajer's 1908 award. A 1909 report with a wrong date. Zero is a lower bound.</li>
+</ul>
+</div>
+</section>
+
+<section class="slide" id="s9">
+<div class="inner">
+<div class="n">9 / 12</div>
+<h2>The record-keeping standard</h2>
+<ul>
+<li>50 fields per generation: run identity, model identity (repo, revision, checkpoint, weight sha256), prompt, sampling (seed, temperature, top_k, sample count), environment (GPU, dtype, torch version), output, judge (model, prompt hash, raw response, score), error.</li>
+<li>One sample per engine call, so any record compares with any other at the same seed, whatever the batch size.</li>
+<li>The comparison tool refuses to report a rate when settings differ. That is the exact mistake in the published comparison.</li>
+<li>A judge failure is recorded as null, never 0. Their judge writes 0.</li>
+<li>This is the part that outlives the project. Any future run through it produces evidence rather than anecdotes.</li>
+</ul>
+</div>
+</section>
+
+<section class="slide" id="s10">
+<div class="inner">
+<div class="n">10 / 12</div>
+<h2>What could not be checked, and why</h2>
+<ul>
+<li>The v5 to v8 results. Their weights were never published: 54 of 89 checkpoints are unreachable to anyone outside the project.</li>
+<li>Bit-level agreement with their outputs. Expanse V100s emulate bfloat16 and their hardware is unknown. Same-machine repeatability is established; cross-machine should not be expected.</li>
+<li>Scores from their judge. claude-sonnet-4-20250514 is deprecated, still served, and no key was available. Every score here is from a provisional blinded grader: 44 of 48 regraded answers exact, 48 of 48 within one point.</li>
+<li>The judge's own reliability on their data. They never repeated their judging, and it could not be repeated here.</li>
+<li>An outside yardstick. The evidence table covers 11 benchmarks and models in three families, each read at the source. None tests reconstruction from pre-breakthrough knowledge, so there is nothing to compare GPT-1900 against.</li>
+</ul>
+</div>
+</section>
+
+<section class="slide" id="s11">
+<div class="inner">
+<div class="n">11 / 12</div>
+<h2>What is next</h2>
+<ul>
+<li>Grade everything with their judge: 20 minutes and under $3 once a key exists. Then both graders side by side.</li>
+<li>Judge reliability under their judge: the same answers graded twice.</li>
+<li>Blinded physicist review from the packet, <code>evidence/review-packet-a/packet.html</code>.</li>
+<li>Serve the model on Jetstream2 so anyone can query it. Expanse is a batch cluster with no public address.</li>
+<li>Adopt a leakage benchmark of the TypewriterLM kind for the corpus, and decide whether a pre-1911 model for general relativity is in scope.</li>
+</ul>
+</div>
+</section>
+
+<section class="slide" id="s12">
+<div class="inner">
+<div class="n">12 / 12</div>
+<h2>Three asks</h2>
+<ul>
+<li>An API key for the judge. Under $3 grades every answer with the grader the paper used, and turns every provisional score into a checkable one.</li>
+<li>Physicists' time on the blinded packet. It is built, shuffled and sealed. It needs graders.</li>
+<li>A call on hosting and scope: a Jetstream2 allocation for a public query page, and whether the pre-1911 model is in.</li>
+</ul>
+</div>
+</section>
+<div class="foot">Akshat Singh, GPT-1900 reproducibility sprint, prepared 22 Sep 2026</div>
+<div class="counter" id="counter"></div>
+<div class="help">Esc returns to the deck. Click a slide to open it.</div>
+<script>
+(function () {
+  var slides = Array.prototype.slice.call(document.querySelectorAll("section.slide"));
+  var N = slides.length;
+  var cur = 0;
+  var counter = document.getElementById("counter");
+  var body = document.body;
+
+  function inOverview() { return body.classList.contains("overview"); }
+
+  function show(i, scroll) {
+    cur = Math.max(0, Math.min(N - 1, i));
+    slides.forEach(function (s, k) { s.classList.toggle("active", k === cur); });
+    counter.textContent = (cur + 1) + " / " + N;
+    if (history.replaceState) history.replaceState(null, "", "#" + (cur + 1));
+    if (inOverview() && scroll !== false) slides[cur].scrollIntoView({ block: "start" });
+  }
+
+  function fromHash() {
+    var n = parseInt(location.hash.slice(1), 10);
+    return isNaN(n) ? 0 : n - 1;
+  }
+
+  function toggleOverview() {
+    var on = body.classList.toggle("overview");
+    if (on) { slides[cur].scrollIntoView({ block: "start" }); }
+    else { window.scrollTo(0, 0); }
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    switch (e.key) {
+      case "ArrowRight":
+      case " ":
+      case "PageDown":
+      case "Enter":
+        e.preventDefault(); show(cur + 1); break;
+      case "ArrowLeft":
+      case "PageUp":
+      case "Backspace":
+        e.preventDefault(); show(cur - 1); break;
+      case "Home":
+        e.preventDefault(); show(0); break;
+      case "End":
+        e.preventDefault(); show(N - 1); break;
+      case "Escape":
+        e.preventDefault(); toggleOverview(); break;
+    }
+  });
+
+  slides.forEach(function (s, k) {
+    s.addEventListener("click", function () {
+      if (!inOverview()) return;
+      body.classList.remove("overview");
+      show(k, false);
+      window.scrollTo(0, 0);
+    });
+  });
+
+  window.addEventListener("hashchange", function () { show(fromHash(), true); });
+  show(fromHash(), false);
+})();
+</script>
+</body>
+</html>

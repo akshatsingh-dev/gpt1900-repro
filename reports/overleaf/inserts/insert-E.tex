@@ -1,0 +1,6 @@
+% INSERT E. Section 11.4, evaluation and archiving
+
+\subsection{What a generation record must contain}
+
+We implemented and ran a record of 50 fields per generation: run identity (run id, code commit, dirty flag, config hash); model identity (repository, revision, checkpoint step, weight hash); prompt (text, hash, condition, mode); sampling (seed, sample index, temperature, top\_k, sample count, token limit); environment (device, GPU, compute capability, bfloat16 support, dtype as loaded, library versions, scheduler job id, deterministic flag); output (text, hash, token count, stop reason, seconds); judge (model, model version, prompt hash, temperature, raw response, score, rubric version, time); and error. Three rules did more work than the field count. One sample per engine call, so any two records with the same seed are comparable regardless of batch size. A comparison tool that refuses to report an agreement rate when any generation setting differs between runs, which is the mistake in the published comparison. And a judge failure recorded as null, never as 0, where the published code writes 0. Archiving generations is necessary and not sufficient; an archive without these fields cannot support the reproducibility claim made for it.
+% sources: notes/logging-schema.md; D004; E031; D006

@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GPT-1900 project overview</title>
+<style>
+  :root {
+    --ink: #1c1c1c;
+    --muted: #5a5a5a;
+    --line: #d9d9d9;
+    --bg: #fbfaf7;
+    --panel: #ffffff;
+    --done: #1f6f3f;
+    --done-bg: #e3f2e8;
+    --partly: #8a5a00;
+    --partly-bg: #fbeed2;
+    --todo: #7a2222;
+    --todo-bg: #f8e1e1;
+    --link: #0b4f8a;
+  }
+  * { box-sizing: border-box; }
+  html { color-scheme: light; }
+  body {
+    margin: 0;
+    padding: 20px 16px 48px;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  main { max-width: 820px; margin: 0 auto; }
+  h1 { font-size: 1.7rem; line-height: 1.2; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 20px; font-size: 0.95rem; }
+  h2 {
+    font-size: 1.2rem;
+    margin: 36px 0 10px;
+    padding-top: 14px;
+    border-top: 1px solid var(--line);
+  }
+  h2 .n { color: var(--muted); font-weight: normal; margin-right: 6px; }
+  h3 { font-size: 1rem; margin: 18px 0 6px; }
+  p { margin: 0 0 10px; }
+  ul, ol { margin: 0 0 12px; padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--link); }
+  code, pre {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.88em;
+  }
+  code { background: #f0efeb; padding: 1px 4px; border-radius: 3px; }
+  pre {
+    background: #f0efeb;
+    padding: 10px 12px;
+    border-radius: 6px;
+    overflow-x: auto;
+    margin: 6px 0 12px;
+  }
+  pre code { background: none; padding: 0; }
+  .nav { font-size: 0.9rem; color: var(--muted); margin-bottom: 8px; }
+  .nav a { margin-right: 10px; white-space: nowrap; }
+  .tablewrap { overflow-x: auto; margin: 8px 0 14px; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9rem; background: var(--panel); }
+  th, td { text-align: left; vertical-align: top; padding: 7px 9px; border-bottom: 1px solid var(--line); }
+  th { background: #f0efeb; font-weight: 600; }
+  td.num { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .pill {
+    display: inline-block;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 1px 8px;
+    border-radius: 999px;
+    white-space: nowrap;
+    vertical-align: middle;
+  }
+  .done { color: var(--done); background: var(--done-bg); }
+  .partly { color: var(--partly); background: var(--partly-bg); }
+  .todo { color: var(--todo); background: var(--todo-bg); }
+  .ws { border: 1px solid var(--line); background: var(--panel); border-radius: 8px; padding: 10px 12px; margin-bottom: 10px; }
+  .ws .head { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; justify-content: space-between; }
+  .ws .head strong { flex: 1 1 200px; }
+  .ws .proof { color: var(--muted); font-size: 0.92rem; margin-top: 4px; }
+  .tl { list-style: none; padding: 0; }
+  .tl li { display: grid; grid-template-columns: 110px 1fr; gap: 10px; margin-bottom: 8px; }
+  .tl .d { font-weight: 600; white-space: nowrap; }
+  .tl .e { color: var(--muted); font-size: 0.85rem; }
+  @media (max-width: 480px) {
+    .tl li { grid-template-columns: 1fr; gap: 2px; }
+  }
+  .note { border-left: 3px solid var(--partly); background: #fff8e8; padding: 8px 12px; margin: 10px 0 14px; }
+  .small { font-size: 0.9rem; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+
+<h1>GPT-1900 project overview</h1>
+<p class="sub">One page for the morning of 8 Oct 2026, before the meeting with Prof. Keating. Every number carries its lab notebook entry (<code>notes/lab-notebook.md</code>, E-numbers). Written 7 Oct 2026.</p>
+
+<p class="nav">
+  <a href="#q">1 Question</a>
+  <a href="#ws">2 Workstreams</a>
+  <a href="#tl">3 Timeline</a>
+  <a href="#num">4 Numbers</a>
+  <a href="#tonight">5 Tonight</a>
+  <a href="#left">6 What is left</a>
+  <a href="#ev">7 Evidence pages</a>
+  <a href="#ol">8 Overleaf</a>
+</p>
+
+<h2 id="q"><span class="n">1</span>The question</h2>
+<p>Can an AI restricted to knowledge that existed before a breakthrough reconstruct the reasoning behind it, rather than retrieve it? GPT-1900, a 3.29B-parameter model trained only on pre-1900 text, was scored 0.93 out of 5 on eight physics reasoning prompts by an LLM judge, and nobody had checked whether that number could be reproduced. My job was the evidence layer: run it again, record everything that produced each answer, measure how much of the score belongs to the prompt and the grader rather than the model, and leave a record another researcher can check.</p>
+
+<h2 id="ws"><span class="n">2</span>The six workstreams</h2>
+
+<div class="ws">
+  <div class="head"><strong>1. Reproduce a published evaluation on the released checkpoints</strong> <span class="pill done">Done</span></div>
+  <div>All 24 checkpoints, 192 answers at their exact settings, graded and set beside the published 0.93 with intervals. Our answers under our grader 1.27, their answers under our grader 1.26, so the model reproduces to within 0.01 once the grader is held fixed.</div>
+  <div class="proof">Proof: <a href="../evidence/sweep/report.html">evidence/sweep/report.html</a>, E042 and E044. Caveat: graded by the provisional grader, not the judge the paper used. That pass needs an API key.</div>
+</div>
+
+<div class="ws">
+  <div class="head"><strong>2. Pipeline recording prompt, output, model version, seed, temperature and scoring decision</strong> <span class="pill done">Done</span></div>
+  <div>50 fields per answer (schema 1.2), including revision, seed, temperature, top_k, dtype read off the loaded model, and the judge fields. The comparison tool refuses to compare runs whose settings differ.</div>
+  <div class="proof">Proof: <code>tools/logged_eval.py</code>, <code>notes/logging-schema.md</code>, E031, D004, D006. The API judge script <code>tools/judge.py</code> is written and dry-tested only (E033).</div>
+</div>
+
+<div class="ws">
+  <div class="head"><strong>3. Prompt sensitivity and contamination</strong> <span class="pill done">Done</span></div>
+  <div>Three wordings (minimal, scaffolded, leading) on three checkpoints and three seeds, matched and graded: 1.22 / 1.36 / 1.64. Contamination checked on the model side twice and on the corpus side: 2,074,160 documents, none dated 1900 or later.</div>
+  <div class="proof">Proof: <a href="../evidence/prompt-sensitivity/report.html">evidence/prompt-sensitivity/report.html</a> (E037, E039); <a href="../evidence/contamination/corpus-search.html">evidence/contamination/corpus-search.html</a> (E041).</div>
+</div>
+
+<div class="ws">
+  <div class="head"><strong>4. Archive every generation, no cherry-picking</strong> <span class="pill done">Done</span></div>
+  <div>Every generation, failure, grade and rationale is on disk as JSONL with a rendered page, and every report prints its denominator. 16 determinism, 32 sampling, 216 sensitivity, 192 sweep, 128 probe, 216 elevator, 216 free fall, 144 jump answers; 0 generation errors in any run.</div>
+  <div class="proof">Proof: <code>evidence/</code> and <code>logs/</code>; the Slurm output files live in <code>logs/expanse/</code>.</div>
+</div>
+
+<div class="ws">
+  <div class="head"><strong>5. Source-backed evidence table of AI-discovery benchmarks</strong> <span class="pill done">Done</span></div>
+  <div>8 benchmarks and 4 vintage-model projects, every row read at the source on 22 Sep. No benchmark tests reconstruction from restricted knowledge; LLM-as-judge is the weak point everywhere.</div>
+  <div class="proof">Proof: <a href="evidence-table.md">reports/evidence-table.md</a>.</div>
+</div>
+
+<div class="ws">
+  <div class="head"><strong>6. Blinded review packet, reproducibility memo, final presentation</strong> <span class="pill partly">Partly</span></div>
+  <div>Packet builder written and five packets built (ours, sweep, theirs, elevator, free fall); packet A holds 224 answers in 10 batches with the key sealed. Memo complete. Slides drafted, with three GR slides still to add. No physicist has graded from the packet yet, because no names have been given.</div>
+  <div class="proof">Proof: <code>tools/blind_packet.py</code>, <code>evidence/review-packet-a/packet.html</code> and <code>score-sheet.csv</code>, <a href="reproducibility-memo.md">reports/reproducibility-memo.md</a>, <a href="slides.md">reports/slides.md</a> (E039).</div>
+</div>
+
+<h2 id="tl"><span class="n">3</span>Timeline, 25 Aug to 7 Oct 2026</h2>
+<ul class="tl">
+  <li><span class="d">25 Aug</span><span>Workspace set up, upstream cloned and pinned, their archive read end to end in one night. 2 of 120 paired answers reproduce between their runs and repeats; no seed and no revision in the eval script; three fields saved per answer; published mean verified at 0.932. <span class="e">E001 to E025</span></span></li>
+  <li><span class="d">1 to 3 Sep</span><span>The seed was never missing: it is fixed at 42 inside the engine and shared across a batch, so mismatched sample counts explain the published divergence. Logging wrapper written. Laptop disk down to 3.3 GB, work moved to Expanse; 1000 GPU hours confirmed under CIS261668; dtype now read off the model; comparison script written. <span class="e">E026 to E031</span></span></li>
+  <li><span class="d">8 Sep</span><span>First tokens generated, on an Expanse V100. One checkpoint, temperature 0, all 8 tasks, run twice: 8 of 8 byte-identical. 0 of 8 against their published sampled text, as expected. <span class="e">E032</span></span></li>
+  <li><span class="d">15 Sep</span><span>The planned end date. Every remaining experiment turned into a Slurm job ending in an HTML page; their 0.93 given an interval for the first time; seeded sampling at their settings 8 of 8 three ways; greedy knowledge probe; sensitivity generations 216 of 216. The sweep was not yet submitted. <span class="e">E033 to E037</span></span></li>
+  <li><span class="d">22 to 23 Sep</span><span>Sweep, sampled probe and corpus search submitted and landed overnight. Sensitivity graded 1.22 / 1.36 / 1.64; probe 66 of 66 clean; corpus 0 of 2,074,160 dated after 1899; sweep 1.27 against the published 0.93; cross-grade puts the gap on the grader; dtype control 0 of 8 across machines. Memo, talking points, slides and the presentation brief written. <span class="e">E038 to E044</span></span></li>
+  <li><span class="d">30 Sep to 1 Oct</span><span>The two general-relativity tasks at n=72 per condition. Elevator: hint effect +0.89. Elevator with no question: 0 of 64 reach geometry. Free fall, the 1907 observation: hint effect +0.00, and 0 of 144 reach the equivalence unprompted. Paper draft numbers complete. <span class="e">E045 to E047</span></span></li>
+  <li><span class="d">7 Oct</span><span>Abduction suite submitted on Expanse tonight (section 5). Three GR slides to add to the deck. Presentation 8 Oct.</span></li>
+</ul>
+
+<h2 id="num"><span class="n">4</span>Headline numbers</h2>
+<div class="tablewrap">
+<table>
+  <thead><tr><th>Measurement</th><th>Result</th><th>n</th><th>Entry</th></tr></thead>
+  <tbody>
+    <tr><td>Reproduction: our answers, our grader</td><td class="num">1.27 (1.18 to 1.36)</td><td class="num">192</td><td>E042</td></tr>
+    <tr><td>Reproduction: their answers, our grader</td><td class="num">1.26 (1.17 to 1.35)</td><td class="num">192</td><td>E044</td></tr>
+    <tr><td>Reproduction: their answers, their grader (published)</td><td class="num">0.93 (0.84 to 1.03)</td><td class="num">192</td><td>E033, E044</td></tr>
+    <tr><td>Ours vs theirs under one grader, cells exact</td><td class="num">126 of 192, mean difference +0.01</td><td class="num">192</td><td>E044</td></tr>
+    <tr><td>Determinism: temperature 0, run twice, byte-identical</td><td class="num">8 of 8</td><td class="num">8</td><td>E032</td></tr>
+    <tr><td>Determinism: their settings (0.7, top_k 50, seed 42), three ways</td><td class="num">8 of 8, 8 of 8, 8 of 8</td><td class="num">8</td><td>E035</td></tr>
+    <tr><td>Cross-machine: V100 emulated bf16 vs CPU float32</td><td class="num">0 of 8 identical; each machine 8 of 8 self-consistent</td><td class="num">8</td><td>E043</td></tr>
+    <tr><td>Prompt sensitivity: minimal / scaffolded / leading</td><td class="num">1.22 / 1.36 / 1.64</td><td class="num">72 each</td><td>E037, E039</td></tr>
+    <tr><td>1911 elevator: hint effect, leading minus scaffolded</td><td class="num">+0.89 (+0.69 to +1.08)</td><td class="num">72 per condition</td><td>E045</td></tr>
+    <tr><td>1907 free fall: hint effect</td><td class="num">+0.00 (-0.12 to +0.12)</td><td class="num">72 per condition</td><td>E047</td></tr>
+    <tr><td>1907 observation alone, answers that reach the equivalence</td><td class="num">0 of 144</td><td class="num">144</td><td>E047</td></tr>
+    <tr><td>Elevator setup with no question, answers that reach geometry</td><td class="num">0 of 64</td><td class="num">64</td><td>E046</td></tr>
+    <tr><td>Contamination, corpus: documents dated 1900 or later</td><td class="num">0 of 2,074,160; one misdated leak (a "Nobel Prize" hit dated 1829 describing a 1908 award)</td><td class="num">2,074,160</td><td>E041</td></tr>
+    <tr><td>Contamination, model: post-1900 stems clean under sampling</td><td class="num">66 of 66</td><td class="num">66</td><td>E040</td></tr>
+    <tr><td>Grader reliability: answers graded twice by independent sessions</td><td class="num">89 exact, 96 within one</td><td class="num">96</td><td>E039, E042</td></tr>
+    <tr><td>Grader vs grader: their answers, ours against theirs</td><td class="num">119 exact, 188 within one, +0.33</td><td class="num">192</td><td>E044</td></tr>
+  </tbody>
+</table>
+</div>
+<p class="small">Intervals are 95 percent bootstrap. The one sentence: the model can be led to the consequence and not to the seed. Given the 1907 observation alone it never makes the step, 0 of 144.</p>
+
+<h2 id="tonight"><span class="n">5</span>Running tonight on Expanse: the abduction suite</h2>
+<div class="note">Done 7 Oct: E049 and E050, see evidence/elevator-final/report.html and evidence/abduction/report.html. Nothing below is a result until the files are on disk.</div>
+<p>Three jobs, all landing in <code>evidence/abduction/</code>:</p>
+<ol>
+  <li><strong>The broken-cable elevator in Keating's own words</strong>, across all 24 checkpoints. His question, not the benchmark's, so the answer cannot lean on the rubric wording.</li>
+  <li><strong>A scaffolding ladder on the 1907 observation.</strong> The same free-fall seed with a graded series of hints, from nothing to nearly the answer, to find where, if anywhere, the model makes the step.</li>
+  <li><strong>Reasoning-type controls</strong>: deduction, induction and abduction tasks, each posed once inside the pre-1900 corpus and once outside it, to separate "cannot reason this way" from "has not read about this".</li>
+</ol>
+<p>In the morning: check that <code>evidence/abduction/</code> exists and holds JSONL and a rendered page, and read the Slurm <code>.o</code> and <code>.e</code> files under <code>logs/expanse/</code>. If the directory is empty, the job did not finish, and that is what to say.</p>
+
+<h2 id="left"><span class="n">6</span>What is left</h2>
+<ul>
+  <li><strong>API judge pass.</strong> Every score so far is from the provisional grader (D008). <code>tools/judge.py</code> runs the paper's own rubric at temperature 0 and fills the judge fields; about 20 minutes and under $5. Blocked on an API key, the one thing only Keating can unblock.</li>
+  <li><strong>Physicist grading from the blinded packet.</strong> <code>evidence/review-packet-a/packet.html</code> and <code>score-sheet.csv</code> are ready to send the moment he names collaborators. This is what settles which grader is closer to a physicist.</li>
+  <li><strong>Paper prose.</strong> The numbers are complete in the draft; 10 prose sections are marked <code>WRITE:</code> and unwritten. Section 8 below is how to move it into Overleaf.</li>
+  <li><strong>Jev as a third grader, optional.</strong> A decision model, API only, waitlist. Worth one row in a judge table, not more. Ask whether to join the waitlist.</li>
+</ul>
+
+<h2 id="ev"><span class="n">7</span>Evidence pages to open</h2>
+<ul>
+  <li><a href="../evidence/sweep/report.html">evidence/sweep/report.html</a>: the three-row grader table, per checkpoint.</li>
+  <li><a href="../evidence/prompt-sensitivity/report.html">evidence/prompt-sensitivity/report.html</a>: per condition and per task.</li>
+  <li><a href="../evidence/elevator/summary.html">evidence/elevator/summary.html</a>: the 1911 task at n=72.</li>
+  <li><a href="../evidence/freefall/summary.html">evidence/freefall/summary.html</a>: the 1907 task at n=72.</li>
+  <li><a href="../evidence/freefall/jump.html">evidence/freefall/jump.html</a>: the 144 answers to the 1907 observation, verdict per answer. Show the "weight dissolves" answer and one Newton-attraction answer.</li>
+  <li><a href="../evidence/contamination/corpus-search.html">evidence/contamination/corpus-search.html</a>: the term table and the 1829 hit.</li>
+  <li><a href="../evidence/contamination/probe.html">evidence/contamination/probe.html</a>: the boiler answer, the paper photon.</li>
+</ul>
+
+<h2 id="ol"><span class="n">8</span>Overleaf quickstart</h2>
+<p>For someone who has never opened Overleaf. Facts checked on the Overleaf site and the REVTeX 4.2 author guide on 7 Oct 2026; the pages are listed at the end.</p>
+<ol>
+  <li><strong>Make a free account.</strong> Go to overleaf.com and register. The free plan has unlimited projects, one collaborator per project, the basic compile timeout, and project history for the previous 24 hours only.</li>
+  <li><strong>New project.</strong> On the dashboard click <em>New project</em>, above the project list. The menu offers a blank project, an example project, <em>Existing project (.zip)</em>, and templates.</li>
+  <li><strong>Pick one of two starts.</strong>
+    <ul>
+      <li>If Keating shares an Overleaf link or invites you by email, open it: you are a collaborator in his project and you do not create your own. If he sends a <code>.tex</code> or a <code>.zip</code> instead, choose <em>Existing project (.zip)</em> and drag the zip in. The main document must not sit inside a folder in the zip, and after it opens, check that the right <code>.tex</code> file is set as the main document.</li>
+      <li>Otherwise start from the APS template. In the template gallery search "RevTeX 4.2" or "APS". On 7 Oct 2026 the gallery shows two by the American Physical Society: <em>RevTeX 4.2 Template and Sample</em> (opens with <code>\documentclass[reprint, amsmath, amssymb, aps]{revtex4-2}</code>) and <em>APS Physical Review Journals Template</em> (opens with <code>\documentclass[preprint, linenumbers, amsmath, amssymb, aps, physrev]{revtex4-2}</code>). Names change; verify on the site. Click <em>Open as Template</em>.</li>
+    </ul>
+  </li>
+  <li><strong>main.tex and the documentclass line.</strong> The first line of <code>main.tex</code> chooses the look. For a PRX-style manuscript:
+    <pre><code>\documentclass[aps,prx,preprint,superscriptaddress,amsmath,amssymb]{revtex4-2}</code></pre>
+    From the author guide: <code>aps</code> is the default society option; <code>prx</code> is the Physical Review X journal option, new in 4.2 (<code>physrev</code> is the unified Physical Review style); <code>preprint</code> is single column for drafts and <code>reprint</code> is "an approximation to the selected journal's actual layout"; <code>superscriptaddress</code> links authors to affiliations with superscript numbers, where the default <code>groupedaddress</code> groups authors under their affiliation; <code>linenumbers</code> adds line numbers for reviewers. Draft in <code>preprint</code>, switch to <code>reprint</code> to see the journal look. REVTeX 4.2 needs natbib 8.31a or later, which Overleaf has. Which options Keating wants for the actual submission is his call; check with him.</li>
+  <li><strong>Where figures go.</strong> The upload icon is in the upper left of the editor; the folder icon next to it creates a folder. Make one called <code>figures</code>, upload PDF or PNG files into it, then in the preamble <code>\usepackage{graphicx}</code> (the templates already have it) and <code>\graphicspath{ {./figures/} }</code>. A figure is then:
+    <pre><code>\begin{figure}
+  \includegraphics[width=\columnwidth]{sweep}
+  \caption{\label{fig:sweep} Mean score per checkpoint under each grader.}
+\end{figure}</code></pre>
+    REVTeX numbers the captions FIG. 1, FIG. 2 and <code>\ref{fig:sweep}</code> cross-references them. The file name goes in without its extension.</li>
+  <li><strong>References via a .bib file.</strong> Create <code>refs.bib</code> in the project (the new-file icon, upper left). One entry per source, for example <code>@article{hla2025gpt1900, ...}</code>; cite in the text with <code>\cite{hla2025gpt1900}</code>; put <code>\bibliography{refs}</code> just before <code>\end{document}</code>. The journal option picks the bibliography style for you: <code>apsrev4-2.bst</code> for every APS journal except RMP, so no <code>\bibliographystyle</code> line is needed. Every source in <code>reports/evidence-table.md</code> becomes one entry.</li>
+  <li><strong>Recompile and the log.</strong> Press <em>Recompile</em> to build the PDF; the dropdown beneath it has auto-compile. The <em>Logs and output files</em> icon sits to the right of the Recompile button. Errors are red and stop the PDF; warnings are light orange and can usually be ignored; overfull and underfull box warnings are blue. Turn on <em>Stop on First Error</em> in that same dropdown so one mistake does not become fifty. After adding references, recompile again so the citations resolve; a question mark in the PDF means a key is missing from the .bib file.</li>
+  <li><strong>Sharing by link.</strong> The <em>Share</em> button is at the top right. <em>Turn on link sharing</em> gives a view link and an edit link; the edit link requires the other person to have an Overleaf account. Or invite by email with view-only, review, or edit permission. On the free plan "adding more than one collaborator per project (editor or reviewer) is a premium feature", so if you own the project you can add Keating and nobody else; if he owns it, his plan sets the limit.</li>
+  <li><strong>What needs a paid plan</strong> (plans page, 7 Oct 2026): track changes, Git and GitHub sync, Dropbox sync, full document history (free keeps 24 hours), the extended compile timeout, the symbol palette, and advanced reference search. A paying owner's collaborators get full history and extended compile time inside that project. Some universities hold a site licence; check whether UCSD does before paying. That was not checked.</li>
+  <li><strong>The habit: one section at a time.</strong> Paste one section from <code>reports/paper-full-draft.md</code> (if that file is not there yet, <code>reports/paper-draft.md</code> is the one with the numbers filled in), recompile, fix anything red, then paste the next. Markdown is not LaTeX: <code>#</code> headings become <code>\section{}</code>, <code>**bold**</code> becomes <code>\textbf{}</code>, tables become <code>tabular</code>, and <code>%</code>, <code>&amp;</code> and <code>_</code> must be escaped. Put the E-number beside every number as a LaTeX comment, <code>% E042</code>, so the paper stays traceable to the notebook.</li>
+</ol>
+
+<h3>Pages checked for section 8</h3>
+<ul class="small">
+  <li>Overleaf template gallery: <a href="https://www.overleaf.com/latex/templates/revtex-4-dot-2-template-and-sample/yydsrzvrqrzs">RevTeX 4.2 Template and Sample</a> and <a href="https://www.overleaf.com/latex/templates/aps-physical-review-journals-template/kdtxdvcpfstb">APS Physical Review Journals Template</a>; also <a href="https://www.overleaf.com/gallery/tagged/aps">gallery/tagged/aps</a>.</li>
+  <li>Overleaf plans: <a href="https://www.overleaf.com/user/subscription/plans">overleaf.com/user/subscription/plans</a>.</li>
+  <li>Overleaf docs: <a href="https://docs.overleaf.com/managing-projects-and-files/uploading-a-project">Uploading a project</a>, <a href="https://docs.overleaf.com/collaborating/sharing-a-project">Sharing a project</a>, <a href="https://docs.overleaf.com/getting-started/recompiling-your-project">Recompiling your project</a>, <a href="https://docs.overleaf.com/troubleshooting-and-support/fixing-latex-errors">Fixing LaTeX errors</a>, <a href="https://docs.overleaf.com/writing-and-editing/inserting-images/uploading-images">Uploading images</a>, <a href="https://docs.overleaf.com/writing-and-editing/inserting-images/latex-code-for-including-images-in-your-document">LaTeX code for including images</a>.</li>
+  <li>REVTeX: <a href="https://journals.aps.org/revtex">journals.aps.org/revtex</a> (version 4.2f, 30 May 2023; natbib requirement) and the REVTeX 4.2 Author's Guide, <code>auguide4-2.pdf</code>, read from the copy at <a href="https://texdoc.org/serve/auguide4-2.pdf/0">texdoc.org</a>; the same file is on any CTAN mirror under <code>macros/latex/contrib/revtex/auguide/</code>.</li>
+</ul>
+
+</main>
+</body>
+</html>

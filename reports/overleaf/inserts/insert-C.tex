@@ -1,0 +1,22 @@
+% INSERT C. Section 13.2, prompt leakage
+
+\subsection{Three wordings, matched denominators}
+
+Three checkpoints, three seeds each, three wordings of all eight prompts: the published scaffolded prompt, which lists the classical assumptions; a minimal prompt with the list removed; and a leading prompt that appends one hint paragraph stating the core idea, generated so that every judge field stays byte-identical across conditions.
+% sources: E037, D007
+
+\begin{table*}[t]
+\caption{Mean score by wording, n=72 each.}
+\begin{ruledtabular}
+\begin{tabular}{lll}
+Wording & Mean & 95\% interval \\
+\hline
+minimal & 1.22 & 1.12 to 1.32 \\
+scaffolded & 1.36 & 1.22 to 1.50 \\
+leading & 1.64 & 1.46 to 1.83 \\
+\end{tabular}
+\end{ruledtabular}
+\end{table*}
+
+The ordering holds on every checkpoint. A hint that states the answer is worth +0.28 on a benchmark whose published signal is 0.93. The authors' own comparison of scaffolded against minimal (0.93 against 1.38) used different sample counts and checkpoint sets and cannot be read as a sensitivity result.
+% sources: E039; E025

@@ -1,0 +1,6 @@
+% INSERT F. Sections 11.1 and 13.1, corpus and contamination
+
+\subsection{Two contamination checks}
+
+Corpus side: the full training set, \texttt{mhla/pre1900-corpus}, 2,074,160 documents in 56 GB, scanned for 15 terms with a year histogram per term. 0 documents dated 1900 or later. photon, spacetime, Einstein and photoelectric: 0 each. Planck 705 and Michelson 277, at pre-1900 levels; the Michelson-Morley experiment is inside the corpus. One document dated 1829 describes a 1908 Nobel Prize, a misdated 1909 report, so the zero is a lower bound and the search is lexical. Model side: 16 sentence stems, 11 post-1900 and 5 pre-1900 controls, on the base model and a late checkpoint, greedy and sampled: 88 of 88 post-1900 stems drew a blank, but most controls failed too, so the probe shows weak recall of named facts in general rather than a clean date split.
+% sources: E041; E036, E040

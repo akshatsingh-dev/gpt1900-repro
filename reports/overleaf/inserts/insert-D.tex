@@ -1,0 +1,21 @@
+% INSERT D. New subsection, under the discovery-mismatch discussion or as Section 13.8
+
+\subsection{The elevator test, measured}
+
+The benchmark's two general-relativity prompts are Einstein's two steps: \texttt{gr\_free\_fall\_equivalence} is the 1907 seed, the falling observer who feels no weight, and \texttt{gr\_main\_elevator\_light} is the 1911 consequence, light bending in an accelerating frame. We ran both on all 24 checkpoints, three seeds, three wordings, 72 answers per cell.
+% sources: E045, E047
+
+\begin{table*}[t]
+\caption{The two general-relativity tasks at n=72 per wording.}
+\begin{ruledtabular}
+\begin{tabular}{llllll}
+Task & minimal & scaffolded & leading & hint effect, paired & highest score \\
+\hline
+1911 light bending & 1.31 & 1.57 & 2.46 & +0.89 (+0.69 to +1.08) & 4 \\
+1907 free fall & 0.92 & 0.99 & 0.99 & +0.00 (-0.12 to +0.12) & 2 \\
+\end{tabular}
+\end{ruledtabular}
+\end{table*}
+
+On the 1911 task the hint lifts 39 of 72 answers to 3 or 4; without it none reaches 3. On the 1907 task no answer in 216 reaches 3 under any wording, and a hint of the same kind moves nothing. We then gave the 1907 observation alone, with and without the question "what does this tell us about gravity", to all 24 checkpoints, 144 answers, read blind by two independent readers against a fixed verdict ladder: 0 of 144 bring in acceleration, equivalence or geometry on their own; the 7 automatic keyword hits were false positives on reading. The 1911 thought experiment given with no question at all, 64 continuations: 0 reach geometry, and the trained model restates "acceleration and gravity are equivalent", a line of its own prompt, and stops. The model can be led to the consequence and cannot be led to the seed, even when the seed is handed to it. Given the observation alone it never makes the step. This is the first stage of the test failing, measured rather than argued.
+% sources: E045, E047; E047; E046
