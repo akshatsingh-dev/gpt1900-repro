@@ -1,0 +1,44 @@
+# Upstream clone keeps its own .git. Tracking it here would record a broken
+# gitlink instead of files. Re-clone it from the pinned commit in
+# notes/provenance.md instead.
+upstream/
+
+# Model weights and HF cache. One 3.29B checkpoint is ~6.6GB and GitHub
+# rejects files over 100MB.
+*.pt
+*.bin
+*.safetensors
+*.gguf
+*.ckpt
+hf_cache/
+.cache/
+checkpoints/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.python-version
+
+# Never commit API keys. The eval calls the Claude API as judge.
+.env
+*.key
+
+.DS_Store
+
+# Contains analysis of the confidential draft. Never commit.
+notes/paper-mapping.md
+
+# Quotes the confidential draft. Never commit.
+notes/meeting-1-notes.md
+
+# Local working files, not part of the record.
+CLAUDE.md
+.claude/
+notes/roadtrip-2026-09-22.md
+reports/handoff-summary.md
+script_logs/
+*.zip
+reports/overleaf-guide.md
+reports/overleaf-guide.html
+reports/todo-2026-10-08.md
